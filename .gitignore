@@ -1,0 +1,23 @@
+# Local guide
+GUIDE.md
+
+# Build outputs
+*.exe
+*.out
+*.o
+*.obj
+
+# Debug files
+*.pdb
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.log
