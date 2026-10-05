@@ -26,7 +26,7 @@ algorithm-notes/
 
 - 暂无
 
-→ [完整索引](app://-/templates/README.md)
+→ [完整索引](templates/README.md)
 
 ### Patterns
 
@@ -36,7 +36,7 @@ algorithm-notes/
 
 - 暂无
 
-→ [完整索引](app://-/patterns/README.md)
+→ [完整索引](patterns/README.md)
 
 ### Problems
 
@@ -46,7 +46,7 @@ algorithm-notes/
 
 - 暂无
 
-→ [完整索引](app://-/problems/README.md)
+→ [[完整索引](problems/README.md)]
 
 ### Notes
 
@@ -56,7 +56,7 @@ algorithm-notes/
 
 - 暂无
 
-→ [完整索引](app://-/notes/README.md)
+→ [[完整索引](notes/README.md)]
 
 ## 收录原则
 
