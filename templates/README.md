@@ -6,6 +6,10 @@
 
 ## 索引
 
+### 竞赛基础
+
+- [C++ 竞赛基础模板](cpp-contest-template/README.md)
+
 ### 数据结构
 
 - 暂无
