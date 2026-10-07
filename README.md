@@ -32,9 +32,7 @@
 
 ## 索引
 
-当前仓库仍处于初始阶段。
-
-后续在算法学习与竞赛训练中沉淀的内容，将逐步加入这里。
+> 这里只索引当前重要内容，完整内容请查看各目录 README。
 
 ### Templates
 
@@ -42,7 +40,7 @@
 
 ### Patterns
 
-暂无。
+- [枚举降维](patterns/enumeration-dimension-reduction.md)
 
 ### Problems
 

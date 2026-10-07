@@ -8,7 +8,7 @@
 
 ### 搜索与枚举
 
-- 暂无
+- [枚举降维](enumeration-dimension-reduction.md)
 
 ### 区间与序列
 
