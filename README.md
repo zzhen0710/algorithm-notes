@@ -38,7 +38,7 @@
 
 ### Templates
 
-暂无。
+- [C++ 竞赛基础模板](templates/cpp-contest-template/README.md)
 
 ### Patterns
 
@@ -50,7 +50,7 @@
 
 ### Notes
 
-暂无。
+- [蓝桥杯系统训练](notes/blue-bridge/README.md)
 
 ## 收录原则
 
