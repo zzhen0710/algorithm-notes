@@ -41,6 +41,7 @@
 ### Patterns
 
 - [枚举降维](patterns/enumeration-dimension-reduction.md)
+- [前后缀分解：排除元素后的信息合并](patterns/prefix-suffix-exclusion.md)
 
 ### Problems
 
