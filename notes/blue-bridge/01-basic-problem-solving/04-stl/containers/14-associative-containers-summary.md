@@ -48,6 +48,47 @@ C++11 的八种关联容器，区别主要来自三个问题：
 
 `equal_range()` 只返回边界；若还要遍历区间内 `k` 项，需再计入 `O(k)`。上表对哈希 `multi` 的平均复杂度采用包含全部匹配元素的保守计法。
 
+### 2.1 模板参数：还能自定义比较规则与哈希规则
+
+前面的 `set<T>`、`map<K, V>` 等都是**省略默认模板参数的常用写法**。这八种容器都允许自定义规则，但**比较器与哈希函数所在的位置不同**：
+
+| 容器家族 | 常用模板参数形式（省略默认值） | 可定制的规则与位置 |
+|---|---|---|
+| `set` / `multiset` | `set<Key, Compare, Allocator>` | 第 **2** 个参数 `Compare`：排序比较器 |
+| `map` / `multimap` | `map<Key, T, Compare, Allocator>` | 第 **3** 个参数 `Compare`：按 key 排序的比较器 |
+| `unordered_set` / `unordered_multiset` | `unordered_set<Key, Hash, KeyEqual, Allocator>` | 第 **2** 个参数 `Hash`：哈希函数；第 **3** 个 `KeyEqual`：判断 key 是否相等 |
+| `unordered_map` / `unordered_multimap` | `unordered_map<Key, T, Hash, KeyEqual, Allocator>` | 第 **3** 个参数 `Hash`：哈希函数；第 **4** 个 `KeyEqual`：判断 key 是否相等 |
+
+同一行的 `multi` 版本参数顺序完全相同。`Allocator` 是内存分配器，普通竞赛中基本无需自定义。
+
+默认情况下，有序容器的 `Compare` 是 `less<Key>`（按 key 升序），哈希容器的 `Hash` / `KeyEqual` 分别是 `hash<Key>` / `equal_to<Key>`。因此：
+
+```cpp
+set<int, greater<int>> s;              // 使用现成比较器：降序集合
+map<int, int, greater<int>> m;         // 第 3 个参数是 Compare：按 key 降序
+
+// 第一关键字升序，第二关键字降序
+struct Cmp {
+    bool operator()(const pair<int, int>& a,
+                    const pair<int, int>& b) const {
+        if (a.first != b.first) return a.first < b.first;
+        return a.second > b.second;
+    }
+};
+set<pair<int, int>, Cmp> ordered;      // 有特殊顺序需求时可以自定义
+```
+
+**自定义规则的两个边界：**
+
+- `Compare` 必须满足**严格弱序**。对于 `set` / `map`，两键若同时满足 `!comp(a,b) && !comp(b,a)`，容器就认为它们等价；如果比较器只比较二元组的 `first`，不同 `second` 的键也可能被当作同一个 key。
+- 哈希容器要求：`KeyEqual(a,b)` 为 `true` 时，`Hash(a)` 与 `Hash(b)` **必须相同**。C++11 默认支持 `int`、`string` 等常见键的哈希，**但不提供通用的 `hash<pair<int,int>>`**；若坚持把 `pair` 用作哈希键，需要提供自定义哈希函数。
+
+**竞赛中如何取舍？**
+
+- 需要按特殊顺序动态维护元素：可以直接用 `greater<Key>`，或为 `set` / `map` 编写简洁、正确的 `Compare`；这类自定义很常见，不必刻意回避。
+- 只是为了让 `unordered_set<pii>` / `unordered_map<pii, V>` 能编译：**不必优先手写复合键哈希**。它增加实现和测试成本，还需要考虑哈希冲突；可以先尝试 `set<pii>` / `map<pii, V>`、二维数组、排序扫描、无冲突整数编码。
+- **四种替代方案的具体条件与示例见 [`15-pair.md` 第 5 节「复合键的存储与判重」](15-pair.md)**。只有现成方案不符合需求时，再考虑自定义哈希与相等规则。
+
 ## 3. 最容易混淆的 API 行为
 
 ### 3.1 `insert()` / `emplace()`：返回类型由“是否唯一”决定
