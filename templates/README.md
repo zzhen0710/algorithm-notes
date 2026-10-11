@@ -6,7 +6,7 @@
 
 ## 索引
 
-### 竞赛基础
+### [竞赛基础](cpp-contest-template/README.md)
 
 - [C++ 竞赛基础模板](cpp-contest-template/README.md)
 

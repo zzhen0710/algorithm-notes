@@ -10,12 +10,15 @@
 顺序容器、容器适配器、关联容器、pair、tuple、
 bitset，以及相关的代表题与解题思想。
 
-### Algorithms：标准算法
+### [Algorithms：标准算法](algorithms/16-stl-algorithm-index.md)
 
-待整理。包括 sort、lower_bound、upper_bound、
-unique 等常用算法。
+已整理 01–16 节，涵盖排序与选择、二分边界、去重与聚合、
+区间重排、有序合并、复制与映射，以及 Lambda 与比较器。
+完整导航与选型速查见总结索引。
 
 ## 进度
 
-- [x] Containers：容器与工具类型
-- [ ] Algorithms：标准算法
+勾选记录本节的笔记整理进度。
+
+- [x] [Containers：容器与工具类型](containers/README.md)
+- [x] [Algorithms：标准算法](algorithms/16-stl-algorithm-index.md)

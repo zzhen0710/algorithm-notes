@@ -34,11 +34,11 @@
 
 > 这里只索引当前重要内容，完整内容请查看各目录 README。
 
-### Templates
+### [Templates](templates/README.md)
 
 - [C++ 竞赛基础模板](templates/cpp-contest-template/README.md)
 
-### Patterns
+### [Patterns](patterns/README.md)
 
 - [枚举降维](patterns/enumeration-dimension-reduction.md)
 - [前后缀分解：排除元素后的信息合并](patterns/prefix-suffix-exclusion.md)
@@ -46,13 +46,14 @@
 - [博弈中的临界条件：从资源阈值到策略证明](patterns/critical-condition-in-game.md)
 - [状态扫描：变化时结算与尾状态处理](patterns/state-scan-finalization.md)
 
-### Problems
+### [Problems](problems/README.md)
 
 - [CF 2271B — MEX Game](problems/CF_MEX_Game.md)
 
-### Notes
+### [Notes](notes/README.md)
 
 - [蓝桥杯系统训练](notes/blue-bridge/README.md)
+- [STL Algorithm 总结索引](notes/blue-bridge/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
 
 ## 收录原则
 
