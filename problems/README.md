@@ -12,7 +12,7 @@
 
 ### Codeforces
 
-- 暂无
+- [CF 2271B — MEX Game](CF_MEX_Game.md)：MEX 定义、平衡分配与临界频率。
 
 ### 其他
 

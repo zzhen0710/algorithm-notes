@@ -42,10 +42,13 @@
 
 - [枚举降维](patterns/enumeration-dimension-reduction.md)
 - [前后缀分解：排除元素后的信息合并](patterns/prefix-suffix-exclusion.md)
+- [MEX：从定义域与频率出发](patterns/mex-analysis.md)
+- [博弈中的临界条件：从资源阈值到策略证明](patterns/critical-condition-in-game.md)
+- [状态扫描：变化时结算与尾状态处理](patterns/state-scan-finalization.md)
 
 ### Problems
 
-暂无。
+- [CF 2271B — MEX Game](problems/CF_MEX_Game.md)
 
 ### Notes
 
