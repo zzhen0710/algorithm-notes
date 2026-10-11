@@ -26,13 +26,13 @@
 
 ### [Notes](notes/README.md)
 
-算法学习过程中的综合笔记、经验总结与错误记录。
+按知识章节组织的系统算法笔记，以及学习过程中的经验总结与错误记录。
 
-用于沉淀不适合单独归入某个算法、解题范式或题目的知识与经验。
+用于建立算法知识体系，记录概念、原理、复杂度、接口与边界；可复用实现、跨题范式和代表题分别由 Templates、Patterns、Problems 承担。
 
 ## 索引
 
-> 这里只索引当前重要内容，完整内容请查看各目录 README。
+> 根目录保留模块入口、代表性范式与专题总览；完整章节和详细选型请查看各目录索引。
 
 ### [Templates](templates/README.md)
 
@@ -52,8 +52,8 @@
 
 ### [Notes](notes/README.md)
 
-- [蓝桥杯系统训练](notes/blue-bridge/README.md)
-- [STL Algorithm 总结索引](notes/blue-bridge/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
+- [算法知识与训练总览](notes/README.md)
+- [STL 总览](notes/01-basic-problem-solving/04-stl/README.md)：[容器索引](notes/01-basic-problem-solving/04-stl/containers/README.md) · [算法索引](notes/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
 
 ## 收录原则
 
