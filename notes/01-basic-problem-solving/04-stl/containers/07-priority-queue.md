@@ -27,13 +27,13 @@ mn.pop();          // 删除 2，此后堆顶为 5
 
 | API 签名 | 作用与返回值 | 时间复杂度 |
 |---|---|---|
-| `void push(const int& value)` | 插入元素，不返回值 | \(O(\log n)\) |
-| `void push(int&& value)` | 插入右值，不返回值 | \(O(\log n)\) |
-| `void pop()` | 删除堆顶，**不返回被删除的值** | \(O(\log n)\) |
-| `const int& top() const` | 返回堆顶元素的只读引用 | \(O(1)\) |
-| `size_type size() const` | 返回元素个数 | \(O(1)\) |
-| `bool empty() const` | 判断是否为空 | \(O(1)\) |
-| `template<class... Args> void emplace(Args&&... args)` | 在容器中构造并插入元素 | \(O(\log n)\) |
+| `void push(const int& value)` | 插入元素，不返回值 | $O(\log n)$ |
+| `void push(int&& value)` | 插入右值，不返回值 | $O(\log n)$ |
+| `void pop()` | 删除堆顶，**不返回被删除的值** | $O(\log n)$ |
+| `const int& top() const` | 返回堆顶元素的只读引用 | $O(1)$ |
+| `size_type size() const` | 返回元素个数 | $O(1)$ |
+| `bool empty() const` | 判断是否为空 | $O(1)$ |
+| `template<class... Args> void emplace(Args&&... args)` | 在容器中构造并插入元素 | $O(\log n)$ |
 
 `size_type` 为容器定义的无符号大小类型；复杂度以一次比较为常数时间为前提。
 
@@ -104,7 +104,7 @@ priority_queue<Task, vector<Task>, Cmp> pq;
 | 易错点 | 正确理解 |
 |---|---|
 | 以为 `top()` 是最小值 | 默认大根堆；需要小根堆时使用 `greater<T>` |
-| 以为 `pop()` 是 \(O(1)\) | `top()` 为 \(O(1)\)，`pop()` 为 \(O(\log n)\) |
+| 以为 `pop()` 是 $O(1)$ | `top()` 为 $O(1)$，`pop()` 为 $O(\log n)$ |
 | `int x = pq.pop();` | 错误：`pop()` 返回 `void`；先 `top()` 再 `pop()` |
 | 对空堆访问 `top()` / `pop()` | 不合法；先判断 `empty()` |
 | 认为堆内元素整体排序 | 只保证堆顶；不能直接按下标访问或遍历 |
@@ -161,7 +161,7 @@ while (true) {
 }
 ```
 
-**原解正确，复杂度为 \(O(n\log n)\)。** 原题对结果范围有保证，使用 `int` 可以通过；做同类问题仍应根据数据范围判断累计答案是否需要 `long long`。
+**原解正确，复杂度为 $O(n\log n)$。** 原题对结果范围有保证，使用 `int` 可以通过；做同类问题仍应根据数据范围判断累计答案是否需要 `long long`。
 
 仅需把终止条件写得更直接：
 
@@ -181,9 +181,9 @@ while (pq.size() > 1) {
 
 因此总费用等于加权路径长度（WPL）：
 
-\[
+$$
 \text{cost}=\sum_i w_i\cdot depth_i
-\]
+$$
 
 - 权值越小，放在越深的位置越划算。
 - 在一棵最优合并树中，可以使**最小的两项成为最深的一对兄弟叶子**，而不增加总费用。

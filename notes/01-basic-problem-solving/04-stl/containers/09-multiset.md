@@ -25,21 +25,21 @@ cout << *ms.rbegin();  // 8，最大值
 
 | API 签名 | 作用 / 返回值 | 时间复杂度 |
 |---|---|---|
-| `iterator insert(const int& value)` | 插入一个元素，返回新元素位置；**不会去重** | \(O(\log n)\) |
-| `template<class... Args> iterator emplace(Args&&... args)` | 用参数构造并插入一个元素，返回新元素位置；**允许重复** | \(O(\log n)\) |
-| `iterator find(const int& key)` | 查找某个等于 `key` 的元素；不存在返回 `end()` | \(O(\log n)\) |
-| `size_type count(const int& key) const` | 返回等于 `key` 的元素个数 | \(O(\log n+k)\) |
-| `size_type erase(const int& key)` | **删除所有**等于 `key` 的元素，返回删除数量 | \(O(\log n+k)\) |
-| `iterator erase(const_iterator pos)` | **只删除**迭代器指向的一个元素，返回下一位置 | 均摊 \(O(1)\) |
-| `iterator lower_bound(const int& key)` | 第一个 `>= key` 的元素位置 | \(O(\log n)\) |
-| `iterator upper_bound(const int& key)` | 第一个 `> key` 的元素位置 | \(O(\log n)\) |
-| `pair<iterator, iterator> equal_range(const int& key)` | 返回所有等值元素构成的左闭右开区间 | \(O(\log n)\) |
-| `iterator begin()` / `iterator end()` | 最小元素位置 / 尾后位置 | \(O(1)\) |
-| `reverse_iterator rbegin()` | 最大元素位置 | \(O(1)\) |
-| `size_type size() const` / `bool empty() const` | 元素数量（含重复）/ 是否为空 | \(O(1)\) |
-| `void clear()` | 删除所有元素 | \(O(n)\) |
+| `iterator insert(const int& value)` | 插入一个元素，返回新元素位置；**不会去重** | $O(\log n)$ |
+| `template<class... Args> iterator emplace(Args&&... args)` | 用参数构造并插入一个元素，返回新元素位置；**允许重复** | $O(\log n)$ |
+| `iterator find(const int& key)` | 查找某个等于 `key` 的元素；不存在返回 `end()` | $O(\log n)$ |
+| `size_type count(const int& key) const` | 返回等于 `key` 的元素个数 | $O(\log n+k)$ |
+| `size_type erase(const int& key)` | **删除所有**等于 `key` 的元素，返回删除数量 | $O(\log n+k)$ |
+| `iterator erase(const_iterator pos)` | **只删除**迭代器指向的一个元素，返回下一位置 | 均摊 $O(1)$ |
+| `iterator lower_bound(const int& key)` | 第一个 `>= key` 的元素位置 | $O(\log n)$ |
+| `iterator upper_bound(const int& key)` | 第一个 `> key` 的元素位置 | $O(\log n)$ |
+| `pair<iterator, iterator> equal_range(const int& key)` | 返回所有等值元素构成的左闭右开区间 | $O(\log n)$ |
+| `iterator begin()` / `iterator end()` | 最小元素位置 / 尾后位置 | $O(1)$ |
+| `reverse_iterator rbegin()` | 最大元素位置 | $O(1)$ |
+| `size_type size() const` / `bool empty() const` | 元素数量（含重复）/ 是否为空 | $O(1)$ |
+| `void clear()` | 删除所有元素 | $O(n)$ |
 
-其中 \(n\) 为当前元素数量，\(k\) 为等于 `key` 的元素数量。表中复杂度默认整数比较为 \(O(1)\)。
+其中 $n$ 为当前元素数量，$k$ 为等于 `key` 的元素数量。表中复杂度默认整数比较为 $O(1)$。
 
 `emplace()` 与 `insert()` 都会保留重复元素，但 `multiset::emplace()` 返回的是 **`iterator`**，不是 `pair<iterator, bool>`：
 
@@ -96,7 +96,7 @@ auto range = ms.equal_range(3);
 distance(l, r);  // O(k)：需要逐个前进，不是 O(1)
 ```
 
-`std::lower_bound(ms.begin(), ms.end(), x)` 的迭代器移动可能达到 \(O(n)\)；要找上下界，使用成员函数 `ms.lower_bound(x)`，保证 \(O(\log n)\)。
+`std::lower_bound(ms.begin(), ms.end(), x)` 的迭代器移动可能达到 $O(n)$；要找上下界，使用成员函数 `ms.lower_bound(x)`，保证 $O(\log n)$。
 
 ### 2.3 迭代器与边界
 
@@ -111,21 +111,21 @@ distance(l, r);  // O(k)：需要逐个前进，不是 O(1)
 
 **题型**：区间交集 / 动态维护极值 / 枚举删除一个对象 / 离线预处理优化。
 
-**题意**：给定 \(n\) 个区间，**恰好删除一个区间**，最大化其余区间的公共交集长度。允许端点重复，区间也可能退化为单点。
+**题意**：给定 $n$ 个区间，**恰好删除一个区间**，最大化其余区间的公共交集长度。允许端点重复，区间也可能退化为单点。
 
 ### 3.1 首先找出决定答案的状态
 
 任意一组区间的交集，只取决于：
 
-\[
+$$
 L=\max_i l_i,\qquad R=\min_i r_i
-\]
+$$
 
 其长度为：
 
-\[
+$$
 \max(0,R-L)
-\]
+$$
 
 因此，无须维护或检查所有可能的交集内部位置，只需要维护**最大左端点**与**最小右端点**。
 
@@ -203,13 +203,13 @@ int ans = 0;
 // Complexity: find/insert O(log n), extrema O(1), total O(n log n).
 ```
 
-**总复杂度**：初始化 \(O(n\log n)\)，每轮查找、删除、插回 \(O(\log n)\)，共 \(n\) 轮，所以时间 \(O(n\log n)\)，额外空间 \(O(n)\)。
+**总复杂度**：初始化 $O(n\log n)$，每轮查找、删除、插回 $O(\log n)$，共 $n$ 轮，所以时间 $O(n\log n)$，额外空间 $O(n)$。
 
 ### 3.3 进一步优化：静态数据不必动态删除
 
 真正的题目结构是：**所有区间预先给出，只枚举“删掉哪个区间”，并不永久修改集合。**
 
-删除第 \(i\) 个区间，剩余部分可以拆成：
+删除第 $i$ 个区间，剩余部分可以拆成：
 
 ```text
 [1 ... i-1]   删除 i   [i+1 ... n]
@@ -220,14 +220,15 @@ int ans = 0;
 - 最大左端点；
 - 最小右端点；
 
-那么删除 \(i\) 后的两个边界可在 \(O(1)\) 内求出：
+那么删除 $i$ 后的两个边界可在 $O(1)$ 内求出：
 
-\[
+$$
 L_i=\max(preL[i-1],sufL[i+1])
-\]
-\[
+$$
+
+$$
 R_i=\min(preR[i-1],sufR[i+1])
-\]
+$$
 
 #### O(n) 实现：前后缀极值
 
@@ -275,14 +276,14 @@ void solve() {
 
 前后缀数组的 `INT_MIN` / `INT_MAX` 是**求最大值 / 最小值的空区间单位元**，使删除首尾区间时不必单独写边界分支。
 
-这版时间 \(O(n)\)，空间 \(O(n)\)；相较双 `multiset`，优化来源于**利用离线已知的完整数据，预处理排除某一项后的结果**，而不是更快的 STL 接口。
+这版时间 $O(n)$，空间 $O(n)$；相较双 `multiset`，优化来源于**利用离线已知的完整数据，预处理排除某一项后的结果**，而不是更快的 STL 接口。
 
 ### 3.4 两种解法应该如何选？
 
 | 方案 | 时间 | 空间 | 适用场景 |
 |---|---|---|---|
-| 双 `multiset` | \(O(n\log n)\) | \(O(n)\) | 集合真正动态变化，需要插入、删除并维护极值 |
-| 前后缀极值 | \(O(n)\) | \(O(n)\) | 全部数据已知，只需枚举排除一个位置 |
+| 双 `multiset` | $O(n\log n)$ | $O(n)$ | 集合真正动态变化，需要插入、删除并维护极值 |
+| 前后缀极值 | $O(n)$ | $O(n)$ | 全部数据已知，只需枚举排除一个位置 |
 
 > **先提取决定答案的极值，再判断是否真需要动态数据结构；若所有数据已知，尝试用前后缀预处理替代动态修改。**
 
@@ -295,9 +296,9 @@ void solve() {
 | `ms.erase(x)` 只想删一个 `x` | 实际会删掉全部相等值 | `auto it=ms.find(x); if(it!=ms.end()) ms.erase(it);` |
 | 把 `multiset` 当成支持下标的数组 | 树的迭代器不支持随机访问 | 用 `begin()`、`rbegin()`、`lower_bound()` |
 | 空集合上解引用 `begin()` / `rbegin()` | 没有任何元素 | 先判断 `empty()` |
-| 认为 `distance(l,r)` 在树上是 \(O(1)\) | 双向迭代器需要逐步移动 | 复杂度为 \(O(k)\) |
+| 认为 `distance(l,r)` 在树上是 $O(1)$ | 双向迭代器需要逐步移动 | 复杂度为 $O(k)$ |
 | 在 `multiset` 上调用算法版 `lower_bound` | 迭代器移动可能为线性 | 使用 `ms.lower_bound(x)` |
-| 把取极值误写成 \(O(\log n)\) | 混淆了查找与端点迭代器 | `*ms.begin()` / `*ms.rbegin()` 为 \(O(1)\) |
+| 把取极值误写成 $O(\log n)$ | 混淆了查找与端点迭代器 | `*ms.begin()` / `*ms.rbegin()` 为 $O(1)$ |
 
 ## 5. 选型触发器
 

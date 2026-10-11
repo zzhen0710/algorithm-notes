@@ -21,18 +21,18 @@ cout << *s.rbegin();         // 8，最大值
 
 | API 签名 | 作用 / 返回值 | 复杂度 |
 |---|---|---|
-| `pair<iterator, bool> insert(const int& value)` | 返回元素位置和是否**新插入** | \(O(\log n)\) |
-| `template<class... Args> pair<iterator, bool> emplace(Args&&... args)` | 用参数构造并尝试插入；返回位置和成功标记 | \(O(\log n)\) |
-| `iterator find(const int& key)` | 找到对应元素；不存在返回 `end()` | \(O(\log n)\) |
-| `size_type count(const int& key) const` | 存在返回 1，否则返回 0 | \(O(\log n)\) |
-| `size_type erase(const int& key)` | 按值删除；返回 0 或 1 | \(O(\log n)\) |
-| `iterator erase(const_iterator pos)` | 删除迭代器指向的元素，返回其后继 | 均摊 \(O(1)\) |
-| `iterator lower_bound(const int& key)` | 第一个大于等于 `key` 的位置 | \(O(\log n)\) |
-| `iterator upper_bound(const int& key)` | 第一个严格大于 `key` 的位置 | \(O(\log n)\) |
-| `iterator begin()` / `iterator end()` | 最小元素位置 / 尾后位置 | \(O(1)\) |
-| `reverse_iterator rbegin()` | 逆序起点，即最大元素的位置 | \(O(1)\) |
-| `size_type size() const` / `bool empty() const` | 元素数量 / 判空 | \(O(1)\) |
-| `void clear()` | 清空集合 | \(O(n)\) |
+| `pair<iterator, bool> insert(const int& value)` | 返回元素位置和是否**新插入** | $O(\log n)$ |
+| `template<class... Args> pair<iterator, bool> emplace(Args&&... args)` | 用参数构造并尝试插入；返回位置和成功标记 | $O(\log n)$ |
+| `iterator find(const int& key)` | 找到对应元素；不存在返回 `end()` | $O(\log n)$ |
+| `size_type count(const int& key) const` | 存在返回 1，否则返回 0 | $O(\log n)$ |
+| `size_type erase(const int& key)` | 按值删除；返回 0 或 1 | $O(\log n)$ |
+| `iterator erase(const_iterator pos)` | 删除迭代器指向的元素，返回其后继 | 均摊 $O(1)$ |
+| `iterator lower_bound(const int& key)` | 第一个大于等于 `key` 的位置 | $O(\log n)$ |
+| `iterator upper_bound(const int& key)` | 第一个严格大于 `key` 的位置 | $O(\log n)$ |
+| `iterator begin()` / `iterator end()` | 最小元素位置 / 尾后位置 | $O(1)$ |
+| `reverse_iterator rbegin()` | 逆序起点，即最大元素的位置 | $O(1)$ |
+| `size_type size() const` / `bool empty() const` | 元素数量 / 判空 | $O(1)$ |
+| `void clear()` | 清空集合 | $O(n)$ |
 
 ### 插入返回值：不用先 `find()` 再 `insert()`
 
@@ -102,7 +102,7 @@ auto a = s.lower_bound(x);                      // O(log n)，推荐
 auto b = lower_bound(s.begin(), s.end(), x);   // 迭代器移动可达 O(n)
 ```
 
-通用算法 `std::lower_bound` 在这里的**比较次数**是 \(O(\log n)\)，但 `set` 迭代器不是随机访问迭代器，迭代器推进总次数可能是 \(O(n)\)。
+通用算法 `std::lower_bound` 在这里的**比较次数**是 $O(\log n)$，但 `set` 迭代器不是随机访问迭代器，迭代器推进总次数可能是 $O(n)$。
 
 ### 4.3 `set` 不支持下标，也不能直接修改元素
 
@@ -212,7 +212,7 @@ void solve() {
 - `lower_bound()` 已自然覆盖“恰好相等”情况，无须取出前再 `find()`。
 - 维护**最终选中的迭代器**，可直接 `erase(it)`，不需要按值重新查找。
 
-**时间复杂度：** 共 \(n\) 次操作，每次至多 \(O(\log n)\)，总计 \(O(n\log n)\)；空间 \(O(n)\)。
+**时间复杂度：** 共 $n$ 次操作，每次至多 $O(\log n)$，总计 $O(n\log n)$；空间 $O(n)$。
 
 ---
 

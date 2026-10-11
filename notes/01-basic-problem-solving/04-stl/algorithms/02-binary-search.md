@@ -307,11 +307,11 @@ true
 
 与 `lower_bound` 区别：
 
-  需求         方法
------------- -----------------------------
-  只判断存在   `binary_search`
-  需要位置     `lower_bound`
-  需要数量     `upper_bound - lower_bound`
+| 需求 | 方法 |
+| --- | --- |
+| 只判断存在 | `binary_search` |
+| 需要位置 | `lower_bound` |
+| 需要数量 | `upper_bound - lower_bound` |
 
 竞赛中：
 

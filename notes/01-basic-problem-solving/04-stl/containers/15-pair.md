@@ -91,9 +91,9 @@ priority_queue<pii, vector<pii>, greater<pii>> mn; // 字典序最小堆
 
 即判断是否存在两台电脑 `i`、`j` 满足：
 
-\[
+$$
 price_i<price_j,\qquad quality_i>quality_j.
-\]
+$$
 
 原题保证价格互不相同。直接枚举两台电脑需要 `O(n²)`，但可以利用排序与单调性降为 `O(n log n)`。
 
@@ -111,15 +111,15 @@ sort(a.begin(), a.end());
 
 因为 `pair` 先比较 `first`，排序后价格从低到高排列。又由于本题的价格互不相同，有：
 
-\[
+$$
 price_1<price_2<\cdots<price_n.
-\]
+$$
 
 于是，任意两个排序后的位置 `i < j`，**价格关系已经确定**；只需判断质量是否发生逆序：
 
-\[
+$$
 quality_i>quality_j.
-\]
+$$
 
 这一步将原本包含两个严格不等式的二维判断，转化为一维质量序列的性质判断。
 
@@ -138,15 +138,15 @@ quality_i>quality_j.
 
 不会。考虑其逆否关系：如果每对相邻位置都满足
 
-\[
+$$
 quality_i\le quality_{i+1},
-\]
+$$
 
 由大小关系的**传递性**，必然得到
 
-\[
+$$
 quality_1\le quality_2\le\cdots\le quality_n.
-\]
+$$
 
 所以任意 `i < j` 都满足 `quality_i <= quality_j`，不存在“更便宜却质量更高”的一对，输出 `Poor Alex`。
 

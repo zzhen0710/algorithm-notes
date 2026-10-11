@@ -29,15 +29,15 @@ array<int, N> c{};
 
 | API 签名（常用形式） | 作用与返回值 | 复杂度 |
 |---|---|---|
-| `int& operator[](size_type pos)` | 返回下标 `pos` 处元素的引用；**不检查越界** | \(O(1)\) |
-| `int& at(size_type pos)` | 返回元素引用；越界抛出 `out_of_range` | \(O(1)\) |
-| `int& front()` | 返回首元素引用 | \(O(1)\) |
-| `int& back()` | 返回末元素引用 | \(O(1)\) |
-| `constexpr size_type size() const noexcept` | 返回固定元素数量 `N` | \(O(1)\) |
-| `constexpr bool empty() const noexcept` | 判断是否为空（即 `N == 0`） | \(O(1)\) |
-| `void fill(const int& value)` | 将全部元素赋值为 `value` | \(O(N)\) |
-| `iterator begin() noexcept` | 返回首元素迭代器 | \(O(1)\) |
-| `iterator end() noexcept` | 返回尾后迭代器 | \(O(1)\) |
+| `int& operator[](size_type pos)` | 返回下标 `pos` 处元素的引用；**不检查越界** | $O(1)$ |
+| `int& at(size_type pos)` | 返回元素引用；越界抛出 `out_of_range` | $O(1)$ |
+| `int& front()` | 返回首元素引用 | $O(1)$ |
+| `int& back()` | 返回末元素引用 | $O(1)$ |
+| `constexpr size_type size() const noexcept` | 返回固定元素数量 `N` | $O(1)$ |
+| `constexpr bool empty() const noexcept` | 判断是否为空（即 `N == 0`） | $O(1)$ |
+| `void fill(const int& value)` | 将全部元素赋值为 `value` | $O(N)$ |
+| `iterator begin() noexcept` | 返回首元素迭代器 | $O(1)$ |
+| `iterator end() noexcept` | 返回尾后迭代器 | $O(1)$ |
 
 `const array` 的访问接口返回 `const int&` 或 `const_iterator`。实际使用通常借助 `auto`，不必死记这些类型别名。
 
@@ -174,7 +174,7 @@ for (char c : s) {
 
 其余代码保持原样即可，无须重复整份程序。
 
-复杂度：若输入字符串长度为 \(L\)，遍历输入为 \(O(L)\)，累加 26 个标记为 \(O(26)\)；总时间 \(O(L+26)\)，额外空间 \(O(26)\)。
+复杂度：若输入字符串长度为 $L$，遍历输入为 $O(L)$，累加 26 个标记为 $O(26)$；总时间 $O(L+26)$，额外空间 $O(26)$。
 
 ---
 

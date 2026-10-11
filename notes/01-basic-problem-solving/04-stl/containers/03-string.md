@@ -22,23 +22,23 @@ cout << s.substr(2, 3); // cde
 
 | API 签名 | 作用与返回值 | 时间复杂度 |
 |---|---|---|
-| `size_type size() const` | 返回字符数 | \(O(1)\) |
-| `bool empty() const` | 判断是否为空 | \(O(1)\) |
-| `char& operator[](size_type pos)` | 按下标访问；不进行越界检查 | \(O(1)\) |
-| `char& front()` / `char& back()` | 访问首 / 尾字符 | \(O(1)\) |
-| `void push_back(char ch)` | 追加一个字符 | 均摊 \(O(1)\) |
-| `void pop_back()` | 删除末尾字符，不返回值 | \(O(1)\) |
-| `string& operator+=(char ch)` | 末尾追加一个字符，返回自身引用 | 均摊 \(O(1)\) |
-| `string& operator+=(const string& str)` | 末尾拼接字符串，返回自身引用 | 均摊 \(O(m)\) |
-| `string substr(size_type pos = 0, size_type count = npos) const` | 返回复制出的子串 | \(O(\text{实际子串长度})\) |
+| `size_type size() const` | 返回字符数 | $O(1)$ |
+| `bool empty() const` | 判断是否为空 | $O(1)$ |
+| `char& operator[](size_type pos)` | 按下标访问；不进行越界检查 | $O(1)$ |
+| `char& front()` / `char& back()` | 访问首 / 尾字符 | $O(1)$ |
+| `void push_back(char ch)` | 追加一个字符 | 均摊 $O(1)$ |
+| `void pop_back()` | 删除末尾字符，不返回值 | $O(1)$ |
+| `string& operator+=(char ch)` | 末尾追加一个字符，返回自身引用 | 均摊 $O(1)$ |
+| `string& operator+=(const string& str)` | 末尾拼接字符串，返回自身引用 | 均摊 $O(m)$ |
+| `string substr(size_type pos = 0, size_type count = npos) const` | 返回复制出的子串 | $O(\text{实际子串长度})$ |
 | `size_type find(const string& str, size_type pos = 0) const` | 从 `pos` 起找子串，返回首位置或 `npos` | 取决于实现与匹配情况 |
-| `size_type find(char ch, size_type pos = 0) const` | 从 `pos` 起找字符，返回位置或 `npos` | 最坏 \(O(n)\) |
-| `string& erase(size_type pos = 0, size_type count = npos)` | 删除指定区间，返回自身引用 | 最坏 \(O(n)\) |
-| `string& insert(size_type pos, const string& str)` | 在 `pos` 前插入字符串，返回自身引用 | 最坏 \(O(n+m)\) |
-| `string& replace(size_type pos, size_type count, const string& str)` | 替换指定区间，返回自身引用 | 最坏 \(O(n+m)\) |
-| `int compare(const string& str) const` | 与整个字符串按字典序比较 | \(O(\min(n,m))\) |
-| `int compare(size_type pos, size_type count, const string& str) const` | 将指定子串与 `str` 比较 | \(O(\min(count,m))\) |
-| `void clear()` | 清空字符串 | \(O(n)\) |
+| `size_type find(char ch, size_type pos = 0) const` | 从 `pos` 起找字符，返回位置或 `npos` | 最坏 $O(n)$ |
+| `string& erase(size_type pos = 0, size_type count = npos)` | 删除指定区间，返回自身引用 | 最坏 $O(n)$ |
+| `string& insert(size_type pos, const string& str)` | 在 `pos` 前插入字符串，返回自身引用 | 最坏 $O(n+m)$ |
+| `string& replace(size_type pos, size_type count, const string& str)` | 替换指定区间，返回自身引用 | 最坏 $O(n+m)$ |
+| `int compare(const string& str) const` | 与整个字符串按字典序比较 | $O(\min(n,m))$ |
+| `int compare(size_type pos, size_type count, const string& str) const` | 将指定子串与 `str` 比较 | $O(\min(count,m))$ |
+| `void clear()` | 清空字符串 | $O(n)$ |
 
 其中 `n` 为当前字符串长度，`m = str.size()`；复杂度按通常的字符处理成本讨论。
 
@@ -214,7 +214,7 @@ while (l < text.size()) {
 }
 ```
 
-**评价：正确、天然保证完整单词匹配，整体线性。** 由于单词片段互不重叠，`find(' ')` 的扫描与 `substr()` 的总复制量均为 \(O(n)\)；每个片段的字符串比较也不会超过片段自身长度。
+**评价：正确、天然保证完整单词匹配，整体线性。** 由于单词片段互不重叠，`find(' ')` 的扫描与 `substr()` 的总复制量均为 $O(n)$；每个片段的字符串比较也不会超过片段自身长度。
 
 原版中将 `find()` 结果赋给 `ll`、以 `len + 1` 表示未找到，没有必要；改为 `size_t`，并统一使用 `text.size()` 作为最终右边界即可。
 
@@ -227,7 +227,7 @@ if (text.compare(l, r - l, word) == 0) {
 }
 ```
 
-**这属于实现层面优化，不改变整体 \(O(n)\) 复杂度。**
+**这属于实现层面优化，不改变整体 $O(n)$ 复杂度。**
 
 ### 4.2 另一种建模：两端补空格 + `find()`
 
@@ -287,7 +287,7 @@ int main() {
 
 | 思路 | 优势 | 注意点 |
 |---|---|---|
-| 分词后比较 | 时间复杂度可明确保证为 \(O(n)\)，思路直观 | 需要处理每个单词的边界 |
+| 分词后比较 | 时间复杂度可明确保证为 $O(n)$，思路直观 | 需要处理每个单词的边界 |
 | 两端补空格再查找 | 建模简洁，消除逐次判断边界的分支 | `string::find()` 的最坏时间复杂度不保证线性；需要题目以空格分隔单词 |
 
 这里的优秀之处主要是**改变问题表示，而不是提升渐近复杂度**。

@@ -25,9 +25,9 @@
 
 用 `⊕` 表示合并两个部分的摘要：
 
-\[
+$$
 \operatorname{ans}(i)=\operatorname{pre}[i-1]\oplus\operatorname{suf}[i+1]
-\]
+$$
 
 预处理：
 
@@ -71,9 +71,9 @@ ans = merge(pre[i - 1], suf[i + 1]);
 
 交集只取决于：
 
-\[
+$$
 L=\max(l_i),\quad R=\min(r_i),\quad \text{length}=\max(0,R-L)
-\]
+$$
 
 **方案一：动态维护。** 用两个 `multiset` 分别维护左右端点；枚举每个区间，临时删除一个端点值，取极值，再恢复。总复杂度 `O(n log n)`。
 
@@ -115,9 +115,9 @@ for (int i = 1; i <= n; ++i) {
 
 排除整个 `[l, r]` 后，剩余为 `[1, l-1]` 和 `[r+1, n]`：
 
-\[
+$$
 \operatorname{ans}(l,r)=\operatorname{pre}[l-1]\oplus\operatorname{suf}[r+1]
-\]
+$$
 
 **同一套前后缀摘要，即可在 `O(1)` 时间求出任意一个连续区间被排除后的可合并信息。**
 

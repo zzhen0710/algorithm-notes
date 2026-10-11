@@ -8,9 +8,9 @@
 
 MEX（Minimum Excluded）是最小未出现的非负整数。推广到正整数 `k`：
 
-\[
+$$
 \operatorname{mex}_k(S)=\min\{x\ge0:cnt_S[x]<k\}.
-\]
+$$
 
 它要求的是：`0...m-1` 的频率全部至少为 `k`，而 `m` 的频率不足 `k`。所以结果由**第一个失败位置**决定，后面的数字再多也不能补上前面的空缺。
 
@@ -43,9 +43,9 @@ int mex_k(const vector<int>& v, int k) {  // 要求 k >= 1
 
 设集合大小为 `s`，若 `mex_k(S)=m`，前 `m` 个数各至少出现 `k` 次，所以：
 
-\[
+$$
 km\le s,\qquad m\le\left\lfloor\frac{s}{k}\right\rfloor.
-\]
+$$
 
 数组实现可以只统计 `0...floor(s/k)` 的频率，忽略更大的值；该上界也保证扫描必然终止。哈希实现的平均时间为 `O(s)`，最坏时间不由平均结论保证；辅助空间为 `O(s)`。
 
