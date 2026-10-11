@@ -26,7 +26,7 @@
 用 `⊕` 表示合并两个部分的摘要：
 
 $$
-\operatorname{ans}(i)=\operatorname{pre}[i-1]\oplus\operatorname{suf}[i+1]
+\mathrm{ans}(i)=\mathrm{pre}[i-1]\oplus\mathrm{suf}[i+1]
 $$
 
 预处理：
@@ -116,7 +116,7 @@ for (int i = 1; i <= n; ++i) {
 排除整个 `[l, r]` 后，剩余为 `[1, l-1]` 和 `[r+1, n]`：
 
 $$
-\operatorname{ans}(l,r)=\operatorname{pre}[l-1]\oplus\operatorname{suf}[r+1]
+\mathrm{ans}(l,r)=\mathrm{pre}[l-1]\oplus\mathrm{suf}[r+1]
 $$
 
 **同一套前后缀摘要，即可在 `O(1)` 时间求出任意一个连续区间被排除后的可合并信息。**

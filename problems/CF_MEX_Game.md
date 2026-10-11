@@ -9,7 +9,7 @@
 有偶数张牌 `n`，Alice 先手，两人轮流任取一张，直到各拿到 `n/2` 张。对多重集合 `S`，定义：
 
 $$
-\operatorname{mex}_k(S)=\min\{x\ge0:\operatorname{cnt}_S(x)<k\}.
+\mathrm{mex}_k(S)=\min\{x\ge0:\mathrm{cnt}_S(x)<k\}.
 $$
 
 `k=1` 时就是通常的 MEX（Minimum Excluded，最小未出现非负整数）。Alice 希望双方的 `mex_k` **不同**，Bob 希望它们**相同**。输出 `YES` 表示 Alice 在双方最优时必胜，否则输出 `NO`；相同是 Bob 获胜，不是平局。
