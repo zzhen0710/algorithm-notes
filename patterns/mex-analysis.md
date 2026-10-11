@@ -9,7 +9,7 @@
 MEX（Minimum Excluded）是最小未出现的非负整数。推广到正整数 `k`：
 
 $$
-\mathrm{mex}_k(S)=\min\{x\ge0:cnt_S[x]<k\}.
+\mathrm{mex}_k(S)=\min\lbrace x\ge0:cnt_S[x]<k\rbrace.
 $$
 
 它要求的是：`0...m-1` 的频率全部至少为 `k`，而 `m` 的频率不足 `k`。所以结果由**第一个失败位置**决定，后面的数字再多也不能补上前面的空缺。
