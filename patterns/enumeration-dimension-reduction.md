@@ -71,8 +71,8 @@ a² + b² + c² + d² = N
 
 ## 代表题
 
-- [P1618 三连击（升级版）](https://www.luogu.com.cn/problem/P1618?utm_source=chatgpt.com)
-- [P8635 四平方和](https://www.luogu.com.cn/problem/P8635?utm_source=chatgpt.com)
+- [P1618 三连击（升级版）](https://www.luogu.com.cn/problem/P1618)
+- [P8635 四平方和](https://www.luogu.com.cn/problem/P8635)
 
 ------
 
