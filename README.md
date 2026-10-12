@@ -58,6 +58,7 @@
 ### [Notes](notes/README.md)
 
 - [算法知识总览](notes/README.md)
+- [序列与区间技巧](notes/02-sequence-techniques/README.md)
 - [STL 总览](notes/01-basic-problem-solving/04-stl/README.md)：[容器索引](notes/01-basic-problem-solving/04-stl/containers/README.md) · [算法索引](notes/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
 
 典题按“给题 → 独立尝试 → 核验 → 我的做法与推荐做法对比 → 提炼迁移方法”推进，具体规范见 [Notes 总览](notes/README.md)。

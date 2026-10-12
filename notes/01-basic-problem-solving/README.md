@@ -24,4 +24,4 @@
 - [x] [1.2 枚举](02-enumeration.md)
 - [x] [1.3 模拟](03-simulation.md)
 - [x] [1.4 STL 与竞赛常用 C++ 工具](04-stl/README.md)
-- [x] [1.5 位运算](05-bit-operations.md)：知识正文已整理，2 道配套题已完成本地核验与复盘。
+- [x] [1.5 位运算](05-bit-operations.md)
