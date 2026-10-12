@@ -1,16 +1,16 @@
 # Algorithm Notes
 
-个人算法学习与竞赛训练仓库。
+个人算法知识与解题复盘仓库。
 
-当前主要用于蓝桥杯备赛，同时通过系统学习与刷题逐步提高算法与问题解决能力。
+记录算法知识、问题建模过程与有复用价值的解题经验。
 
 ## 仓库结构
 
 ### [Templates](templates/README.md)
 
-算法与数据结构模板。
+已验证的竞赛算法模板。
 
-用于沉淀已经理解、能够独立实现并具有复用价值的算法与数据结构实现。
+用于沉淀便于现场复现、经过验证的竞赛实现。KMP、并查集、图算法等即使在相关仓库已有基础实现，也保留竞赛模板；验证状态如实记录。
 
 ### [Patterns](patterns/README.md)
 
@@ -52,7 +52,7 @@
 
 ### [Notes](notes/README.md)
 
-- [算法知识与训练总览](notes/README.md)
+- [算法知识总览](notes/README.md)
 - [STL 总览](notes/01-basic-problem-solving/04-stl/README.md)：[容器索引](notes/01-basic-problem-solving/04-stl/containers/README.md) · [算法索引](notes/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
 
 ## 收录原则
@@ -69,9 +69,8 @@
 
 目标不是积累代码数量，而是在持续训练中逐渐建立一个精炼、可复用的个人算法知识库。
 
-## 当前重点
+## 相关仓库与知识分工
 
-- 蓝桥杯
-- 算法竞赛基础
-- 算法思维与问题建模
-- C++
+[ds-notes](https://github.com/zzhen0710/ds-notes) 收录数据结构基础，以及排序、查找、图的基础算法和 KMP。本仓库承接这些基础，整理竞赛所需的必要原理、规范模板、问题建模与应用边界。普通排序及基础容器优先使用 STL，不重复编写教材式实现。
+
+知识目录保持九个主题，详见 [Notes 总览](notes/README.md)。先整理 B 组及其包含的 C 组内容，全部整理后再按需补充 A 组专项；A 组条目的标题与索引前标记 `*`，星号表示扩展范围，不表示难度。

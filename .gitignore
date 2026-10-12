@@ -21,3 +21,6 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.log
+
+# Local learning and collaboration plan
+/LEARNING_PLAN.local.md
