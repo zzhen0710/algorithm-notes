@@ -22,13 +22,13 @@
 
 具有代表性和长期复习价值的题目与题解。
 
-不记录全部刷题历史，只保留能够体现典型算法、解题思路、重要技巧或思维问题的题目。
+从独立刷题、比赛或补题过程中筛选值得长期积累的好题，保存个人思路、错误与改进过程；不收录从知识笔记迁出的配套典题。
 
 ### [Notes](notes/README.md)
 
 按知识章节组织的系统算法笔记，以及学习过程中的经验总结与错误记录。
 
-用于建立算法知识体系，记录概念、原理、复杂度、接口与边界；可复用实现、跨题范式和代表题分别由 Templates、Patterns、Problems 承担。
+用于建立算法知识体系，记录概念、原理、复杂度、接口与边界。配套典题的原 AC、完善 AC 及改进分析完整保留在所属章节；独立刷题积累的好题归入 Problems，可复用实现归入 Templates，跨题范式归入 Patterns。
 
 ## 索引
 
@@ -54,6 +54,8 @@
 
 - [算法知识总览](notes/README.md)
 - [STL 总览](notes/01-basic-problem-solving/04-stl/README.md)：[容器索引](notes/01-basic-problem-solving/04-stl/containers/README.md) · [算法索引](notes/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
+
+典题按“给题 → 独立尝试 → 核验 → 我的做法与推荐做法对比 → 提炼迁移方法”推进，具体规范见 [Notes 总览](notes/README.md)。
 
 ## 收录原则
 
