@@ -41,14 +41,19 @@
 ### [Patterns](patterns/README.md)
 
 - [枚举降维](patterns/enumeration-dimension-reduction.md)
+- [枚举少量耦合变量](patterns/small-coupling-enumeration.md)
 - [前后缀分解：排除元素后的信息合并](patterns/prefix-suffix-exclusion.md)
 - [MEX：从定义域与频率出发](patterns/mex-analysis.md)
 - [博弈中的临界条件：从资源阈值到策略证明](patterns/critical-condition-in-game.md)
 - [状态扫描：变化时结算与尾状态处理](patterns/state-scan-finalization.md)
+- [排除不可行空间：约束扩张与区间收缩](patterns/feasible-interval-shrinking.md)
 
 ### [Problems](problems/README.md)
 
 - [CF 2271B — MEX Game](problems/CF_MEX_Game.md)
+- [CF 1628A — Meximum Array](problems/CF1628A_Meximum_Array.md)
+- [CF 1367C — Social Distance](problems/CF1367C_Social_Distance.md)
+- [CF 1494B — Berland Crossword](problems/CF1494B_Berland_Crossword.md)
 
 ### [Notes](notes/README.md)
 

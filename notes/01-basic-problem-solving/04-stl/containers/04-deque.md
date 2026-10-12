@@ -103,7 +103,7 @@ if (!dq.empty()) {
 
 ### 4.1 独立实现：`deque` 直接模拟
 
-你的 AC 核心代码：
+我的 AC 核心代码：
 
 ```cpp
 deque<int> dq;

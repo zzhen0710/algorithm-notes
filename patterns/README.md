@@ -19,10 +19,13 @@
 ### 搜索与枚举
 
 - [枚举降维](enumeration-dimension-reduction.md)
+- [枚举少量耦合变量：固定共享部分后独立求解](small-coupling-enumeration.md)
 
 ### 区间与序列
 
 - [前后缀分解：排除元素后的信息合并](prefix-suffix-exclusion.md)
+- [后缀预处理：用未来摘要辅助当前决策](suffix-preprocessing.md)
+- [排除不可行空间：约束扩张与区间收缩](feasible-interval-shrinking.md)
 - [MEX：从定义域与频率出发](mex-analysis.md)
 - [状态扫描：变化时结算与尾状态处理](state-scan-finalization.md)
 
