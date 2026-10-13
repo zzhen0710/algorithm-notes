@@ -37,6 +37,7 @@
 ### [Templates](templates/README.md)
 
 - [C++ 竞赛基础模板](templates/cpp-contest-template/README.md)
+- [离散化：建表与编号查找](templates/discretization/README.md)
 
 ### [Patterns](patterns/README.md)
 
@@ -46,6 +47,7 @@
 - [MEX：从定义域与频率出发](patterns/mex-analysis.md)
 - [博弈中的临界条件：从资源阈值到策略证明](patterns/critical-condition-in-game.md)
 - [状态扫描：变化时结算与尾状态处理](patterns/state-scan-finalization.md)
+- [稀疏边界划段：按状态不变的区间计算](patterns/sparse-boundary-segments.md)
 - [排除不可行空间：约束扩张与区间收缩](patterns/feasible-interval-shrinking.md)
 
 ### [Problems](problems/README.md)

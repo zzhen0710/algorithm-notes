@@ -5,6 +5,7 @@
 ## 索引
 
 - [C++ 竞赛基础模板](cpp-contest-template/README.md)
+- [离散化：建表与编号查找](discretization/README.md)
 
 ## 收录范围
 
