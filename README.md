@@ -4,64 +4,18 @@
 
 记录算法知识、问题建模过程与有复用价值的解题经验。
 
-## 仓库结构
+## 导航
 
-### [Templates](templates/README.md)
+> **根目录提供模块入口与少量重点直达；完整条目请查看各模块索引。**
 
-已验证的竞赛算法模板。
+| 模块 | 完整索引 | 内容 | 重点直达 |
+| --- | --- | --- | --- |
+| Notes | [算法知识总览](notes/README.md) | 系统知识、配套典题与双解复盘 | [STL 总览](notes/01-basic-problem-solving/04-stl/README.md) |
+| Patterns | [范式索引](patterns/README.md) | 跨题识别与问题建模 | [枚举降维](patterns/enumeration-dimension-reduction.md) · [前后缀分解](patterns/prefix-suffix-exclusion.md) · [稀疏边界划段](patterns/sparse-boundary-segments.md) |
+| Templates | [模板索引](templates/README.md) | 带接口与边界约定的可复用实现 | [C++ 竞赛基础框架](templates/cpp-contest-template/README.md) |
+| Problems | [好题复盘索引](problems/README.md) | 独立刷题中精选的题目与复盘 | [CF 2271B — MEX Game](problems/CF_MEX_Game.md) |
 
-用于沉淀便于现场复现、经过验证的竞赛实现。KMP、并查集、图算法等即使在相关仓库已有基础实现，也保留竞赛模板；验证状态如实记录。
-
-### [Patterns](patterns/README.md)
-
-常见解题范式与可复用的思维模型。
-
-重点记录如何识别问题特征、选择方法并完成问题建模，而不仅仅是具体代码实现。
-
-### [Problems](problems/README.md)
-
-具有代表性和长期复习价值的题目与题解。
-
-从独立刷题、比赛或补题过程中筛选值得长期积累的好题，保存个人思路、错误与改进过程；不收录从知识笔记迁出的配套典题。
-
-### [Notes](notes/README.md)
-
-按知识章节组织的系统算法笔记，以及学习过程中的经验总结与错误记录。
-
-用于建立算法知识体系，记录概念、原理、复杂度、接口与边界。配套典题的原 AC、完善 AC 及改进分析完整保留在所属章节；独立刷题积累的好题归入 Problems，可复用实现归入 Templates，跨题范式归入 Patterns。
-
-## 索引
-
-> 根目录保留模块入口、代表性范式与专题总览；完整章节和详细选型请查看各目录索引。
-
-### [Templates](templates/README.md)
-
-- [C++ 竞赛基础模板](templates/cpp-contest-template/README.md)
-- [离散化：建表与编号查找](templates/discretization/README.md)
-
-### [Patterns](patterns/README.md)
-
-- [枚举降维](patterns/enumeration-dimension-reduction.md)
-- [枚举少量耦合变量](patterns/small-coupling-enumeration.md)
-- [前后缀分解：排除元素后的信息合并](patterns/prefix-suffix-exclusion.md)
-- [MEX：从定义域与频率出发](patterns/mex-analysis.md)
-- [博弈中的临界条件：从资源阈值到策略证明](patterns/critical-condition-in-game.md)
-- [状态扫描：变化时结算与尾状态处理](patterns/state-scan-finalization.md)
-- [稀疏边界划段：按状态不变的区间计算](patterns/sparse-boundary-segments.md)
-- [排除不可行空间：约束扩张与区间收缩](patterns/feasible-interval-shrinking.md)
-
-### [Problems](problems/README.md)
-
-- [CF 2271B — MEX Game](problems/CF_MEX_Game.md)
-- [CF 1628A — Meximum Array](problems/CF1628A_Meximum_Array.md)
-- [CF 1367C — Social Distance](problems/CF1367C_Social_Distance.md)
-- [CF 1494B — Berland Crossword](problems/CF1494B_Berland_Crossword.md)
-
-### [Notes](notes/README.md)
-
-- [算法知识总览](notes/README.md)
-- [序列与区间技巧](notes/02-sequence-techniques/README.md)
-- [STL 总览](notes/01-basic-problem-solving/04-stl/README.md)：[容器索引](notes/01-basic-problem-solving/04-stl/containers/README.md) · [算法索引](notes/01-basic-problem-solving/04-stl/algorithms/16-stl-algorithm-index.md)
+配套典题的原实现、推荐实现与改进分析完整保留在所属知识笔记，独立刷题精选才归入 Problems。
 
 典题按“给题 → 独立尝试 → 核验 → 我的做法与推荐做法对比 → 提炼迁移方法”推进，具体规范见 [Notes 总览](notes/README.md)。
 
