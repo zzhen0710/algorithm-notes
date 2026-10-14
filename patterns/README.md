@@ -20,6 +20,7 @@
 
 - [枚举降维](enumeration-dimension-reduction.md)
 - [枚举少量耦合变量：固定共享部分后独立求解](small-coupling-enumeration.md)
+- [二分答案：把优化与可行性判定分开](binary-search-on-answer.md)
 
 ### 区间与序列
 

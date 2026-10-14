@@ -16,7 +16,9 @@ inline std::vector<long long> buildCoordinates(std::vector<long long> values) {
 inline int getId(const std::vector<long long>& xs, long long x) {
     auto it = std::lower_bound(xs.begin(), xs.end(), x);
 
-    // 第一个 >= x 的值不一定就是 x，必须检查
+    // 通用查询允许 x 未收录，需要确认第一个 >=x 的值就是 x
+    // 若 xs 由完整原数组排序去重生成，且只查原数组中的值，此检查可省略
+    // 模板仍保留它，以支持任意查询值和空表
     if (it == xs.end() || *it != x) return -1;
 
     // 编号从 1 开始，xs 的下标从 0 开始
