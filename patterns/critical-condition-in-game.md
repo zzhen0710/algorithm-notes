@@ -29,7 +29,7 @@
 
 ## 代表题：MEX Game
 
-在 [CF 2271B](../problems/CF_MEX_Game.md) 中，Alice 希望双方 `mex_k` 不同，Bob 希望相同。对每个数值尽量均分时，双方同时达到 `k` 次的阈值是 `2k`。
+在 [CF 2271B](<../problems/CF 2271B_MEX_Game.md>) 中，Alice 希望双方 `mex_k` 不同，Bob 希望相同。对每个数值尽量均分时，双方同时达到 `k` 次的阈值是 `2k`。
 
 设 `t` 是首个 `cnt[t]<2k` 的值：
 

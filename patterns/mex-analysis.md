@@ -61,7 +61,7 @@ $$
 
 ## 代表题与触发器
 
-[CF 2271B — MEX Game](../problems/CF_MEX_Game.md) 先修正双方 `mex_k` 的计算，再分析原数组中第一个 `cnt[x]<2k` 的数。`2k` 来自双方各需要 `k` 张的资源条件，并不是 MEX 定义自带的规则。
+[CF 2271B — MEX Game](<../problems/CF 2271B_MEX_Game.md>) 先修正双方 `mex_k` 的计算，再分析原数组中第一个 `cnt[x]<2k` 的数。`2k` 来自双方各需要 `k` 张的资源条件，并不是 MEX 定义自带的规则。
 
 [CF 1628A — Meximum Array](../problems/CF1628A_Meximum_Array.md)以剩余后缀的 MEX 作为当前段目标，再收齐连续目标值；MEX 为 `0` 时每段仍必须非空。后缀信息如何保存，见 [后缀预处理](suffix-preprocessing.md)。
 
