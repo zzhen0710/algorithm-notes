@@ -13,6 +13,7 @@
 | [1.3 模拟](03-simulation.md) | 最小状态、更新顺序、尾状态与规则建模 |
 | [1.4 STL 与竞赛常用 C++ 工具](04-stl/README.md) | 容器和标准算法的接口、复杂度、前提与选型 |
 | [1.5 位运算](05-bit-operations.md) | 按位操作、位掩码、异或性质、lowbit、整数位宽与移位边界 |
+| [1.6 本章总结与选型](06-summary-selection.md) | 枚举、模拟、STL、位运算的横向选择与 CF 467B 写法对比 |
 
 基础排序原理参考 [ds-notes](https://github.com/zzhen0710/ds-notes)，普通排序使用 `sort`，需要稳定性时使用 `stable_sort`，不再单独安排冒泡、快排、堆排序等重复实现章节。排序建模与归并计数归入后续主题；需要自行实现的 KMP、并查集及图算法仍整理竞赛笔记与模板，详见 [知识总览](../README.md)。
 
@@ -25,3 +26,4 @@
 - [x] [1.3 模拟](03-simulation.md)
 - [x] [1.4 STL 与竞赛常用 C++ 工具](04-stl/README.md)
 - [x] [1.5 位运算](05-bit-operations.md)
+- [x] [1.6 本章总结与选型](06-summary-selection.md)
