@@ -27,6 +27,7 @@
 - [CF 1628A — Meximum Array](CF1628A_Meximum_Array.md)：前缀收集、后缀 MEX、最短合法切分与两版 AC 复盘。
 - [CF 1367C — Social Distance](CF1367C_Social_Distance.md)：排除不可行空间、统一零段计数与个人三分类实现对比。
 - [CF 1494B — Berland Crossword](CF1494B_Berland_Crossword.md)：保留方向关系、四角 bitmask 枚举与独立容量判定。
+- [CF 2276C — Subarrays](CF2276C_Subarrays.md)：前缀同余配对、按长度延迟加入与合法历史状态计数。
 
 ### 其他
 
