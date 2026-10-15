@@ -7,6 +7,7 @@
 - [C++ 竞赛基础模板](cpp-contest-template/README.md)
 - [离散化：建表与编号查找](discretization/README.md)
 - [整数二分：可行边界与独立判定](binary-search/README.md)
+- [归并计数：严格逆序对](merge-counting/README.md)
 
 ## 收录范围
 
