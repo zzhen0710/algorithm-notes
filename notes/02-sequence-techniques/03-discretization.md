@@ -30,7 +30,7 @@
 
 ## 3. 标准流程：收集 → 排序去重 → 二分编号
 
-可直接复用的建表与查编号函数见[离散化模板](../../templates/discretization/README.md)，以下按步骤解释其主要逻辑。
+可直接复用的建表与查编号函数见[离散化模板](../../templates/discretization/README.md#接口与约定)，以下按步骤解释其主要逻辑。
 
 ### 3.1 收集需要编号的值
 
@@ -766,7 +766,7 @@ int main() {
 
 总时间 `O(n log n)`，存储输入需要 `O(n)` 空间；排序后扫描只维护常数个变量。这个版本也已通过本地独立覆盖对照，平台结果未记录。
 
-最后一片没有后续区间触发结算，对应已有范式：[状态扫描与尾状态处理](../../patterns/state-scan-finalization.md)。
+最后一片没有后续区间触发结算，对应已有范式：[状态扫描与尾状态处理](../../patterns/state-scan-finalization.md#区间合并中的尾状态)。
 
 #### 两种做法的收益与代价
 
@@ -788,7 +788,7 @@ int main() {
 
 > 另一条路线是：只需并集 → 不必保存覆盖重数 → 排序保证新区间从左到右到来 → 合并相交或相接区间，分片结算。
 
-通用的识别方法提炼为[稀疏边界划段：按状态不变的区间计算](../../patterns/sparse-boundary-segments.md)。建表与编号查询复用[离散化模板](../../templates/discretization/README.md)；完整个人过程和双解仍保留在本题下。
+通用的识别方法提炼为[稀疏边界划段：按状态不变的区间计算](../../patterns/sparse-boundary-segments.md)。建表与编号查询复用[离散化模板](../../templates/discretization/README.md#接口与约定)；完整个人过程和双解仍保留在本题下。
 
 ## 8. 自查
 

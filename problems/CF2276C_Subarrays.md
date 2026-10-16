@@ -165,7 +165,7 @@ void solve() {
 - 若要求长度至少为 $L$，固定右端点时只加入下标不超过 $r-L$ 的前缀。
 - 若长度还不能超过 $R$，合法下标为 $[r-R,r-L]$，需要同时加入新前缀、移除过期前缀，形成频次窗口。
 
-相关知识：[前缀和](../notes/02-sequence-techniques/01-prefix-sum.md)、[滑动窗口](../notes/02-sequence-techniques/05-sliding-window.md)。本题只有长度下限，历史候选不断增加；并非所有频次维护都需要收缩窗口。
+相关知识：[前缀和](../notes/02-sequence-techniques/01-prefix-sum.md#2-一维前缀和状态与推导)、[滑动窗口](../notes/02-sequence-techniques/05-sliding-window.md#5-频次窗口出现次数与种类数)。本题只有长度下限，历史候选不断增加；并非所有频次维护都需要收缩窗口。
 
 ## 核验依据
 

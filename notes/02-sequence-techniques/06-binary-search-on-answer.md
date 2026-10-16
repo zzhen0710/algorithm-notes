@@ -8,7 +8,7 @@
 
 > **把“求最优值”转成“判断候选值是否可行”，再利用单调性寻找可行与不可行的分界。**
 
-[STL 二分查找](../01-basic-problem-solving/04-stl/algorithms/02-binary-search.md)在已有序列中找边界；二分答案在候选答案范围中找边界，通常不需要把全部候选存成数组。
+[STL 二分查找](../01-basic-problem-solving/04-stl/algorithms/02-binary-search.md#一二分查找的核心思想)在已有序列中找边界；二分答案在候选答案范围中找边界，通常不需要把全部候选存成数组。
 
 本节采用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)中的 `ll`、标准库与命名空间约定，只展示相关函数。
 

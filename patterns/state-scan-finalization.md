@@ -70,13 +70,13 @@ vector<pair<int, int>> runs(const vector<int>& a) {
 
 ## 区间合并中的尾状态
 
-[P1496 的排序合并解法](../notes/02-sequence-techniques/03-discretization.md#72-p1496从逐点覆盖到按段计算)在发现空隙时结算当前覆盖区间，输入结束后仍需结算最后一片。
+[P1496 的排序合并解法](../notes/02-sequence-techniques/03-discretization.md#另一种做法排序合并区间)在发现空隙时结算当前覆盖区间，输入结束后仍需结算最后一片。
 
-另一种按端点分段的实现直接累加每个被覆盖小段，不再额外补整片长度，见[稀疏边界划段](sparse-boundary-segments.md)。两种结算单位不同，不能叠加使用。
+另一种按端点分段的实现直接累加每个被覆盖小段，不再额外补整片长度，见[稀疏边界划段](sparse-boundary-segments.md#核心模型)。两种结算单位不同，不能叠加使用。
 
 ## 在 MEX Game 中的经验
 
-[CF MEX Game](<../problems/CF 2271B_MEX_Game.md>) 的编写过程带来了尾状态处理经验，但提供的 WA 版本已包含尾段判断。它实际错在漏查未出现整数，见 [MEX 分析](mex-analysis.md)。
+[CF MEX Game](<../problems/CF 2271B_MEX_Game.md#尾状态经验与本次-wa-要分开>) 的编写过程带来了尾状态处理经验，但提供的 WA 版本已包含尾段判断。它实际错在漏查未出现整数，见 [MEX 分析](mex-analysis.md#常见错误与适用边界)。
 
 连续段扫描只能告诉我们已有元素如何分段；即使每一段都正确结算，也不能自动检查不在数组中的 `0` 或中间空缺。
 
