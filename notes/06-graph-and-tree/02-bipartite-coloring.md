@@ -578,6 +578,6 @@ void solve() {
 
 本节建立二分图的判定、合法划分与连通块独立选择。**二分图最大匹配是另一个问题**：在边之间挑选互不共用端点的尽量多配对，后续再学。
 
-本节代表题已完成复盘，后续按基础轮路线进入贪心与构造；图的其他算法在相应前置齐备后继续整理。
+本节代表题已完成复盘，后续按基础轮路线进入 [4.1 排序贪心与交换论证](../04-greedy-and-construction/01-sorting-greedy.md)；图的其他算法在相应前置齐备后继续整理。
 
 进一步阅读：[CP-Algorithms · Bipartite Graph Check](https://cp-algorithms.com/graph/bipartite-check.html)。
