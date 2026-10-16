@@ -17,6 +17,8 @@ vector<int> d = {1, 2, 3};
 
 以下以 `vector<int>` 为例。`size_type` 是容器的大小类型，`iterator` / `const_iterator` 是对应迭代器类型；表格列出常用签名，省略其他重载与部分限定符。
 
+复杂度中的 `n` 表示调用前的元素数，`k` 表示输入区间或初始化列表的元素数。
+
 | API 签名 | 作用 / 返回值 | 复杂度 |
 |---|---|---|
 | `void push_back(const int& value)` | 尾部追加一个元素 | **均摊 O(1)**，单次扩容可能 O(n) |
@@ -27,7 +29,11 @@ vector<int> d = {1, 2, 3};
 | `bool empty() const` | 是否为空 | O(1) |
 | `size_type capacity() const` | 当前可容纳的元素数 | O(1) |
 | `void reserve(size_type new_cap)` | 将容量至少扩至 `new_cap`，**不改变元素个数** | 发生重分配时 O(n) |
-| `void resize(size_type count)` | 将元素个数改为 `count`；新增的 `int` 为 0 | 最坏 O(n) |
+| `void resize(size_type count)` | 将元素个数改为 `count`；新增的 `int` 为 0，保留部分不变 | 最坏 O(n + count) |
+| `void resize(size_type count, const int& value)` | 改变元素个数；**仅新增元素**取 `value` | 最坏 O(n + count) |
+| `void assign(size_type count, const int& value)` | 用 `count` 个 `value` **替换全部内容**；返回 `void` | O(n + count) |
+| `template<class InputIt> void assign(InputIt first, InputIt last)` | 用 `[first, last)` 的元素替换全部内容 | O(n + k) |
+| `void assign(initializer_list<int> values)` | 用初始化列表替换全部内容，C++11 支持 | O(n + k) |
 | `iterator insert(const_iterator pos, const int& value)` | 在 `pos` 前插入，返回新元素位置 | O(n) |
 | `iterator erase(const_iterator pos)` | 删除该位置，返回其后一个元素的位置 | O(n) |
 | `void clear()` | 删除所有元素，保留的容量不保证缩小 | O(n) |
@@ -83,6 +89,55 @@ b.resize(100);   // size() == 100，b[0] == 0
 - `erase(pos)` 会使被删位置及之后的迭代器、引用失效。遍历时删除元素，应接住 `erase()` 返回的下一位置或谨慎控制下标。
 - `v[i]` 不检查边界；只有 `0 <= i < v.size()` 才能正常访问。
 - `vector<int> b = a;` 会复制元素，两份整数互不影响；若元素是指针，复制指针并不意味着复制其指向的对象。
+
+### 3.4 `assign()`：替换全部内容，与其他操作对照
+
+**`assign` 同时确定新的长度和全部元素值。** 它不是尾部追加，也不是只填充新增位置；旧内容不保留。
+
+```cpp
+vector<int> a = {10, 20, 30};
+a.assign(5, -1); // 替换为 {-1, -1, -1, -1, -1}，size() == 5
+
+vector<int> src = {2, 4, 6, 8};
+a.assign(src.begin() + 1, src.end()); // 复制半开区间，结果为 {4, 6, 8}
+
+a.assign({7, 9}); // 初始化列表形式，结果为 {7, 9}
+a.assign(0, -1);  // 新长度为 0，结果为空
+```
+
+区间形式要求 `[first, last)` 有效，且来源迭代器不能属于正在被 `assign` 的这个 `vector`；从另一个容器复制更明确。调用后旧迭代器、引用和指针均不可继续依赖，应重新获取。
+
+#### `assign`、`resize`、`reserve`、`reverse` 分别改变什么
+
+下表各行都**独立从 `{10, 20, 30}` 开始**，不是顺序执行：
+
+| 操作 | 操作后的 `size()` | 元素内容 | 容量行为 |
+| --- | --- | --- | --- |
+| `a.assign(5, -1)` | 5 | 全部替换为 5 个 `-1` | 可能重分配，不保证容量恰好等于 5 |
+| `a.resize(5, -1)` | 5 | `{10, 20, 30, -1, -1}`，原有前缀保留 | 容量不足时扩张；缩短长度不缩容量 |
+| `a.reserve(5)` | 3 | `{10, 20, 30}`，不创建新元素 | 容量至少为 5；已有容量足够则不变 |
+| `reverse(a.begin(), a.end())` | 3 | `{30, 20, 10}`，只改变顺序 | 不变 |
+
+> **替换整份内容用 `assign`；保留前缀、调整长度用 `resize`；只预留空间用 `reserve`；反转顺序用 `reverse`。**
+
+`reverse` 是 `<algorithm>` 中的标准算法，不是 `vector` 成员函数，时间为 $O(n)$；与 `reserve` 是两个不同的名字。详细用法见[反转算法](../algorithms/06-reverse-rotate.md#一reverse)。
+
+#### 为什么重置状态不能只用 `resize`
+
+```cpp
+vector<int> color = {0, 1, 0};
+
+color.resize(3, -1); // 长度没有变化，原内容仍为 {0, 1, 0}
+color.resize(5, -1); // 只有新增位置为 -1，得到 {0, 1, 0, -1, -1}
+
+color.assign(5, -1); // 所有位置重新设为 -1，得到 5 个 -1
+```
+
+距离、颜色或频次表需要**重新确定长度并重置全部状态**时，`assign(n, value)` 更直接。若只想修改现有元素值而保持长度，可使用 `fill(a.begin(), a.end(), value)`。
+
+`assign` 不承诺释放多余容量，也不能据此假定一定重新分配内存；是否保留存储空间与本次内容重置是两回事。
+
+接口参考：[Microsoft Learn · vector::assign](https://learn.microsoft.com/en-us/cpp/standard-library/vector-class#assign)。
 
 ## 4. 代表题：[CF 1560A — Dislike of Threes](https://codeforces.com/problemset/problem/1560/A)
 
