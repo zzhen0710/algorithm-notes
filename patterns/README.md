@@ -34,3 +34,8 @@
 ### 博弈
 
 - [博弈中的临界条件：从资源阈值到策略证明](critical-condition-in-game.md)
+
+### 构造与分配
+
+- [基值与剩余量：先铺合法基线，再补足总量](baseline-residual-construction.md)
+- [分阶段解耦：先消除强制情况，再统一处理](staged-constraint-decoupling.md)
