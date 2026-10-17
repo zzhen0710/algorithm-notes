@@ -8,6 +8,8 @@
 - [离散化：建表与编号查找](discretization/README.md)
 - [整数二分：可行边界与独立判定](binary-search/README.md)
 - [归并计数：严格逆序对](merge-counting/README.md)
+- [区间选择：最多互不冲突区间](interval-scheduling/README.md)
+- [全图二分图染色与判定](bipartite-coloring/README.md)
 
 ## 收录范围
 
