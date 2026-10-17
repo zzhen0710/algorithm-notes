@@ -28,6 +28,7 @@
 - [CF 1367C — Social Distance](CF1367C_Social_Distance.md)：排除不可行空间、统一零段计数与个人三分类实现对比。
 - [CF 1494B — Berland Crossword](CF1494B_Berland_Crossword.md)：保留方向关系、四角 bitmask 枚举与独立容量判定。
 - [CF 2276C — Subarrays](CF2276C_Subarrays.md)：前缀同余配对、按长度延迟加入与合法历史状态计数。
+- [CF 2276D — Caveman](CF2276D_Caveman.md)：粗粒度方案计数、星形结构、度数特征与额外自由度证明。
 
 ### 其他
 
