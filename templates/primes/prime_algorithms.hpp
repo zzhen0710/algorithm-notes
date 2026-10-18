@@ -32,6 +32,30 @@ inline std::vector<bool> sieve(int N) {
     return prime;
 }
 
+// 与 sieve 相同的范围和返回值；欧拉筛 O(N)，每个合数只生成一次
+inline std::vector<bool> linear_sieve(int N) {
+    std::vector<bool> prime(N + 1, true);
+    std::vector<int> primes;
+    prime[0] = false;
+    if (N >= 1) prime[1] = false;
+
+    for (int i = 2; i <= N; ++i) {
+        if (prime[i])
+            primes.push_back(i); // 新质数先入表，平方也能在本轮生成
+
+        for (int p : primes) {
+            if (p > N / i) break; // 通过范围检查后再计算乘积
+
+            prime[i * p] = false; // p 不大于 i 的最小质因子
+
+            if (i % p == 0)
+                break; // 先生成等号情形，再排除更大的 p
+        }
+    }
+
+    return prime;
+}
+
 // n>=1；按质因子递增返回 (质因子,指数)，n=1 返回空分解
 inline std::vector<std::pair<ll, int>> factorize(ll n) {
     std::vector<std::pair<ll, int>> factors;
