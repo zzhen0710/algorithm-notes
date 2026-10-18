@@ -11,6 +11,7 @@
 - [区间选择：最多互不冲突区间](interval-scheduling/README.md)
 - [全图二分图染色与判定](bipartite-coloring/README.md)
 - [gcd/lcm：递归与数组聚合](gcd-lcm/README.md)
+- [快速幂：整数模幂](binary-exponentiation/README.md)
 
 ## 收录范围
 
