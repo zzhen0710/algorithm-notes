@@ -12,6 +12,7 @@
 - [全图二分图染色与判定](bipartite-coloring/README.md)
 - [gcd/lcm：递归与数组聚合](gcd-lcm/README.md)
 - [快速幂：整数模幂](binary-exponentiation/README.md)
+- [素数：判定、埃氏筛与质因数分解](primes/README.md)
 
 ## 收录范围
 
