@@ -39,3 +39,4 @@
 
 - [基值与剩余量：先铺合法基线，再补足总量](baseline-residual-construction.md)
 - [分阶段解耦：先消除强制情况，再统一处理](staged-constraint-decoupling.md)
+- [有限资源选子集：识别 0/1 背包](resource-limited-selection.md)
