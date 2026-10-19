@@ -39,4 +39,5 @@
 
 - [基值与剩余量：先铺合法基线，再补足总量](baseline-residual-construction.md)
 - [分阶段解耦：先消除强制情况，再统一处理](staged-constraint-decoupling.md)
-- [有限资源选子集：识别 0/1 背包](resource-limited-selection.md)
+- [背包建模：使用次数、状态边界与优化目标](resource-limited-selection.md)
+- [从最优性推出状态上界：超过太多，就删掉一步](optimality-state-bound.md)
