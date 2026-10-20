@@ -22,6 +22,10 @@
 - [枚举少量耦合变量：固定共享部分后独立求解](small-coupling-enumeration.md)
 - [二分答案：把优化与可行性判定分开](binary-search-on-answer.md)
 
+### 图与依赖
+
+- [DAG 上的 DP：先满足依赖，再汇总状态](dag-dp.md)
+
 ### 区间与序列
 
 - [稀疏边界划段：按状态不变的区间计算](sparse-boundary-segments.md)
