@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="760" viewBox="0 0 1140 760" role="img" aria-labelledby="title desc">
+<title id="title">CF126B：内部出现的前缀形成长度上限，再沿全串 border 链筛选</title>
+<desc id="desc">字符串 abcdabcdabcd 长度12。pi[10]=7，对应前缀abcdabc在内部下标4到10出现，最后一位11不参与mx。将内部这次出现从开头缩短到4个字符，得到下标4到7的abcd。全串border候选8超过mx7，回退到pi[7]=4后合法。缩短时保留的是开头，不是末尾dabc。</desc>
+<rect x="0" y="0" width="1140" height="760" rx="0" fill="#f8fafc" stroke="#f8fafc"/>
+<text x="32" y="46" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="30" fill="#172554" font-weight="700" text-anchor="start">mx 把“内部出现”变成一个长度上限</text>
+<text x="32" y="81" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#475569" font-weight="400" text-anchor="start">s = abcdabcdabcd，n = 12；统计 pi[0..10]，排除最后一项 pi[11]。</text>
+<rect x="24" y="105" width="1092" height="270" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="48" y="143" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">① pi[10] = 7：前缀 abcdabc 在内部出现</text>
+<text x="267" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">0</text>
+<rect x="244" y="190" width="46" height="46" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="267" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#94a3b8" font-weight="700" text-anchor="middle">a</text>
+<text x="329" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">1</text>
+<rect x="306" y="190" width="46" height="46" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="329" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#94a3b8" font-weight="700" text-anchor="middle">b</text>
+<text x="391" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">2</text>
+<rect x="368" y="190" width="46" height="46" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="391" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#94a3b8" font-weight="700" text-anchor="middle">c</text>
+<text x="453" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">3</text>
+<rect x="430" y="190" width="46" height="46" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="453" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#94a3b8" font-weight="700" text-anchor="middle">d</text>
+<text x="515" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">4</text>
+<rect x="492" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="515" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<text x="577" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">5</text>
+<rect x="554" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="577" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">b</text>
+<text x="639" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">6</text>
+<rect x="616" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="639" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">c</text>
+<text x="701" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">7</text>
+<rect x="678" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="701" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">d</text>
+<text x="763" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">8</text>
+<rect x="740" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="763" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<text x="825" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">9</text>
+<rect x="802" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="825" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">b</text>
+<text x="887" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">10</text>
+<rect x="864" y="190" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="887" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">c</text>
+<text x="949" y="179" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#b91c1c" font-weight="700" text-anchor="middle">11</text>
+<rect x="926" y="190" width="46" height="46" rx="8" fill="#f1f5f9" stroke="#94a3b8"/>
+<text x="949" y="223" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#94a3b8" font-weight="700" text-anchor="middle">d</text>
+<text x="48" y="222" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="21" fill="#172554" font-weight="400" text-anchor="start">原串 s</text>
+<rect x="492" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="515" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<text x="515" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[0]</text>
+<rect x="554" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="577" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<text x="577" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[1]</text>
+<rect x="616" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="639" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">c</text>
+<text x="639" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[2]</text>
+<rect x="678" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="701" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">d</text>
+<text x="701" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[3]</text>
+<rect x="740" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="763" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<text x="763" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[4]</text>
+<rect x="802" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="825" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<text x="825" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[5]</text>
+<rect x="864" y="264" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="887" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">c</text>
+<text x="887" y="334" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="15" fill="#64748b" font-weight="400" text-anchor="middle">s[6]</text>
+<text x="48" y="295" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="21" fill="#172554" font-weight="400" text-anchor="start">对齐前缀 s[0..6]</text>
+<text x="48" y="359" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#166534" font-weight="400" text-anchor="start">内部位置 [4,10]：起点不是 0，终点不是 11；这就是一次合法的内部出现。</text>
+<rect x="24" y="396" width="1092" height="244" rx="14" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="48" y="433" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">② 缩短时保留同一次出现的开头，不是末尾</text>
+<text x="323" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">4</text>
+<rect x="300" y="477" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="323" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<text x="385" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">5</text>
+<rect x="362" y="477" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="385" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">b</text>
+<text x="447" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">6</text>
+<rect x="424" y="477" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="447" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">c</text>
+<text x="509" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">7</text>
+<rect x="486" y="477" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="509" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">d</text>
+<text x="571" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">8</text>
+<rect x="548" y="477" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="571" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<text x="633" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">9</text>
+<rect x="610" y="477" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="633" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<text x="695" y="466" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">10</text>
+<rect x="672" y="477" width="46" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/>
+<text x="695" y="510" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#2563eb" font-weight="700" text-anchor="middle">c</text>
+<text x="48" y="508" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#172554" font-weight="400" text-anchor="start">内部已有 7 个字符</text>
+<rect x="300" y="551" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="323" y="584" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<rect x="362" y="551" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="385" y="584" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">b</text>
+<rect x="424" y="551" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="447" y="584" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">c</text>
+<rect x="486" y="551" width="46" height="46" rx="8" fill="#dcfce7" stroke="#15803d"/>
+<text x="509" y="584" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="28" fill="#15803d" font-weight="700" text-anchor="middle">d</text>
+<text x="48" y="582" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#172554" font-weight="400" text-anchor="start">只取开头 4 个</text>
+<text x="620" y="583" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="23" fill="#166534" font-weight="700" text-anchor="start">s[4..7] = abcd</text>
+<text x="48" y="624" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#475569" font-weight="400" text-anchor="start">起点仍然是 4，右端提前；更短的前缀也都从同一位置开始。</text>
+<text x="32" y="685" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="24" fill="#172554" font-weight="700" text-anchor="start">候选筛选：8 &gt; mx = 7  →  pi[7] = 4 ≤ 7  →  答案 abcd</text>
+<text x="32" y="731" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="21" fill="#475569" font-weight="400" text-anchor="start">mx 判断内部是否出现；border 链保证候选还同时匹配整串开头与结尾。</text>
+</svg>

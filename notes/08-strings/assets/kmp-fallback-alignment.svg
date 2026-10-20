@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="820" viewBox="0 0 1100 820" role="img" aria-labelledby="title desc">
+<title id="title">KMP 失配前后：文本位置不退，已匹配长度从 5 回到 3</title>
+<desc id="desc">上图 text[5] 的 b 与 pattern[5] 的 c 失配，已匹配 ababa。下图模式右移两格，保留 text[2..4] 的 aba，与 pattern[0..2] 相等；仍比较同一个 text[5]，候选字符变为 pattern[3] 的 b。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<rect x="0" y="0" width="1100" height="820" rx="0" fill="#f8fafc"/>
+<text x="32" y="47" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="32" fill="#172554" font-weight="700" text-anchor="start">失配后，保留哪一段？</text>
+<text x="32" y="82" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="19" fill="#475569" font-weight="400" text-anchor="start">蓝：已匹配 · 绿：保留 · 橙：当前字符 · 红：失配</text>
+<rect x="24" y="105" width="1052" height="285" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="48" y="142" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">① 失配前：j = 5，已经匹配 ababa</text>
+<rect x="24" y="410" width="1052" height="310" rx="14" fill="#ffffff" stroke="#cbd5e1" stroke-width="1"/>
+<text x="48" y="447" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">② 回退后：j = pi[4] = 3，保留末尾 aba</text>
+<text x="271" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">0</text>
+<text x="271" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">0</text>
+<text x="347" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">1</text>
+<text x="347" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">1</text>
+<text x="423" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">2</text>
+<text x="423" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">2</text>
+<text x="499" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">3</text>
+<text x="499" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">3</text>
+<text x="575" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">4</text>
+<text x="575" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">4</text>
+<text x="651" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#b45309" font-weight="700" text-anchor="middle">5</text>
+<text x="651" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#b45309" font-weight="700" text-anchor="middle">5</text>
+<text x="727" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">6</text>
+<text x="727" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">6</text>
+<text x="803" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">7</text>
+<text x="803" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">7</text>
+<text x="879" y="178" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">8</text>
+<text x="879" y="483" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">8</text>
+<text x="48" y="178" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="17" fill="#64748b" font-weight="400" text-anchor="start">文本下标</text>
+<text x="48" y="483" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="17" fill="#64748b" font-weight="400" text-anchor="start">文本下标</text>
+<text x="48" y="224" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="23" fill="#172554" font-weight="400" text-anchor="start">text</text>
+<text x="48" y="296" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="23" fill="#172554" font-weight="400" text-anchor="start">pattern</text>
+<rect x="244" y="190" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="271" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<rect x="320" y="190" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="347" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<rect x="396" y="190" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="423" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<rect x="472" y="190" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="499" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<rect x="548" y="190" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="575" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<rect x="624" y="190" width="54" height="50" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="651" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#b45309" font-weight="700" text-anchor="middle">b</text>
+<rect x="700" y="190" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="727" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<rect x="776" y="190" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="803" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">c</text>
+<rect x="852" y="190" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="879" y="225" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<rect x="244" y="262" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="271" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<rect x="320" y="262" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="347" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<rect x="396" y="262" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="423" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<rect x="472" y="262" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="499" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">b</text>
+<rect x="548" y="262" width="54" height="50" rx="8" fill="#dbeafe" stroke="#2563eb" stroke-width="1.5"/>
+<text x="575" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#2563eb" font-weight="700" text-anchor="middle">a</text>
+<rect x="624" y="262" width="54" height="50" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="1.5"/>
+<text x="651" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#b91c1c" font-weight="700" text-anchor="middle">c</text>
+<rect x="700" y="262" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="727" y="297" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<text x="271" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[0]</text>
+<text x="347" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[1]</text>
+<text x="423" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[2]</text>
+<text x="499" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[3]</text>
+<text x="575" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[4]</text>
+<text x="651" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[5]</text>
+<text x="727" y="335" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[6]</text>
+<line x1="651" y1="182" x2="651" y2="190" stroke="#b45309" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="651" y1="240" x2="651" y2="262" stroke="#b45309" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="48" y="367" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#7f1d1d" font-weight="400" text-anchor="start">仍在比较 text[5] = b；此时对应 pattern[5] = c，不相等。</text>
+<text x="48" y="529" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="23" fill="#172554" font-weight="400" text-anchor="start">text</text>
+<text x="48" y="601" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="23" fill="#172554" font-weight="400" text-anchor="start">pattern</text>
+<rect x="244" y="495" width="54" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="271" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#94a3b8" font-weight="700" text-anchor="middle">a</text>
+<rect x="320" y="495" width="54" height="50" rx="8" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="347" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#94a3b8" font-weight="700" text-anchor="middle">b</text>
+<rect x="396" y="495" width="54" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="423" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<rect x="472" y="495" width="54" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="499" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#15803d" font-weight="700" text-anchor="middle">b</text>
+<rect x="548" y="495" width="54" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="575" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<rect x="624" y="495" width="54" height="50" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="651" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#b45309" font-weight="700" text-anchor="middle">b</text>
+<rect x="700" y="495" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="727" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<rect x="776" y="495" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="803" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">c</text>
+<rect x="852" y="495" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="879" y="530" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<rect x="396" y="567" width="54" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="423" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<rect x="472" y="567" width="54" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="499" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#15803d" font-weight="700" text-anchor="middle">b</text>
+<rect x="548" y="567" width="54" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="1.5"/>
+<text x="575" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#15803d" font-weight="700" text-anchor="middle">a</text>
+<rect x="624" y="567" width="54" height="50" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="1.5"/>
+<text x="651" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#b45309" font-weight="700" text-anchor="middle">b</text>
+<rect x="700" y="567" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="727" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<rect x="776" y="567" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="803" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">c</text>
+<rect x="852" y="567" width="54" height="50" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="1.5"/>
+<text x="879" y="602" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="30" fill="#64748b" font-weight="700" text-anchor="middle">a</text>
+<text x="423" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[0]</text>
+<text x="499" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[1]</text>
+<text x="575" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[2]</text>
+<text x="651" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[3]</text>
+<text x="727" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[4]</text>
+<text x="803" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[5]</text>
+<text x="879" y="640" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="16" fill="#64748b" font-weight="400" text-anchor="middle">p[6]</text>
+<line x1="651" y1="487" x2="651" y2="495" stroke="#b45309" stroke-width="2" stroke-dasharray="6 5"/>
+<line x1="651" y1="545" x2="651" y2="567" stroke="#b45309" stroke-width="2" stroke-dasharray="6 5"/>
+<text x="48" y="680" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#166534" font-weight="400" text-anchor="start">绿色 aba 已确认相等，不需要重新比较。</text>
+<text x="48" y="708" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="20" fill="#475569" font-weight="400" text-anchor="start">当前文本位置仍是 5，只把候选字符换成 pattern[3]。</text>
+<text x="32" y="760" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="start">已匹配 5 个字符 → 最后下标是 4 → 查询 pi[4]，保留长度 3。</text>
+<text x="32" y="799" font-family="'Microsoft YaHei','Noto Sans CJK SC','PingFang SC',sans-serif" font-size="21" fill="#166534" font-weight="400" text-anchor="start">本例 b 与新的候选 b 相同，j 随后变为 4；在这里停止回退。</text>
+</svg>
