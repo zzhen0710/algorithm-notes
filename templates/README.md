@@ -16,6 +16,7 @@
 - [快速幂：整数模幂](binary-exponentiation/README.md)
 - [素数：判定、两种筛法与质因数分解](primes/README.md)
 - [精确组合数：单次乘除递推](combinations/README.md)
+- [KMP：前缀函数与全部匹配位置](kmp/README.md)
 
 ## 收录范围
 
