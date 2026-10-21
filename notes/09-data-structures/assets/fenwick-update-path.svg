@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="830" viewBox="0 0 1140 830" role="img" aria-labelledby="title desc">
+<title id="title">树状数组单点更新：访问所有包含原位置的块</title>
+<desc id="desc">1基数组，第3项由3增加5变为8。更新路径3、4、8，对应区间3到3、1到4、1到8，bit值由3到8、10到15、24到29。每块都包含原位置3。bit5、6、7覆盖的区间均在位置3右侧，不应修改。下一下标16超过n8，结束。</desc>
+<rect width="1140" height="830" fill="#f8fafc"/>
+<text x="28" y="43" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="28" fill="#172554" font-weight="700" text-anchor="start">单点增加：改的是位置 3，传播的是增量 +5</text>
+<text x="28" y="83" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#334155" font-weight="400" text-anchor="start">每个被更新的块都包含原位置；相互重叠也要分别更新。</text>
+<text x="30" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="start">原数组下标</text>
+<text x="30" y="162" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#172554" font-weight="700" text-anchor="start">原值 a[i]</text>
+<text x="342" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">1</text>
+<rect x="300" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="342" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">2</text>
+<text x="434" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">2</text>
+<rect x="392" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="434" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">1</text>
+<text x="526" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">3</text>
+<rect x="484" y="132" width="84" height="46" rx="8" fill="#ffedd5" stroke="#cbd5e1"/>
+<text x="526" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">3→8</text>
+<text x="618" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">4</text>
+<rect x="576" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="618" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">4</text>
+<text x="710" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">5</text>
+<rect x="668" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="710" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">5</text>
+<text x="802" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">6</text>
+<rect x="760" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="802" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">2</text>
+<text x="894" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">7</text>
+<rect x="852" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="894" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">6</text>
+<text x="986" y="120" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#64748b" font-weight="400" text-anchor="middle">8</text>
+<rect x="944" y="132" width="84" height="46" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="986" y="163" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="middle">1</text>
+<text x="30" y="249" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="start">bit[3]  [3,3]</text>
+<text x="30" y="286" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#9a3412" font-weight="400" text-anchor="start">块和：3 + 5 = 8</text>
+<rect x="484" y="234" width="84" height="60" rx="8" fill="#dbeafe" stroke="#cbd5e1"/>
+<rect x="484" y="234" width="84" height="60" rx="8" fill="#ffedd5" stroke="#cbd5e1"/>
+<text x="526" y="271" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#9a3412" font-weight="700" text-anchor="middle">位置 3</text>
+<text x="30" y="372" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="start">bit[4]  [1,4]</text>
+<text x="30" y="409" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#9a3412" font-weight="400" text-anchor="start">块和：10 + 5 = 15</text>
+<rect x="300" y="357" width="360" height="60" rx="8" fill="#dbeafe" stroke="#cbd5e1"/>
+<rect x="484" y="357" width="84" height="60" rx="8" fill="#ffedd5" stroke="#cbd5e1"/>
+<text x="526" y="394" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#9a3412" font-weight="700" text-anchor="middle">位置 3</text>
+<text x="30" y="495" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="22" fill="#172554" font-weight="700" text-anchor="start">bit[8]  [1,8]</text>
+<text x="30" y="532" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#9a3412" font-weight="400" text-anchor="start">块和：24 + 5 = 29</text>
+<rect x="300" y="480" width="728" height="60" rx="8" fill="#dbeafe" stroke="#cbd5e1"/>
+<rect x="484" y="480" width="84" height="60" rx="8" fill="#ffedd5" stroke="#cbd5e1"/>
+<text x="526" y="517" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#9a3412" font-weight="700" text-anchor="middle">位置 3</text>
+<rect x="24" y="621" width="1092" height="181" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="44" y="660" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="24" fill="#172554" font-weight="700" text-anchor="start">3 + lowbit(3) = 4；4 + lowbit(4) = 8</text>
+<text x="44" y="703" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="24" fill="#172554" font-weight="700" text-anchor="start">8 + lowbit(8) = 16 &gt; n，停止更新。</text>
+<text x="44" y="747" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" fill="#334155" font-weight="400" text-anchor="start">bit[5]、bit[6]、bit[7] 不含位置 3，不需要改变。</text>
+<text x="44" y="784" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#166534" font-weight="400" text-anchor="start">更新时找包含块；查询时拆分前缀，不能把两条路径当作简单反向。</text>
+</svg>
