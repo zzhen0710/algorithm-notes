@@ -211,7 +211,7 @@ int longestAtMostKinds(const vector<int>& a, int m, int k) {
 
 | 方法 | 保留什么信息 | 后续位置 |
 | --- | --- | --- |
-| 单调队列 | 可能成为后续最值的候选下标，排除劣势与过期候选；整段扫描可为 $O(n)$ | 第 09 章：单调栈/队列，待整理 |
+| 单调队列 | 可能成为后续最值的候选下标，排除劣势与过期候选；整段扫描可为 $O(n)$ | [9.3 单调队列](../09-data-structures/03-monotonic-queue.md#3-队尾为什么可以删除旧候选) |
 | `multiset` | 窗口内所有值及重复次数，插入、移除一次出现为 $O(\log k)$ | [已有 STL 笔记](../01-basic-problem-solving/04-stl/containers/09-multiset.md#2-常用-api) |
 | ST 表 | 对静态数组预处理区间最值，之后查询为 $O(1)$ | 第 09 章：ST 表，待整理 |
 | 线段树 | 分层保存区间最值，支持修改与查询 | 第 09 章：线段树，待整理 |
