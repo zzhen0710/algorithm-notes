@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="760" viewBox="0 0 1140 760" role="img" aria-labelledby="title desc">
+<title id="title">子串哈希：旧前缀乘上基数幂后对齐，再相减</title>
+<desc id="desc">字符串abcde取下标2到5的半开区间cde。h5包含aB四次方到e，h2为aB加b。h2乘B三次方后a和b的权重与h5对齐。相减消去前两项，保留cB平方加dB加e。a到e表示字符编码。</desc>
+<rect width="1140" height="760" fill="#f8fafc"/>
+<text x="30" y="46" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="30" fill="#172554" font-weight="700" text-anchor="start">取出 cde：旧前缀先对齐位权，再消去</text>
+<text x="30" y="83" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" fill="#334155" font-weight="400" text-anchor="start">s = abcde；查询 [2,5)，长度 3；a、b、c、d、e 表示各字符的数值编码。</text>
+<rect x="24" y="112" width="1092" height="162" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="44" y="152" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">① h[5]</text>
+<text x="44" y="190" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#334155" font-weight="400" text-anchor="start">前五个字符</text>
+<rect x="274" y="168" width="122" height="64" rx="10" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="335" y="210" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#1d4ed8" font-weight="700" text-anchor="middle">aB⁴</text>
+<text x="335" y="146" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">s[0]</text>
+<rect x="429" y="168" width="122" height="64" rx="10" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="490" y="210" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#1d4ed8" font-weight="700" text-anchor="middle">bB³</text>
+<text x="490" y="146" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">s[1]</text>
+<rect x="584" y="168" width="122" height="64" rx="10" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="645" y="210" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#15803d" font-weight="700" text-anchor="middle">cB²</text>
+<text x="645" y="146" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">s[2]</text>
+<rect x="739" y="168" width="122" height="64" rx="10" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="800" y="210" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#15803d" font-weight="700" text-anchor="middle">dB</text>
+<text x="800" y="146" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">s[3]</text>
+<rect x="894" y="168" width="122" height="64" rx="10" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="955" y="210" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#15803d" font-weight="700" text-anchor="middle">e</text>
+<text x="955" y="146" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="17" fill="#64748b" font-weight="400" text-anchor="middle">s[4]</text>
+<rect x="24" y="293" width="1092" height="162" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="44" y="333" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">② h[2] × B³</text>
+<text x="44" y="371" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#334155" font-weight="400" text-anchor="start">旧前缀提高三位</text>
+<rect x="274" y="349" width="122" height="64" rx="10" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="335" y="391" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#1d4ed8" font-weight="700" text-anchor="middle">aB⁴</text>
+<rect x="429" y="349" width="122" height="64" rx="10" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="490" y="391" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#1d4ed8" font-weight="700" text-anchor="middle">bB³</text>
+<rect x="584" y="349" width="122" height="64" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="645" y="391" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#94a3b8" font-weight="700" text-anchor="middle">—</text>
+<rect x="739" y="349" width="122" height="64" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="800" y="391" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#94a3b8" font-weight="700" text-anchor="middle">—</text>
+<rect x="894" y="349" width="122" height="64" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="955" y="391" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#94a3b8" font-weight="700" text-anchor="middle">—</text>
+<text x="280" y="442" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#1d4ed8" font-weight="400" text-anchor="start">a、b 与上一行处在同一列，权重也完全一致。</text>
+<rect x="24" y="474" width="1092" height="162" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="44" y="514" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="23" fill="#172554" font-weight="700" text-anchor="start">③ 相减</text>
+<text x="44" y="552" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#334155" font-weight="400" text-anchor="start">留下 cde 的编码</text>
+<rect x="274" y="530" width="122" height="64" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="335" y="572" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#94a3b8" font-weight="700" text-anchor="middle">—</text>
+<rect x="429" y="530" width="122" height="64" rx="10" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="490" y="572" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#94a3b8" font-weight="700" text-anchor="middle">—</text>
+<rect x="584" y="530" width="122" height="64" rx="10" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="645" y="572" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#15803d" font-weight="700" text-anchor="middle">cB²</text>
+<rect x="739" y="530" width="122" height="64" rx="10" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="800" y="572" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#15803d" font-weight="700" text-anchor="middle">dB</text>
+<rect x="894" y="530" width="122" height="64" rx="10" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="955" y="572" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#15803d" font-weight="700" text-anchor="middle">e</text>
+<text x="280" y="623" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="19" fill="#15803d" font-weight="400" text-anchor="start">不是直接减 h[2]；要减的是 h[2] × B³。</text>
+<text x="32" y="688" font-family="'Consolas','DejaVu Sans Mono',monospace" font-size="27" fill="#172554" font-weight="700" text-anchor="start">get(2,5) = (h[5] − h[2] × pw[3]) mod M</text>
+<text x="32" y="731" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#334155" font-weight="400" text-anchor="start">相减后与单独计算 cde 得到同一指纹；实际代码先将乘积取模，再补 M 防负余数。</text>
+</svg>

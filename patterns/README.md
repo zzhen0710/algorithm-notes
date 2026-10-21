@@ -35,6 +35,10 @@
 - [MEX：从定义域与频率出发](mex-analysis.md)
 - [状态扫描：变化时结算与尾状态处理](state-scan-finalization.md)
 
+### 表示与分类
+
+- [筛选候选与比较键：排序去重统计类别](filter-key-dedup.md)
+
 ### 博弈
 
 - [博弈中的临界条件：从资源阈值到策略证明](critical-condition-in-game.md)
