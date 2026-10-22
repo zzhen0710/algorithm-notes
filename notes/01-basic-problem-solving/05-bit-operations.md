@@ -178,7 +178,7 @@ for (ull mask = 0; mask < total; ++mask) {
 
 `n≈20` 时仍需估算实际操作量；即使 `n=40` 的状态能存进整数，也不表示能枚举完。
 
-已整理的 [CF 1494B](../../problems/CF1494B_Berland_Crossword.md)使用四位表示角落选择。关键是只枚举少量共享变量，再检查剩余部分，见 [少量耦合变量枚举](../../patterns/small-coupling-enumeration.md)。
+已整理的 [CF 1494B](../../problems/CF1494B_Berland_Crossword.md)使用四位表示角落选择。关键是只枚举少量共享变量，再检查剩余部分，见 [少量耦合变量枚举](../../patterns/01-basic-problem-solving/small-coupling-enumeration.md)。
 
 > 位掩码只是状态表示，**不能单凭这种表示证明判定或贪心正确**。
 

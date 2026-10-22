@@ -658,7 +658,7 @@ $$
 
 ### 8.3 两题共用的可迁移模型
 
-独立归纳见[筛选候选与比较键：排序去重统计类别](../../patterns/filter-key-dedup.md)。
+独立归纳见[筛选候选与比较键：排序去重统计类别](../../patterns/08-strings/filter-key-dedup.md)。
 
 竞赛代码见[字符串双哈希模板](../../templates/string-hash/README.md)：`get(l,r)` 返回两份哈希，`key(l,r)` 自动补上长度，减少调用处重复拼 tuple。
 

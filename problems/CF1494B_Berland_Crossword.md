@@ -134,8 +134,8 @@ bitmask 只是四个二元选择的紧凑表示，不自动保证复杂度小。
 
 ## 范式与核验
 
-- [枚举少量耦合变量：固定共享部分后独立求解](../patterns/small-coupling-enumeration.md)：只枚举让各部分相互影响的少量选择。
-- [枚举降维](../patterns/enumeration-dimension-reduction.md)：其余变量能够由约束直接算出时，只枚举自由变量；本题剩余染色不唯一，范围检查足以判断存在性。
+- [枚举少量耦合变量：固定共享部分后独立求解](../patterns/01-basic-problem-solving/small-coupling-enumeration.md)：只枚举让各部分相互影响的少量选择。
+- [枚举降维](../patterns/01-basic-problem-solving/enumeration-dimension-reduction.md)：其余变量能够由约束直接算出时，只枚举自由变量；本题剩余染色不唯一，范围检查足以判断存在性。
 
 整理实现以 C++17、`-O2 -Wall -Wextra` 编译，无警告；通过原题 4 组样例、2,258 组小规模输入穷举核验及 4 组 `n=100` 边界。
 

@@ -31,3 +31,7 @@
 - [x] [2.9 本章总结与选型](09-summary-selection.md)：覆盖 2.1–2.8，已完善整章的写法成本与两类准备场景。
 
 知识范围与复盘规范见 [Notes 总览](../README.md)。
+
+## 本章范式
+
+[查看本章范式索引](../../patterns/02-sequence-techniques/README.md)，跨章节方法通过索引互相引用，完整正文只维护一处。

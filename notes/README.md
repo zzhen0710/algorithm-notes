@@ -4,17 +4,17 @@
 
 ## 知识目录
 
-| 章节 | 内容范围 |
-| --- | --- |
-| [01 基础问题求解](01-basic-problem-solving/README.md) | 复杂度、枚举、模拟、STL、位运算 |
-| [02 序列与区间技巧](02-sequence-techniques/README.md) | 前缀和、差分、离散化、双指针、滑动窗口、二分答案、离线处理与归并计数 |
-| [03 搜索](03-search/README.md) | DFS/BFS 框架、状态建模、回溯、剪枝、记忆化、双向 BFS、迭代加深与启发式搜索 |
-| [04 贪心与构造](04-greedy-and-construction/README.md) | 排序与区间贪心、交换论证、反例、不变量、奇偶性与构造 |
-| [05 动态规划](05-dynamic-programming/README.md) | 状态设计、线性与序列 DP、背包、区间、树形、状压、数位 DP 及常见优化 |
-| [06 图与树](06-graph-and-tree/README.md) | 建图、二分图染色、最短路、最小生成树、拓扑排序、DFS 序、LCA、差分约束、欧拉路、连通性与二分图匹配 |
-| [07 数学](07-math/README.md) | 数论、模运算、组合计数、容斥、高精度、矩阵、高斯消元、基础几何、概率与博弈 |
-| [08 字符串](08-strings/README.md) | KMP、前后缀与周期、字符串哈希及碰撞边界、Manacher |
-| [09 竞赛数据结构](09-data-structures/README.md) | 并查集、单调栈/队列、树状数组、ST 表、基础线段树与懒标记、Trie |
+| 章节 | 内容范围 | 范式入口 |
+| --- | --- | --- |
+| [01 基础问题求解](01-basic-problem-solving/README.md) | 复杂度、枚举、模拟、STL、位运算 | [本章范式](../patterns/01-basic-problem-solving/README.md) |
+| [02 序列与区间技巧](02-sequence-techniques/README.md) | 前缀和、差分、离散化、双指针、滑动窗口、二分答案、离线处理与归并计数 | [本章范式](../patterns/02-sequence-techniques/README.md) |
+| [03 搜索](03-search/README.md) | DFS/BFS 框架、状态建模、回溯、剪枝、记忆化、双向 BFS、迭代加深与启发式搜索 | [关联范式](../patterns/README.md#章节索引) |
+| [04 贪心与构造](04-greedy-and-construction/README.md) | 排序与区间贪心、交换论证、反例、不变量、奇偶性与构造 | [本章范式](../patterns/04-greedy-and-construction/README.md) |
+| [05 动态规划](05-dynamic-programming/README.md) | 状态设计、线性与序列 DP、背包、区间、树形、状压、数位 DP 及常见优化 | [本章范式](../patterns/05-dynamic-programming/README.md) |
+| [06 图与树](06-graph-and-tree/README.md) | 建图、二分图染色、最短路、最小生成树、拓扑排序、DFS 序、LCA、差分约束、欧拉路、连通性与二分图匹配 | [本章范式](../patterns/06-graph-and-tree/README.md) |
+| [07 数学](07-math/README.md) | 数论、模运算、组合计数、容斥、高精度、矩阵、高斯消元、基础几何、概率与博弈 | [本章范式](../patterns/07-math/README.md) |
+| [08 字符串](08-strings/README.md) | KMP、前后缀与周期、字符串哈希及碰撞边界、Manacher | [本章范式](../patterns/08-strings/README.md) |
+| [09 竞赛数据结构](09-data-structures/README.md) | 并查集、单调栈/队列、树状数组、ST 表、基础线段树与懒标记、Trie | [关联范式](../patterns/README.md#章节索引) |
 
 九个知识主题均已有正式笔记，各主题仍按实际进度逐步补充，不因目录存在就视为整章完成。每个主题默认直接放 Markdown 文件与 README，不预建空分类；现有 STL 保留容器与算法分类。
 

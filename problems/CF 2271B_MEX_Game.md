@@ -205,8 +205,8 @@ int main() {
 
 复习时先回答：MEX 为什么必须从 `0` 连续检查？平衡分配何以能判定真实博弈？为什么必须找第一个不足 `2k` 的值？
 
-- [MEX：从定义域与频率出发](../patterns/mex-analysis.md)
-- [博弈中的临界条件：从资源阈值到策略证明](../patterns/critical-condition-in-game.md)
-- [状态扫描：变化时结算与尾状态处理](../patterns/state-scan-finalization.md)
+- [MEX：从定义域与频率出发](../patterns/02-sequence-techniques/mex-analysis.md)
+- [博弈中的临界条件：从资源阈值到策略证明](../patterns/07-math/critical-condition-in-game.md)
+- [状态扫描：变化时结算与尾状态处理](../patterns/02-sequence-techniques/state-scan-finalization.md)
 
 来源与核验范围：个人思路和代码保留原复盘记录，题面规则依据已保存的完整题面。整理时未成功读取 Codeforces 原站；线性实现不标为官方题解，验证结果限于上述本地核验，不作为平台 AC 记录。

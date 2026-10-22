@@ -309,7 +309,7 @@ void get_ans(int n, int k) {
 
 这里能把全部余量放到最后一项，依赖**没有单项上限、大小关系或相邻关系限制**。有额外约束时，不能照搬“最后一项兜底”。
 
-这条思路提炼为[基值与剩余量：先铺合法基线，再补足总量](../../patterns/baseline-residual-construction.md)，完整题解与实际代码仍留在本节。
+这条思路提炼为[基值与剩余量：先铺合法基线，再补足总量](../../patterns/04-greedy-and-construction/baseline-residual-construction.md)，完整题解与实际代码仍留在本节。
 
 ### CF 1512C — A-B Palindrome
 
@@ -549,7 +549,7 @@ else cout << "-1\n";
 
 > **每完成一个阶段，都明确“已经确定什么、还剩哪些自由度、下一阶段可以直接相信什么”。** 通过收敛情况减少后续判断，比同时维护所有情况更容易推理、实现和核验。
 
-通用的识别线索、其他应用及传播顺序的限制，见[分阶段解耦范式](../../patterns/staged-constraint-decoupling.md)；本节保留回文问题的具体阶段与实现。
+通用的识别线索、其他应用及传播顺序的限制，见[分阶段解耦范式](../../patterns/04-greedy-and-construction/staged-constraint-decoupling.md)；本节保留回文问题的具体阶段与实现。
 
 #### 为什么先填 0 的自由对不会堵死后续
 

@@ -186,8 +186,8 @@ int main() {
 
 本题可以压缩为：**后缀供给决定本段能达到的 MEX，前缀收集决定最早在哪里达到。** 提高当前答案由字典序要求决定；达到目标后尽早切割由保留后续选择决定。不能泛化成“分段贪心都不必考虑未来”。
 
-- [MEX：从定义域与频率出发](../patterns/mex-analysis.md)：先确定必须覆盖的连续值域。
-- [后缀预处理：用未来摘要辅助当前决策](../patterns/suffix-preprocessing.md)：当前决策反复依赖右侧时，提前保存所需信息。
+- [MEX：从定义域与频率出发](../patterns/02-sequence-techniques/mex-analysis.md)：先确定必须覆盖的连续值域。
+- [后缀预处理：用未来摘要辅助当前决策](../patterns/02-sequence-techniques/suffix-preprocessing.md)：当前决策反复依赖右侧时，提前保存所需信息。
 
 ## 核验记录
 

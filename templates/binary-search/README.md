@@ -2,7 +2,7 @@
 
 适用：整数候选的判定结果单调。使用 C++11，头文件通过 `using ll = long long;` 定义整数类型别名，候选范围为 $0\le L\le R\le10^{18}$。
 
-实现见 [binary_search.hpp](binary_search.hpp)，原理与来源见[2.6 二分答案](../../notes/02-sequence-techniques/06-binary-search-on-answer.md)，选型见[独立判定范式](../../patterns/binary-search-on-answer.md)。
+实现见 [binary_search.hpp](binary_search.hpp)，原理与来源见[2.6 二分答案](../../notes/02-sequence-techniques/06-binary-search-on-answer.md)，选型见[独立判定范式](../../patterns/02-sequence-techniques/binary-search-on-answer.md)。
 
 ## 接口与约定
 
@@ -15,7 +15,7 @@
 
 ## 独立判定的用法
 
-`check` 可以是函数或 lambda。常用结构是 `auto check = [&](ll limit) -> bool { ... };`：`[&]` 引用捕获已有数据，`limit` 是本次候选，返回值表示是否可行。频次、累计量等临时状态在每次调用内部初始化。语法拆解与待填写骨架见[范式中的判定写法](../../patterns/binary-search-on-answer.md#判定-lambda-怎么写)。
+`check` 可以是函数或 lambda。常用结构是 `auto check = [&](ll limit) -> bool { ... };`：`[&]` 引用捕获已有数据，`limit` 是本次候选，返回值表示是否可行。频次、累计量等临时状态在每次调用内部初始化。语法拆解与待填写骨架见[范式中的判定写法](../../patterns/02-sequence-techniques/binary-search-on-answer.md#判定-lambda-怎么写)。
 
 ```cpp
 #include "binary_search.hpp"

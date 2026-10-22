@@ -1,5 +1,7 @@
 # 二分答案：把优化与可行性判定分开
 
+[本章范式索引](README.md) · [全部范式](../README.md)
+
 ## 什么时候想到
 
 直接求“最少时间、最小容量、最大长度”需要反复尝试，但**固定候选后，能否完成任务更容易判断**。
@@ -28,7 +30,7 @@ lambda 只是代码组织方式，不会自动带来单调性或正确性。临�
 
 ## 判定 lambda 怎么写
 
-先明确语法：**写作 `auto check = [&](ll limit) { ... };`，不是 `auto check() = ...`。** `check` 是保存 lambda 的变量，定义后通过 `check(mid)` 调用。
+先明确语法：**写作 `auto check = [&](<../ll limit>) { ... };`，不是 `auto check() = ...`。** `check` 是保存 lambda 的变量，定义后通过 `check(mid)` 调用。
 
 下面的片段放在 `solve()` 等函数内部，用简单阈值演示完整结构；`using ll` 也可放在通用框架中：
 
@@ -90,7 +92,7 @@ auto check = [&](ll limit) -> bool {
 
 ## 来源：P1182
 
-[数列分段复盘](../notes/02-sequence-techniques/06-binary-search-on-answer.md#92-p1182从前缀和判定到最小滚动状态)中，候选值是“每段和允许的上限”。固定上限后，先验证最少需要多少段；上限增大时，原来合法的分段仍合法，因此可以寻找最小可行上限。
+[数列分段复盘](../../notes/02-sequence-techniques/06-binary-search-on-answer.md#92-p1182从前缀和判定到最小滚动状态)中，候选值是“每段和允许的上限”。固定上限后，先验证最少需要多少段；上限增大时，原来合法的分段仍合法，因此可以寻找最小可行上限。
 
 这题还暴露了三个与二分配套的状态设计问题：
 
@@ -116,4 +118,4 @@ auto check = [&](ll limit) -> bool {
 - 先直接测试候选值，再测试完整搜索。小输入枚举可帮助区分“判定错”与“二分错”。
 - 已有公式或单次扫描可以求解时，先比较是否还需要增加二分这一层。
 
-通用边界实现见[整数二分模板](../templates/binary-search/README.md)，两种整数框架及实数精度见[二分答案正文](../notes/02-sequence-techniques/06-binary-search-on-answer.md)。
+通用边界实现见[整数二分模板](../../templates/binary-search/README.md)，两种整数框架及实数精度见[二分答案正文](../../notes/02-sequence-techniques/06-binary-search-on-answer.md)。

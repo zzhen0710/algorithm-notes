@@ -1,5 +1,7 @@
 # 从最优性推出状态上界：超过太多，就删掉一步
 
+[本章范式索引](README.md) · [全部范式](../README.md)
+
 “至少达到目标”往往允许无限多的终态，但求最小费用时，超过很多的状态未必可能最优。先检查：**删掉一次选择后，还够不够、是否合法、能不能更便宜？**
 
 ## 1. 适用条件
@@ -54,7 +56,7 @@ $$
 
 普通 $n$ 种容量 DP 的时间为 $O(nB)$、空间为 $O(B)$。**有限上界仍可能很大**，证明后还要核对规模，不能仅因有公式就直接开表。
 
-实际模型、错误路径与原 AC 见 [P2918 Buying Hay](../notes/05-dynamic-programming/03-complete-knapsack.md#92-洛谷-p2918buying-hay)。
+实际模型、错误路径与原 AC 见 [P2918 Buying Hay](../../notes/05-dynamic-programming/03-complete-knapsack.md#92-洛谷-p2918buying-hay)。
 
 ## 4. 哪些线索值得试一试
 

@@ -11,7 +11,7 @@
 | 模块 | 完整索引 | 内容 | 重点直达 |
 | --- | --- | --- | --- |
 | Notes | [算法知识总览](notes/README.md) | 系统知识、配套典题与双解复盘 | [STL 总览](notes/01-basic-problem-solving/04-stl/README.md) |
-| Patterns | [范式索引](patterns/README.md) | 跨题识别与问题建模 | [枚举降维](patterns/enumeration-dimension-reduction.md) · [前后缀分解](patterns/prefix-suffix-exclusion.md) · [稀疏边界划段](patterns/sparse-boundary-segments.md) |
+| Patterns | [范式索引](patterns/README.md) | 跨题识别与问题建模 | [枚举降维](patterns/01-basic-problem-solving/enumeration-dimension-reduction.md) · [前后缀分解](patterns/02-sequence-techniques/prefix-suffix-exclusion.md) · [稀疏边界划段](patterns/02-sequence-techniques/sparse-boundary-segments.md) |
 | Templates | [模板索引](templates/README.md) | 带接口与边界约定的可复用实现 | [C++ 竞赛基础框架](templates/cpp-contest-template/README.md) |
 | Problems | [好题复盘索引](problems/README.md) | 独立刷题中精选的题目与复盘 | [CF 2271B — MEX Game](<problems/CF 2271B_MEX_Game.md>) |
 

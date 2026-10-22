@@ -27,3 +27,7 @@
 - [x] [1.4 STL 与竞赛常用 C++ 工具](04-stl/README.md)
 - [x] [1.5 位运算](05-bit-operations.md)
 - [x] [1.6 本章总结与选型](06-summary-selection.md)
+
+## 本章范式
+
+[查看本章范式索引](../../patterns/01-basic-problem-solving/README.md)，跨章节方法通过索引互相引用，完整正文只维护一处。

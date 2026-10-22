@@ -1,8 +1,27 @@
-# Patterns
+# Patterns：按章节查找范式
 
-常见解题范式与可复用的思维模型。
+记录跨题识别与建模方法。**章节编号和目录名与 Notes 对齐，先进入章节索引，再查阅完整条目。**
 
-重点记录「什么时候想到这种方法」以及「如何完成问题建模」。
+## 章节索引
+
+| 对应章节 | 范式入口 | 主要内容 |
+| --- | --- | --- |
+| [01 基础问题求解](../notes/01-basic-problem-solving/README.md) | [本章索引](01-basic-problem-solving/README.md) | 枚举降维、少量共享变量 |
+| [02 序列与区间技巧](../notes/02-sequence-techniques/README.md) | [本章索引](02-sequence-techniques/README.md) | 区间、前后缀、二分、MEX 与扫描结算 |
+| [03 搜索](../notes/03-search/README.md) | 跨章参考：[DAG DP](06-graph-and-tree/dag-dp.md) | 暂无独立篇章，记忆化与依赖状态见关联范式 |
+| [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 基值与剩余量、分阶段解耦 |
+| [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | 背包识别、状态上界，并链接 DAG DP |
+| [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 无环依赖、状态方向与路径统计 |
+| [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | 博弈阈值与策略证明 |
+| [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | 筛选候选、比较键与指纹去重 |
+| [09 竞赛数据结构](../notes/09-data-structures/README.md) | 暂无独立篇章 | 随实际题目提炼，不预建空目录 |
+
+## 归档与跨章引用
+
+- 每篇范式只选一个主要归属；跨章节使用时，在相关章节索引引用，不复制正文。
+- 尚无独立范式的章节不创建空目录；首篇正式内容加入时再建立章节 README。
+- 本章目录内保持单层文件，文件名继续表达方法，不按来源题目命名。
+- 新建或实质修订知识笔记、完成典题复盘时，检查已有范式；发生新增或补充时同步章索引、跨章引用及 Notes 双向链接，必要时更新本表，不为每篇笔记强造新范式。
 
 ## 提炼原则
 
@@ -12,40 +31,4 @@
 
 不机械要求先积累固定题数；一题也可提炼，但需要解释迁移到其他问题的依据。只有单题观察、尚不确定能否泛化时，先留在原题复盘中。
 
-范式篇记录通用模型与必要伪代码，具体的“我的做法／推荐做法”留在原笔记或独立题解，通过双向链接关联。完整条目维护于本目录的分类链接索引；根 README 只保留少量重点直达，新增范式不自动加入。
-
-## 索引
-
-### 搜索与枚举
-
-- [枚举降维](enumeration-dimension-reduction.md)
-- [枚举少量耦合变量：固定共享部分后独立求解](small-coupling-enumeration.md)
-- [二分答案：把优化与可行性判定分开](binary-search-on-answer.md)
-
-### 图与依赖
-
-- [DAG 上的 DP：先满足依赖，再汇总状态](dag-dp.md)：状态方向、最优值与计数、记忆化／拓扑顺序及建模检查。
-
-### 区间与序列
-
-- [稀疏边界划段：按状态不变的区间计算](sparse-boundary-segments.md)
-- [前后缀分解：排除元素后的信息合并](prefix-suffix-exclusion.md)
-- [后缀预处理：用未来摘要辅助当前决策](suffix-preprocessing.md)
-- [排除不可行空间：约束扩张与区间收缩](feasible-interval-shrinking.md)
-- [MEX：从定义域与频率出发](mex-analysis.md)
-- [状态扫描：变化时结算与尾状态处理](state-scan-finalization.md)
-
-### 表示与分类
-
-- [筛选候选与比较键：排序去重统计类别](filter-key-dedup.md)
-
-### 博弈
-
-- [博弈中的临界条件：从资源阈值到策略证明](critical-condition-in-game.md)
-
-### 构造与分配
-
-- [基值与剩余量：先铺合法基线，再补足总量](baseline-residual-construction.md)
-- [分阶段解耦：先消除强制情况，再统一处理](staged-constraint-decoupling.md)
-- [背包建模：使用次数、状态边界与优化目标](resource-limited-selection.md)
-- [从最优性推出状态上界：超过太多，就删掉一步](optimality-state-bound.md)
+范式篇记录通用模型与必要伪代码，具体的“我的做法／推荐做法”留在原笔记或独立题解，通过双向链接关联。完整条目维护于所属章节的 README；根 README 只保留少量重点直达，新增范式不自动加入。

@@ -1,6 +1,8 @@
 # DAG 上的 DP：先满足依赖，再汇总状态
 
-来源：[P1137 的出队编号反例与最长路线复盘](../notes/06-graph-and-tree/05-topological-sort.md#101-洛谷-p1137旅行计划)、[P1434 与 P4017 的记忆化／路径计数复盘](../notes/03-search/03-memoized-search.md#7-典题与复盘)。拓扑算法、建边与判环见[拓扑排序](../notes/06-graph-and-tree/05-topological-sort.md#6-c11-实现kahn-算法)。
+[本章范式索引](README.md) · [全部范式](../README.md)
+
+来源：[P1137 的出队编号反例与最长路线复盘](../../notes/06-graph-and-tree/05-topological-sort.md#101-洛谷-p1137旅行计划)、[P1434 与 P4017 的记忆化／路径计数复盘](../../notes/03-search/03-memoized-search.md#7-典题与复盘)。拓扑算法、建边与判环见[拓扑排序](../../notes/06-graph-and-tree/05-topological-sort.md#6-c11-实现kahn-算法)。
 
 > **拓扑排序决定计算先后，DP 决定每个点保存什么结果。**
 >
@@ -18,7 +20,7 @@
 - **什么条件意味着 u 必须先于 v？**
 - **输入已经保证无环，还是需要检测矛盾？**
 
-若目标只是求一种合法排列，到拓扑序即可；例如 [CF 510C](../notes/06-graph-and-tree/05-topological-sort.md#102-codeforces-510cfox-and-names) 先从相邻名字提取字母关系。
+若目标只是求一种合法排列，到拓扑序即可；例如 [CF 510C](../../notes/06-graph-and-tree/05-topological-sort.md#102-codeforces-510cfox-and-names) 先从相邻名字提取字母关系。
 
 ### 什么时候还需要 DP？
 
@@ -117,7 +119,7 @@ $$
 
 **同一问题可以换状态方向，但不能只把循环换掉，仍沿用另一方向的初值和答案位置。** 同一状态则可以换计算顺序，例如后续状态采用记忆化或逆拓扑递推。
 
-两个方向的完整图例与实现见 [P4017 路径计数复盘](../notes/03-search/03-memoized-search.md#72-洛谷-p4017最大食物链计数)。
+两个方向的完整图例与实现见 [P4017 路径计数复盘](../../notes/03-search/03-memoized-search.md#72-洛谷-p4017最大食物链计数)。
 
 ## 4. 同一个顺序，可以维护不同状态
 
@@ -197,6 +199,6 @@ $$
 
 **路径数量为 `0` 也可以是合法答案，尤其取模后。** 缓存的“未计算”应使用不冲突的哨兵或单独的完成标记，不能拿合法零值充当尚未求解。
 
-从 [滑雪中的每层职责](../notes/03-search/03-memoized-search.md#71-洛谷-p1434滑雪)到 [食物链的两种状态方向](../notes/03-search/03-memoized-search.md#72-洛谷-p4017最大食物链计数)，共同方法是先明确所求量，再由它决定初值、组合规则、计算顺序与答案位置。
+从 [滑雪中的每层职责](../../notes/03-search/03-memoized-search.md#71-洛谷-p1434滑雪)到 [食物链的两种状态方向](../../notes/03-search/03-memoized-search.md#72-洛谷-p4017最大食物链计数)，共同方法是先明确所求量，再由它决定初值、组合规则、计算顺序与答案位置。
 
-**完整题目过程与原代码留在[拓扑排序典题复盘](../notes/06-graph-and-tree/05-topological-sort.md#10-典题与复盘)与[记忆化搜索典题复盘](../notes/03-search/03-memoized-search.md#7-典题与复盘)，本篇只维护识别、建模和迁移边界。**
+**完整题目过程与原代码留在[拓扑排序典题复盘](../../notes/06-graph-and-tree/05-topological-sort.md#10-典题与复盘)与[记忆化搜索典题复盘](../../notes/03-search/03-memoized-search.md#7-典题与复盘)，本篇只维护识别、建模和迁移边界。**

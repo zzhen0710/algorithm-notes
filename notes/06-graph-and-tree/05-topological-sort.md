@@ -477,7 +477,7 @@ void solve() {
 
 **核验状态：个人反馈平台 AC，本地核验通过。**
 
-可迁移模型见 [DAG 上的 DP：先满足依赖，再汇总状态](../../patterns/dag-dp.md)。
+可迁移模型见 [DAG 上的 DP：先满足依赖，再汇总状态](../../patterns/06-graph-and-tree/dag-dp.md)。
 
 ### 10.2 Codeforces 510C：Fox And Names
 
@@ -672,7 +672,7 @@ size_t j = 0; // 与字符串长度类型一致；后面的比较和索引逻辑
 
 **拓扑排序回答“现在轮到谁”，状态转移回答“轮到它时，应算出什么”。** 具体状态、初始化和汇总方式不能由队列出队编号代替。
 
-一般识别与变式见 [DAG 上的 DP](../../patterns/dag-dp.md)；两题完整原解仍留在本节。
+一般识别与变式见 [DAG 上的 DP](../../patterns/06-graph-and-tree/dag-dp.md)；两题完整原解仍留在本节。
 
 ## 11. 自查与后续
 
