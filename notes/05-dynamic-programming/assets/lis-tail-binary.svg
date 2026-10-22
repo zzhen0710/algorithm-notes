@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="610" viewBox="0 0 1120 610" role="img" aria-labelledby="title desc">
+<title id="title">LIS最小末尾：替换与追加</title>
+<desc id="desc">读入1、2、100后，最小末尾表为1、2、100。新数3替换100，长度仍为3；再读4则追加，长度为4。反例2、3、1的末尾表为1、3，不是原数组的实际子序列。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#64748b"/></marker></defs>
+<rect width="1120" height="610" rx="18" fill="#f8fafc"/>
+
+<text x="560" y="39" text-anchor="middle" font-size="25" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">按长度保存最小末尾：替换与追加是两种变化</text>
+<text x="190" y="91" text-anchor="middle" font-size="22" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">读入 x = 3</text>
+<text x="120" y="123" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 1</text>
+<rect x="70" y="133" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="120" y="163" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">1</text>
+<text x="246" y="123" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 2</text>
+<rect x="196" y="133" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="246" y="163" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">2</text>
+<text x="372" y="123" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 3</text>
+<rect x="322" y="133" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="372" y="163" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">100</text>
+<text x="530" y="163" text-anchor="middle" font-size="19" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">第一个 ≥ 3</text>
+<path d="M625 155 H690" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="762" y="123" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 1</text>
+<rect x="712" y="133" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="762" y="163" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">1</text>
+<text x="888" y="123" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 2</text>
+<rect x="838" y="133" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="888" y="163" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">2</text>
+<text x="1014" y="123" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 3</text>
+<rect x="964" y="133" width="100" height="44" rx="8" fill="#dcfce7" stroke="#94a3b8" stroke-width="2"/>
+<text x="1014" y="163" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">3</text>
+<text x="560" y="220" text-anchor="middle" font-size="20" fill="#15803d" font-weight="bold" font-family="Microsoft YaHei,sans-serif">替换 100 为 3：长度仍为 3，但更容易接上后来的数</text>
+<path d="M35 245 H1085" stroke="#cbd5e1"/>
+<text x="190" y="283" text-anchor="middle" font-size="22" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">再读入 x = 4</text>
+<text x="120" y="317" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 1</text>
+<rect x="70" y="327" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="120" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">1</text>
+<text x="246" y="317" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 2</text>
+<rect x="196" y="327" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="246" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">2</text>
+<text x="372" y="317" text-anchor="middle" font-size="16" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">长度 3</text>
+<rect x="322" y="327" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="372" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">3</text>
+<text x="530" y="355" text-anchor="middle" font-size="19" fill="#334155" font-weight="normal" font-family="Microsoft YaHei,sans-serif">没有 ≥ 4</text>
+<path d="M625 349 H690" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="687" y="327" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="737" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">1</text>
+<rect x="792" y="327" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="842" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">2</text>
+<rect x="897" y="327" width="100" height="44" rx="8" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="947" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">3</text>
+<rect x="1002" y="327" width="100" height="44" rx="8" fill="#dbeafe" stroke="#94a3b8" stroke-width="2"/>
+<text x="1052" y="357" text-anchor="middle" font-size="23" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">4</text>
+<text x="560" y="414" text-anchor="middle" font-size="20" fill="#0369a1" font-weight="bold" font-family="Microsoft YaHei,sans-serif">追加 4：发现长度 4 的上升子序列</text>
+<rect x="35" y="450" width="1050" height="127" rx="12" fill="#fff7ed" stroke="#fed7aa"/>
+<text x="560" y="484" text-anchor="middle" font-size="22" fill="#9a3412" font-weight="bold" font-family="Microsoft YaHei,sans-serif">注意：各长度的代表不一定来自同一条路线</text>
+<text x="560" y="523" text-anchor="middle" font-size="20" fill="#9a3412" font-weight="normal" font-family="Microsoft YaHei,sans-serif">原数组 [2, 3, 1]   →   最小末尾 tail = [1, 3]，长度为 2</text>
+<text x="560" y="555" text-anchor="middle" font-size="19" fill="#9a3412" font-weight="normal" font-family="Microsoft YaHei,sans-serif">实际 LIS 可以是 [2, 3]；不能直接把 tail 当作答案序列输出</text>
+</svg>
