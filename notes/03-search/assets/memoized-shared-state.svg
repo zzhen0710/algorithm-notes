@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+<title id="title">重复递归与共享子问题</title>
+<desc id="desc">图中1分别经过2和3到达4，再到5。普通递归重复展开4到5；记忆化第一次保存4的答案2，第二次直接返回2。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1120" height="500" rx="20" fill="#f8fafc"/>
+
+<text x="560" y="44" text-anchor="middle" font-size="26" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">同一个后续，只计算一次</text>
+<path d="M560 77 V452" stroke="#cbd5e1" stroke-dasharray="7 7"/>
+<text x="280" y="93" text-anchor="middle" font-size="21" font-weight="bold" fill="#334155" font-family="Microsoft YaHei, sans-serif">普通递归：按调用展开</text>
+<text x="840" y="93" text-anchor="middle" font-size="21" font-weight="bold" fill="#334155" font-family="Microsoft YaHei, sans-serif">记忆化：按状态保存答案</text>
+<path d="M280,139 L196,191" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M280,139 L364,191" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M180,239 L180,281" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M380,239 L380,281" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M180,329 L180,371" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M380,329 L380,371" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="280" cy="115" r="23" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="280" y="122" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">1</text>
+<circle cx="180" cy="215" r="23" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="180" y="222" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">2</text>
+<circle cx="380" cy="215" r="23" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="380" y="222" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">3</text>
+<circle cx="180" cy="305" r="23" fill="#ffedd5" stroke="#0284c7" stroke-width="2"/>
+<text x="180" y="312" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">4</text>
+<circle cx="380" cy="305" r="23" fill="#ffedd5" stroke="#0284c7" stroke-width="2"/>
+<text x="380" y="312" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">4</text>
+<circle cx="180" cy="395" r="23" fill="#ffedd5" stroke="#0284c7" stroke-width="2"/>
+<text x="180" y="402" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">5</text>
+<circle cx="380" cy="395" r="23" fill="#ffedd5" stroke="#0284c7" stroke-width="2"/>
+<text x="380" y="402" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">5</text>
+<text x="280" y="450" text-anchor="middle" font-size="18" font-weight="bold" fill="#c2410c" font-family="Microsoft YaHei, sans-serif">4 → 5 被重复求解</text>
+<path d="M840,139 L756,191" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M840,139 L924,191" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M751,235 L823,286" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M929,235 L857,286" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<path d="M840,329 L840,371" stroke="#64748b" stroke-width="2.5" fill="none" marker-end="url(#arrow)"/>
+<circle cx="840" cy="115" r="23" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="840" y="122" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">1</text>
+<circle cx="740" cy="215" r="23" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="740" y="222" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">2</text>
+<circle cx="940" cy="215" r="23" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+<text x="940" y="222" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">3</text>
+<circle cx="840" cy="305" r="23" fill="#dcfce7" stroke="#0284c7" stroke-width="2"/>
+<text x="840" y="312" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">4</text>
+<circle cx="840" cy="395" r="23" fill="#dcfce7" stroke="#0284c7" stroke-width="2"/>
+<text x="840" y="402" text-anchor="middle" font-size="21" font-weight="bold" fill="#0f172a" font-family="Microsoft YaHei, sans-serif">5</text>
+<text x="668" y="281" text-anchor="middle" font-size="15" font-weight="normal" fill="#15803d" font-family="Microsoft YaHei, sans-serif">首次：计算并保存</text>
+<text x="1003" y="281" text-anchor="middle" font-size="15" font-weight="normal" fill="#15803d" font-family="Microsoft YaHei, sans-serif">再次：直接返回 2</text>
+<text x="935" y="343" text-anchor="middle" font-size="17" font-weight="bold" fill="#15803d" font-family="Microsoft YaHei, sans-serif">memo[4] = 2</text>
+<text x="840" y="450" text-anchor="middle" font-size="18" font-weight="bold" fill="#15803d" font-family="Microsoft YaHei, sans-serif">两次询问，一次展开</text>
+</svg>

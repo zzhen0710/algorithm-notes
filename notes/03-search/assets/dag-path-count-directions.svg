@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440" role="img" aria-labelledby="title desc">
+<title id="title">同一食物网，两种路径计数状态</title>
+<desc id="desc">起点1和2都指向3，3分别指向终点4和5。到达状态依次为1、1、2、2、2；出发状态依次为2、2、2、1、1。终点到达数之和与起点出发数之和都为4。</desc>
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#64748b"/></marker></defs>
+<rect width="1120" height="440" rx="18" fill="#f8fafc"/>
+
+<text x="560" y="39" text-anchor="middle" font-size="25" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">同一张图：到达当前点，还是从当前点出发？</text>
+<text x="160" y="87" text-anchor="middle" font-size="18" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">起点：原始入度为 0</text>
+<text x="930" y="87" text-anchor="middle" font-size="18" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">终点：g[u].empty()</text>
+<path d="M250 155 L470 209" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M250 289 L470 235" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M650 209 L840 155" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+<path d="M650 235 L840 289" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="70" y="107" width="180" height="96" rx="12" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="160" y="136" text-anchor="middle" font-size="20" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">顶点 1</text>
+<text x="160" y="163" text-anchor="middle" font-size="17" fill="#0369a1" font-weight="normal" font-family="Microsoft YaHei,sans-serif">到达 ways = 1</text>
+<text x="160" y="188" text-anchor="middle" font-size="17" fill="#15803d" font-weight="normal" font-family="Microsoft YaHei,sans-serif">出发 memo = 2</text>
+<rect x="70" y="241" width="180" height="96" rx="12" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="160" y="270" text-anchor="middle" font-size="20" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">顶点 2</text>
+<text x="160" y="297" text-anchor="middle" font-size="17" fill="#0369a1" font-weight="normal" font-family="Microsoft YaHei,sans-serif">到达 ways = 1</text>
+<text x="160" y="322" text-anchor="middle" font-size="17" fill="#15803d" font-weight="normal" font-family="Microsoft YaHei,sans-serif">出发 memo = 2</text>
+<rect x="470" y="174" width="180" height="96" rx="12" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="560" y="203" text-anchor="middle" font-size="20" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">顶点 3</text>
+<text x="560" y="230" text-anchor="middle" font-size="17" fill="#0369a1" font-weight="normal" font-family="Microsoft YaHei,sans-serif">到达 ways = 2</text>
+<text x="560" y="255" text-anchor="middle" font-size="17" fill="#15803d" font-weight="normal" font-family="Microsoft YaHei,sans-serif">出发 memo = 2</text>
+<rect x="840" y="107" width="180" height="96" rx="12" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="930" y="136" text-anchor="middle" font-size="20" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">顶点 4</text>
+<text x="930" y="163" text-anchor="middle" font-size="17" fill="#0369a1" font-weight="normal" font-family="Microsoft YaHei,sans-serif">到达 ways = 2</text>
+<text x="930" y="188" text-anchor="middle" font-size="17" fill="#15803d" font-weight="normal" font-family="Microsoft YaHei,sans-serif">出发 memo = 1</text>
+<rect x="840" y="241" width="180" height="96" rx="12" fill="white" stroke="#94a3b8" stroke-width="2"/>
+<text x="930" y="270" text-anchor="middle" font-size="20" fill="#334155" font-weight="bold" font-family="Microsoft YaHei,sans-serif">顶点 5</text>
+<text x="930" y="297" text-anchor="middle" font-size="17" fill="#0369a1" font-weight="normal" font-family="Microsoft YaHei,sans-serif">到达 ways = 2</text>
+<text x="930" y="322" text-anchor="middle" font-size="17" fill="#15803d" font-weight="normal" font-family="Microsoft YaHei,sans-serif">出发 memo = 1</text>
+<text x="560" y="371" text-anchor="middle" font-size="19" fill="#0369a1" font-weight="bold" font-family="Microsoft YaHei,sans-serif">蓝色：从起点传播到终点，终点求和 2 + 2 = 4</text>
+<text x="560" y="406" text-anchor="middle" font-size="19" fill="#15803d" font-weight="bold" font-family="Microsoft YaHei,sans-serif">绿色：先求终点再返回起点，起点求和 2 + 2 = 4</text>
+</svg>
