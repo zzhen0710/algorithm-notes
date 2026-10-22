@@ -175,7 +175,7 @@ $$
 \text{被依赖状态的 }i+j < \text{当前状态的 }i+j.
 $$
 
-依赖不会绕回来。它也属于[DAG DP 的隐式依赖](../../patterns/06-graph-and-tree/dag-dp.md#两个前缀也能组成隐式-dag)，但本题无需建图，按行填写已经满足顺序。
+依赖不会绕回来。它也属于[DAG DP 的隐式依赖](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#两个前缀也能组成隐式-dag)，但本题无需建图，按行填写已经满足顺序。
 
 **答案不必再扫描全表取最大值。** 扩大任意一边的前缀，都可以保留原方案；完整的两个前缀已经包含全部候选。
 
@@ -565,3 +565,5 @@ $$
 3. 滚动版的三个来源各属于哪一行，为什么交换后不用把整行清零？
 
 [返回本章索引](README.md) · [本章范式](../../patterns/05-dynamic-programming/README.md)
+
+下一节：[区间 DP：从最后一次合并倒推](06-interval-dp.md)。

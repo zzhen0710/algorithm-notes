@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="730" viewBox="0 0 1120 730" role="img" aria-labelledby="title desc">
+<title id="title">区间合并：枚举最后分界，先求短区间</title>
+<desc id="desc">对质量3、2、4的三堆，最后分界在0时总成本15，在1时总成本14；状态按长度1、2、3递增计算。</desc>
+<rect width="1120" height="730" rx="18" fill="#f5f7fb"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#1c2b40">
+<text x="32" y="44" font-size="27" font-weight="700" fill="#1c2b40" text-anchor="start">区间 DP：最后一次合并前，只剩左右两堆</text>
+<text x="32" y="80" font-size="21" font-weight="400" fill="#53677d" text-anchor="start">原数组 a = [3, 2, 4]；0-based 闭区间 [0,2]；最后一次合并代价固定为 9。</text>
+<rect x="32" y="112" width="511" height="337" rx="10" fill="#fff1e0" stroke="#c8d5e4"/>
+<text x="52" y="150" font-size="25" font-weight="700" fill="#8d5619" text-anchor="start">分界 k = 0</text>
+<rect x="56" y="175" width="191" height="60" rx="10" fill="#ffffff" stroke="#c8d5e4"/>
+<rect x="319" y="175" width="191" height="60" rx="10" fill="#ffffff" stroke="#c8d5e4"/>
+<text x="152" y="215" font-size="28" font-weight="700" fill="#1c2b40" text-anchor="middle">[3]</text>
+<text x="415" y="215" font-size="28" font-weight="700" fill="#1c2b40" text-anchor="middle">[2, 4]</text>
+<text x="284" y="216" font-size="30" font-weight="700" fill="#8d5619" text-anchor="middle">|</text>
+<text x="54" y="277" font-size="21" font-weight="400" fill="#1c2b40" text-anchor="start">左侧先合好：0       右侧先合好：6</text>
+<text x="54" y="316" font-size="22" font-weight="700" fill="#1c2b40" text-anchor="start">最后两堆再合并：+ 9</text>
+<text x="54" y="365" font-size="24" font-weight="700" fill="#8d5619" text-anchor="start">候选代价 = 0 + 6 + 9 = 15</text>
+<text x="54" y="411" font-size="19" font-weight="400" fill="#53677d" text-anchor="start">先付子问题花费，再付最后一次操作。</text>
+<rect x="577" y="112" width="511" height="337" rx="10" fill="#e4f4eb" stroke="#c8d5e4"/>
+<text x="597" y="150" font-size="25" font-weight="700" fill="#176047" text-anchor="start">分界 k = 1</text>
+<rect x="601" y="175" width="191" height="60" rx="10" fill="#ffffff" stroke="#c8d5e4"/>
+<rect x="864" y="175" width="191" height="60" rx="10" fill="#ffffff" stroke="#c8d5e4"/>
+<text x="697" y="215" font-size="28" font-weight="700" fill="#1c2b40" text-anchor="middle">[3, 2]</text>
+<text x="960" y="215" font-size="28" font-weight="700" fill="#1c2b40" text-anchor="middle">[4]</text>
+<text x="829" y="216" font-size="30" font-weight="700" fill="#176047" text-anchor="middle">|</text>
+<text x="599" y="277" font-size="21" font-weight="400" fill="#1c2b40" text-anchor="start">左侧先合好：5       右侧先合好：0</text>
+<text x="599" y="316" font-size="22" font-weight="700" fill="#1c2b40" text-anchor="start">最后两堆再合并：+ 9</text>
+<text x="599" y="365" font-size="24" font-weight="700" fill="#176047" text-anchor="start">候选代价 = 5 + 0 + 9 = 14</text>
+<text x="599" y="411" font-size="19" font-weight="400" fill="#53677d" text-anchor="start">先付子问题花费，再付最后一次操作。</text>
+<rect x="32" y="476" width="1056" height="215" rx="10" fill="#ffffff" stroke="#c8d5e4"/>
+<text x="52" y="512" font-size="24" font-weight="700" fill="#1c2b40" text-anchor="start">计算顺序：按原区间长度递增，两个子区间都更短</text>
+<text x="52" y="555" font-size="22" font-weight="700" fill="#1c2b40" text-anchor="start">长度 1</text>
+<text x="205" y="555" font-size="23" font-weight="400" fill="#1c2b40" text-anchor="start">dp[0][0] = dp[1][1] = dp[2][2] = 0</text>
+<text x="52" y="601" font-size="22" font-weight="700" fill="#1c2b40" text-anchor="start">长度 2</text>
+<text x="205" y="601" font-size="23" font-weight="400" fill="#1c2b40" text-anchor="start">dp[0][1] = 5，dp[1][2] = 6</text>
+<text x="52" y="647" font-size="22" font-weight="700" fill="#1c2b40" text-anchor="start">长度 3</text>
+<text x="205" y="647" font-size="25" font-weight="700" fill="#176047" text-anchor="start">dp[0][2] = min(15, 14) = 14</text>
+</g>
+</svg>

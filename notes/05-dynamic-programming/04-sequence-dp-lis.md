@@ -127,7 +127,7 @@ $$
 
 这与旅行计划的“到达当前点的最长路线”相同，只是合法边通过条件判断生成，**无需存邻接表，也无需再跑一次拓扑排序**。
 
-相关识别见 [DAG DP 中的序列依赖](../../patterns/06-graph-and-tree/dag-dp.md#从序列中识别隐式-dag)。
+相关识别见 [DAG DP 中的序列依赖](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#从序列中识别隐式-dag)。
 
 ## 5. 执行流程与手推
 
