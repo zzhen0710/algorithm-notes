@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="710" viewBox="0 0 1120 710" role="img" aria-labelledby="title desc">
+<title id="title">编辑距离：三种操作缩小哪一侧前缀</title>
+<desc id="desc">替换同时减少两侧长度；删除只减少源串长度；插入只减少目标串长度。相邻前缀的最少代价加一次操作，再取最小值。</desc>
+<rect width="1120" height="710" rx="18" fill="#f5f7fb"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#1b2b40">
+<text x="32" y="45" font-size="26" fill="#1b2b40" font-weight="700" text-anchor="start">编辑距离：从 A 转成 B，末尾选择对应三个更小的状态</text>
+<text x="32" y="83" font-size="20" fill="#52667d" font-weight="400" text-anchor="start">i、j 表示前缀长度；原字符下标为 i−1、j−1。以下每张卡只演示一种操作。</text>
+<rect x="32" y="116" width="322" height="361" rx="10" fill="#e5f3ec" stroke="#c6d4e3"/>
+<text x="50" y="151" font-size="25" fill="#176048" font-weight="700" text-anchor="start">① 替换</text>
+<text x="50" y="184" font-size="20" fill="#176048" font-weight="400" text-anchor="start">两侧各退一项</text>
+<text x="50" y="229" font-size="27" fill="#1b2b40" font-weight="700" text-anchor="start">A：a b</text>
+<text x="50" y="270" font-size="27" fill="#1b2b40" font-weight="700" text-anchor="start">B：a c</text>
+<text x="50" y="314" font-size="18" fill="#1b2b40" font-weight="400" text-anchor="start">先处理 a → a，代价 0</text>
+<text x="50" y="345" font-size="18" fill="#1b2b40" font-weight="400" text-anchor="start">把末尾 b 换成 c</text>
+<text x="50" y="396" font-size="21" fill="#176048" font-weight="700" text-anchor="start">dp[i−1][j−1] + 1</text>
+<text x="50" y="443" font-size="23" fill="#176048" font-weight="700" text-anchor="start">0 + 1 = 1</text>
+<rect x="399" y="116" width="322" height="361" rx="10" fill="#fff1df" stroke="#c6d4e3"/>
+<text x="417" y="151" font-size="25" fill="#8e5718" font-weight="700" text-anchor="start">② 删除</text>
+<text x="417" y="184" font-size="20" fill="#8e5718" font-weight="400" text-anchor="start">只退 A 一侧</text>
+<text x="417" y="229" font-size="27" fill="#1b2b40" font-weight="700" text-anchor="start">A：c a b</text>
+<text x="417" y="270" font-size="27" fill="#1b2b40" font-weight="700" text-anchor="start">B：c a</text>
+<text x="417" y="314" font-size="18" fill="#1b2b40" font-weight="400" text-anchor="start">先删 A 末尾 b，代价 1</text>
+<text x="417" y="345" font-size="18" fill="#1b2b40" font-weight="400" text-anchor="start">剩下 ca → ca，代价 0</text>
+<text x="417" y="396" font-size="21" fill="#8e5718" font-weight="700" text-anchor="start">dp[i−1][j] + 1</text>
+<text x="417" y="443" font-size="23" fill="#8e5718" font-weight="700" text-anchor="start">0 + 1 = 1</text>
+<rect x="766" y="116" width="322" height="361" rx="10" fill="#e8edfb" stroke="#c6d4e3"/>
+<text x="784" y="151" font-size="25" fill="#304d91" font-weight="700" text-anchor="start">③ 插入</text>
+<text x="784" y="184" font-size="20" fill="#304d91" font-weight="400" text-anchor="start">只退 B 一侧</text>
+<text x="784" y="229" font-size="27" fill="#1b2b40" font-weight="700" text-anchor="start">A：c a</text>
+<text x="784" y="270" font-size="27" fill="#1b2b40" font-weight="700" text-anchor="start">B：c a b</text>
+<text x="784" y="314" font-size="18" fill="#1b2b40" font-weight="400" text-anchor="start">先处理 ca → ca，代价 0</text>
+<text x="784" y="345" font-size="18" fill="#1b2b40" font-weight="400" text-anchor="start">再插入 B 的末尾 b</text>
+<text x="784" y="396" font-size="21" fill="#304d91" font-weight="700" text-anchor="start">dp[i][j−1] + 1</text>
+<text x="784" y="443" font-size="23" fill="#304d91" font-weight="700" text-anchor="start">0 + 1 = 1</text>
+<rect x="32" y="503" width="1056" height="164" rx="10" fill="#ffffff" stroke="#c6d4e3"/>
+<text x="53" y="538" font-size="23" fill="#1b2b40" font-weight="700" text-anchor="start">同一个状态，比较三种“前缀最优成本 + 本轮操作”</text>
+<text x="53" y="576" font-size="21" fill="#1b2b40" font-weight="400" text-anchor="start">例如 ab → ac：替换候选 1，删除候选 2，插入候选 2，最终取 1。</text>
+<text x="53" y="613" font-size="19" fill="#52667d" font-weight="400" text-anchor="start">不是比较单步代价：三种操作单步都是 1；差别在于它们来自不同的前缀状态。</text>
+<text x="53" y="644" font-size="20" fill="#176048" font-weight="700" text-anchor="start">末尾相同时可直接保留：dp[i][j] = dp[i−1][j−1]，不增加操作。</text>
+</g>
+</svg>

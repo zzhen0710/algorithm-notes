@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700" role="img" aria-labelledby="title desc">
+<title id="title">LCS：两个前缀与相邻状态</title>
+<desc id="desc">A为1、2、1、3，B为2、1、3。二维表的最后一格为3。相同末尾使用左上方加一，不同末尾比较上方和左方。</desc>
+<rect width="1100" height="700" rx="18" fill="#f5f7fb"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#18283d">
+<text x="36" y="46" font-size="27" font-weight="700" fill="#18283d" text-anchor="start">LCS：每格处理两个前缀，末尾可以不选</text>
+<text x="36" y="82" font-size="22" font-weight="400" fill="#18283d" text-anchor="start">A = [1, 2, 1, 3]       B = [2, 1, 3]</text>
+<text x="36" y="119" font-size="19" font-weight="400" fill="#52657b" text-anchor="start">行：A 的前 i 项；列：B 的前 j 项</text>
+<text x="210.0" y="164" font-size="17" font-weight="700" fill="#18283d" text-anchor="middle">0（空）</text>
+<text x="298.0" y="164" font-size="17" font-weight="700" fill="#18283d" text-anchor="middle">1：2</text>
+<text x="386.0" y="164" font-size="17" font-weight="700" fill="#18283d" text-anchor="middle">2：1</text>
+<text x="474.0" y="164" font-size="17" font-weight="700" fill="#18283d" text-anchor="middle">3：3</text>
+<text x="148" y="228" font-size="19" font-weight="700" fill="#18283d" text-anchor="end">0（空）</text>
+<rect x="166" y="188" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="206" y="229" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="254" y="188" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="294" y="229" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="342" y="188" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="382" y="229" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="430" y="188" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="470" y="229" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<text x="148" y="293" font-size="19" font-weight="700" fill="#18283d" text-anchor="end">1：1</text>
+<rect x="166" y="253" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="206" y="294" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="254" y="253" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="294" y="294" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="342" y="253" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="382" y="294" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<rect x="430" y="253" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="470" y="294" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<text x="148" y="358" font-size="19" font-weight="700" fill="#18283d" text-anchor="end">2：2</text>
+<rect x="166" y="318" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="206" y="359" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="254" y="318" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="294" y="359" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<rect x="342" y="318" width="84" height="61" rx="7" fill="#ffe1b8" stroke="#c8d3e2"/>
+<text x="382" y="359" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<rect x="430" y="318" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="470" y="359" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<text x="148" y="423" font-size="19" font-weight="700" fill="#18283d" text-anchor="end">3：1</text>
+<rect x="166" y="383" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="206" y="424" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="254" y="383" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="294" y="424" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<rect x="342" y="383" width="84" height="61" rx="7" fill="#d7eee8" stroke="#c8d3e2"/>
+<text x="382" y="424" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">2</text>
+<rect x="430" y="383" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="470" y="424" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">2</text>
+<text x="148" y="488" font-size="19" font-weight="700" fill="#18283d" text-anchor="end">4：3</text>
+<rect x="166" y="448" width="84" height="61" rx="7" fill="#e9eef5" stroke="#c8d3e2"/>
+<text x="206" y="489" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">0</text>
+<rect x="254" y="448" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="294" y="489" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">1</text>
+<rect x="342" y="448" width="84" height="61" rx="7" fill="#ffffff" stroke="#c8d3e2"/>
+<text x="382" y="489" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">2</text>
+<rect x="430" y="448" width="84" height="61" rx="7" fill="#bce4d6" stroke="#c8d3e2"/>
+<text x="470" y="489" font-size="26" font-weight="700" fill="#18283d" text-anchor="middle">3</text>
+<text x="36" y="555" font-size="18" font-weight="400" fill="#52657b" text-anchor="start">表头格式：前缀长度：该前缀的末尾值</text>
+<text x="36" y="588" font-size="18" font-weight="400" fill="#52657b" text-anchor="start">第 0 行／列表示空前缀，不对应实际元素。</text>
+<rect x="560" y="148" width="506" height="206" rx="7" fill="#e8f5ef" stroke="#c8d3e2"/>
+<text x="582" y="182" font-size="22" font-weight="700" fill="#176047" text-anchor="start">末尾相同：a[3] = b[2] = 3</text>
+<text x="582" y="226" font-size="22" font-weight="400" fill="#18283d" text-anchor="start">左上方 dp[3][2] = 2</text>
+<text x="582" y="267" font-size="21" font-weight="400" fill="#18283d" text-anchor="start">匹配 [2, 1]，再接上一对 3</text>
+<text x="582" y="315" font-size="24" font-weight="700" fill="#176047" text-anchor="start">dp[4][3] = 2 + 1 = 3</text>
+<rect x="560" y="379" width="506" height="206" rx="7" fill="#fff2e2" stroke="#c8d3e2"/>
+<text x="582" y="413" font-size="21" font-weight="700" fill="#925811" text-anchor="start">末尾不同：a[1] = 2，b[1] = 1</text>
+<text x="582" y="457" font-size="20" font-weight="400" fill="#18283d" text-anchor="start">上方 dp[1][2] = 1：不选 A 的末尾</text>
+<text x="582" y="497" font-size="20" font-weight="400" fill="#18283d" text-anchor="start">左方 dp[2][1] = 1：不选 B 的末尾</text>
+<text x="582" y="545" font-size="23" font-weight="700" fill="#925811" text-anchor="start">dp[2][2] = max(1, 1) = 1</text>
+<rect x="36" y="619" width="1030" height="54" rx="7" fill="#e7ecf5" stroke="#c8d3e2"/>
+<text x="56" y="654" font-size="21" font-weight="700" fill="#18283d" text-anchor="start">先完成上一行，再从左向右写本行：左上方、上方、左方都已知。</text>
+</g>
+</svg>

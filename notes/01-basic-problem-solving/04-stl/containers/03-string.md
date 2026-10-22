@@ -38,6 +38,7 @@ cout << s.substr(2, 3); // cde
 | `string& replace(size_type pos, size_type count, const string& str)` | 替换指定区间，返回自身引用 | 最坏 $O(n+m)$ |
 | `int compare(const string& str) const` | 与整个字符串按字典序比较 | $O(\min(n,m))$ |
 | `int compare(size_type pos, size_type count, const string& str) const` | 将指定子串与 `str` 比较 | $O(\min(count,m))$ |
+| `void swap(string& other)` | 与 `other` 交换全部内容（包括长度），不返回值；写作 `s.swap(t)`，也可用 `std::swap(s, t)` | $O(1)$ |
 | `void clear()` | 清空字符串 | $O(n)$ |
 
 其中 `n` 为当前字符串长度，`m = str.size()`；复杂度按通常的字符处理成本讨论。
