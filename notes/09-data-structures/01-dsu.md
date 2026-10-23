@@ -91,7 +91,7 @@ flowchart LR
 
 ## 5. C++11 主写法
 
-代码使用 `vector`、`iota`、`swap`，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。本节只维护这一份通用结构，个人独立复现与模板提炼另按实际练习记录。
+代码使用 `vector`、`iota`、`swap`，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。本节只维护这一份通用结构，个人独立复现与模板提炼另按实际练习记录。
 
 **为什么构造函数前加 `explicit`，后面的单参数函数不加？**
 
@@ -170,7 +170,7 @@ cout << dsu.size(4) << ' ' << dsu.components << '\n'; // 4 1
 
 ### 竞赛模板：一个数组保存父节点与大小
 
-上文双数组写法便于分别观察 `parent` 与 `sz`，两题原实现也保留这种结构。实际复用可使用 [DSU 竞赛模板](../../templates/dsu/README.md)，按固定版本的 ei1333/library 适配：
+上文双数组写法便于分别观察 `parent` 与 `sz`，两题原实现也保留这种结构。实际复用可使用 [DSU 竞赛模板](../../templates/09-data-structures/dsu/README.md)，按固定版本的 ei1333/library 适配：
 
 - 根处存**负的集合大小**，如 `p[r]=-4` 表示这组有 4 个对象。
 - 非根处存**父节点编号**，如 `p[x]=r` 表示沿父指针找到 `r`。

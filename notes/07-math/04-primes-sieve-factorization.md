@@ -2,7 +2,7 @@
 
 [gcd/lcm](01-gcd-lcm.md#51-先看例子12-与-18-需要哪些因子)用质因子的指数解释整除关系；本节进一步说明：**怎样判断质数、批量找出质数，以及实际求出一个数的质因子。**
 
-使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。可复用的判定、埃氏筛、欧拉筛与分解函数见[素数模板](../../templates/primes/README.md)；两种筛法分别展开，最小质因子表留到大量分解的场景再补充。
+使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。可复用的判定、埃氏筛、欧拉筛与分解函数见[素数模板](../../templates/07-math/primes/README.md)；两种筛法分别展开，最小质因子表留到大量分解的场景再补充。
 
 ## 1. 因数成对，只需检查到平方根
 

@@ -209,9 +209,9 @@ $$
 
 ## 5. C++11 主写法
 
-下面保留按值传参的教学实现，复用[并查集 `DSU`](../09-data-structures/01-dsu.md#5-c11-主写法)，将其定义放在函数之前。沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)与 `using ll = long long;`。
+下面保留按值传参的教学实现，复用[并查集 `DSU`](../09-data-structures/01-dsu.md#5-c11-主写法)，将其定义放在函数之前。沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)与 `using ll = long long;`。
 
-实际复用优先使用 [Kruskal 竞赛模板](../../templates/kruskal/README.md)：采用原地排序，支持目标块数 `k`，不复制边表；与下方教学代码的接口差异见[典题复盘](#83-推荐竞赛主版本)。
+实际复用优先使用 [Kruskal 竞赛模板](../../templates/06-graph-and-tree/kruskal/README.md)：采用原地排序，支持目标块数 `k`，不复制边表；与下方教学代码的接口差异见[典题复盘](#83-推荐竞赛主版本)。
 
 **契约：** $1\le n\le10^6$，边端点均在 `1..n`，边数可用 `int` 表示；边权及累加过程均可用 `ll` 表示。
 
@@ -488,7 +488,7 @@ void solve() {
 
 ### 8.3 推荐竞赛主版本
 
-可复用实现分别放在 [DSU](../../templates/dsu/README.md) 与 [Kruskal](../../templates/kruskal/README.md)，主代码按固定版本的 ei1333/library 适配，并记录来源与变更。
+可复用实现分别放在 [DSU](../../templates/09-data-structures/dsu/README.md) 与 [Kruskal](../../templates/06-graph-and-tree/kruskal/README.md)，主代码按固定版本的 ei1333/library 适配，并记录来源与变更。
 
 - **并查集：** 用一个负值数组合并父指针与根处大小，保留 `bool unite` 和 `components`；比双数组版少一份数组，但必须理解正负值的两种含义。
 - **Kruskal：** 一个入口支持目标 `k`，默认 `k=1`；保留原地排序，只在合并成功后计数。

@@ -31,3 +31,7 @@
 ## 本章范式
 
 [查看本章范式索引](../../patterns/01-basic-problem-solving/README.md)，跨章节方法通过索引互相引用，完整正文只维护一处。
+
+## 竞赛模板
+
+[查看本章模板索引](../../templates/01-basic-problem-solving/README.md)，接口与代码在模板组内维护；具体知识正文保留相关模板直达。

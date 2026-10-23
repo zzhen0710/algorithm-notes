@@ -10,7 +10,7 @@
 
 [STL 二分查找](../01-basic-problem-solving/04-stl/algorithms/02-binary-search.md#一二分查找的核心思想)在已有序列中找边界；二分答案在候选答案范围中找边界，通常不需要把全部候选存成数组。
 
-本节采用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)中的 `ll`、标准库与命名空间约定，只展示相关函数。
+本节采用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)中的 `ll`、标准库与命名空间约定，只展示相关函数。
 
 ## 2. 先定义判定，再证明单调
 
@@ -255,7 +255,7 @@ double sqrtByBinary(double value) {
 
 ## 9. 典题与复盘
 
-典题只展示 `solve()`，通用框架沿用[竞赛基础模板](../../templates/cpp-contest-template/README.md)。P1182 的 AC 来源为个人评测说明，并完成本地核验；P1873 保留原错误实现与本地核验的修正版，尚未记录个人修正后的平台结果。
+典题只展示 `solve()`，通用框架沿用[竞赛基础模板](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。P1182 的 AC 来源为个人评测说明，并完成本地核验；P1873 保留原错误实现与本地核验的修正版，尚未记录个人修正后的平台结果。
 
 | 题目 | 核心收获 | 状态 |
 | --- | --- | --- |
@@ -481,7 +481,7 @@ void solve() {
 
 每次调用重新初始化段数与当前和。lambda 捕获输入数组，但不沿用上一次候选的临时状态。
 
-可复用实现见[整数二分模板](../../templates/binary-search/README.md)，识别与迁移见[独立判定范式](../../patterns/02-sequence-techniques/binary-search-on-answer.md)。
+可复用实现见[整数二分模板](../../templates/02-sequence-techniques/binary-search/README.md)，识别与迁移见[独立判定范式](../../patterns/02-sequence-techniques/binary-search-on-answer.md)。
 
 **4. 从 1 记录已用段数，状态更直接。**
 

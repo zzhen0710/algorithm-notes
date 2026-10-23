@@ -2,7 +2,7 @@
 
 [CF 584B 的复盘](03-binary-exponentiation.md#82-cf-584bkolya-and-tanya)已经用过“总数减去不满足的方案”。本节先建立通用判断：**数的是什么、顺序是否重要、能否重复，再决定分类相加还是分步相乘。**
 
-使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。先掌握基础模型；模意义组合数、逆元、一般容斥等后续再补，不在本节堆公式。
+使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。先掌握基础模型；模意义组合数、逆元、一般容斥等后续再补，不在本节堆公式。
 
 ## 1. 先明确：怎样才算不同方案
 
@@ -184,7 +184,7 @@ vector<vector<ll>> build_comb(int N) {
 
 ### 单次查询：乘除递推
 
-只问一个组合数，且选取数较小时，可直接相乘并逐步整除，不必建表。下面保留 CF 478B 原稿的 `C`，仅整理排版与注释；可复用版本见[精确组合数模板](../../templates/combinations/README.md)。
+只问一个组合数，且选取数较小时，可直接相乘并逐步整除，不必建表。下面保留 CF 478B 原稿的 `C`，仅整理排版与注释；可复用版本见[精确组合数模板](../../templates/07-math/combinations/README.md)。
 
 先利用 $\binom{n}{m}=\binom{n}{n-m}$，将 `m` 改为两边较小者。记 $d=n-m$，循环进行到第 $i$ 步时：
 

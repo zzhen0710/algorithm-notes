@@ -12,7 +12,7 @@
 勾选只表示知识正文已整理，不代表配题完成或已经熟练；本章尚未整理完毕。
 
 - [x] [8.1 KMP 与前缀函数](01-kmp.md)：正文与 P3375、CF 126B 原实现复盘完成（本地核验通过，平台结果未单独记录）；补内部前缀出现、mx 上界和 border 回退图解。
-- [x] [8.2 字符串哈希与碰撞边界](02-string-hash.md)：知识正文、P3370 与 CF 271D 原实现复盘完成（本地核验，平台结果未单独记录）；已提炼[比较键范式](../../patterns/08-strings/filter-key-dedup.md)与[双哈希模板](../../templates/string-hash/README.md)。
+- [x] [8.2 字符串哈希与碰撞边界](02-string-hash.md)：知识正文、P3370 与 CF 271D 原实现复盘完成（本地核验，平台结果未单独记录）；已提炼[比较键范式](../../patterns/08-strings/filter-key-dedup.md)与[双哈希模板](../../templates/08-strings/string-hash/README.md)。
 - [ ] 前后缀与周期的进一步应用、Manacher 及其余字符串内容。
 - [ ] 全章总结与场景选型，主题收尾时完善。
 
@@ -20,10 +20,14 @@
 
 基础链先完成 KMP 的状态含义、回退与典题，再认识哈希的适用条件和碰撞风险。8.2 两题复盘已整理，后续按第一轮顺序进入[单调栈](../09-data-structures/02-monotonic-stack.md)；熟练度通过手推与独立重写另行核验。回文等模型后续补充，不预建空文章。
 
-本章主 KMP 写法统一使用 0-based 前缀函数 pi；其他 next 约定只作定义对照，避免多个版本混用。通用框架见 [C++ 竞赛基础模板](../../templates/cpp-contest-template/README.md)。
+本章主 KMP 写法统一使用 0-based 前缀函数 pi；其他 next 约定只作定义对照，避免多个版本混用。通用框架见 [C++ 竞赛基础模板](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 知识范围与典题复盘规范见 [Notes 总览](../README.md)。
 
 ## 本章范式
 
 [查看本章范式索引](../../patterns/08-strings/README.md)，跨章节方法通过索引互相引用，完整正文只维护一处。
+
+## 竞赛模板
+
+[查看本章模板索引](../../templates/08-strings/README.md)，接口与代码在模板组内维护；具体知识正文保留相关模板直达。

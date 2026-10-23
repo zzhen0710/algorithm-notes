@@ -154,7 +154,7 @@ $$
 
 对象保存构造时的字符串快照所对应的哈希表，**不保存原文**。之后修改外部字符串，不会更新这些表；需要重新构造。
 
-依赖 `string、vector、pair`，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)中的命名空间与头文件。
+依赖 `string、vector、pair`，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)中的命名空间与头文件。
 
 ```cpp
 using ll = long long;
@@ -660,7 +660,7 @@ $$
 
 独立归纳见[筛选候选与比较键：排序去重统计类别](../../patterns/08-strings/filter-key-dedup.md)。
 
-竞赛代码见[字符串双哈希模板](../../templates/string-hash/README.md)：`get(l,r)` 返回两份哈希，`key(l,r)` 自动补上长度，减少调用处重复拼 tuple。
+竞赛代码见[字符串双哈希模板](../../templates/08-strings/string-hash/README.md)：`get(l,r)` 返回两份哈希，`key(l,r)` 自动补上长度，减少调用处重复拼 tuple。
 
 ## 9. 自查与后续
 

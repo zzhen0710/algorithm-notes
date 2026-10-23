@@ -142,7 +142,7 @@ vector<int> next_greater_right(const vector<ll>& a) {
 }
 ```
 
-沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)，依赖 vector 和 stack；所有状态在函数内创建，**多测无需清理全局数组或栈**。
+沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)，依赖 vector 和 stack；所有状态在函数内创建，**多测无需清理全局数组或栈**。
 
 ### 对照调用
 
@@ -246,7 +246,7 @@ $$
 
 ## 8. 典题与复盘
 
-两份原实现已完成本地核验，**平台结果未单独记录**。以下仅整理排版与注释，保留原逻辑；通用头文件、类型别名和 main 沿用[基础框架](../../templates/cpp-contest-template/README.md)。
+两份原实现已完成本地核验，**平台结果未单独记录**。以下仅整理排版与注释，保留原逻辑；通用头文件、类型别名和 main 沿用[基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ### 8.1 [P5788 【模板】单调栈](https://www.luogu.com.cn/problem/P5788)
 
@@ -471,4 +471,4 @@ vector<int> r(n), l(n); // 错误：默认的 0 被后续当成真实站点下�
 
 两题原实现与复盘已完成本地核验，平台结果未单独记录；个人掌握另行核验。下一节继续[单调队列](03-monotonic-queue.md)，再进入树状数组等动态维护模型，不要求一次学完第九章。
 
-竞赛短写法见[单调栈模板](../../templates/monotonic-stack/README.md)：返回右侧第一个严格更大位置，不存在为 -1；其余比较关系按说明调整。
+竞赛短写法见[单调栈模板](../../templates/09-data-structures/monotonic-stack/README.md)：返回右侧第一个严格更大位置，不存在为 -1；其余比较关系按说明调整。

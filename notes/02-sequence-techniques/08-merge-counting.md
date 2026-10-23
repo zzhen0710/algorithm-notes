@@ -12,7 +12,7 @@ $$
 
 > **重点不是重新学习归并排序，而是利用归并过程，把逐个判断变成整段计数。** 普通排序仍优先使用 `sort`。
 
-本节使用 C++11、**0 下标、闭区间**，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)中的 `using ll = long long;`，不重复通用输入输出框架。
+本节使用 C++11、**0 下标、闭区间**，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)中的 `using ll = long long;`，不重复通用输入输出框架。
 
 ## 2. 分治：先把数对分成三类
 
@@ -86,7 +86,7 @@ $$
 
 ## 6. 通用实现
 
-完整实现维护于[归并计数模板](../../templates/merge-counting/README.md#接口与约定)，直接复用两道题中的计数核心，入口为 `count_inversions(a)`。该入口按引用接收数组，调用后会将其排序。
+完整实现维护于[归并计数模板](../../templates/02-sequence-techniques/merge-counting/README.md#接口与约定)，直接复用两道题中的计数核心，入口为 `count_inversions(a)`。该入口按引用接收数组，调用后会将其排序。
 
 ```cpp
 vector<ll> a = {3, 1, 2};
@@ -253,7 +253,7 @@ void solve() {
 
 两题的个人实现均有本地对照核验；CF 题另以直接模拟小规模行走过程核对相遇次数，覆盖负坐标、路线有交集却不相遇、完全嵌套、多测和大规模答案。未记录实际发生过的错误，不虚构踩坑过程。
 
-整章比较见[2.9 本章总结与选型](09-summary-selection.md)，可复用实现见[归并计数模板](../../templates/merge-counting/README.md#接口与约定)。
+整章比较见[2.9 本章总结与选型](09-summary-selection.md)，可复用实现见[归并计数模板](../../templates/02-sequence-techniques/merge-counting/README.md#接口与约定)。
 
 ## 10. 自查
 

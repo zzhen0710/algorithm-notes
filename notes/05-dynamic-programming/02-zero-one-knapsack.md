@@ -254,7 +254,7 @@ $$
 - `dp[i]` 是**总采摘时间不超过 `i` 时的最大价值**，下标为 $0\ldots T$，按时间上限分配 `T + 1` 项。
 - 每株只处理一轮，时间倒序更新，避免重复采同一株。
 
-以下只整理排版与注释，保留原逻辑；`pii` 等别名沿用[竞赛基础模板](../../templates/cpp-contest-template/README.md)。
+以下只整理排版与注释，保留原逻辑；`pii` 等别名沿用[竞赛基础模板](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ```cpp
 void solve() {

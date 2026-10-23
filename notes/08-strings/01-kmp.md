@@ -224,7 +224,7 @@ $$
 
 ### C++11 实现
 
-沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 **输入范围：** 字符串长度可以用 `int` 表示。
 

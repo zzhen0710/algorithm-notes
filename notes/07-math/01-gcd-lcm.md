@@ -2,7 +2,7 @@
 
 从奇偶条件进一步走向**整除关系**：哪些数能同时整除多个数，哪些数能同时被多个数整除？本节建立 gcd/lcm 模型，同余运算与快速幂后续再讲。
 
-使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ## 1. 整除、gcd 与 lcm 分别表示什么
 
@@ -234,7 +234,7 @@ ll gcd_rec(ll a, ll b) {
 
 两版的取余次数相同。循环版辅助空间为 $O(1)$；递归版按调用栈计为 $O(1+\log\min(a,b))$（正数输入），零值边界为常数，**不能仅因代码短就认为递归没有额外空间**。
 
-实际复用见 [gcd/lcm 简洁模板](../../templates/gcd-lcm/README.md)，主写法采用递归 gcd，另提供 lcm 与数组聚合；本节保留循环版解释状态更新。
+实际复用见 [gcd/lcm 简洁模板](../../templates/07-math/gcd-lcm/README.md)，主写法采用递归 gcd，另提供 lcm 与数组聚合；本节保留循环版解释状态更新。
 
 ## 4. 多个数：用一个 gcd 汇总共同约数
 

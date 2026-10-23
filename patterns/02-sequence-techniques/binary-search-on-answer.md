@@ -163,4 +163,4 @@ $$
 - 先直接测试候选值，再测试完整搜索。小输入枚举可帮助区分“判定错”与“二分错”。
 - 已有公式或单次扫描可以求解时，先比较是否还需要增加二分这一层。
 
-通用边界实现见[整数二分模板](../../templates/binary-search/README.md)，两种整数框架及实数精度见[二分答案正文](../../notes/02-sequence-techniques/06-binary-search-on-answer.md)。
+通用边界实现见[整数二分模板](../../templates/02-sequence-techniques/binary-search/README.md)，两种整数框架及实数精度见[二分答案正文](../../notes/02-sequence-techniques/06-binary-search-on-answer.md)。

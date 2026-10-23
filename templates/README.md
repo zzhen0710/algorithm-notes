@@ -1,34 +1,29 @@
-# Templates
+# Templates：按章节查找模板
 
-存放便于现场复现、具有复用价值的竞赛算法实现，按实际学习与验证结果逐项整理。
+存放便于现场复现、具有复用价值的竞赛实现。**章节编号和目录名与 Notes、Patterns 对齐，先进入章节，再查接口与代码。**
 
-## 索引
+## 章节索引
 
-- [C++ 竞赛基础模板](cpp-contest-template/README.md)
-- [离散化：建表与编号查找](discretization/README.md)
-- [整数二分：可行边界与独立判定](binary-search/README.md)
-- [归并计数：严格逆序对](merge-counting/README.md)
-- [区间选择：最多互不冲突区间](interval-scheduling/README.md)
-- [全图二分图染色与判定](bipartite-coloring/README.md)
-- [并查集：路径压缩与按大小合并](dsu/README.md)
-- [树状数组：增量与前缀和](fenwick/README.md)
-- [Kruskal：最小生成树与目标块数](kruskal/README.md)
-- [gcd/lcm：递归与数组聚合](gcd-lcm/README.md)
-- [快速幂：整数模幂](binary-exponentiation/README.md)
-- [素数：判定、两种筛法与质因数分解](primes/README.md)
-- [精确组合数：单次乘除递推](combinations/README.md)
-- [KMP：前缀函数与全部匹配位置](kmp/README.md)
-- [字符串双哈希：子串指纹与去重键](string-hash/README.md)
+| 对应章节 | 模板入口 | 已收录内容 |
+| --- | --- | --- |
+| [01 基础问题求解](../notes/01-basic-problem-solving/README.md) | [本章索引](01-basic-problem-solving/README.md) | C++ 程序框架与常用类型 |
+| [02 序列与区间技巧](../notes/02-sequence-techniques/README.md) | [本章索引](02-sequence-techniques/README.md) | 离散化、二分、归并计数、区间合并 |
+| [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 互不冲突区间选择 |
+| [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | LIS 长度与逐位置长度 |
+| [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、最短路、拓扑、匹配 |
+| [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、快速幂、素数与分解、组合数 |
+| [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | KMP、字符串双哈希 |
+| [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表 |
 
-- [Dijkstra：非负权最短路与路径还原](dijkstra/README.md)
-- [拓扑排序：Kahn 顺序与有向环判定](topological-sort/README.md)
-- [二分图最大匹配：DFS 增广](bipartite-matching/README.md)
-- [LIS：二分长度与逐位置长度](lis/README.md)
-- [单调栈：右侧第一个严格更大位置](monotonic-stack/README.md)
-- [单调队列：定长窗口最大值位置](monotonic-queue/README.md)
-- [区间合并：合并覆盖与并集长度](interval-merging/README.md)
+第三章搜索暂未单独收录模板，后续出现稳定的复用实现时再建立目录，不预建空分类。
 
-- [ST 表：静态闭区间最大值](sparse-table/README.md)
+## 归档与跨章复用
+
+- 使用 `templates/章节/模板组/README.md` 与实现文件的结构；每章列完整清单，总索引只列章节。
+- Notes 的章节 README 指向对应模板索引，避免两处重复维护完整清单；正文复盘仍可直达具体模板。
+- 每组只选一个主要归属，跨章链接引用。例如 DSU 归第九章，Kruskal 归第六章并依赖那一份 DSU，不复制第二份。
+- 基础框架归第一章；区间合并和归并计数按知识来源归第二章；LIS 归第五章。是否建立模板仍取决于复用价值，不为补齐章节强造代码。
+- 新增、移动或改名时同步章节索引、笔记及范式入口，并核对 README 相对链接、头文件 include 和当前使用说明。
 
 ## 收录范围
 

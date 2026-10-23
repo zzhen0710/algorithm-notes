@@ -4,7 +4,7 @@
 
 目标是计算 $A^B\bmod p$，其中 $B\ge0$、$p>0$。不是算出完整的大整数再取模，也不是近似的浮点幂。
 
-使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)；最低位与右移可参考[位运算](../01-basic-problem-solving/05-bit-operations.md)。
+使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)；最低位与右移可参考[位运算](../01-basic-problem-solving/05-bit-operations.md)。
 
 ## 1. 从逐次相乘，到复用已经算出的幂
 
@@ -98,7 +98,7 @@ $$
 
 ## 4. 注释实现
 
-可直接复用的头文件与接口约定见[快速幂模板](../../templates/binary-exponentiation/README.md)。下面保留同一主写法，配合状态推导阅读。
+可直接复用的头文件与接口约定见[快速幂模板](../../templates/07-math/binary-exponentiation/README.md)。下面保留同一主写法，配合状态推导阅读。
 
 ```cpp
 using ll = long long;

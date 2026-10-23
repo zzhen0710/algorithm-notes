@@ -81,7 +81,7 @@ $$
 
 ## 我的实现
 
-保留原实现逻辑，仅调整排版并补充过程注释。通用头文件、类型别名与多测入口沿用[竞赛基础模板](../templates/cpp-contest-template/README.md)，其中 `ll` 为 `long long`。
+保留原实现逻辑，仅调整排版并补充过程注释。通用头文件、类型别名与多测入口沿用[竞赛基础模板](../templates/01-basic-problem-solving/cpp-contest-template/README.md)，其中 `ll` 为 `long long`。
 
 ```cpp
 const int maxx = 2e5 + 5;

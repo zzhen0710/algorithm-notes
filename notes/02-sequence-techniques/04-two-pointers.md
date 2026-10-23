@@ -174,7 +174,7 @@ cout << isSubsequence(pattern, data) << '\n'; // 输出 1，可跳过中间的 1
 
 两题已完成个人 AC 与复盘，并通过本地独立核验。AC 依据个人评测记录，未独立查询平台提交；推荐实现目前只有本地核验依据。
 
-原 AC 的 `solve()` 仅调整排版与注释，逻辑保持不变；完整程序的 `main` 使用[竞赛基础框架](../../templates/cpp-contest-template/README.md)补齐。
+原 AC 的 `solve()` 仅调整排版与注释，逻辑保持不变；完整程序的 `main` 使用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)补齐。
 
 | 题目 | 核心收获 | 状态 |
 | --- | --- | --- |

@@ -100,7 +100,7 @@
 
 ## 原实现
 
-保留原逻辑，仅调整排版和注释。通用框架沿用[竞赛基础模板](../templates/cpp-contest-template/README.md)，继续读取多测，不重复展示 `main()`。
+保留原逻辑，仅调整排版和注释。通用框架沿用[竞赛基础模板](../templates/01-basic-problem-solving/cpp-contest-template/README.md)，继续读取多测，不重复展示 `main()`。
 
 ### 状态与执行流程
 

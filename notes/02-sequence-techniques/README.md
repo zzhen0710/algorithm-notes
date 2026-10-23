@@ -38,5 +38,4 @@
 
 ## 竞赛模板
 
-- [离散化](../../templates/discretization/README.md)、[整数二分](../../templates/binary-search/README.md)、[归并计数](../../templates/merge-counting/README.md)。
-- [区间合并与并集长度](../../templates/interval-merging/README.md)：对应 P1496 的另一种实现，不与区间选择混用。
+[查看本章模板索引](../../templates/02-sequence-techniques/README.md)，接口与代码在模板组内维护；具体知识正文保留相关模板直达。

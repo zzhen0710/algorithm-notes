@@ -243,7 +243,7 @@ cout << longestAtMostKinds(ids, 3, 2) << '\n'; // 输出 3，对应 {1,2,1}
 
 ## 8. 典题与复盘
 
-两份原实现已完成本地核验与复盘，平台评测结果未记录。通用框架沿用[竞赛基础模板](../../templates/cpp-contest-template/README.md)，以下只列 `solve()`，不重复头文件、类型别名和 `main`。
+两份原实现已完成本地核验与复盘，平台评测结果未记录。通用框架沿用[竞赛基础模板](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)，以下只列 `solve()`，不重复头文件、类型别名和 `main`。
 
 | 题目 | 核心收获 | 状态 |
 | --- | --- | --- |

@@ -2,7 +2,7 @@
 
 上一节用[整除与 gcd](01-gcd-lcm.md)描述共同约数。本节进一步考虑：**当只关心除以某个正整数的余数时，哪些信息可以丢掉，哪些运算仍能继续？**
 
-此前 [CF 2276C 的前缀同余](../../problems/CF2276C_Subarrays.md#1-整除条件只需匹配相同余数)已用过这一性质；完整比赛复盘留在原处，这里整理通用规则。使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+此前 [CF 2276C 的前缀同余](../../problems/CF2276C_Subarrays.md#1-整除条件只需匹配相同余数)已用过这一性质；完整比赛复盘留在原处，这里整理通用规则。使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ## 1. 同余：按余数给整数分组
 

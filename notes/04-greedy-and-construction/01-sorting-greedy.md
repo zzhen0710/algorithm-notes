@@ -10,7 +10,7 @@
 
 > 贪心不一定需要排序。排序只是让某种优先级变得容易维护；真正需要证明的是按这个优先级选择不会吃亏。
 
-前置：[排序与比较器](../01-basic-problem-solving/04-stl/algorithms/15-lambda-comparators.md)。本节采用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+前置：[排序与比较器](../01-basic-problem-solving/04-stl/algorithms/15-lambda-comparators.md)。本节采用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ## 2. 导引模型：预算内最多选多少件
 

@@ -178,7 +178,7 @@ vector<int> window_max_positions(const vector<ll>& a, int k) {
 }
 ```
 
-依赖 vector 和 deque，沿用[基础框架](../../templates/cpp-contest-template/README.md)。所有状态局部初始化，多测无需清理全局队列。
+依赖 vector 和 deque，沿用[基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。所有状态局部初始化，多测无需清理全局队列。
 
 ### 对照调用
 
@@ -582,4 +582,4 @@ $$
 
 **定义对照：**[Minimum Queue](https://cp-algorithms.com/data_structures/stack_queue_modification.html#queue-modification-method-2) 也通过记录下标识别过期候选；本节直接查询原数组，以窗口左边界判断过期，并明确保留较新同值位置的约定。
 
-竞赛短写法见[单调队列模板](../../templates/monotonic-queue/README.md)：封装定长窗口最大值下标，最小值说明比较差异；变长窗口条件继续按题意维护。
+竞赛短写法见[单调队列模板](../../templates/09-data-structures/monotonic-queue/README.md)：封装定长窗口最大值下标，最小值说明比较差异；变长窗口条件继续按题意维护。

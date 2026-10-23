@@ -241,7 +241,7 @@ DP 不能只看当前位置是否相同。只有当后续能做的选择和收�
 
 #### 原实现：读入时直接更新
 
-以下只整理排版与注释，保留原逻辑；通用框架沿用[竞赛基础模板](../../templates/cpp-contest-template/README.md)。
+以下只整理排版与注释，保留原逻辑；通用框架沿用[竞赛基础模板](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ```cpp
 void solve() {

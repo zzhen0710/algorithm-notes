@@ -43,4 +43,4 @@
 
 ## 竞赛模板
 
-- [LIS：二分长度与逐位置长度](../../templates/lis/README.md)。这是目标固定的算法接口；其他 DP 继续根据状态和转移选写法，不建立万能模板。
+[查看本章模板索引](../../templates/05-dynamic-programming/README.md)，接口与代码在模板组内维护；具体知识正文保留相关模板直达。

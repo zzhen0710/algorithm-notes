@@ -30,7 +30,7 @@
 
 ## 3. 标准流程：收集 → 排序去重 → 二分编号
 
-可直接复用的建表与查编号函数见[离散化模板](../../templates/discretization/README.md#接口与约定)，以下按步骤解释其主要逻辑。
+可直接复用的建表与查编号函数见[离散化模板](../../templates/02-sequence-techniques/discretization/README.md#接口与约定)，以下按步骤解释其主要逻辑。
 
 ### 3.1 收集需要编号的值
 
@@ -788,7 +788,7 @@ int main() {
 
 > 另一条路线是：只需并集 → 不必保存覆盖重数 → 排序保证新区间从左到右到来 → 合并相交或相接区间，分片结算。
 
-通用的识别方法提炼为[稀疏边界划段：按状态不变的区间计算](../../patterns/02-sequence-techniques/sparse-boundary-segments.md)。建表与编号查询复用[离散化模板](../../templates/discretization/README.md#接口与约定)；完整个人过程和双解仍保留在本题下。
+通用的识别方法提炼为[稀疏边界划段：按状态不变的区间计算](../../patterns/02-sequence-techniques/sparse-boundary-segments.md)。建表与编号查询复用[离散化模板](../../templates/02-sequence-techniques/discretization/README.md#接口与约定)；完整个人过程和双解仍保留在本题下。
 
 ## 8. 自查
 
@@ -799,4 +799,4 @@ int main() {
 - 能说明重复值为什么必须共用编号，而贡献仍应保留。
 - 能解释为什么区间长度不能直接用编号差计算。
 
-排序合并的竞赛短写法见[区间合并模板](../../templates/interval-merging/README.md)：返回合并后的半开区间，并复用它计算并集长度；与区间选择模板分开。
+排序合并的竞赛短写法见[区间合并模板](../../templates/02-sequence-techniques/interval-merging/README.md)：返回合并后的半开区间，并复用它计算并集长度；与区间选择模板分开。

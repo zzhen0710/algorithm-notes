@@ -282,7 +282,7 @@ int min_coins(const vector<int>& coins, int target) {
 
 总时间 $t\le10^7$，种类数 $m\le10^4$，且 $mt\le10^7$；每次采摘时间、价值在 $[1,10^4]$。每种草药可无限采摘，总用时不超过上限，求最大价值。
 
-以下只调整排版与注释，保留原逻辑；别名和框架沿用[竞赛基础模板](../../templates/cpp-contest-template/README.md)。
+以下只调整排版与注释，保留原逻辑；别名和框架沿用[竞赛基础模板](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ```cpp
 void solve() {

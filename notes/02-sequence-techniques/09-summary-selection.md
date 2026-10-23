@@ -151,7 +151,7 @@ void solve() {
 
 > **现场手写重在少状态、可推导、易检查；片段复用重在接口稳定、前提明确、已验证。两者都不能省去题意到模型的证明。**
 
-当前可复用入口见[离散化](../../templates/discretization/README.md)、[整数二分](../../templates/binary-search/README.md)与[归并计数](../../templates/merge-counting/README.md)。CF 专用本地库的构型仍待讨论，本页不表示该专用库已经落地。
+当前可复用入口见[离散化](../../templates/02-sequence-techniques/discretization/README.md)、[整数二分](../../templates/02-sequence-techniques/binary-search/README.md)与[归并计数](../../templates/02-sequence-techniques/merge-counting/README.md)。CF 专用本地库的构型仍待讨论，本页不表示该专用库已经落地。
 
 ## 4. 补充对照：CF 600B
 

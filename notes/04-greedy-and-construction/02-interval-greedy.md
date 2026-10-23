@@ -6,7 +6,7 @@
 
 本节只讨论**每个区间贡献相同，目标是数量最多**的模型。若目标改成总收益最大、覆盖长度最大或覆盖全部时间，不能直接沿用结论。
 
-前置：[排序贪心与交换论证](01-sorting-greedy.md#3-为什么先选便宜的不会吃亏)。采用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+前置：[排序贪心与交换论证](01-sorting-greedy.md#3-为什么先选便宜的不会吃亏)。采用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 > **优先结束早，是为了让后面尽早重新可用；不是因为当前活动短，也不是因为它开始早。**
 

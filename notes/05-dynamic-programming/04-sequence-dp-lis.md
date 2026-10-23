@@ -6,7 +6,7 @@
 
 ## 平方写法：先看完整代码
 
-下面只返回长度，不保存具体选取方案。沿用 [C++ 基础框架](../../templates/cpp-contest-template/README.md)；单独使用需包含 `<vector>` 和 `<algorithm>`。
+下面只返回长度，不保存具体选取方案。沿用 [C++ 基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)；单独使用需包含 `<vector>` 和 `<algorithm>`。
 
 ```cpp
 // a 使用 0-based；返回严格上升子序列的最大长度
@@ -678,4 +678,4 @@ $$
 
 下一节：[双序列 DP：同时处理两个前缀](05-two-sequence-dp-lcs.md)。
 
-竞赛短写法见 [LIS 模板](../../templates/lis/README.md)：同一算法提供整体长度与逐位置长度，默认严格上升，可切换非下降；模板元素统一使用 ll。
+竞赛短写法见 [LIS 模板](../../templates/05-dynamic-programming/lis/README.md)：同一算法提供整体长度与逐位置长度，默认严格上升，可切换非下降；模板元素统一使用 ll。

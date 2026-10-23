@@ -18,7 +18,7 @@
 
 - [x] [6.1 图的表示与基本模型](01-graph-basics.md)：补充递归/显式 DFS 与 BFS 行为对照；P5318 原实现起点待修正，修正版已本地核验；CF 115A 原版与统一入队版复盘完成（本地核验，平台结果未记录）。
 - [x] [6.2 二分图染色与判定](02-bipartite-coloring.md)：CF 687A、P1330 复盘完成（个人反馈 AC＋本地核验），保留孤立点处理与全局取小的踩坑；后续衔接 [6.6 最大匹配](06-bipartite-matching.md)。
-- [x] [6.3 最小生成树与 Kruskal](03-kruskal-mst.md)：正文与 P3366、P1195 原实现复盘已整理，平台结果未单独记录；本地核验通过，补 `n-k` 选边数及 [Kruskal 模板](../../templates/kruskal/README.md)。
+- [x] [6.3 最小生成树与 Kruskal](03-kruskal-mst.md)：正文与 P3366、P1195 原实现复盘已整理，平台结果未单独记录；本地核验通过，补 `n-k` 选边数及 [Kruskal 模板](../../templates/06-graph-and-tree/kruskal/README.md)。
 - [x] [6.4 Dijkstra：非负权图的单源最短路](04-dijkstra.md)：知识正文及 P4779、CF 20C 原实现复盘完成（本地核验通过，平台结果未单独记录）；补有向/无向建图、前驱回溯、不可达和 ll 距离边界。
 - [x] [6.5 拓扑排序：依赖关系与有向环](05-topological-sort.md)：正文及 P1137、CF 510C 两题复盘完成；P1137 为个人反馈 AC＋本地核验，CF 510C 原实现与类型整理版本地通过、平台结果未记录；关联 [DAG DP 范式](../../patterns/06-graph-and-tree/dag-dp.md)。
 - [x] [6.6 二分图最大匹配：沿增广路重新安排配对](06-bipartite-matching.md)：知识正文及 P3386、P1129 原实现复盘完成（本地核验通过，平台结果未单独提供）；补任意重排到完美匹配的识别、双向证明与列重排图示。
@@ -38,7 +38,4 @@
 
 ## 竞赛模板
 
-- [二分图染色](../../templates/bipartite-coloring/README.md)、[Kruskal](../../templates/kruskal/README.md)。
-- [Dijkstra 与路径还原](../../templates/dijkstra/README.md)。
-- [拓扑排序与有向环判定](../../templates/topological-sort/README.md)。
-- [二分图最大匹配](../../templates/bipartite-matching/README.md)。
+[查看本章模板索引](../../templates/06-graph-and-tree/README.md)，接口与代码在模板组内维护；具体知识正文保留相关模板直达。

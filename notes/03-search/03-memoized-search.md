@@ -97,7 +97,7 @@ $$
 
 教学模型的前提是：**1-based 图、端点合法、没有有向环，且递归深度在调用栈承受范围内。** 代码不负责检测有向环。
 
-沿用 [C++ 基础框架](../../templates/cpp-contest-template/README.md)。单独使用时需要 `<vector>`、`<functional>` 和 `<algorithm>`。
+沿用 [C++ 基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。单独使用时需要 `<vector>`、`<functional>` 和 `<algorithm>`。
 
 ```cpp
 // 返回 memo[u]：从 u 出发最多经过多少个点；下标 0 不使用

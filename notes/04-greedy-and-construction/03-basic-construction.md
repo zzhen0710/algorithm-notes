@@ -8,7 +8,7 @@
 
 > **先从约束推出必要条件，再给出满足条件时一定成功的构造。** 两边都证明后，才能把条件作为完整的有解判定。
 
-前置：[贪心中的交换论证](01-sorting-greedy.md#3-为什么先选便宜的不会吃亏)、[DFS 与回溯](../03-search/01-dfs-backtracking.md)。使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+前置：[贪心中的交换论证](01-sorting-greedy.md#3-为什么先选便宜的不会吃亏)、[DFS 与回溯](../03-search/01-dfs-backtracking.md)。使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 ## 2. 导引模型：相邻位置不能同时放 1
 

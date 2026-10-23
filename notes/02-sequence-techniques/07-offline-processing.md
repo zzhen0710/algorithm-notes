@@ -6,7 +6,7 @@
 
 > **先收集询问，再按有利于计算的顺序处理；用原编号恢复输出顺序。**
 
-离线是一种组织方式，不是一种固定的数据结构。本节只整理**排序询问＋单向扫描**的基础用法，使用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)中的 `using ll = long long;`，不重复通用框架。
+离线是一种组织方式，不是一种固定的数据结构。本节只整理**排序询问＋单向扫描**的基础用法，使用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)中的 `using ll = long long;`，不重复通用框架。
 
 ## 2. 在线与离线
 

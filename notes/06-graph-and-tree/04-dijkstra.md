@@ -150,7 +150,7 @@ priority_queue<State, vector<State>, greater<State>> pq;
 
 ## 6. C++11 教学实现
 
-沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)及 `using ll = long long;`。使用普通邻接表，按过程展开，不依赖外部图框架。
+沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)及 `using ll = long long;`。使用普通邻接表，按过程展开，不依赖外部图框架。
 
 **前提：** 起点和所有端点合法，`g[0]` 留空，边权非负。定义 `INF=LLONG_MAX/4`，要求每条边权及所有有限最短距离都小于 `INF`；按题目规模先核对数值上限。
 
@@ -523,4 +523,4 @@ $$
 
 下一节：[拓扑排序与依赖关系](05-topological-sort.md)。后续负权算法等专题仍保留，全章选型在图与树主题收尾时完善。
 
-竞赛短写法与路径还原见 [Dijkstra 模板](../../templates/dijkstra/README.md)；模板使用 WeightedEdge 区分最小生成树的边类型，前提和下标约定保持一致。
+竞赛短写法与路径还原见 [Dijkstra 模板](../../templates/06-graph-and-tree/dijkstra/README.md)；模板使用 WeightedEdge 区分最小生成树的边类型，前提和下标约定保持一致。

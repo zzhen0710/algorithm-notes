@@ -10,7 +10,7 @@
 
 这里的“二分”是分成两个点集，与[二分答案](../02-sequence-techniques/06-binary-search-on-answer.md#1-解决什么问题)没有算法上的对应关系。
 
-前置：[邻接表与图遍历](01-graph-basics.md#3-邻接表按起点存邻居)、[BFS](../03-search/02-bfs-shortest-path.md#3-队列与距离数组各做什么)。本节采用 C++11，沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。
+前置：[邻接表与图遍历](01-graph-basics.md#3-邻接表按起点存邻居)、[BFS](../03-search/02-bfs-shortest-path.md#3-队列与距离数组各做什么)。本节采用 C++11，沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。
 
 **点编号采用 1-based，颜色使用 `0、1`；颜色 `0` 不表示“未访问”。** 未染色另用 `-1` 表示。
 
@@ -88,7 +88,7 @@ graph LR
 
 ## 5. 通用实现
 
-可直接复用的接口与输入输出契约见[全图二染色模板](../../templates/bipartite-coloring/README.md#接口与约定)；下方保留理解颜色传播所需的教学实现。
+可直接复用的接口与输入输出契约见[全图二染色模板](../../templates/06-graph-and-tree/bipartite-coloring/README.md#接口与约定)；下方保留理解颜色传播所需的教学实现。
 
 输入前提：`g` 至少包含留空的下标 `0`，点数及外层长度可用 `int` 表示；
 

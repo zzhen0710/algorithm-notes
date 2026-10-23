@@ -8,7 +8,7 @@
 
 > **建图先回答：点代表什么，边代表什么，关系是否有方向。** 图不要求题面出现地图，只要对象之间存在可利用的联系，就可能适合建图。
 
-本节使用 C++11，沿用 [竞赛基础框架](../../templates/cpp-contest-template/README.md)。所有图代码采用 **1-based 点编号：`1..n`**，下标 `0` 留空。
+本节使用 C++11，沿用 [竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。所有图代码采用 **1-based 点编号：`1..n`**，下标 `0` 留空。
 
 ## 2. 需要区分的概念
 
@@ -428,7 +428,7 @@ graph TD
 
 先按引用方向建图，将每个邻居列表升序排列；DFS 用栈和游标保留分支进度，BFS 用距离数组判重。两种遍历都在首次发现时输出，搜索期间不撤销访问状态。
 
-下面保留原实现逻辑，只整理排版与注释。**原版有起点选择错误，不能作为正确提交版本。** 通用框架沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)，只列辅助函数与 `solve()`。
+下面保留原实现逻辑，只整理排版与注释。**原版有起点选择错误，不能作为正确提交版本。** 通用框架沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)，只列辅助函数与 `solve()`。
 
 ```cpp
 vector<vector<int>> build_g(int n, int m) {

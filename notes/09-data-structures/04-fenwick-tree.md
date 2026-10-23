@@ -511,7 +511,7 @@ struct Fenwick {
 };
 ```
 
-只依赖 vector 与 ll；沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。explicit 的用途与[并查集构造函数](01-dsu.md#5-c11-主写法)相同，避免把一个整数隐式转换成整个结构。
+只依赖 vector 与 ll；沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。explicit 的用途与[并查集构造函数](01-dsu.md#5-c11-主写法)相同，避免把一个整数隐式转换成整个结构。
 
 这里的 p 和 r 都是按值传入，循环使用局部 i；查询不修改结构，add 只更新内部 bit，**不会同步修改外部 a**。
 
@@ -849,7 +849,7 @@ $$
 
 **先确定维护对象，再解释接口返回值。** 结构本身没变，变量的业务含义可以由数学关系重新解释；不能因为名字叫 sum 就认定它一定返回原数组区间和。
 
-竞赛短写法见 [BIT 模板](../../templates/fenwick/README.md)。只保留一份基本结构，原数组与差分初始化的区别在调用处表达；区间加与区间和同时出现时，还需要进一步推导，不能把这两题的调用直接拼接。
+竞赛短写法见 [BIT 模板](../../templates/09-data-structures/fenwick/README.md)。只保留一份基本结构，原数组与差分初始化的区别在调用处表达；区间加与区间和同时出现时，还需要进一步推导，不能把这两题的调用直接拼接。
 
 
 ## 10. 自查与后续

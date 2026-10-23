@@ -155,7 +155,7 @@ $$
 
 ## 6. C++11 实现：Kahn 算法
 
-沿用[竞赛基础框架](../../templates/cpp-contest-template/README.md)。下方只展示通用函数。
+沿用[竞赛基础框架](../../templates/01-basic-problem-solving/cpp-contest-template/README.md)。下方只展示通用函数。
 
 **前提：** `g` 至少有留给 0 的一项，端点均在 `1..n`；点数及每个点的入度可以用 `int` 表示。允许重边、自环，二者的处理见后文。
 
@@ -683,4 +683,4 @@ size_t j = 0; // 与字符串长度类型一致；后面的比较和索引逻辑
 
 两题已完成实际实现复盘，接下来按第一轮顺序进入[字符串基础与 KMP](../08-strings/01-kmp.md)；既有待修正题继续保留，具体推进仍以本地学习计划为准。DFS 逆后序、DAG 上的进一步应用及全章选型，留到有需要时补充，不在这里堆多套写法。
 
-竞赛短写法见[拓扑排序模板](../../templates/topological-sort/README.md)：只返回顺序与是否成功，具体 DAG DP 更新继续留在题目中。
+竞赛短写法见[拓扑排序模板](../../templates/06-graph-and-tree/topological-sort/README.md)：只返回顺序与是否成功，具体 DAG DP 更新继续留在题目中。
