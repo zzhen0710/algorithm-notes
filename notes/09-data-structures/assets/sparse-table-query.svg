@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="450" viewBox="0 0 1120 450" role="img" aria-labelledby="title desc">
+<title id="title">ST 查询：左右两块覆盖目标区间</title><desc id="desc">查询区间2到7，长度六。取长度四的2到5和4到7。两块重叠4到5，最大值都是九；重复比较九不会改变答案。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<rect width="1120" height="450" rx="16" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="25" y="34" font-size="22" font-weight="700" fill="#1e293b" text-anchor="start">查询 [2,7]：长度 6，选择左右各长 4 的两块</text>
+<text x="25" y="125" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">原数组</text>
+<rect x="120" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="162.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">1</text>
+<text x="162.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">7</text>
+<rect x="225" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="267.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">2</text>
+<text x="267.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">2</text>
+<rect x="330" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="372.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">3</text>
+<text x="372.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">6</text>
+<rect x="435" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="477.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">4</text>
+<text x="477.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">3</text>
+<rect x="540" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="582.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">5</text>
+<text x="582.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">9</text>
+<rect x="645" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="687.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">6</text>
+<text x="687.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">4</text>
+<rect x="750" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="792.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">7</text>
+<text x="792.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">8</text>
+<rect x="855" y="94" width="85" height="49" rx="7" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="897.5" y="84" font-size="15" font-weight="400" fill="#64748b" text-anchor="middle">8</text>
+<text x="897.5" y="126" font-size="23" font-weight="700" fill="#1e293b" text-anchor="middle">1</text>
+<text x="982" y="125" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">上方为下标</text>
+<rect x="225" y="180" width="400" height="53" rx="7" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="425.0" y="207" font-size="18" font-weight="700" fill="#2563eb" text-anchor="middle">左块 [2,5]：最大值 9</text>
+<rect x="435" y="257" width="400" height="53" rx="7" fill="#ffedd5" stroke="#c56812" stroke-width="2"/>
+<text x="635.0" y="284" font-size="18" font-weight="700" fill="#c56812" text-anchor="middle">右块 [4,7]：最大值 9</text>
+<text x="865" y="214" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">贴住左端 l = 2</text>
+<text x="865" y="290" font-size="17" font-weight="700" fill="#c56812" text-anchor="start">贴住右端 r = 7</text>
+<rect x="430" y="84" width="200" height="236" rx="10" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 6"/>
+<text x="25" y="357" font-size="19" font-weight="700" fill="#1e293b" text-anchor="start">虚线框：重叠的 [4,5]，即 3、9。重复取最大值无害。</text>
+<text x="25" y="400" font-size="19" font-weight="700" fill="#047857" text-anchor="start">两块并集恰好是 [2,7]；返回 max(9,9) = 9。</text>
+</g></svg>

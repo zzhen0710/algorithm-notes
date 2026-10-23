@@ -28,6 +28,8 @@
 - [单调队列：定长窗口最大值位置](monotonic-queue/README.md)
 - [区间合并：合并覆盖与并集长度](interval-merging/README.md)
 
+- [ST 表：静态闭区间最大值](sparse-table/README.md)
+
 ## 收录范围
 
 普通排序和基础容器优先使用 STL，不重复实现整套教材内容。KMP、并查集、最短路、最小生成树、拓扑排序等即使在 [ds-notes](https://github.com/zzhen0710/ds-notes) 已有实现，也可整理为本仓库的竞赛模板。

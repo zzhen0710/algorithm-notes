@@ -4,7 +4,7 @@
 
 ## 本章范式
 
-- [DP 三步走：找到状态、推导转移、写成代码](dp-modeling-workflow.md)：画状态、合并历史、完整转移与代码落实，含序列、双前缀及区间依赖对照。
+- [DP 三步走：找到状态、推导转移、写成代码](dp-modeling-workflow.md)：画状态、合并历史、完整转移与代码落实，含序列、双前缀、区间及 ST 倍增长度的依赖对照。
 - [背包建模：使用次数、状态边界与优化目标](resource-limited-selection.md)
 - [从最优性推出状态上界：超过太多，就删掉一步](optimality-state-bound.md)
 
