@@ -593,4 +593,6 @@ $$
 
 通用实现、三题原代码与正文例子已本地核验；平台依据见各题复盘，不以复盘完成代替已经熟练。
 
+后续按前置关系切换到[二分图最大匹配](../06-graph-and-tree/06-bipartite-matching.md)，结合 DFS 与二分图基础学习递归改配，不要求先学完整章 DP。
+
 [返回本章索引](README.md) · [本章范式](../../patterns/05-dynamic-programming/README.md)

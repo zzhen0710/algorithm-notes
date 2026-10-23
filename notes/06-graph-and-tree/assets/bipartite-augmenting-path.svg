@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="440" viewBox="0 0 1120 440" role="img" aria-labelledby="title desc">
+<title id="title">二分图增广：先替原占用者找位置，再腾出位置给新左点</title>
+<desc id="desc">L1可连接R1或R2，L2只能连接R1。初始L1配R1；沿L2、R1、L1、R2寻找增广路，最后L1配R2，L2配R1。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#c56812"/></marker></defs>
+<rect width="1120" height="440" rx="16" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="30" y="34" font-size="21" font-weight="700">增广路：旧配对换搭档，总数量增加 1</text>
+
+<rect x="20" y="56" width="340" height="354" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="390" y="56" width="340" height="354" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="760" y="56" width="340" height="354" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="38" y="88" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">① 初始：已经配上 1 对</text>
+<text x="778" y="88" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">③ 改配结束：共 2 对</text>
+<line x1="90" y1="145" x2="290" y2="145" stroke="#087f5b" stroke-width="5"/>
+<line x1="90" y1="145" x2="290" y2="275" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="7 6"/>
+<line x1="90" y1="275" x2="290" y2="145" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="7 6"/>
+<circle cx="90" cy="145" r="24" fill="#e0edff" stroke="#3b82f6" stroke-width="2"/>
+<text x="90" y="151" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">L1</text>
+<circle cx="90" cy="275" r="24" fill="#e0edff" stroke="#3b82f6" stroke-width="2"/>
+<text x="90" y="281" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">L2</text>
+<circle cx="290" cy="145" r="24" fill="#fef3c7" stroke="#d49b14" stroke-width="2"/>
+<text x="290" y="151" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">R1</text>
+<circle cx="290" cy="275" r="24" fill="#fef3c7" stroke="#d49b14" stroke-width="2"/>
+<text x="290" y="281" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">R2</text>
+<line x1="830" y1="145" x2="1030" y2="145" stroke="#94a3b8" stroke-width="2.5" stroke-dasharray="7 6"/>
+<line x1="830" y1="145" x2="1030" y2="275" stroke="#087f5b" stroke-width="5"/>
+<line x1="830" y1="275" x2="1030" y2="145" stroke="#087f5b" stroke-width="5"/>
+<circle cx="830" cy="145" r="24" fill="#e0edff" stroke="#3b82f6" stroke-width="2"/>
+<text x="830" y="151" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">L1</text>
+<circle cx="830" cy="275" r="24" fill="#e0edff" stroke="#3b82f6" stroke-width="2"/>
+<text x="830" y="281" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">L2</text>
+<circle cx="1030" cy="145" r="24" fill="#fef3c7" stroke="#d49b14" stroke-width="2"/>
+<text x="1030" y="151" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">R1</text>
+<circle cx="1030" cy="275" r="24" fill="#fef3c7" stroke="#d49b14" stroke-width="2"/>
+<text x="1030" y="281" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">R2</text>
+<text x="40" y="338" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">L2 唯一可选的 R1 被占用。</text>
+<text x="40" y="372" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">先别放弃：L1 还有 R2 可去。</text>
+<text x="778" y="338" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">先让 L1 改配 R2。</text>
+<text x="778" y="372" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">递归返回，再把 R1 配给 L2。</text>
+<text x="408" y="88" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">② 沿交替路线寻找空位</text>
+<line x1="443" y1="151" x2="443" y2="177" stroke="#c56812" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="415" y="111" width="56" height="38" rx="8" fill="#e0edff" stroke="#cbd5e1"/>
+<text x="443" y="136" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">L2</text>
+<text x="482" y="136" font-size="14" font-weight="400" fill="#1e293b" text-anchor="start">新左点，尚未配对</text>
+<line x1="443" y1="221" x2="443" y2="247" stroke="#c56812" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="415" y="181" width="56" height="38" rx="8" fill="#fef3c7" stroke="#cbd5e1"/>
+<text x="443" y="206" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">R1</text>
+<text x="482" y="206" font-size="14" font-weight="400" fill="#1e293b" text-anchor="start">想占用它，但它已有搭档</text>
+<line x1="443" y1="291" x2="443" y2="317" stroke="#c56812" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="415" y="251" width="56" height="38" rx="8" fill="#e0edff" stroke="#cbd5e1"/>
+<text x="443" y="276" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">L1</text>
+<text x="482" y="276" font-size="14" font-weight="400" fill="#1e293b" text-anchor="start">原搭档尝试改配</text>
+<rect x="415" y="321" width="56" height="38" rx="8" fill="#fef3c7" stroke="#cbd5e1"/>
+<text x="443" y="346" font-size="17" font-weight="700" fill="#1e293b" text-anchor="middle">R2</text>
+<text x="482" y="346" font-size="14" font-weight="400" fill="#1e293b" text-anchor="start">找到空位，开始返回更新</text>
+<text x="410" y="389" font-size="15" font-weight="400" fill="#a14d0c" text-anchor="start">未选边 → 已选边反向 → 未选边</text>
+</g></svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="410" viewBox="0 0 1120 410" role="img" aria-labelledby="title desc">
+<title id="title">原对角线不必为一，按匹配重排列即可</title>
+<desc id="desc">原矩阵的三行为010、001、100，匹配选择行一列二、行二列三、行三列一。把原列按二三一排序，矩阵变成单位阵，选中的三个一落在对角线。</desc>
+<rect width="1120" height="410" rx="16" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="26" y="35" font-size="22" font-weight="700" fill="#1e293b" text-anchor="start">P1129：匹配决定选哪一列，列重排决定放到哪里</text>
+<rect x="24" y="59" width="340" height="324" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="390" y="59" width="340" height="324" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<rect x="756" y="59" width="340" height="324" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="42" y="92" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">① 原矩阵：对角线全为 0</text>
+<text x="408" y="92" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">② 已选配对：行、列各用一次</text>
+<text x="774" y="92" font-size="18" font-weight="700" fill="#1e293b" text-anchor="start">③ 把原列按 2、3、1 重排</text>
+<text x="127" y="132" font-size="15" font-weight="700" fill="#c56812" text-anchor="middle">原列 1</text>
+<text x="194" y="132" font-size="15" font-weight="700" fill="#c56812" text-anchor="middle">原列 2</text>
+<text x="261" y="132" font-size="15" font-weight="700" fill="#c56812" text-anchor="middle">原列 3</text>
+<text x="84" y="182" font-size="16" font-weight="400" fill="#1e293b" text-anchor="end">行 1</text>
+<rect x="98" y="147" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="127" y="182" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="165" y="147" width="58" height="53" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="194" y="182" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle">1</text>
+<rect x="232" y="147" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="261" y="182" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<text x="84" y="244" font-size="16" font-weight="400" fill="#1e293b" text-anchor="end">行 2</text>
+<rect x="98" y="209" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="127" y="244" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="165" y="209" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="194" y="244" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="232" y="209" width="58" height="53" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="261" y="244" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle">1</text>
+<text x="84" y="306" font-size="16" font-weight="400" fill="#1e293b" text-anchor="end">行 3</text>
+<rect x="98" y="271" width="58" height="53" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="127" y="306" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle">1</text>
+<rect x="165" y="271" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="194" y="306" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="232" y="271" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="261" y="306" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<text x="859" y="132" font-size="15" font-weight="700" fill="#c56812" text-anchor="middle">原列 2</text>
+<text x="926" y="132" font-size="15" font-weight="700" fill="#c56812" text-anchor="middle">原列 3</text>
+<text x="993" y="132" font-size="15" font-weight="700" fill="#c56812" text-anchor="middle">原列 1</text>
+<text x="816" y="182" font-size="16" font-weight="400" fill="#1e293b" text-anchor="end">行 1</text>
+<rect x="830" y="147" width="58" height="53" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="859" y="182" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle">1</text>
+<rect x="897" y="147" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="926" y="182" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="964" y="147" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="993" y="182" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<text x="816" y="244" font-size="16" font-weight="400" fill="#1e293b" text-anchor="end">行 2</text>
+<rect x="830" y="209" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="859" y="244" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="897" y="209" width="58" height="53" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="926" y="244" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle">1</text>
+<rect x="964" y="209" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="993" y="244" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<text x="816" y="306" font-size="16" font-weight="400" fill="#1e293b" text-anchor="end">行 3</text>
+<rect x="830" y="271" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="859" y="306" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="897" y="271" width="58" height="53" rx="6" fill="#f8fafc" stroke="#cbd5e1"/>
+<text x="926" y="306" font-size="23" font-weight="400" fill="#64748b" text-anchor="middle">0</text>
+<rect x="964" y="271" width="58" height="53" rx="6" fill="#dbeafe" stroke="#2563eb"/>
+<text x="993" y="306" font-size="23" font-weight="700" fill="#1d4ed8" text-anchor="middle">1</text>
+<text x="416" y="173" font-size="21" font-weight="700" fill="#1d4ed8" text-anchor="start">行 1 — 原列 2</text>
+<text x="596" y="173" font-size="15" font-weight="400" fill="#1e293b" text-anchor="start">→ 新位置 (1,1)</text>
+<text x="416" y="235" font-size="21" font-weight="700" fill="#1d4ed8" text-anchor="start">行 2 — 原列 3</text>
+<text x="596" y="235" font-size="15" font-weight="400" fill="#1e293b" text-anchor="start">→ 新位置 (2,2)</text>
+<text x="416" y="297" font-size="21" font-weight="700" fill="#1d4ed8" text-anchor="start">行 3 — 原列 1</text>
+<text x="596" y="297" font-size="15" font-weight="400" fill="#1e293b" text-anchor="start">→ 新位置 (3,3)</text>
+<text x="42" y="353" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">蓝色格：匹配选中的 1。</text>
+<text x="408" y="353" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">原行不动，只调整列的位置。</text>
+<text x="774" y="353" font-size="16" font-weight="400" fill="#1e293b" text-anchor="start">每行选中的 1 都到达对角线。</text>
+</g></svg>
