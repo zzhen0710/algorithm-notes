@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="560" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+<title id="title">字符集合合并与叶子替换</title><desc id="desc">字符串aba拆成ab与a，左右不同字符数相加为3，但集合并集是a和b，只有2种。叶子a替换为b时必须先清空旧集合。</desc>
+<rect width="1120" height="560" rx="16" fill="#f8fafc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" fill="#64748b"/></marker></defs>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="24" y="37" font-size="24" font-weight="700">合并保存集合，替换先清空叶子</text>
+<rect x="55" y="74" width="270" height="88" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="190" y="103" text-anchor="middle" font-size="19">左段 [1,2]：ab</text><text x="190" y="139" text-anchor="middle" font-size="23" font-weight="700">集合 {a,b}，数量 2</text>
+<rect x="795" y="74" width="270" height="88" rx="10" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+<text x="930" y="103" text-anchor="middle" font-size="19">右段 [3,3]：a</text><text x="930" y="139" text-anchor="middle" font-size="23" font-weight="700">集合 {a}，数量 1</text>
+<line x1="325" y1="118" x2="424" y2="191" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="795" y1="118" x2="696" y2="191" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="367" y="194" width="386" height="90" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="560" y="224" text-anchor="middle" font-size="20">父段 [1,3]：aba</text><text x="560" y="260" text-anchor="middle" font-size="24" font-weight="700">OR 合并 {a,b} → count = 2</text>
+<text x="24" y="319" font-size="18" fill="#b91c1c">不能先 count 再相加：2 + 1 = 3，会重复计算两段共有的 a。</text>
+<line x1="24" y1="342" x2="1096" y2="342" stroke="#cbd5e1"/>
+<text x="24" y="377" font-size="21" font-weight="700">单点替换：a → b</text>
+<rect x="55" y="401" width="230" height="77" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="170" y="431" text-anchor="middle" font-size="18">原叶子</text><text x="170" y="462" text-anchor="middle" font-size="23" font-weight="700">{a}</text>
+<rect x="445" y="401" width="230" height="77" rx="10" fill="#f1f5f9" stroke="#64748b" stroke-width="2"/>
+<text x="560" y="431" text-anchor="middle" font-size="18">reset：清空所有位</text><text x="560" y="462" text-anchor="middle" font-size="23" font-weight="700">空集合</text>
+<rect x="835" y="401" width="230" height="77" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="950" y="431" text-anchor="middle" font-size="18">set：写入新字母</text><text x="950" y="462" text-anchor="middle" font-size="23" font-weight="700">{b}</text>
+<line x1="285" y1="441" x2="433" y2="441" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="675" y1="441" x2="823" y2="441" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="24" y="526" font-size="18" fill="#334155">叶子始终只表示当前字符；若省去 reset，就会错误保留 {a,b}。</text>
+</g></svg>
