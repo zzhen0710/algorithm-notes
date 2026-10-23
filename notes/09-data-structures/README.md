@@ -28,3 +28,9 @@
 并查集已衔接 [Kruskal 最小生成树](../06-graph-and-tree/03-kruskal-mst.md)。9.2 单调栈及两题复盘已整理，9.3 单调队列及两题原实现复盘已整理，9.4 树状数组正文与两题原实现复盘已整理，动态维护基础后续结合独立重写和旧题巩固，再按前置与练习缺口安排下一单元，不要求先学完数据结构整章。
 
 知识范围与典题复盘规范见 [Notes 总览](../README.md)。
+
+## 竞赛模板
+
+- [并查集](../../templates/dsu/README.md)、[树状数组](../../templates/fenwick/README.md)。
+- [单调栈：右侧第一个严格更大位置](../../templates/monotonic-stack/README.md)。
+- [单调队列：定长窗口最值位置](../../templates/monotonic-queue/README.md)。

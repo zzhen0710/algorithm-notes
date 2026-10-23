@@ -20,6 +20,14 @@
 - [KMP：前缀函数与全部匹配位置](kmp/README.md)
 - [字符串双哈希：子串指纹与去重键](string-hash/README.md)
 
+- [Dijkstra：非负权最短路与路径还原](dijkstra/README.md)
+- [拓扑排序：Kahn 顺序与有向环判定](topological-sort/README.md)
+- [二分图最大匹配：DFS 增广](bipartite-matching/README.md)
+- [LIS：二分长度与逐位置长度](lis/README.md)
+- [单调栈：右侧第一个严格更大位置](monotonic-stack/README.md)
+- [单调队列：定长窗口最大值位置](monotonic-queue/README.md)
+- [区间合并：合并覆盖与并集长度](interval-merging/README.md)
+
 ## 收录范围
 
 普通排序和基础容器优先使用 STL，不重复实现整套教材内容。KMP、并查集、最短路、最小生成树、拓扑排序等即使在 [ds-notes](https://github.com/zzhen0710/ds-notes) 已有实现，也可整理为本仓库的竞赛模板。

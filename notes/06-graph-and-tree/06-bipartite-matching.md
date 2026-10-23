@@ -619,3 +619,5 @@ $$
 4. P1129 为什么只要选出 n 对，就能通过交换得到全黑对角线？原行顺序需要改变吗？
 
 [返回本章索引](README.md) · [本章范式](../../patterns/06-graph-and-tree/README.md)
+
+竞赛短写法见[二分图最大匹配模板](../../templates/bipartite-matching/README.md)：保留逐轮清标记与右侧搭档，返回数量和方案；不改本篇原实现。

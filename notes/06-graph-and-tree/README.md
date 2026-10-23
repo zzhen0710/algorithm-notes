@@ -35,3 +35,10 @@
 ## 本章范式
 
 [查看本章范式索引](../../patterns/06-graph-and-tree/README.md)，跨章节方法通过索引互相引用，完整正文只维护一处。
+
+## 竞赛模板
+
+- [二分图染色](../../templates/bipartite-coloring/README.md)、[Kruskal](../../templates/kruskal/README.md)。
+- [Dijkstra 与路径还原](../../templates/dijkstra/README.md)。
+- [拓扑排序与有向环判定](../../templates/topological-sort/README.md)。
+- [二分图最大匹配](../../templates/bipartite-matching/README.md)。

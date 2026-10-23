@@ -35,3 +35,8 @@
 ## 本章范式
 
 [查看本章范式索引](../../patterns/02-sequence-techniques/README.md)，跨章节方法通过索引互相引用，完整正文只维护一处。
+
+## 竞赛模板
+
+- [离散化](../../templates/discretization/README.md)、[整数二分](../../templates/binary-search/README.md)、[归并计数](../../templates/merge-counting/README.md)。
+- [区间合并与并集长度](../../templates/interval-merging/README.md)：对应 P1496 的另一种实现，不与区间选择混用。

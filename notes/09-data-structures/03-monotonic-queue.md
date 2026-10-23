@@ -579,3 +579,5 @@ $$
 两题原实现与复盘已完成本地核验，平台结果未单独记录。下一节继续[树状数组](04-fenwick-tree.md)，认识带修改的前缀维护；本节正文整理、配题状态和个人掌握分别记录。
 
 **定义对照：**[Minimum Queue](https://cp-algorithms.com/data_structures/stack_queue_modification.html#queue-modification-method-2) 也通过记录下标识别过期候选；本节直接查询原数组，以窗口左边界判断过期，并明确保留较新同值位置的约定。
+
+竞赛短写法见[单调队列模板](../../templates/monotonic-queue/README.md)：封装定长窗口最大值下标，最小值说明比较差异；变长窗口条件继续按题意维护。
