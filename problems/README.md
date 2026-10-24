@@ -31,6 +31,8 @@
 - [CF 2276D — Caveman](CF2276D_Caveman.md)：粗粒度方案计数、星形结构、度数特征与额外自由度证明。
 - [CF 2261B — What's the Capital of France?](CF2261B_Whats_the_Capital_of_France.md)：操作不变量、共同高位前缀、相邻分组边界与上界可达构造。
 
+- [CF 2277C — Edge Addeleting](CF2277C_Edge_Addeleting.md)：从最终路径限制压缩多次操作，LCA 原解与固定终点受限 BFS 对照。
+
 ### 其他
 
 - 暂无
