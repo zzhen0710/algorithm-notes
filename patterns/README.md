@@ -14,7 +14,7 @@
 | [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 无环依赖、状态方向与路径统计 |
 | [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | 博弈阈值与策略证明 |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | 筛选候选、比较键与指纹去重 |
-| [09 竞赛数据结构](../notes/09-data-structures/README.md) | 跨章参考：[区间代价与二分长度](02-sequence-techniques/binary-search-on-answer.md#固定区间代价再二分可行长度) | 暂无独立篇章；查询工具与判定分层，倍增状态见本章索引 |
+| [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | 统一变换与操作复合；跨章引用局部维护、倍增状态与区间判定 |
 
 ## 归档与跨章引用
 

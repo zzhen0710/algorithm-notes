@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="510" viewBox="0 0 1120 510" role="img" aria-labelledby="title desc">
+<title id="title">翻转整段：新 1 的数量 = 长度 − 旧 1 的数量</title><desc id="desc">五位串01010有两个1，翻转后10101有三个1，再翻转回到两个1。标记0到1到0，保存翻转次数奇偶。</desc>
+<rect width="1120" height="510" rx="16" fill="#f8fafc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#64748b"/></marker></defs>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="24" y="38" font-size="24" font-weight="700">翻转整段：新 1 的数量 = 长度 − 旧 1 的数量</text>
+<text x="24" y="150" font-size="21" fill="#334155">原区间</text>
+<rect x="190" y="110" width="82" height="75" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="231.0" y="155" text-anchor="middle" font-size="26" font-weight="700">0</text>
+<rect x="296" y="110" width="82" height="75" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="337.0" y="155" text-anchor="middle" font-size="26" font-weight="700">1</text>
+<rect x="402" y="110" width="82" height="75" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="443.0" y="155" text-anchor="middle" font-size="26" font-weight="700">0</text>
+<rect x="508" y="110" width="82" height="75" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="549.0" y="155" text-anchor="middle" font-size="26" font-weight="700">1</text>
+<rect x="614" y="110" width="82" height="75" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="655.0" y="155" text-anchor="middle" font-size="26" font-weight="700">0</text>
+<text x="765" y="154" font-size="25" fill="#166534">1 的数量 = 2</text>
+<text x="24" y="292" font-size="21" fill="#334155">翻转一次</text>
+<rect x="190" y="252" width="82" height="75" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="231.0" y="297" text-anchor="middle" font-size="26" font-weight="700">1</text>
+<rect x="296" y="252" width="82" height="75" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="337.0" y="297" text-anchor="middle" font-size="26" font-weight="700">0</text>
+<rect x="402" y="252" width="82" height="75" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="443.0" y="297" text-anchor="middle" font-size="26" font-weight="700">1</text>
+<rect x="508" y="252" width="82" height="75" rx="10" fill="#f1f5f9" stroke="#94a3b8" stroke-width="2"/><text x="549.0" y="297" text-anchor="middle" font-size="26" font-weight="700">0</text>
+<rect x="614" y="252" width="82" height="75" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="655.0" y="297" text-anchor="middle" font-size="26" font-weight="700">1</text>
+<text x="765" y="296" font-size="25" fill="#166534">1 的数量 = 3</text>
+<line x1="455" y1="190" x2="455" y2="242" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="505" y="225" font-size="20" fill="#334155">每个 0 / 1 互换</text>
+<text x="24" y="387" font-size="24" fill="#334155">再翻一次：5 − (5 − 2) = 2，回到原状态。</text>
+<text x="24" y="435" font-size="22" fill="#1d4ed8">待下传标记：0 → 1 → 0；只需维护翻转次数的奇偶。</text>
+<text x="24" y="480" font-size="19" fill="#334155">区间边界仍由树保存；摘要不必记录每个 1 在哪里。</text>
+</g></svg>

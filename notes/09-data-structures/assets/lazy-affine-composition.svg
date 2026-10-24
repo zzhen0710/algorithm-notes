@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+<title id="title">新变换接在旧变换之后：乘法也会作用于旧加数</title><desc id="desc">上行先加3再乘2得到2x+6；下行先乘2再加3得到2x+3。旧变换ax+b后接cx+d，合成为ca乘x加cb+d。</desc>
+<rect width="1120" height="520" rx="16" fill="#f8fafc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#64748b"/></marker></defs>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="24" y="38" font-size="24" font-weight="700">新变换接在旧变换之后：乘法也会作用于旧加数</text>
+<text x="24" y="85" font-size="20" fill="#334155">先加 3，再乘 2</text>
+<rect x="35" y="110" width="180" height="75" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="125.0" y="155" text-anchor="middle" font-size="26" font-weight="700">x</text>
+<rect x="385" y="110" width="235" height="75" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="502.5" y="155" text-anchor="middle" font-size="26" font-weight="700">x + 3</text>
+<rect x="790" y="110" width="285" height="75" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/><text x="932.5" y="155" text-anchor="middle" font-size="26" font-weight="700">2x + 6</text>
+<line x1="215" y1="147" x2="385" y2="147" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="620" y1="147" x2="790" y2="147" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="265" y="130" font-size="20" fill="#334155">+3</text>
+<text x="682" y="130" font-size="20" fill="#334155">×2</text>
+<text x="24" y="240" font-size="20" fill="#334155">先乘 2，再加 3</text>
+<rect x="35" y="267" width="180" height="75" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="125.0" y="312" text-anchor="middle" font-size="26" font-weight="700">x</text>
+<rect x="385" y="267" width="235" height="75" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/><text x="502.5" y="312" text-anchor="middle" font-size="26" font-weight="700">2x</text>
+<rect x="790" y="267" width="285" height="75" rx="10" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><text x="932.5" y="312" text-anchor="middle" font-size="26" font-weight="700">2x + 3</text>
+<line x1="215" y1="304" x2="385" y2="304" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="620" y1="304" x2="790" y2="304" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="265" y="287" font-size="20" fill="#334155">×2</text>
+<text x="682" y="287" font-size="20" fill="#334155">+3</text>
+<text x="24" y="404" font-size="22" fill="#334155">旧标记 (a,b)  后接新操作 (c,d)：</text>
+<text x="24" y="451" font-size="27" fill="#166534">c(ax+b)+d = ca·x + (cb+d)</text>
+<text x="24" y="495" font-size="19" fill="#334155">待下传的是合成效果；不能把乘法与加法当作互不影响的两条历史。</text>
+</g></svg>

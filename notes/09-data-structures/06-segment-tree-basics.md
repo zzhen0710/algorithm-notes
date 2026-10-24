@@ -697,8 +697,8 @@ $$
 
 4. 不同字符数为什么不能直接相加？叶子替换时为什么需要 reset，而父节点不需要？
 
-两题原实现与对照已完成本地核验，平台结果未单独记录；后续学习**区间修改与懒标记**，它需要进一步说明“整段变化后，节点摘要怎样直接更新”，不是再多写一个递归循环。
+两题原实现与对照已完成本地核验，平台结果未单独记录；下一节接入 [9.7 区间修改与懒标记](07-lazy-segment-tree.md)，说明“整段变化后，节点摘要怎样直接更新、何时再交给孩子”，不是再多写一个递归循环。
 
 接口与合并条件可对照 [ACL 的 Segtree 文档](https://atcoder.github.io/ac-library/production/document_en/segtree.html)。ACL 接口为 0-based、半开区间；本篇独立教学实现采用 **1-based、闭区间与递归划分**，未移植其迭代代码，不混用端点约定。
 
-[返回本章索引](README.md) · [关联范式：固定依赖与局部重算](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#固定划分的区间只重算受影响的祖先)
+[配套线段树竞赛模板](../../templates/09-data-structures/segment-tree/README.md) · [返回本章索引](README.md) · [关联范式：固定依赖与局部重算](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#固定划分的区间只重算受影响的祖先)
