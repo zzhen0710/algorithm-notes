@@ -144,6 +144,21 @@ $$
 
 **命名保留 tin/tout/order，便于与通用模板和常见资料对照。** 阅读时分别理解为“子树左端、子树右端、位置查节点”；不另建三份同义数组。尤其不要因 tout 的名字带 out，就误以为本篇退出时还要再增加 timer。
 
+### parent 什么时候可以省，什么时候需要？
+
+**是否维护 parent，取决于建图方式和后续操作，不是 DFS 必须固定带着它。**
+
+| 场景 | 如何处理父节点信息 | 原因 |
+| --- | --- | --- |
+| **CF1006E、P10722：仅存父→子，只求 DFS 序与子树区间** | **不需要 parent** | 没有反向边，遍历不会走回父节点，后续也不查询父亲 |
+| 无向树：每条边双向存储 | 必须避免沿父边走回去；本节用 parent 判断 | 也可在递归参数或栈帧中保存父编号，不一定必须分配完整 parent 数组 |
+| 后续要查父亲、沿祖先链向上走或还原路径 | 需要能取得父节点信息 | 只有孩子列表，不能直接向上查找父亲 |
+| [倍增 LCA](08-lca-binary-lifting.md) | 需要直接父亲，作为 up[0] | 后续长跳由父亲跳转复合得到；可以把 parent 移交给 up[0]，不必再长期保存两份 |
+
+**这两题只沿孩子方向向下走，因此最终题解可以删去 parent 的分配、赋值和跳父判断。** 第二题原本已经是这个精简形式；第一题在复盘代码中同步删去。前文通用无向树实现仍保留 parent，供双向边遍历及后续 LCA 使用。
+
+“输入给出了父亲”与“程序必须存一份 parent 数组”不是一回事：是否存下来，仍要看后续是否需要向上使用。
+
 ### 两个方向，都能还原
 
 两套映射互相还原：
@@ -374,17 +389,16 @@ $$
 
 **收录原因：分清“对象是谁”和“它排在第几个”，用双向映射把结构查询变成位置查询。**
 
-#### 原实现
+#### 整理实现：删去本题无用的 parent
 
-保留实际逻辑与命名，仅调整排版和过程注释，通用主函数不重复。
+在原实现上仅删除 parent 数组、对应赋值和跳父判断，保留其余逻辑与命名；访问顺序和输出不变，通用主函数不重复。**本段仅用于父→子建图，不能直接拿来遍历双向边的无向树。**
 
 ```cpp
 struct DFSOrder {
-    vector<int> parent;
     vector<int> tin, tout, order;
 
     explicit DFSOrder(int n)
-        : parent(n + 1), tin(n + 1), tout(n + 1), order(n + 1) {}
+        : tin(n + 1), tout(n + 1), order(n + 1) {}
 };
 
 DFSOrder get_torder(const vector<vector<int>>& g, int root = 1) {
@@ -395,7 +409,6 @@ DFSOrder get_torder(const vector<vector<int>>& g, int root = 1) {
     stack<int> st;
     int timer = 0;
 
-    t.parent[root] = 0;
     t.tin[root] = ++timer;
     t.order[timer] = root;
     st.push(root);
@@ -410,9 +423,6 @@ DFSOrder get_torder(const vector<vector<int>>& g, int root = 1) {
         }
 
         int v = g[u][next[u]++];
-        if (v == t.parent[u]) continue;
-
-        t.parent[v] = u;
         t.tin[v] = ++timer;
         t.order[timer] = v;
         st.push(v);
@@ -512,7 +522,7 @@ $$
 #### 实现取舍
 
 - **孩子顺序：** `v=2..n` 递增读入，每次追加 v，单个父亲的孩子列表自然升序，不必再次 sort。
-- **父亲与深度：** 原实现保留 parent，没有 depth；只存父到子的边时，parent 的跳过判断不会触发，也可省去，但保留不影响正确性。
+- **父亲与深度：** 本题既不向上跳，也不查深度，只保留 tin、tout、order；原稿多存的 parent 已在整理版中删去。
 - **字段按后续用途裁剪：** 本题需要 tin、tout、order；第二题不需要由位置取节点，因此能省去 order。通用模板保留常用信息，不必每题全部照搬。
 
 预处理 `O(n)`，单次查询 `O(1)`，总时间 `O(n+m)`，空间 `O(n)`。原实现已直接完成位置查询，不为制造另一解而重复贴等价程序。
@@ -702,7 +712,7 @@ for (int i = 1; i <= n; ++i) {
 
 本题对“历史只保留奇偶效果”的复用，补充到[统一变换范式](../../patterns/09-data-structures/composable-transformations.md#翻转历史的奇偶性也能用异或差分维护)，不另造一份重复范式。
 
-两题原实现已本地核验并完成复盘；平台 AC 结果未单独记录。
+两题实际实现已本地核验并完成复盘；CF1006E 删除无用 parent 后的整理版也已核验，平台 AC 结果未单独记录。
 
 ## 10. 自查与衔接
 
@@ -711,7 +721,7 @@ for (int i = 1; i <= n; ++i) {
 3. 改变孩子顺序，会不会破坏子树连续性？会不会改变题目要求的访问次序？
 4. 第一题为什么要用 order 取回节点，而第二题按 u 输出时只需要 tin？异或差分为什么在右端之后再改一次？
 
-本节把**树的结构关系转成序列位置关系**。之后在此基础上学习倍增 LCA 与树形 DP；本章完整成本比较与场景推荐仍留到主题收尾。
+本节把**树的结构关系转成序列位置关系**。之后在此基础上学习[倍增 LCA](08-lca-binary-lifting.md)与树形 DP；本章完整成本比较与场景推荐仍留到主题收尾。
 
 概念可对照 [USACO Guide 的 Euler Tour Technique](https://usaco.guide/gold/tree-euler?lang=cpp)，它的实现采用 0-based、半开区间；本篇独立实现采用 **1-based、闭区间**，保留已有显式栈风格，不能直接混用端点公式。
 

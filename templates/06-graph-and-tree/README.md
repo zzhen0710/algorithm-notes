@@ -12,6 +12,8 @@
 
 - [DFS 序：固定根与子树区间](dfs-order/README.md)
 
+- [倍增 LCA：祖先跳跃与无权距离](lca/README.md)，复用本章 DFS 序遍历。
+
 ## 跨章依赖
 
 - [DSU：并查集](../09-data-structures/dsu/README.md)：Kruskal 复用这一实现；复制单文件参赛时按模板说明处理依赖。
