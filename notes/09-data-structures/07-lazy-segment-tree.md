@@ -796,4 +796,6 @@ $$
 
 合并、整段映射与标记复合的条件可对照 [ACL Lazy Segtree 文档](https://atcoder.github.io/ac-library/production/document_en/lazysegtree.html)。该库采用通用接口与 0-based 半开区间；本篇为独立 C++11 教学实现，使用 1-based 闭区间，未移植其代码。
 
+区间维护小链之后，接入 [9.8 Trie](08-trie.md)，将组织方式从按数组区间划分，换成按字符串前缀共享路径。
+
 [返回本章索引](README.md) · [统一变换与操作复合](../../patterns/09-data-structures/composable-transformations.md) · [固定依赖与局部维护](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#固定划分的区间只重算受影响的祖先)

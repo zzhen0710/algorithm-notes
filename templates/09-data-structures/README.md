@@ -10,5 +10,6 @@
 - [单调队列：定长窗口最大值位置](monotonic-queue/README.md)
 - [ST 表：静态闭区间最大值](sparse-table/README.md)
 - [线段树：点赋值最大值、区间加、乘加复合与翻转](segment-tree/README.md)
+- [Trie：完整字符串、前缀计数与双方前缀关系](trie/README.md)
 
 [返回全部模板](../README.md)

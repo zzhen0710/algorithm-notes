@@ -13,7 +13,7 @@
 | [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、最短路、拓扑、匹配 |
 | [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、快速幂、素数与分解、组合数 |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | KMP、字符串双哈希 |
-| [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表、线段树 |
+| [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表、线段树、Trie |
 
 第三章搜索暂未单独收录模板，后续出现稳定的复用实现时再建立目录，不预建空分类。
 

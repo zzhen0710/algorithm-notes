@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="420" viewBox="0 0 1160 420">
+<rect width="1160" height="420" rx="14" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#14263d">
+<text x="36" y="42" font-size="24" font-weight="bold">查询 01：按长度分组，相等消息只算一次</text>
+<text x="36" y="77" font-size="17">消息：0、01、01、010、011、1　　查询路径：根 → 0 → 01</text>
+<path d="M230 160 H350 M580 160 H700" stroke="#64748b" stroke-width="3"/>
+<text x="280" y="145" font-size="20">0</text><text x="630" y="145" font-size="20">1</text>
+<rect x="36" y="112" width="194" height="98" rx="12" fill="#e2e8f0"/>
+<text x="56" y="146" font-size="20">根：空前缀</text><text x="56" y="182" font-size="18">先加 end = 0</text>
+<rect x="350" y="112" width="230" height="98" rx="12" fill="#dbeafe"/>
+<text x="370" y="146" font-size="20">前缀 0</text><text x="370" y="182" font-size="18">先加 end = 1</text>
+<rect x="700" y="112" width="415" height="98" rx="12" fill="#dcfce7"/>
+<text x="720" y="146" font-size="20">终点 01：完整读完后，加 pass = 4</text>
+<text x="720" y="182" font-size="18">end = 2 已包含在 pass 内，不再加</text>
+<rect x="36" y="243" width="410" height="80" rx="10" fill="#dbeafe"/>
+<text x="56" y="275" font-size="20" font-weight="bold">严格更短的一组：0</text>
+<text x="56" y="306" font-size="18">在向下走之前，统计当前节点 end</text>
+<rect x="470" y="243" width="645" height="80" rx="10" fill="#dcfce7"/>
+<text x="490" y="275" font-size="20" font-weight="bold">等长与更长的一组：01、01、010、011</text>
+<text x="490" y="306" font-size="18">在查询终点统计 pass；两组没有重叠</text>
+<text x="36" y="372" font-size="23" font-weight="bold">答案：1 + 4 = 5</text>
+<text x="380" y="372" font-size="18">消息 1 不在查询路径上，不属于任何一组。</text>
+</g></svg>

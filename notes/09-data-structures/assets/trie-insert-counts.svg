@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="405" viewBox="0 0 1120 405" role="img" aria-labelledby="title desc">
+<title id="title">重复插入 app：更新路径计数，不重建节点</title><desc id="desc">已插入app apple apt，第4次再插app。根a和ap经过次数3变4，app经过2变3，结束1变2。bat尚未插入。</desc>
+<rect width="1120" height="405" rx="16" fill="#f8fafc"/>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10z" fill="#64748b"/></marker></defs>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif" fill="#1e293b">
+<text x="24" y="38" font-size="25" font-weight="700">重复插入 app：更新路径计数，不重建节点</text>
+<text x="24" y="80" font-size="19" fill="#334155">本图时刻：已插入 app、apple、apt，正在第 4 次插入 app；bat 稍后插入。</text>
+<line x1="245" y1="167" x2="315" y2="167" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="515" y1="167" x2="585" y2="167" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<line x1="785" y1="167" x2="855" y2="167" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="45.0" y="120" width="200" height="94" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="145" y="145" text-anchor="middle" font-size="18" font-weight="700">根 0</text>
+<text x="145" y="175" text-anchor="middle" font-size="22" font-weight="400">pass = 3 → 4</text>
+<text x="145" y="202" text-anchor="middle" font-size="22" font-weight="700">end = 0</text>
+<rect x="315.0" y="120" width="200" height="94" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="415" y="145" text-anchor="middle" font-size="18" font-weight="700">a  节点 1</text>
+<text x="415" y="175" text-anchor="middle" font-size="22" font-weight="400">pass = 3 → 4</text>
+<text x="415" y="202" text-anchor="middle" font-size="22" font-weight="700">end = 0</text>
+<rect x="585.0" y="120" width="200" height="94" rx="10" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="685" y="145" text-anchor="middle" font-size="18" font-weight="700">ap  节点 2</text>
+<text x="685" y="175" text-anchor="middle" font-size="22" font-weight="400">pass = 3 → 4</text>
+<text x="685" y="202" text-anchor="middle" font-size="22" font-weight="700">end = 0</text>
+<rect x="855.0" y="120" width="200" height="94" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+<text x="955" y="145" text-anchor="middle" font-size="18" font-weight="700">app  节点 3</text>
+<text x="955" y="175" text-anchor="middle" font-size="22" font-weight="400">pass = 2 → 3</text>
+<text x="955" y="202" text-anchor="middle" font-size="22" font-weight="700">end = 1 → 2</text>
+<text x="24" y="280" font-size="22" fill="#334155">沿途每个节点 pass 加 1：本次插入以这些路径为前缀。</text>
+<text x="24" y="326" font-size="22" fill="#166534">只有最后的 app 节点 end 加 1：本次字符串恰好在这里结束。</text>
+<text x="24" y="371" font-size="20" fill="#334155">已有路径全部复用，节点数保持不变。</text>
+</g></svg>
