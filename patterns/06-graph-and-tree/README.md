@@ -8,6 +8,8 @@
 
 ## 跨章参考
 
+- [翻转历史与异或差分](../09-data-structures/composable-transformations.md#翻转历史的奇偶性也能用异或差分维护)：DFS序负责子树映射，奇偶状态负责压缩翻转，最终输出时统一还原。
+
 - [DP 三步走](../05-dynamic-programming/dp-modeling-workflow.md)：通用状态设计、最优子结构及序列／前缀／区间的依赖对照。
 
 [返回全部范式](../README.md)

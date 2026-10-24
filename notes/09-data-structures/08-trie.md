@@ -611,4 +611,6 @@ $$
 
 Trie 的路径定义可对照 [cp-algorithms 的 Construction of the trie](https://cp-algorithms.com/string/aho_corasick.html#construction-of-the-trie)；这里只核对前缀树部分，不引入该页面后面的自动机内容。代码为独立教学实现，保留 -1 哨兵与重复插入计数，未移植外部实现。
 
+下一单元：[6.7 DFS 序](../06-graph-and-tree/07-dfs-order.md)，将树上子树映射到已学的数组区间工具。
+
 [返回本章索引](README.md) · [Trie 竞赛模板](../../templates/09-data-structures/trie/README.md)

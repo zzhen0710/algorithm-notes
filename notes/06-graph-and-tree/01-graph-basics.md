@@ -698,4 +698,6 @@ void solve() {
 
 本节建立图的存储、遍历与树的基本关系。后续衔接 [6.2 二分图染色与判定](02-bipartite-coloring.md)；P5318 原实现的固定起点仍需修正并确认结果，不因切换新节而关闭待办。
 
+树的父子关系与显式栈写法，在 [6.7 DFS 序](07-dfs-order.md) 中继续用于记录子树的连续区间。
+
 概念补充参考：[Hello 算法 · 图](https://www.hello-algo.com/chapter_graph/graph/)。

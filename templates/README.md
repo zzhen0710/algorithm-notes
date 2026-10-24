@@ -10,7 +10,7 @@
 | [02 序列与区间技巧](../notes/02-sequence-techniques/README.md) | [本章索引](02-sequence-techniques/README.md) | 离散化、二分、归并计数、区间合并 |
 | [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 互不冲突区间选择 |
 | [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | LIS 长度与逐位置长度 |
-| [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、最短路、拓扑、匹配 |
+| [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、最短路、拓扑、匹配、DFS 序 |
 | [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、快速幂、素数与分解、组合数 |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | KMP、字符串双哈希 |
 | [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表、线段树、Trie |
