@@ -12,7 +12,7 @@
 
 - [DFS 序：固定根与子树区间](dfs-order/README.md)
 
-- [倍增 LCA：祖先跳跃与无权距离](lca/README.md)，复用本章 DFS 序遍历。
+- [倍增 LCA：祖先跳跃、无权距离与根路径前缀](lca/README.md)，复用本章 DFS 序遍历。
 
 ## 跨章依赖
 

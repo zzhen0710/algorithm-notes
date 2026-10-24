@@ -1,6 +1,6 @@
 # 倍增 LCA：祖先跳跃与无权距离
 
-实现：[lca.hpp](lca.hpp)。原理、图解与待做配题见 [6.8 倍增与 LCA](../../../notes/06-graph-and-tree/08-lca-binary-lifting.md)。
+实现：[lca.hpp](lca.hpp)。原理、图解与典题复盘见 [6.8 倍增与 LCA](../../../notes/06-graph-and-tree/08-lca-binary-lifting.md)。
 
 **先拉齐深度，再从大到小同步跳；祖先不同时才跳，最后返回共同父亲。**
 
@@ -42,6 +42,33 @@ int missing = tree.jump(3, 3); // 0
 ll edges = tree.distance(3, 4); // 2
 ```
 
+## 根路径前缀：可选辅助
+
+实现：[root_path_prefix.hpp](root_path_prefix.hpp)，复用已有 DFSOrder，**不改 LCA 的查询接口**。
+
+```cpp
+#include "lca.hpp"
+#include "root_path_prefix.hpp"
+
+// 沿用上例的 g，固定根为 1。权值按原节点编号存储。
+std::vector<ll> weight = {0, 10, 20, 30, 40};
+auto t = tree_order(g, 1);
+auto sum = root_path_prefix(t, weight); // sum[3]=60，sum[4]=70
+
+LCA tree(g, 1);
+int w = tree.lca(3, 4); // 2
+ll path_sum = sum[3] + sum[4] - 2 * sum[w] + weight[w]; // 90
+```
+
+此段是另一段使用示例；单独放入函数，或替换前例末尾，避免重复声明 tree。简单组合会遍历树两次：LCA 内部一次、外部 tree_order 一次；总预处理仍为 O(n log n)。有需要时可像[机房原实现](../../../notes/06-graph-and-tree/08-lca-binary-lifting.md#92-洛谷-p8805机房)保留一次遍历结果，不必为省一次 O(n) 遍历改写全部接口。
+
+- **前提：** t 是同一棵 1-based 非空树的一次完整遍历结果，parent、order 尚未移走或修改；weight 长度 n+1。与 LCA 拼接时必须采用同一棵树、同一个根。
+- **含义：** 返回 sum 长度 n+1，sum[0]=0；sum[u] 为根到 u 的点权和，包含两端。仅借助 order 保证父亲先算，sum 仍按原节点编号索引。
+- **范围：** 点权可为负、零或正数，所有前缀及最终路径表达式的中间值须能用 ll 表示；前缀不保证单调。
+- **副作用与多测：** 不修改 t、weight；每次返回独立数组。修改权值后需重算，不能用旧前缀回答新权值。
+- **复杂度：** 此函数时间 O(n)、额外空间 O(n)，不包括取得 DFSOrder 或构造 LCA 的成本。
+- **单文件使用：** 依次展开 DFSOrder/tree_order、LCA（如需查询）、本辅助函数，删除本地相对 include。
+
 ## 复杂度与边界
 
 建立父亲／深度 O(n)，建立跳跃表 **O(n log n)**，表空间 **O(n log n)**，另有 O(n) 的临时遍历结果。jump、lca 与 distance 最坏 **O(log n)**；n=1 时按常数处理，可用 log(n+1) 统一边界。
@@ -54,6 +81,6 @@ u=v 时返回自己；根参与 LCA 时返回根。jump 的节点必须合法，
 
 在本仓库非递归 DFS 基础上独立实现，未移植外部库；教学版展开 mid 与查询步骤，竞赛版保留相同接口和一种主写法。
 
-**C++11 本地核验通过，编译无警告。** 与逐层找父亲、BFS 距离和直接上跳对照，检查不同根、同点、祖先关系、越根、单点、幂边界、长链及对象独立；实际 README 示例与头文件依赖一起核验。配题仍待独立尝试，不记为平台 AC 或已经掌握。
+**C++11 本地核验通过，编译无警告。** 与逐层找父亲、BFS 距离和直接上跳对照，检查不同根、同点、祖先关系、越根、单点、幂边界、长链及对象独立；实际 README 示例与头文件依赖一起核验。P3379／P8805 实际实现与根路径前缀辅助已本地核验；不据此记为平台 AC 或已经掌握。
 
 [本章模板](../README.md) · [全部模板](../../README.md)
