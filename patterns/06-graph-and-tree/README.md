@@ -8,6 +8,10 @@
 
 ## 跨章参考
 
+- [固定节点状态与子树独立合并](../05-dynamic-programming/subtree-boundary-state.md)：用当前节点的状态表达父子约束；与只满足计算顺序分开考虑。
+
+- [树形 DP 的依赖方向](../05-dynamic-programming/dp-modeling-workflow.md#树上状态先看依赖父亲还是依赖孩子)：父亲先算与孩子先算、顺序与组合规则的分工。
+
 - [翻转历史与异或差分](../09-data-structures/composable-transformations.md#翻转历史的奇偶性也能用异或差分维护)：DFS序负责子树映射，奇偶状态负责压缩翻转，最终输出时统一还原。
 
 - [DP 三步走](../05-dynamic-programming/dp-modeling-workflow.md)：通用状态设计、最优子结构及序列／前缀／区间的依赖对照。
