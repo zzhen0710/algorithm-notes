@@ -556,4 +556,6 @@ $$
 
 本节把同余、快速幂与基础计数连起来。范围与写法依据参考 [Modular Inverse](https://cp-algorithms.com/algebra/module-inverse.html)及 [Binomial Coefficients](https://cp-algorithms.com/combinatorics/binomial-coefficients.html)，代码在本仓库既有快速幂上独立整理。
 
+后续用 [7.7 容斥原理](07-inclusion-exclusion.md)处理类别重叠：本节强调一套位置选择不能重复计数，容斥进一步处理同一对象同时属于多类的情况。
+
 [本章索引](README.md) · [逆元模板](../../templates/07-math/modular-arithmetic/README.md) · [组合数模板](../../templates/07-math/combinations/README.md)

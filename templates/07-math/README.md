@@ -10,4 +10,6 @@
 - [模逆元：素数模数下的快速幂](modular-arithmetic/README.md)
 - [组合数：精确计算与素数模数](combinations/README.md)
 
+- [容斥：已知交集的并集计数](inclusion-exclusion/README.md)
+
 [返回全部模板](../README.md)

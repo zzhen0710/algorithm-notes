@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="540" viewBox="0 0 780 540" role="img" aria-labelledby="title desc">
+<title id="title">容斥：三类倍数的重叠区域</title>
+<desc id="desc">全集为1到30。A为2的倍数，B为3的倍数，C为5的倍数。各独占区域数量分别为8、4、2，只有AB为4，只有AC为2，只有BC为1，ABC为1，三个圆外为8。</desc>
+<rect width="780" height="540" fill="#ffffff"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#172d40">
+<text x="30" y="32" font-size="20" font-weight="700">U = {1, 2, …, 30}　小区域内的数字表示该区域的数量</text>
+<rect x="25" y="50" width="730" height="450" rx="12" fill="#f7fafc" stroke="#8395a7" stroke-width="2"/>
+<circle cx="240" cy="200" r="140" fill="#4b9fea" fill-opacity="0.19" stroke="#2378bd" stroke-width="2.5"/>
+<circle cx="420" cy="200" r="140" fill="#e9a542" fill-opacity="0.19" stroke="#af7316" stroke-width="2.5"/>
+<circle cx="330" cy="345" r="140" fill="#58b990" fill-opacity="0.19" stroke="#218062" stroke-width="2.5"/>
+<text x="125" y="92" font-size="17" font-weight="700" fill="#175b99">A：2 的倍数</text>
+<text x="430" y="92" font-size="17" font-weight="700" fill="#8b5a12">B：3 的倍数</text>
+<text x="268" y="467" font-size="17" font-weight="700" fill="#17634d">C：5 的倍数</text>
+<g text-anchor="middle" font-size="25" font-weight="700">
+<text x="170" y="197">8</text><text x="490" y="197">4</text>
+<text x="330" y="156">4</text><text x="230" y="320">2</text>
+<text x="430" y="320">1</text><text x="330" y="256">1</text>
+<text x="330" y="422">2</text><text x="650" y="345">8</text>
+</g>
+<text x="650" y="373" text-anchor="middle" font-size="16">三类都不属于</text>
+<text x="610" y="147" font-size="17">整个圆的大小：</text>
+<text x="610" y="178" font-size="17">|A| = 15</text>
+<text x="610" y="209" font-size="17">|B| = 10</text>
+<text x="610" y="240" font-size="17">|C| = 6</text>
+<text x="30" y="527" font-size="17">A∩B 含中间的 1，因此为 4+1=5。三重交集中的元素按 3−3+1 计一次。</text>
+</g></svg>
