@@ -523,4 +523,6 @@ $$
 
 下一节：[拓扑排序与依赖关系](05-topological-sort.md)。后续负权算法等专题仍保留，全章选型在图与树主题收尾时完善。
 
+若起点不固定、需要小图的任意点对距离，见 [6.9 Floyd](09-floyd.md)；两者按起点数量、图规模与边权条件选择。
+
 竞赛短写法与路径还原见 [Dijkstra 模板](../../templates/06-graph-and-tree/dijkstra/README.md)；模板使用 WeightedEdge 区分最小生成树的边类型，前提和下标约定保持一致。

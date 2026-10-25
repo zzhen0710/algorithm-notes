@@ -14,6 +14,8 @@
 
 - [倍增 LCA：祖先跳跃、无权距离与根路径前缀](lca/README.md)，复用本章 DFS 序遍历。
 
+- [Floyd：全源最短距离](floyd/README.md)
+
 ## 跨章依赖
 
 - [DSU：并查集](../09-data-structures/dsu/README.md)：Kruskal 复用这一实现；复制单文件参赛时按模板说明处理依赖。

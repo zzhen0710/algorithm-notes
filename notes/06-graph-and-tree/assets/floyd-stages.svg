@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600" role="img" aria-labelledby="title desc">
+<title id="title">Floyd 的两个中转阶段</title>
+<desc id="desc">第一幅图表示k=2时，1到2的3与2到3的2相加得到5，改善直接边10。第二幅图表示k=3时，复用已经改善的1到3距离5，接上3到4的4得到9，改善直接边12。</desc>
+<defs><marker id="blue" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#2775ae"/></marker><marker id="gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#8493a0"/></marker></defs>
+<rect width="980" height="600" fill="white"/>
+<g font-family="Microsoft YaHei,Arial,sans-serif" fill="#1d3345">
+<text x="28" y="35" font-size="22" font-weight="700">k 是本轮新增允许使用的中转点；两段距离可以来自更早阶段</text>
+<rect x="20" y="55" width="940" height="240" rx="12" fill="#f6f9fc" stroke="#c3d3df"/>
+<rect x="20" y="315" width="940" height="240" rx="12" fill="#f6f9fc" stroke="#c3d3df"/>
+<text x="40" y="90" font-size="20" font-weight="700">k = 2：允许经点 2 中转</text>
+<text x="40" y="350" font-size="20" font-weight="700">k = 3：复用前一轮算好的距离</text>
+<g fill="none" stroke="#2775ae" stroke-width="3" marker-end="url(#blue)">
+<path d="M194,180 L452,130"/><path d="M515,130 L775,180"/>
+<path d="M194,440 L452,390"/><path d="M515,390 L775,440"/>
+</g>
+<g fill="none" stroke="#8493a0" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#gray)">
+<path d="M195,195 Q485,300 775,195"/><path d="M195,455 Q485,560 775,455"/>
+</g>
+<g fill="white" stroke="#2775ae" stroke-width="2.5">
+<circle cx="165" cy="185" r="30"/><circle cx="483" cy="124" r="30"/><circle cx="805" cy="185" r="30"/>
+<circle cx="165" cy="445" r="30"/><circle cx="483" cy="384" r="30"/><circle cx="805" cy="445" r="30"/>
+</g>
+<g text-anchor="middle" font-size="23" font-weight="700">
+<text x="165" y="193">1</text><text x="483" y="132">2</text><text x="805" y="193">3</text>
+<text x="165" y="453">1</text><text x="483" y="392">3</text><text x="805" y="453">4</text>
+</g>
+<g text-anchor="middle" font-size="18">
+<text x="320" y="137">dist[1][2] = 3</text><text x="650" y="137">dist[2][3] = 2</text>
+<text x="483" y="275" fill="#586e80">原来直达要 10；现在比较 min(10, 3+2) = 5</text>
+<text x="315" y="392">dist[1][3] = 5</text><text x="650" y="397">dist[3][4] = 4</text>
+<text x="315" y="460" font-size="16" fill="#b56218">这段实际为 1→2→3</text>
+<text x="483" y="535" fill="#586e80">原来直达要 12；现在比较 min(12, 5+4) = 9</text>
+</g>
+<text x="30" y="584" font-size="18" font-weight="700">一轮只新增一个可用中转点，不是说整条路线只能经过一个中转点。</text>
+</g></svg>

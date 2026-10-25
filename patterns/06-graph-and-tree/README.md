@@ -8,6 +8,8 @@
 
 ## 跨章参考
 
+- [按可用中转点分阶段：Floyd](../05-dynamic-programming/dp-modeling-workflow.md#按可用中转点分阶段floyd)：原图可有环，阶段依赖仍按可用中转范围递增。
+
 - [等量统计：赋权后求子树和](../08-strings/filter-key-dedup.md#子树先映射成区间再求权值和)：两类节点分别记为 +1、−1，结合 DFS 序与前缀和判断等量。
 
 - [固定节点状态与子树独立合并](../05-dynamic-programming/subtree-boundary-state.md)：用当前节点的状态表达父子约束；与只满足计算顺序分开考虑。
@@ -16,6 +18,6 @@
 
 - [翻转历史与异或差分](../09-data-structures/composable-transformations.md#翻转历史的奇偶性也能用异或差分维护)：DFS序负责子树映射，奇偶状态负责压缩翻转，最终输出时统一还原。
 
-- [DP 三步走](../05-dynamic-programming/dp-modeling-workflow.md)：通用状态设计、最优子结构及序列／前缀／区间的依赖对照。
+- [DP 三步走](../05-dynamic-programming/dp-modeling-workflow.md)：通用状态设计、最优子结构与依赖对照；补[完整建模到空间压缩的检查流程](../05-dynamic-programming/dp-modeling-workflow.md#0-从识别到压缩五项检查)。
 
 [返回全部范式](../README.md)
