@@ -33,6 +33,8 @@
 
 - [CF 2277C — Edge Addeleting](CF2277C_Edge_Addeleting.md)：从最终路径限制压缩多次操作，LCA 原解与固定终点受限 BFS 对照。
 
+- [CF 2277D1 — Number Operating（简单版）](CF2277D1_Number_Operating.md)：按重置划分操作、区分完整组与最后一段、替换缩小选择范围并递推剩余目标。
+
 ### 其他
 
 - 暂无
