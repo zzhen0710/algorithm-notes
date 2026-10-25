@@ -11,7 +11,7 @@
 | [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 互不冲突区间选择 |
 | [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | LIS 长度与逐位置长度、树上连通点集与独立集 |
 | [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、Dijkstra／Floyd、拓扑、匹配、DFS 序、倍增 LCA |
-| [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、快速幂、素数与分解、逆元、组合数、容斥 |
+| [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、快速幂、素数与分解、逆元、组合数、容斥、高精度 |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | KMP、字符串双哈希 |
 | [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表、线段树、Trie |
 
@@ -37,6 +37,7 @@
 
 - 一项算法或一组紧密相关操作使用一个目录，附简短 README 与实现文件；有内容时再创建。
 - 优先使用短函数或必要的结构体，避免照搬教学演示类、打印工具和多文件工程封装。
+- 普通数值转换优先 `(int)`、`(ll)` 等竞赛短写法，避免默认堆叠 `static_cast`；具体风格与适用范围见 [AGENTS.md](../AGENTS.md#笔记表达与代码)，教学笔记与模板不必统一写法。
 - 明确接口、下标起点、区间端点、输入前提、返回值、复杂度与关键状态含义，代码添加必要注释。
 - 记录初始化、多组测试清理、整数溢出、空输入或不可达等边界；按算法选择适用的验证案例。
 - 每项优先维护一种主写法；变体只说明差异，避免多份实现长期不一致。

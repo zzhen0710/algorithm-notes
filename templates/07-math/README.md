@@ -12,4 +12,6 @@
 
 - [容斥：已知交集的并集计数](inclusion-exclusion/README.md)
 
+- [非负高精度整数：十进制比较、加减乘与除以小整数](big-integer/README.md)
+
 [返回全部模板](../README.md)
