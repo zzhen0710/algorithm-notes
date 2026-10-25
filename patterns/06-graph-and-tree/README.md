@@ -8,6 +8,8 @@
 
 ## 跨章参考
 
+- [等量统计：赋权后求子树和](../08-strings/filter-key-dedup.md#子树先映射成区间再求权值和)：两类节点分别记为 +1、−1，结合 DFS 序与前缀和判断等量。
+
 - [固定节点状态与子树独立合并](../05-dynamic-programming/subtree-boundary-state.md)：用当前节点的状态表达父子约束；与只满足计算顺序分开考虑。
 
 - [树形 DP 的依赖方向](../05-dynamic-programming/dp-modeling-workflow.md#树上状态先看依赖父亲还是依赖孩子)：父亲先算与孩子先算、顺序与组合规则的分工。

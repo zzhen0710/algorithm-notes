@@ -12,4 +12,8 @@
 - [MEX：从定义域与频率出发](mex-analysis.md)
 - [状态扫描：变化时结算与尾状态处理](state-scan-finalization.md)
 
+## 跨章参考
+
+- [等量统计：两类赋权与前缀差值分组](../08-strings/filter-key-dedup.md#等量统计把两类数量压成一个差值)：两类等量转成区间和为零，相同前缀值配对。
+
 [返回全部范式](../README.md)
