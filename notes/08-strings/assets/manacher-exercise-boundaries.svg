@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="655" viewBox="0 0 1160 655" role="img"><title>同一个半径表：看是否触及最左或最右分隔符</title><desc>此处只对 mid = dfdce 建表：m = 5；t 的下标为 0..10，不使用整串 s 的坐标。</desc>
+<rect x="0" y="0" width="1160" height="655" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="30" y="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" fill="#182d43" font-weight="700" text-anchor="start">同一个半径表：看是否触及最左或最右分隔符</text>
+<text x="30" y="79" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="18" fill="#50677d" font-weight="400" text-anchor="start">此处只对 mid = dfdce 建表：m = 5；t 的下标为 0..10，不使用整串 s 的坐标。</text>
+<text x="26" y="180" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="700" text-anchor="start">mid</text>
+<rect x="100" y="150" width="160" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="180" y="136" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<text x="180" y="183" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<line x1="180" y1="211" x2="180" y2="271" stroke="#cdd8e3" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="260" y="150" width="160" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="340" y="136" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<text x="340" y="183" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">f</text>
+<line x1="340" y1="211" x2="340" y2="271" stroke="#cdd8e3" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="420" y="150" width="160" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="500" y="136" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<text x="500" y="183" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<line x1="500" y1="211" x2="500" y2="271" stroke="#cdd8e3" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="580" y="150" width="160" height="49" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="660" y="136" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<text x="660" y="183" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<line x1="660" y1="211" x2="660" y2="271" stroke="#cdd8e3" stroke-width="2" stroke-dasharray="5 5"/>
+<rect x="740" y="150" width="160" height="49" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="820" y="136" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<text x="820" y="183" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">e</text>
+<line x1="820" y1="211" x2="820" y2="271" stroke="#cdd8e3" stroke-width="2" stroke-dasharray="5 5"/>
+<text x="26" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">t</text>
+<rect x="71" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="100" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<text x="100" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="151" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="180" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<text x="180" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<rect x="231" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="260" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<text x="260" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="311" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#176244"/>
+<text x="340" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<text x="340" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">f</text>
+<rect x="391" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="420" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<text x="420" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="471" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="500" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">5</text>
+<text x="500" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<rect x="551" y="289" width="58" height="47" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="580" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">6</text>
+<text x="580" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="631" y="289" width="58" height="47" rx="8" fill="white" stroke="#cdd8e3"/>
+<text x="660" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">7</text>
+<text x="660" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<rect x="711" y="289" width="58" height="47" rx="8" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="740" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">8</text>
+<text x="740" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="791" y="289" width="58" height="47" rx="8" fill="#e4efff" stroke="#2456a0"/>
+<text x="820" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">9</text>
+<text x="820" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">e</text>
+<rect x="871" y="289" width="58" height="47" rx="8" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="900" y="275" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">10</text>
+<text x="900" y="321" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<line x1="100" y1="357" x2="580" y2="357" stroke="#176244" stroke-width="3"/>
+<line x1="100" y1="352" x2="100" y2="362" stroke="#176244" stroke-width="2"/>
+<line x1="580" y1="352" x2="580" y2="362" stroke="#176244" stroke-width="2"/>
+<text x="340.0" y="385" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#176244" font-weight="400" text-anchor="middle">前缀 dfd：中心 i = 3，p[3] = 3</text>
+<line x1="740" y1="406" x2="900" y2="406" stroke="#2456a0" stroke-width="3"/>
+<line x1="740" y1="401" x2="740" y2="411" stroke="#2456a0" stroke-width="2"/>
+<line x1="900" y1="401" x2="900" y2="411" stroke="#2456a0" stroke-width="2"/>
+<text x="820.0" y="434" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#2456a0" font-weight="400" text-anchor="middle">后缀 e：i = 9，p[9] = 1</text>
+<rect x="30" y="466" width="530" height="145" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<rect x="600" y="466" width="530" height="145" rx="8" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="49" y="502" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#176244" font-weight="700" text-anchor="start">左端是 0，才是 mid 的前缀</text>
+<text x="49" y="545" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#176244" font-weight="400" text-anchor="start">i − p[i] = 3 − 3 = 0</text>
+<text x="49" y="584" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#176244" font-weight="700" text-anchor="start">所以筛选条件：p[i] == i</text>
+<text x="619" y="502" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#2456a0" font-weight="700" text-anchor="start">右端是 2m，才是 mid 的后缀</text>
+<text x="619" y="545" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#2456a0" font-weight="400" text-anchor="start">i + p[i] = 9 + 1 = 10 = 2m</text>
+<text x="619" y="584" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#2456a0" font-weight="700" text-anchor="start">所以筛选条件：i + p[i] == 2 * m</text>
+</svg>

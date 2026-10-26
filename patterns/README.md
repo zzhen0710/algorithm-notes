@@ -9,7 +9,7 @@
 | [01 基础问题求解](../notes/01-basic-problem-solving/README.md) | [本章索引](01-basic-problem-solving/README.md) | 枚举降维、少量共享变量 |
 | [02 序列与区间技巧](../notes/02-sequence-techniques/README.md) | [本章索引](02-sequence-techniques/README.md) | 区间、前后缀、二分、MEX 与扫描结算 |
 | [03 搜索](../notes/03-search/README.md) | 跨章参考：[DAG DP](06-graph-and-tree/dag-dp.md) | 暂无独立篇章，记忆化与依赖状态见关联范式 |
-| [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 基值与剩余量、分阶段解耦 |
+| [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 基值与剩余量、分阶段解耦、答案结构缩减 |
 | [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | DP 建模三步、背包识别、状态上界、子树条件状态，并链接 DAG DP |
 | [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 无环依赖、状态方向、路径统计、父子递推与逆序离线 |
 | [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | 博弈阈值与策略证明 |

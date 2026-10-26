@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="725" viewBox="0 0 1200 725" role="img">
+<title>起点换算：start = (i − p[i]) / 2</title><desc>仍用 aaabaac；最长回文中心 i = 7，半径 p[7] = 5，对应原串 aabaa。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto-start-reverse"><path d="M0,0 L6,3 L0,6" fill="#a14b00"/></marker></defs>
+<rect x="0" y="0" width="1200" height="725" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="28" y="42" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="26" fill="#182d43" font-weight="700" text-anchor="start">起点换算：start = (i − p[i]) / 2</text>
+<text x="28" y="77" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="18" fill="#50677d" font-weight="400" text-anchor="start">仍用 aaabaac；最长回文中心 i = 7，半径 p[7] = 5，对应原串 aabaa。</text>
+<text x="28" y="189" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">s</text>
+<rect x="90" y="160" width="140" height="48" rx="0" fill="white" stroke="#ccd7e3"/>
+<text x="160" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<text x="160" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="230" y="160" width="140" height="48" rx="0" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="300" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<text x="300" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="370" y="160" width="140" height="48" rx="0" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="440" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<text x="440" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="510" y="160" width="140" height="48" rx="0" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="580" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<text x="580" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<rect x="650" y="160" width="140" height="48" rx="0" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="720" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<text x="720" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="790" y="160" width="140" height="48" rx="0" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="860" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">5</text>
+<text x="860" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="930" y="160" width="140" height="48" rx="0" fill="white" stroke="#ccd7e3"/>
+<text x="1000" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">6</text>
+<text x="1000" y="192" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<line x1="160" y1="300" x2="160" y2="216" stroke="#ccd7e3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="300" y1="300" x2="300" y2="216" stroke="#2456a0" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="440" y1="300" x2="440" y2="216" stroke="#ccd7e3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="580" y1="300" x2="580" y2="216" stroke="#ccd7e3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="720" y1="300" x2="720" y2="216" stroke="#ccd7e3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="860" y1="300" x2="860" y2="216" stroke="#ccd7e3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="1000" y1="300" x2="1000" y2="216" stroke="#ccd7e3" stroke-width="2" stroke-dasharray="5 5"/>
+<line x1="230" y1="300" x2="230" y2="214" stroke="#a14b00" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="145" y="235" width="170" height="34" rx="8" fill="#fff0d9" stroke="none"/>
+<text x="230" y="259" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#a14b00" font-weight="400" text-anchor="middle">原串左边界：1</text>
+<text x="500" y="263" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="start">每个原字符，都与 t 的奇数位置对齐。</text>
+<text x="28" y="369" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">t</text>
+<rect x="62" y="340" width="56" height="46" rx="8" fill="white" stroke="#ccd7e3"/>
+<text x="90" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<text x="90" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="132" y="340" width="56" height="46" rx="8" fill="white" stroke="#ccd7e3"/>
+<text x="160" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<text x="160" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="202" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="230" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<text x="230" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="272" y="340" width="56" height="46" rx="8" fill="#e4efff" stroke="#2456a0"/>
+<text x="300" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<text x="300" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="342" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="370" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<text x="370" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="412" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="440" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">5</text>
+<text x="440" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="482" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="510" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">6</text>
+<text x="510" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="552" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#a14b00"/>
+<text x="580" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">7</text>
+<text x="580" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<rect x="622" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="650" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">8</text>
+<text x="650" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="692" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="720" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">9</text>
+<text x="720" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="762" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="790" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">10</text>
+<text x="790" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="832" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="860" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">11</text>
+<text x="860" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="902" y="340" width="56" height="46" rx="8" fill="#fff0d9" stroke="#ccd7e3"/>
+<text x="930" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">12</text>
+<text x="930" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="972" y="340" width="56" height="46" rx="8" fill="white" stroke="#ccd7e3"/>
+<text x="1000" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">13</text>
+<text x="1000" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<rect x="1042" y="340" width="56" height="46" rx="8" fill="white" stroke="#ccd7e3"/>
+<text x="1070" y="326" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">14</text>
+<text x="1070" y="371" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<line x1="230" y1="332" x2="230" y2="393" stroke="#a14b00" stroke-width="3"/>
+<line x1="230" y1="407" x2="580" y2="407" stroke="#a14b00" stroke-width="3"/>
+<line x1="230" y1="402" x2="230" y2="412" stroke="#a14b00" stroke-width="2"/>
+<line x1="580" y1="402" x2="580" y2="412" stroke="#a14b00" stroke-width="2"/>
+<text x="405.0" y="433" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#a14b00" font-weight="400" text-anchor="middle">从中心 7 向左 5 格，到分隔符 2</text>
+<text x="40" y="481" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">① 左分隔符：i − p[i] = 7 − 5 = 2。</text>
+<text x="40" y="524" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#2456a0" font-weight="400" text-anchor="start">② 它右边的第一个字符：t[3] ↔ s[1]。</text>
+<text x="40" y="567" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="start">③ s[start] 对应 t[2 × start + 1]，它前面的分隔符就是 t[2 × start]。</text>
+<rect x="30" y="590" width="1140" height="62" rx="8" fill="#dff2e7" stroke="none"/>
+<text x="52" y="630" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#176244" font-weight="700" text-anchor="start">2 × start = i − p[i]    ⇒    start = (7 − 5) / 2 = 1</text>
+<text x="40" y="694" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#182d43" font-weight="700" text-anchor="start">长度为 p[7] = 5，所以取原串 s.substr(1, 5)，得到 aabaa。</text>
+</svg>

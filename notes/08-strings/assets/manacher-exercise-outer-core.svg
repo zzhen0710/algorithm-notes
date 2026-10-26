@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1160" height="770" viewBox="0 0 1160 770" role="img"><title>先保留外层，再把两个自由长度缩成两类候选</title><desc>原题示例 abcdfdcecba：保留可以安全固定的外层；中间两端不同，不能再两侧都取。</desc>
+<rect x="0" y="0" width="1160" height="770" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="30" y="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" fill="#182d43" font-weight="700" text-anchor="start">先保留外层，再把两个自由长度缩成两类候选</text>
+<text x="30" y="79" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="18" fill="#50677d" font-weight="400" text-anchor="start">原题示例 abcdfdcecba：保留可以安全固定的外层；中间两端不同，不能再两侧都取。</text>
+<text x="30" y="167" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">s</text>
+<text x="152.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<rect x="110" y="143" width="84" height="50" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="152.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="236.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<rect x="194" y="143" width="84" height="50" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="236.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<text x="320.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<rect x="278" y="143" width="84" height="50" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="320.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<text x="404.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<rect x="362" y="143" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="404.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<text x="488.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<rect x="446" y="143" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="488.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">f</text>
+<text x="572.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">5</text>
+<rect x="530" y="143" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="572.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<text x="656.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">6</text>
+<rect x="614" y="143" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="656.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<text x="740.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">7</text>
+<rect x="698" y="143" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="740.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">e</text>
+<text x="824.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">8</text>
+<rect x="782" y="143" width="84" height="50" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="824.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<text x="908.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">9</text>
+<rect x="866" y="143" width="84" height="50" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="908.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<text x="992.0" y="128" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">10</text>
+<rect x="950" y="143" width="84" height="50" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="992.0" y="177" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<line x1="110" y1="211" x2="362" y2="211" stroke="#176244" stroke-width="3"/>
+<line x1="110" y1="206" x2="110" y2="216" stroke="#176244" stroke-width="2"/>
+<line x1="362" y1="206" x2="362" y2="216" stroke="#176244" stroke-width="2"/>
+<text x="236.0" y="239" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#176244" font-weight="400" text-anchor="middle">固定 abc</text>
+<line x1="362" y1="211" x2="782" y2="211" stroke="#a14b00" stroke-width="3"/>
+<line x1="362" y1="206" x2="362" y2="216" stroke="#a14b00" stroke-width="2"/>
+<line x1="782" y1="206" x2="782" y2="216" stroke="#a14b00" stroke-width="2"/>
+<text x="572.0" y="239" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#a14b00" font-weight="400" text-anchor="middle">剩余 mid = dfdce</text>
+<line x1="782" y1="211" x2="1034" y2="211" stroke="#176244" stroke-width="3"/>
+<line x1="782" y1="206" x2="782" y2="216" stroke="#176244" stroke-width="2"/>
+<line x1="1034" y1="206" x2="1034" y2="216" stroke="#176244" stroke-width="2"/>
+<text x="908.0" y="239" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#176244" font-weight="400" text-anchor="middle">固定 cba</text>
+<text x="580" y="286" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#182d43" font-weight="700" text-anchor="middle">外层匹配到 c 后，下一对 d ≠ e，停止剥离。</text>
+<rect x="362" y="315" width="84" height="50" rx="0" fill="#fff0d9" stroke="#a14b00"/>
+<text x="404.0" y="349" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<rect x="446" y="315" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="488.0" y="349" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">f</text>
+<rect x="530" y="315" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="572.0" y="349" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<rect x="614" y="315" width="84" height="50" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="656.0" y="349" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<rect x="698" y="315" width="84" height="50" rx="0" fill="#fff0d9" stroke="#a14b00"/>
+<text x="740.0" y="349" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">e</text>
+<text x="580" y="400" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#a14b00" font-weight="700" text-anchor="middle">mid 若两侧都取非空部分，首尾必然是 d、e，不是回文。</text>
+<rect x="40" y="435" width="515" height="115" rx="8" fill="#dff2e7" stroke="#cdd8e3"/>
+<rect x="605" y="435" width="515" height="115" rx="8" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="62" y="474" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#176244" font-weight="700" text-anchor="start">候选一：回文前缀 dfd</text>
+<text x="62" y="518" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#176244" font-weight="400" text-anchor="start">长度 pre = 3</text>
+<text x="627" y="474" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#2456a0" font-weight="700" text-anchor="start">候选二：回文后缀 e</text>
+<text x="627" y="518" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#2456a0" font-weight="400" text-anchor="start">长度 suf = 1</text>
+<text x="40" y="600" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="700" text-anchor="start">选更长的一类，再拼回外层：abc + dfd + cba</text>
+<rect x="202" y="624" width="84" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="244.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="286" y="624" width="84" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="328.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<rect x="370" y="624" width="84" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="412.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<rect x="454" y="624" width="84" height="49" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="496.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<rect x="538" y="624" width="84" height="49" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="580.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">f</text>
+<rect x="622" y="624" width="84" height="49" rx="0" fill="#fff0d9" stroke="#cdd8e3"/>
+<text x="664.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">d</text>
+<rect x="706" y="624" width="84" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="748.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<rect x="790" y="624" width="84" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="832.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<rect x="874" y="624" width="84" height="49" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="916.0" y="657" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="580" y="726" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" fill="#176244" font-weight="700" text-anchor="middle">最终长度 = 2 × 3 + max(3, 1) = 9</text>
+</svg>

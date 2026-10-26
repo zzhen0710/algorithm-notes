@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="570" viewBox="0 0 1240 570" role="img">
+<title>结果：从 t 的半径，换回 s 中的回文</title><desc>最长半径在 i = 7；结束时 center = 13 只是右端最远，不代表回文最长。</desc>
+<rect x="0" y="0" width="1240" height="570" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="30" y="42" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="27" fill="#182d43" font-weight="700" text-anchor="start">结果：从 t 的半径，换回 s 中的回文</text>
+<text x="30" y="76" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="18" fill="#50677d" font-weight="400" text-anchor="start">最长半径在 i = 7；结束时 center = 13 只是右端最远，不代表回文最长。</text>
+<text x="169" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<text x="239" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<text x="309" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<text x="379" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<text x="449" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<text x="519" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">5</text>
+<text x="589" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">6</text>
+<text x="659" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">7</text>
+<text x="729" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">8</text>
+<text x="799" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">9</text>
+<text x="869" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">10</text>
+<text x="939" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">11</text>
+<text x="1009" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">12</text>
+<text x="1079" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">13</text>
+<text x="1149" y="125" font-family="Consolas,monospace" font-size="16" fill="#50677d" font-weight="400" text-anchor="middle">14</text>
+<text x="30" y="168" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" fill="#182d43" font-weight="700" text-anchor="start">t</text>
+<rect x="139" y="140" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="169" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="209" y="140" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="239" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="279" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="309" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="349" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="379" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="419" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="449" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="489" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="519" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="559" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="589" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="629" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="659" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<rect x="699" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="729" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="769" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="799" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="839" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="869" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="909" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="939" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<rect x="979" y="140" width="60" height="43" rx="7" fill="#dff2e7" stroke="#176244"/>
+<text x="1009" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<rect x="1049" y="140" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="1079" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<rect x="1119" y="140" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="1149" y="169" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">#</text>
+<text x="30" y="238" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" fill="#182d43" font-weight="700" text-anchor="start">p</text>
+<rect x="139" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="169" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">0</text>
+<rect x="209" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="239" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="279" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="309" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">2</text>
+<rect x="349" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="379" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">3</text>
+<rect x="419" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="449" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">2</text>
+<rect x="489" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="519" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="559" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="589" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">0</text>
+<rect x="629" y="210" width="60" height="43" rx="7" fill="#fff0d9" stroke="#a14b00"/>
+<text x="659" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">5</text>
+<rect x="699" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="729" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">0</text>
+<rect x="769" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="799" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="839" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="869" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">2</text>
+<rect x="909" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="939" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="979" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="1009" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">0</text>
+<rect x="1049" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="1079" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="1119" y="210" width="60" height="43" rx="7" fill="white" stroke="#cdd8e3"/>
+<text x="1149" y="239" font-family="Consolas,monospace" font-size="22" fill="#182d43" font-weight="400" text-anchor="middle">0</text>
+<line x1="279" y1="274" x2="1039" y2="274" stroke="#176244" stroke-width="3"/>
+<line x1="279" y1="269" x2="279" y2="279" stroke="#176244" stroke-width="2"/>
+<line x1="1039" y1="269" x2="1039" y2="279" stroke="#176244" stroke-width="2"/>
+<text x="659.0" y="298" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="17" fill="#176244" font-weight="400" text-anchor="middle">t[2..12]：中心 1 格 + 左右各 5 格 = 11 格</text>
+<text x="40" y="345" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="21" fill="#182d43" font-weight="700" text-anchor="start">原串位置</text>
+<text x="322" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<rect x="290" y="342" width="64" height="47" rx="9" fill="white" stroke="#cdd8e3"/>
+<text x="322" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="412" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">1</text>
+<rect x="380" y="342" width="64" height="47" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="412" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="502" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">2</text>
+<rect x="470" y="342" width="64" height="47" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="502" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="592" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">3</text>
+<rect x="560" y="342" width="64" height="47" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="592" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">b</text>
+<text x="682" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">4</text>
+<rect x="650" y="342" width="64" height="47" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="682" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="772" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">5</text>
+<rect x="740" y="342" width="64" height="47" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="772" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">a</text>
+<text x="862" y="329" font-family="Consolas,monospace" font-size="17" fill="#50677d" font-weight="400" text-anchor="middle">6</text>
+<rect x="830" y="342" width="64" height="47" rx="9" fill="white" stroke="#cdd8e3"/>
+<text x="862" y="373" font-family="Consolas,monospace" font-size="25" fill="#182d43" font-weight="400" text-anchor="middle">c</text>
+<text x="40" y="438" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">去掉 6 个分隔符：aabaa，共 5 个字符。</text>
+<text x="40" y="483" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="23" fill="#176244" font-weight="400" text-anchor="start">start = (7 − 5) / 2 = 1；len = p[7] = 5；原串区间 [1,6)。</text>
+<text x="40" y="528" font-family="'Microsoft YaHei','Noto Sans CJK SC',sans-serif" font-size="20" fill="#50677d" font-weight="400" text-anchor="start">同一个 p[7]：变换串中的单侧半径是 5，原串中的回文长度也是 5。</text>
+</svg>

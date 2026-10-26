@@ -10,6 +10,7 @@
 ## 跨章参考
 
 - [分阶段解耦：先消除强制情况，再统一处理](../04-greedy-and-construction/staged-constraint-decoupling.md)
+- [先刻画答案结构，再缩小候选范围](../04-greedy-and-construction/answer-structure-reduction.md)
 - [筛选候选与比较键：排序去重统计类别](../08-strings/filter-key-dedup.md)
 
 [返回全部范式](../README.md)
