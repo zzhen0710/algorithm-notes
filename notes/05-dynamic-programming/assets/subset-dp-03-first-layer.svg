@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="515" viewBox="0 0 1240 515" role="img"><title>执行 1：从唯一初值开始，访问第二个地点</title><desc>dp[0001][0] = 0：起点 0 已访问，还没有走边；其他所有格子先设为 INF。</desc>
+<rect x="0" y="0" width="1240" height="515" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="30" y="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" fill="#182d43" font-weight="700" text-anchor="start">执行 1：从唯一初值开始，访问第二个地点</text>
+<text x="30" y="80" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="start">dp[0001][0] = 0：起点 0 已访问，还没有走边；其他所有格子先设为 INF。</text>
+<rect x="30" y="110" width="1180" height="82" rx="9" fill="#dff2e7" stroke="none"/>
+<text x="50" y="147" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#176244" font-weight="700" text-anchor="start">当前状态：mask = 0001，末尾 u = 0，花费 0。</text>
+<text x="50" y="178" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="start">v = 0 已选，跳过；v = 1、2、3 都可加入。</text>
+<rect x="30" y="225" width="180" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="45" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">下一地点 v</text>
+<rect x="210" y="225" width="320" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="225" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">置位得到新集合</text>
+<rect x="530" y="225" width="340" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="545" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">写入的新格子</text>
+<rect x="870" y="225" width="340" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="885" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">候选花费</text>
+<rect x="30" y="273" width="180" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="45" y="305" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">1</text>
+<rect x="210" y="273" width="320" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="225" y="305" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">0001 → 0011</text>
+<rect x="530" y="273" width="340" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="545" y="305" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">dp[0011][1]</text>
+<rect x="870" y="273" width="340" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="885" y="305" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">0 + 1 = 1</text>
+<rect x="30" y="321" width="180" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="45" y="353" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">2</text>
+<rect x="210" y="321" width="320" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="225" y="353" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">0001 → 0101</text>
+<rect x="530" y="321" width="340" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="545" y="353" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">dp[0101][2]</text>
+<rect x="870" y="321" width="340" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="885" y="353" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">0 + 4 = 4</text>
+<rect x="30" y="369" width="180" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="45" y="401" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">3</text>
+<rect x="210" y="369" width="320" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="225" y="401" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">0001 → 1001</text>
+<rect x="530" y="369" width="340" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="545" y="401" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">dp[1001][3]</text>
+<rect x="870" y="369" width="340" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="885" y="401" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">0 + 9 = 9</text>
+<text x="40" y="470" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#a14b00" font-weight="700" text-anchor="start">每次只加一个未选地点；新格子的末尾改为 v，不再是 0。</text>
+</svg>

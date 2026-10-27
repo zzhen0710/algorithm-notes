@@ -6,6 +6,7 @@
 
 - [LIS：二分长度与逐位置长度](lis/README.md)
 - [树形 DP 基础模型：最大连通点集与最大权独立集](tree-dp/README.md)
+- [小集合访问与有序选择：固定起点访问全集、任意起点恰好选 m 项](subset-dp/README.md)
 
 ## 跨章复用
 

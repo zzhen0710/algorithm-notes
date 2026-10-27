@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="590" viewBox="0 0 1240 590" role="img"><title>一个四点例子：用二进制记录集合</title><desc>地点为 0..3，起点是 0；表格每行是出发点，每列是到达点。本例不要求回到起点。</desc>
+<rect x="0" y="0" width="1240" height="590" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="30" y="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" fill="#182d43" font-weight="700" text-anchor="start">一个四点例子：用二进制记录集合</text>
+<text x="30" y="80" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="start">地点为 0..3，起点是 0；表格每行是出发点，每列是到达点。本例不要求回到起点。</text>
+<text x="40" y="130" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">直接花费 w[u][v]</text>
+<rect x="60" y="157" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="104" y="189" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="middle">u → v</text>
+<rect x="148" y="157" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="192" y="189" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="middle">0</text>
+<rect x="236" y="157" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="280" y="189" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="middle">1</text>
+<rect x="324" y="157" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="368" y="189" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="middle">2</text>
+<rect x="412" y="157" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="456" y="189" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="middle">3</text>
+<rect x="60" y="205" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="104" y="237" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#2456a0" font-weight="700" text-anchor="middle">0</text>
+<rect x="148" y="205" width="88" height="48" rx="0" fill="#eef1f6" stroke="#cdd8e3"/>
+<text x="192" y="237" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<rect x="236" y="205" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="280" y="237" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="324" y="205" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="368" y="237" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">4</text>
+<rect x="412" y="205" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="456" y="237" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">9</text>
+<rect x="60" y="253" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="104" y="285" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#2456a0" font-weight="700" text-anchor="middle">1</text>
+<rect x="148" y="253" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="192" y="285" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">9</text>
+<rect x="236" y="253" width="88" height="48" rx="0" fill="#eef1f6" stroke="#cdd8e3"/>
+<text x="280" y="285" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<rect x="324" y="253" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="368" y="285" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">2</text>
+<rect x="412" y="253" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="456" y="285" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">1</text>
+<rect x="60" y="301" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="104" y="333" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#2456a0" font-weight="700" text-anchor="middle">2</text>
+<rect x="148" y="301" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="192" y="333" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">9</text>
+<rect x="236" y="301" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="280" y="333" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">3</text>
+<rect x="324" y="301" width="88" height="48" rx="0" fill="#eef1f6" stroke="#cdd8e3"/>
+<text x="368" y="333" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<rect x="412" y="301" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="456" y="333" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">8</text>
+<rect x="60" y="349" width="88" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="104" y="381" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#2456a0" font-weight="700" text-anchor="middle">3</text>
+<rect x="148" y="349" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="192" y="381" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">9</text>
+<rect x="236" y="349" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="280" y="381" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">5</text>
+<rect x="324" y="349" width="88" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="368" y="381" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#182d43" font-weight="400" text-anchor="middle">7</text>
+<rect x="412" y="349" width="88" height="48" rx="0" fill="#eef1f6" stroke="#cdd8e3"/>
+<text x="456" y="381" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="21" fill="#50677d" font-weight="400" text-anchor="middle">0</text>
+<text x="640" y="130" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#182d43" font-weight="700" text-anchor="start">集合 {0,2} → mask = 0101（二进制）</text>
+<text x="708" y="190" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#50677d" font-weight="400" text-anchor="middle">地点 3</text>
+<rect x="660" y="212" width="96" height="66" rx="9" fill="white" stroke="#cdd8e3"/>
+<text x="708" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" fill="#50677d" font-weight="700" text-anchor="middle">0</text>
+<text x="708" y="315" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="middle">权值 8</text>
+<text x="830" y="190" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#50677d" font-weight="400" text-anchor="middle">地点 2</text>
+<rect x="782" y="212" width="96" height="66" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="830" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" fill="#176244" font-weight="700" text-anchor="middle">1</text>
+<text x="830" y="315" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="middle">权值 4</text>
+<text x="952" y="190" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#50677d" font-weight="400" text-anchor="middle">地点 1</text>
+<rect x="904" y="212" width="96" height="66" rx="9" fill="white" stroke="#cdd8e3"/>
+<text x="952" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" fill="#50677d" font-weight="700" text-anchor="middle">0</text>
+<text x="952" y="315" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="middle">权值 2</text>
+<text x="1074" y="190" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#50677d" font-weight="400" text-anchor="middle">地点 0</text>
+<rect x="1026" y="212" width="96" height="66" rx="9" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="1074" y="257" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="30" fill="#176244" font-weight="700" text-anchor="middle">1</text>
+<text x="1074" y="315" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="middle">权值 1</text>
+<text x="650" y="372" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#176244" font-weight="700" text-anchor="start">0101 = 4 + 1 = 5，是集合编码。</text>
+<text x="650" y="412" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#182d43" font-weight="400" text-anchor="start">已经选了 2 个地点，不是选了 5 个。</text>
+<rect x="30" y="460" width="1180" height="92" rx="9" fill="#fff0d9" stroke="none"/>
+<text x="50" y="497" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#a14b00" font-weight="700" text-anchor="start">集合不记录顺序：0→1→2 与 0→2→1 都对应 0111。</text>
+<text x="50" y="533" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="22" fill="#182d43" font-weight="400" text-anchor="start">但末尾不同，下一条边的花费就可能不同，因此还需要 last。</text>
+</svg>

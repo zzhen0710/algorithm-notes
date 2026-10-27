@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="620" viewBox="0 0 1240 620" role="img"><title>执行 3：同一个新格子，比较所有合法来源</title><desc>全集为 1111；末尾可以是 1、2、3。每个格子取自己的最小值，最后再比较这些末尾。</desc>
+<rect x="0" y="0" width="1240" height="620" rx="0" fill="#f6f8fc" stroke="none"/>
+<text x="30" y="43" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="28" fill="#182d43" font-weight="700" text-anchor="start">执行 3：同一个新格子，比较所有合法来源</text>
+<text x="30" y="80" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="19" fill="#50677d" font-weight="400" text-anchor="start">全集为 1111；末尾可以是 1、2、3。每个格子取自己的最小值，最后再比较这些末尾。</text>
+<rect x="30" y="125" width="280" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="45" y="157" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">全集状态</text>
+<rect x="310" y="125" width="300" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="325" y="157" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">来源一</text>
+<rect x="610" y="125" width="300" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="625" y="157" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">来源二</text>
+<rect x="910" y="125" width="300" height="48" rx="0" fill="#e4efff" stroke="#cdd8e3"/>
+<text x="925" y="157" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#2456a0" font-weight="700" text-anchor="start">保留结果</text>
+<rect x="30" y="173" width="280" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="45" y="205" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">dp[1111][1]</text>
+<rect x="310" y="173" width="300" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="325" y="205" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">16 + 3 = 19</text>
+<rect x="610" y="173" width="300" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="625" y="205" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">12 + 5 = 17</text>
+<rect x="910" y="173" width="300" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="925" y="205" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">min = 17</text>
+<rect x="30" y="221" width="280" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="45" y="253" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">dp[1111][2]</text>
+<rect x="310" y="221" width="300" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="325" y="253" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">14 + 2 = 16</text>
+<rect x="610" y="221" width="300" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="625" y="253" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">2 + 7 = 9</text>
+<rect x="910" y="221" width="300" height="48" rx="0" fill="white" stroke="#cdd8e3"/>
+<text x="925" y="253" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">min = 9</text>
+<rect x="30" y="269" width="280" height="48" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="45" y="301" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">dp[1111][3]</text>
+<rect x="310" y="269" width="300" height="48" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="325" y="301" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">7 + 1 = 8</text>
+<rect x="610" y="269" width="300" height="48" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="625" y="301" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">3 + 8 = 11</text>
+<rect x="910" y="269" width="300" height="48" rx="0" fill="#dff2e7" stroke="#cdd8e3"/>
+<text x="925" y="301" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="20" fill="#182d43" font-weight="400" text-anchor="start">min = 8</text>
+<rect x="30" y="362" width="1180" height="78" rx="9" fill="#dff2e7" stroke="none"/>
+<text x="50" y="411" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="27" fill="#176244" font-weight="700" text-anchor="start">最后的答案 = min(17, 9, 8) = 8；不必回到起点 0。</text>
+<text x="40" y="491" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="24" fill="#182d43" font-weight="700" text-anchor="start">最优路线的一种：0 → 2 → 1 → 3，花费 4 + 3 + 1 = 8。</text>
+<text x="40" y="543" font-family="Microsoft YaHei,Noto Sans CJK SC,sans-serif" font-size="23" fill="#a14b00" font-weight="700" text-anchor="start">集合依次变成：0001 → 0101 → 0111 → 1111，每次恰好多一个 1。</text>
+</svg>
