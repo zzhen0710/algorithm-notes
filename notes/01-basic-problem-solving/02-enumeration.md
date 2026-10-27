@@ -70,7 +70,7 @@ for (int x = ...; ...; ++x) {
 若要求：
 
 $$
-1\le a<b\le n
+1\le a \lt b\le n
 $$
 
 不要先枚举所有 `(a,b)` 再判断：
@@ -98,13 +98,13 @@ for (int a = 1; a <= n; ++a) {
 代数关系也可以继续缩小范围。例如：
 
 $$
-a+b=S,\quad a<b
+a+b=S,\quad a \lt b
 $$
 
 则：
 
 $$
-2a<S
+2a \lt S
 $$
 
 因此 `a` 无需枚举到 `S`。

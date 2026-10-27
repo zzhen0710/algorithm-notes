@@ -1,6 +1,6 @@
 # 归并计数：严格逆序对
 
-统计序列中 $i<j$ 且 $a_i>a_j$ 的数对，使用 C++11。来源与两题个人实现复盘见 [2.8 归并计数](../../../notes/02-sequence-techniques/08-merge-counting.md#9-典题与复盘)。
+统计序列中 $i \lt j$ 且 $a_i \gt a_j$ 的数对，使用 C++11。来源与两题个人实现复盘见 [2.8 归并计数](../../../notes/02-sequence-techniques/08-merge-counting.md#9-典题与复盘)。
 
 实现：[merge_counting.hpp](merge_counting.hpp)。
 
