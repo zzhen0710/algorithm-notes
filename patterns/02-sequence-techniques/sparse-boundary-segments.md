@@ -35,7 +35,7 @@ $$
 $$
 f(c)=
 \begin{cases}
-1, & c>0,\\
+1, & c\gt 0,\\
 0, & c\le 0.
 \end{cases}
 $$

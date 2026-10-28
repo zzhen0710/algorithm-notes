@@ -164,7 +164,7 @@ $n=3$ 时，输出依次为 `AAA`、`AAB`、`ABA`、`BAA`、`BAB`。$n=0$ 时，
 
 ### 9.1 洛谷 P1157：组合的输出
 
-[题目链接](https://www.luogu.com.cn/problem/P1157)。从 $1\ldots n$ 中取 $r$ 个数，输出全部组合；$1<n<21$，$0\le r\le n$。
+[题目链接](https://www.luogu.com.cn/problem/P1157)。从 $1\ldots n$ 中取 $r$ 个数，输出全部组合；$1\lt n\lt 21$，$0\le r\le n$。
 
 每组内升序，组合之间按字典顺序输出，每个数字占 **3 个字符宽度**。可使用 `<iomanip>` 中的 `setw(3)`；它只作用于紧随其后的一个输出项。
 

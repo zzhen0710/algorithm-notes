@@ -185,13 +185,13 @@ $$
 设树高为 h，即最多分割多少次：
 
 $$
-h=\lceil\log_2 n\rceil,\qquad n\le2^h<2n.
+h=\lceil\log_2 n\rceil,\qquad n\le2^h\lt 2n.
 $$
 
 把同样高度、每一层都填满的二叉树当作编号上界：
 
 $$
-\text{最大节点编号}\le2^{h+1}-1<4n.
+\text{最大节点编号}\le2^{h+1}-1\lt 4n.
 $$
 
 因此按 4n 预留足够；代码使用 `4*a.size()`，即 `4*(n+1)`。**这里只读取真正建出的节点，空号默认值没有区间含义**。
@@ -209,7 +209,7 @@ $$
 $$
 \mathrm{pos}\le\mathrm{mid}\Rightarrow\text{进入左半段},
 \qquad
-\mathrm{pos}>\mathrm{mid}\Rightarrow\text{进入右半段}.
+\mathrm{pos}\gt \mathrm{mid}\Rightarrow\text{进入右半段}.
 $$
 
 到达 `[5,5]` 后赋值为 `0`；递归返回时重新合并父区间：

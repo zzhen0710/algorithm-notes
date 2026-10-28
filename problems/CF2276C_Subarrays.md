@@ -11,7 +11,7 @@
 - 元素和能被 $k$ 整除；
 - 长度**严格大于** $k$。
 
-约束：$1\le k<n\le2\times10^5$，$1\le a_i\le10^9$，多组数据的 $n$ 之和不超过 $2\times10^5$。
+约束：$1\le k\lt n\le2\times10^5$，$1\le a_i\le10^9$，多组数据的 $n$ 之和不超过 $2\times10^5$。
 
 ## 从区间条件转成前缀配对
 
@@ -23,7 +23,7 @@
 
 $$
 P_r=q_r k+s_r,\qquad P_j=q_j k+s_j,
-\qquad 0\le s_r,s_j<k
+\qquad 0\le s_r,s_j\lt k
 $$
 
 其中 $q_r,q_j$ 是商，$s_r,s_j$ 是余数。两式相减：
@@ -57,7 +57,7 @@ $$
 区间长度是 $r-j$，所以：
 
 $$
-r-j>k
+r-j\gt k
 \iff j\le r-k-1
 $$
 

@@ -216,7 +216,7 @@ cout << dsu.size(4) << ' ' << dsu.components << '\n'; // 4 1
 | $10^{18}$ | 不超过 4 |
 | $10^{100}$，远超实际可存储规模 | 仍不超过 4 |
 
-[CP-Algorithms 的复杂度说明](https://cp-algorithms.com/data_structures/disjoint_set_union.html#time-complexity)将这一范围概括为约 $n<10^{600}$。不同教材的定义起点可能不同，也常见“实际规模内不超过 5”的说法，如 [Cornell 课程说明](https://people.orie.cornell.edu/prs233/orie-6125/data-structures/union-find.html#path-compression)；这里用于理解增长速度，不必纠结相差一个常数。
+[CP-Algorithms 的复杂度说明](https://cp-algorithms.com/data_structures/disjoint_set_union.html#time-complexity)将这一范围概括为约 $n\lt 10^{600}$。不同教材的定义起点可能不同，也常见“实际规模内不超过 5”的说法，如 [Cornell 课程说明](https://people.orie.cornell.edu/prs233/orie-6125/data-structures/union-find.html#path-compression)；这里用于理解增长速度，不必纠结相差一个常数。
 
 > **接近常数的是一串操作的均摊成本，不是每次 `find` 最多只走 4 步。** 单次仍可能走多层，路径压缩让后续查找变短。
 

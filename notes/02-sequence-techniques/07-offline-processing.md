@@ -197,7 +197,7 @@ void demoOffline() {
 对相邻处理阈值 $t_1\le t_2$，只需要加入它们之间的新记录：
 
 $$
-S(t_2)=S(t_1)+\sum_{t_1<\mathrm{key}_i\le t_2}\mathrm{value}_i
+S(t_2)=S(t_1)+\sum_{t_1\lt \mathrm{key}_i\le t_2}\mathrm{value}_i
 $$
 
 这就是本例的增量状态更新，不必为每个阈值保存一份完整状态表。处理完一个询问，再把当前状态的结果写到它的原编号位置。

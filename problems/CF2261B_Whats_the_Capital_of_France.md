@@ -289,7 +289,7 @@ void solve() {
 `dif` 的最高置位对应 `high`。循环从 1 开始，每次乘 2，直到再乘 2 就会超过 `dif`。
 
 $$
-\mathrm{high}\le\mathrm{dif}<2\times\mathrm{high}.
+\mathrm{high}\le\mathrm{dif}\lt 2\times\mathrm{high}.
 $$
 
 此时 `high` 恰好就是需要的最高位权。

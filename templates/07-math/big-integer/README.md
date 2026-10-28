@@ -24,7 +24,7 @@
 | div_small(a,b) | `{商,余数}`，要求 1≤b≤INT_MAX | O(n) | O(n) |
 | trim(a) | 原地规范高位零，返回 void | 最坏 O(n) | O(1) |
 
-n、m 是有效数位数；read_big 的 n 是输入串长度。单独取出 div_small 的商和余数后，有 A=b×Q+r、0≤r<b。
+n、m 是有效数位数；read_big 的 n 是输入串长度。单独取出 div_small 的商和余数后，有 A=b×Q+r、`0 ≤ r < b`。
 
 ## 使用示例
 

@@ -665,7 +665,7 @@ $$
 如果内部长度不够支持它：
 
 $$
-len>mx
+len\gt mx
 \quad\Longrightarrow\quad
 len\leftarrow pi[len-1].
 $$
@@ -675,7 +675,7 @@ $$
 例子中：
 
 $$
-len=8>mx=7.
+len=8\gt mx=7.
 $$
 
 长度 8 虽然首尾相同，但没有第三次内部出现。

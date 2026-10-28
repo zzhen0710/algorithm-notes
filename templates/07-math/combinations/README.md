@@ -40,7 +40,7 @@ int main() {
 
 实现：[mod_combinations.hpp](mod_combinations.hpp)。推导与条件见 [7.6 模逆元与组合数取模](../../../notes/07-math/06-modular-inverse-combinations.md)。原有 combinations.hpp 的精确 C 接口不变。
 
-- **构造：** ModComb(N,p)，要求 0≤N<p<2³¹、p 为素数且内存足够；不在构造时检测这些条件。
+- **构造：** ModComb(N,p)，要求 `0 ≤ N < p < 2³¹`、p 为素数且内存足够；不在构造时检测这些条件。
 - **存储：** fact、ifact 各 N+1 项，下标 0..N，保存 i! 的余数及其逆元；N 是最大查询上限，不是模数大小。
 - **查询：** 对 0≤n≤N，C(n,k) 返回组合数的规范余数；k<0 或 k>n 返回 0。n<0／n>N 不在契约内，不能据此当作答案为 0。
 - **边界：** N=0、C(0,0)=1；N≥p 时阶乘不可逆，必须更换算法。与允许任意模数的杨辉三角递推不同。

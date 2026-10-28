@@ -126,7 +126,7 @@ flowchart LR
 $$
 \mathrm{check}(d)=\mathrm{true}
 \quad\Longrightarrow\quad
-\mathrm{check}(d-1)=\mathrm{true}\qquad(d>1).
+\mathrm{check}(d-1)=\mathrm{true}\qquad(d\gt 1).
 $$
 
 从那个合法区间删去一端，就给更短长度提供了一个合法见证。**不同长度的见证可以在不同位置，不要求同一个起点一直合法。**

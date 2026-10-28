@@ -9,7 +9,7 @@
 有偶数张牌 `n`，Alice 先手，两人轮流任取一张，直到各拿到 `n/2` 张。对多重集合 `S`，定义：
 
 $$
-\mathrm{mex}_k(S)=\min\lbrace x\ge0:\mathrm{cnt}_S(x)<k\rbrace.
+\mathrm{mex}_k(S)=\min\lbrace x\ge0:\mathrm{cnt}_S(x)\lt k\rbrace.
 $$
 
 `k=1` 时就是通常的 MEX（Minimum Excluded，最小未出现非负整数）。Alice 希望双方的 `mex_k` **不同**，Bob 希望它们**相同**。输出 `YES` 表示 Alice 在双方最优时必胜，否则输出 `NO`；相同是 Bob 获胜，不是平局。
@@ -114,7 +114,7 @@ int main() {
 在平衡分配下，一个数要让双方都达到 `k` 次，总频率至少要有 `2k`。因此设：
 
 $$
-t=\min\lbrace x\ge0:cnt[x]<2k\rbrace.
+t=\min\lbrace x\ge0:cnt[x]\lt 2k\rbrace.
 $$
 
 对所有 `x<t`，平衡分配让双方各至少得到 `k` 张，所以双方 MEX 都不会停在这些位置。只需看 `t`：
