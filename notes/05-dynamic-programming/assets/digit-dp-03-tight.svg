@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="570" viewBox="0 0 1120 570"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs><rect width="1120" height="570" fill="#f8fafc"/>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#172033} .title{font-size:29px;font-weight:700}.sub{font-size:18px;fill:#475569}.normal{font-size:21px}.small{font-size:18px}.big{font-size:26px;font-weight:700}.blue{fill:#1d4ed8}.green{fill:#047857}.muted{fill:#64748b}.red{fill:#b91c1c}</style>
+<text x="36" y="48" class="title">缓存边界：pos 与 rem 相同，tight 不同，答案仍不同</text><text x="36" y="82" class="sub">上界仍为 243；00_ 与 24_ 都使 pos=2、rem=0。</text>
+<rect x="35" y="126" width="500" height="325" rx="14" fill="#ecfdf5" stroke="#cbd5e1" stroke-width="2"/>
+<text x="285" y="171" class="big" text-anchor="middle">00_</text>
+<text x="285" y="211" class="normal" text-anchor="middle">tight=false</text>
+<text x="285" y="252" class="normal" text-anchor="middle">末位允许 0..9</text>
+<rect x="70" y="281" width="95" height="63" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="117" y="322" class="big" text-anchor="middle">0</text>
+<rect x="182" y="281" width="95" height="63" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="229" y="322" class="big" text-anchor="middle">3</text>
+<rect x="294" y="281" width="95" height="63" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="341" y="322" class="big" text-anchor="middle">6</text>
+<rect x="406" y="281" width="95" height="63" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="453" y="322" class="big" text-anchor="middle">9</text>
+<text x="285" y="394" class="big" text-anchor="middle">合法后缀数量 = 4</text>
+<text x="285" y="432" class="small" text-anchor="middle">可缓存 memo[2][0]=4</text>
+<rect x="585" y="126" width="500" height="325" rx="14" fill="#eff6ff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="835" y="171" class="big" text-anchor="middle">24_</text>
+<text x="835" y="211" class="normal" text-anchor="middle">tight=true</text>
+<text x="835" y="252" class="normal" text-anchor="middle">末位只允许 0..3</text>
+<rect x="620" y="281" width="95" height="63" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="667" y="322" class="big" text-anchor="middle">0</text>
+<rect x="732" y="281" width="95" height="63" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="779" y="322" class="big" text-anchor="middle">3</text>
+<rect x="844" y="281" width="95" height="63" rx="14" fill="#fee2e2" stroke="#cbd5e1" stroke-width="2"/>
+<text x="891" y="322" class="big red" text-anchor="middle">6</text>
+<path d="M859,294 L924,333" stroke="#b91c1c" stroke-width="3"/>
+<rect x="956" y="281" width="95" height="63" rx="14" fill="#fee2e2" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1003" y="322" class="big red" text-anchor="middle">9</text>
+<path d="M971,294 L1036,333" stroke="#b91c1c" stroke-width="3"/>
+<text x="835" y="394" class="big" text-anchor="middle">合法后缀数量 = 2</text>
+<text x="835" y="432" class="small" text-anchor="middle">246、249 超过上界，不能计入</text>
+<text x="560" y="501" class="normal blue" text-anchor="middle">二维表没有 tight 这一维，因此只缓存 tight=false 的状态。</text>
+<text x="560" y="537" class="small muted" text-anchor="middle">受限状态仍会正常递归，只是不混入这张自由状态缓存。</text>
+</svg>

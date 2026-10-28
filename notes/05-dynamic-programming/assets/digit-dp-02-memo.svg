@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="620" viewBox="0 0 1120 620"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs><rect width="1120" height="620" fill="#f8fafc"/>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#172033} .title{font-size:29px;font-weight:700}.sub{font-size:18px;fill:#475569}.normal{font-size:21px}.small{font-size:18px}.big{font-size:26px;font-weight:700}.blue{fill:#1d4ed8}.green{fill:#047857}.muted{fill:#64748b}.red{fill:#b91c1c}</style>
+<text x="36" y="48" class="title">同一个后缀问题，只计算一次，仍贡献给每一条历史</text><text x="36" y="82" class="sub">02_ 与 20_：已填两位、数位和余数都是 2，且都已小于 243。</text>
+<rect x="55" y="127" width="310" height="110" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="210" y="170" class="big" text-anchor="middle">02_</text>
+<text x="210" y="209" class="small" text-anchor="middle">不同前缀，不同的一组整数</text>
+<rect x="755" y="127" width="310" height="110" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="910" y="170" class="big" text-anchor="middle">20_</text>
+<text x="910" y="209" class="small" text-anchor="middle">不同前缀，不同的一组整数</text>
+<path d="M210,237 L450,295" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M910,237 L670,295" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="335" y="297" width="450" height="123" rx="14" fill="#ecfdf5" stroke="#6ee7b7" stroke-width="2"/>
+<text x="560" y="332" class="normal" text-anchor="middle">同一自由状态：pos=2，rem=2</text>
+<text x="560" y="367" class="normal" text-anchor="middle">最后一位可选 1、4、7</text>
+<text x="560" y="401" class="big green" text-anchor="middle">缓存 memo[2][2] = 3</text>
+<rect x="55" y="454" width="480" height="82" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="295" y="488" class="big" text-anchor="middle">021、024、027</text>
+<text x="295" y="519" class="small" text-anchor="middle">02_ 分支加上 3</text>
+<rect x="585" y="454" width="480" height="82" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="825" y="488" class="big" text-anchor="middle">201、204、207</text>
+<text x="825" y="519" class="small" text-anchor="middle">20_ 分支也加上 3</text>
+<text x="560" y="584" class="normal blue" text-anchor="middle">复用计算结果 ≠ 去重整数：本例合计 6 个。</text>
+</svg>

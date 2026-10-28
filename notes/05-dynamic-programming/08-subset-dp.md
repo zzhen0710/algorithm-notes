@@ -556,4 +556,6 @@ flowchart LR
 
 概念可对照 [OI Wiki：状压 DP](https://oi-wiki.org/dp/state/)；本节围绕小集合访问模型展开，不照搬该页的棋盘模型或其他状态定义。
 
+下一节：[5.9 数位 DP](09-digit-dp.md)，从小集合选择转向巨大数值区间的逐位计数，继续练习完整状态与结果复用。
+
 [本章索引](README.md) · [配套模板](../../templates/05-dynamic-programming/subset-dp/README.md)

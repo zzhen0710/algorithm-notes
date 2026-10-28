@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="690" viewBox="0 0 1120 690"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 Z" fill="#64748b"/></marker></defs><rect width="1120" height="690" fill="#f8fafc"/>
+<style>text{font-family:"Microsoft YaHei","Noto Sans CJK SC",sans-serif;fill:#172033} .title{font-size:29px;font-weight:700}.sub{font-size:18px;fill:#475569}.normal{font-size:21px}.small{font-size:18px}.big{font-size:26px;font-weight:700}.blue{fill:#1d4ed8}.green{fill:#047857}.muted{fill:#64748b}.red{fill:#b91c1c}</style>
+<text x="36" y="48" class="title">按位限制：第一次选小后，后面不再受上界限制</text><text x="36" y="82" class="sub">同一上界 x=243，m=3；图内数位串统一补为三位，_ 表示待填写。</text>
+<rect x="420" y="112" width="280" height="73" rx="14" fill="#eff6ff" stroke="#93c5fd" stroke-width="2"/>
+<text x="560" y="144" class="big" text-anchor="middle">_ _ _  ≤  2 4 3</text>
+<text x="560" y="170" class="small" text-anchor="middle">dfs(0,0,true)</text>
+<path d="M560,185 L185,238" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="35" y="240" width="310" height="184" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="55" y="274" class="big" text-anchor="start">第一位选 0</text>
+<text x="55" y="309" class="normal" text-anchor="start">000..099</text>
+<text x="55" y="346" class="normal green" text-anchor="start">tight=false</text>
+<text x="55" y="381" class="small" text-anchor="start">后两位各选 0..9</text>
+<text x="55" y="410" class="normal" text-anchor="start">合法计数：34</text>
+<path d="M560,185 L555,238" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="405" y="240" width="310" height="184" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="425" y="274" class="big" text-anchor="start">第一位选 1</text>
+<text x="425" y="309" class="normal" text-anchor="start">100..199</text>
+<text x="425" y="346" class="normal green" text-anchor="start">tight=false</text>
+<text x="425" y="381" class="small" text-anchor="start">后两位各选 0..9</text>
+<text x="425" y="410" class="normal" text-anchor="start">合法计数：33</text>
+<path d="M560,185 L925,238" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="775" y="240" width="310" height="184" rx="14" fill="#eff6ff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="795" y="274" class="big" text-anchor="start">第一位选 2</text>
+<text x="795" y="309" class="normal" text-anchor="start">200..243</text>
+<text x="795" y="346" class="normal blue" text-anchor="start">tight=true</text>
+<text x="795" y="381" class="small" text-anchor="start">第二位最多选 4</text>
+<text x="795" y="410" class="normal" text-anchor="start">合法计数：15</text>
+<rect x="35" y="451" width="1050" height="120" rx="14" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="60" y="486" class="normal" text-anchor="start">继续看前缀 2：第二位选 0、1、2、3 → 更小，末位可选 0..9。</text>
+<text x="60" y="524" class="normal" text-anchor="start">第二位选 4 → 仍相同；前缀 24 的末位只能选 0..3。</text>
+<text x="60" y="553" class="small muted" text-anchor="start">只允许整个前缀始终不超过 243 的对应前缀。</text>
+<text x="560" y="632" class="big blue" text-anchor="middle">F(243) = 34 + 33 + 15 = 82</text>
+</svg>

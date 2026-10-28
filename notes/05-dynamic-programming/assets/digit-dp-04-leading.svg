@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="480" viewBox="0 0 1080 480">
+ <rect width="1080" height="480" rx="16" fill="#f7f9fc"/>
+ <style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#172b4d;font-size:19px}.title{font-size:25px;font-weight:700}.digit{font-family:Consolas,monospace;font-size:30px;font-weight:700}.small{font-size:17px}.muted{fill:#607087}.ok{fill:#18704a}.bad{fill:#b63d3d}</style>
+ <text x="32" y="43" class="title">固定填三位：占位的 0，不一定是上一位真实数字</text>
+ <text x="32" y="77" class="small muted">从 pos=0 填到 pos=2；last=10 表示尚未开始，不能理解成“上一位是 0”。</text>
+ <g transform="translate(0,105)">
+  <text x="32" y="40">整数 1 → 001</text>
+  <rect x="232" y="0" width="138" height="82" rx="9" fill="#e9eef5"/><text x="294" y="33" class="digit">0</text><text x="251" y="65" class="small">last = 10</text>
+  <text x="388" y="45">→</text>
+  <rect x="430" y="0" width="138" height="82" rx="9" fill="#e9eef5"/><text x="492" y="33" class="digit">0</text><text x="449" y="65" class="small">last = 10</text>
+  <text x="587" y="45">→</text>
+  <rect x="630" y="0" width="138" height="82" rx="9" fill="#dff3e9"/><text x="692" y="33" class="digit">1</text><text x="657" y="65" class="small">last = 1</text>
+  <text x="800" y="31" class="ok">第一个真实数字</text><text x="800" y="65" class="small">无需与占位零比较</text>
+ </g>
+ <g transform="translate(0,222)">
+  <text x="32" y="40">整数 10 → 010</text>
+  <rect x="232" y="0" width="138" height="82" rx="9" fill="#e9eef5"/><text x="294" y="33" class="digit">0</text><text x="251" y="65" class="small">last = 10</text>
+  <text x="388" y="45">→</text>
+  <rect x="430" y="0" width="138" height="82" rx="9" fill="#dff3e9"/><text x="492" y="33" class="digit">1</text><text x="457" y="65" class="small">last = 1</text>
+  <text x="582" y="45" class="bad">×</text>
+  <rect x="630" y="0" width="138" height="82" rx="9" fill="#fce8e8"/><text x="692" y="33" class="digit">0</text><text x="646" y="65" class="small bad">真实零：拒绝</text>
+  <text x="800" y="31" class="bad">|1 − 0| = 1</text><text x="800" y="65" class="small">Windy 必须检查并排除</text>
+ </g>
+ <g transform="translate(0,339)">
+  <text x="32" y="40">整数 0 → 000</text>
+  <rect x="232" y="0" width="536" height="82" rx="9" fill="#e9eef5"/><text x="268" y="33" class="digit">0           0           0</text><text x="266" y="65" class="small">始终 last=10；Classy 的 cnt 则始终为 0</text>
+  <text x="800" y="31" class="small">Windy：返回 0，不计入</text><text x="800" y="65" class="small">Classy 原函数：返回 1</text>
+ </g>
+ <text x="32" y="457" class="small muted">是否区分前导零，取决于题目条件；是否统计整数 0，还需单独明确结束判断。</text>
+</svg>
