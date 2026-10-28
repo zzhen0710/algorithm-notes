@@ -68,3 +68,5 @@ $$
 [CF 1628A — Meximum Array](../../problems/CF1628A_Meximum_Array.md)以剩余后缀的 MEX 作为当前段目标，再收齐连续目标值；MEX 为 `0` 时每段仍必须非空。后缀信息如何保存，见 [后缀预处理](suffix-preprocessing.md#代表题cf-1628a)。
 
 > 找最小不满足条件的整数时，先明确完整定义域，再找从起点开始的第一个失败位置。
+
+[CF 2272A — Maximize One MEX](../../contests/codeforces/2272.md#a-maximize-one-mex)：集合加入元素后 MEX 不减，因此前缀 MEX 单调。整个数组为 `0..n-1` 的排列时，目标前缀缺失的最小值恰是剩余后缀最小值；据此固定分界，再分析跨界交换。**这个补集性质依赖排列覆盖完整定义域，普通数组不能直接套用。**
