@@ -16,6 +16,8 @@
 
 - [Floyd：全源最短距离](floyd/README.md)
 
+- [负权最短路与负环：Bellman–Ford、SPFA](negative-shortest-path/README.md)
+
 ## 跨章依赖
 
 - [DSU：并查集](../09-data-structures/dsu/README.md)：Kruskal 复用这一实现；复制单文件参赛时按模板说明处理依赖。

@@ -708,4 +708,6 @@ if (x < 0) return 0;
 5. DFS 有三个参数，memo 为什么只有二维？函数内枚举 d 的 for，对应递推的哪一层循环？
 6. Windy 的 last=10 与真实数字 0 有什么区别？为什么 Classy 原版不能直接按四种 cnt 估算复杂度？
 
+下一小单元：[6.10 负权最短路与负环](../06-graph-and-tree/10-negative-shortest-path.md)，继续对照状态阶段、松弛传播与计算顺序，为差分约束建立前置。
+
 [本章索引](README.md) · [配套模板](../../templates/05-dynamic-programming/digit-dp/README.md)
