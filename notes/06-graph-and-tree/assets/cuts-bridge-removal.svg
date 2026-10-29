@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620" viewBox="0 0 1180 620">
+<rect width="1180" height="620" rx="12" fill="white"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="25" y="42" font-size="27" fill="#172554" text-anchor="start" font-weight="bold">第 4 节：桥 —— 删掉 5—6，6 没有其他出口</text>
+<text x="25" y="78" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">DFS 从 5 进入 6；6 的子树不能通过其他边回到 5 或更早的点。</text>
+<rect x="25" y="100" width="550" height="410" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<rect x="605" y="100" width="550" height="410" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="45" y="138" font-size="20" fill="#172554" text-anchor="start" font-weight="bold">删除前：只有 5—6 连接到 6</text>
+<text x="625" y="138" font-size="20" fill="#172554" text-anchor="start" font-weight="bold">只删这条边：两侧不再相通</text>
+<line x1="90" y1="215" x2="205" y2="180" stroke="#94a3b8" stroke-width="2"/>
+<line x1="205" y1="180" x2="300" y2="280" stroke="#94a3b8" stroke-width="2"/>
+<line x1="300" y1="280" x2="90" y2="215" stroke="#94a3b8" stroke-width="2"/>
+<line x1="300" y1="280" x2="180" y2="375" stroke="#94a3b8" stroke-width="2"/>
+<line x1="180" y1="375" x2="360" y2="405" stroke="#94a3b8" stroke-width="2"/>
+<line x1="360" y1="405" x2="300" y2="280" stroke="#94a3b8" stroke-width="2"/>
+<line x1="360" y1="405" x2="480" y2="405" stroke="#2563eb" stroke-width="4"/>
+<circle cx="90" cy="215" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="90" y="222" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="205" cy="180" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="205" y="187" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="300" cy="280" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="300" y="287" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="180" cy="375" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="180" y="382" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="360" cy="405" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="360" y="412" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="480" cy="405" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="480" y="412" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">6</text>
+<line x1="670" y1="215" x2="785" y2="180" stroke="#94a3b8" stroke-width="2"/>
+<line x1="785" y1="180" x2="880" y2="280" stroke="#94a3b8" stroke-width="2"/>
+<line x1="880" y1="280" x2="670" y2="215" stroke="#94a3b8" stroke-width="2"/>
+<line x1="880" y1="280" x2="760" y2="375" stroke="#94a3b8" stroke-width="2"/>
+<line x1="760" y1="375" x2="940" y2="405" stroke="#94a3b8" stroke-width="2"/>
+<line x1="940" y1="405" x2="880" y2="280" stroke="#94a3b8" stroke-width="2"/>
+<line x1="940" y1="405" x2="1060" y2="405" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="7 6"/>
+<line x1="990.0" y1="395.0" x2="1010.0" y2="415.0" stroke="#dc2626" stroke-width="3"/>
+<line x1="990.0" y1="415.0" x2="1010.0" y2="395.0" stroke="#dc2626" stroke-width="3"/>
+<circle cx="670" cy="215" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="670" y="222" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="785" cy="180" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="785" y="187" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="880" cy="280" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="880" y="287" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">3</text>
+<circle cx="760" cy="375" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="760" y="382" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">4</text>
+<circle cx="940" cy="405" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="940" y="412" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">5</text>
+<circle cx="1060" cy="405" r="25" fill="white" stroke="#c2410c" stroke-width="3"/>
+<text x="1060" y="412" font-size="21" fill="#c2410c" text-anchor="middle" font-weight="bold">6</text>
+<text x="45" y="480" font-size="19" fill="#172554" text-anchor="start" font-weight="normal">low[6] = 6，dfn[5] = 5</text>
+<text x="625" y="480" font-size="19" fill="#172554" text-anchor="start" font-weight="normal">{1,2,3,4,5} 与 {6} 分开</text>
+<rect x="25" y="530" width="1130" height="70" rx="8" fill="#eff6ff" stroke="none"/>
+<text x="42" y="558" font-size="18" fill="#172554" text-anchor="start" font-weight="bold">low[6] &gt; dfn[5]：连父节点本身都回不到，所以树边 5—6 是桥。</text>
+<text x="42" y="585" font-size="17" fill="#172554" text-anchor="start" font-weight="normal">删边只移除一条连接，两个端点都还在；需要严格大于，等号意味着仍可绕回父亲。</text>
+</g></svg>

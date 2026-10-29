@@ -10,6 +10,8 @@
 
 ## 跨章参考
 
+- [割点与桥：先明确删点还是删边](../../notes/06-graph-and-tree/13-articulation-points-bridges.md#5-非根割点只能回到-u-本身也救不了删点)：通过能否绕开对象推导 low 的比较；补[点／边结果提取与端点映射](../../notes/06-graph-and-tree/13-articulation-points-bridges.md#93-两题共同留下什么)。与 SCC 的目标和状态边界分开，暂不独立重复范式。
+
 - [强连通分量：缩点后衔接 DAG](../../notes/06-graph-and-tree/12-strongly-connected-components.md#5-缩点原点编号映射为分量编号)：先解决有向环内互相可达，再分析组间依赖；组内状态能否聚合须另证；[最少起点覆盖](../../notes/06-graph-and-tree/12-strongly-connected-components.md#92-p2002最少选几个起点才能让消息覆盖全图)补原图入度反例与源分量证明。
 
 - [差分约束：从限制反推图](../../notes/06-graph-and-tree/11-difference-constraints.md#2-为什么是-j-到-i看谁为谁提供上界)：先统一形式，再从松弛公式确认方向；可行性与优化目标分开。当前保留知识笔记入口，不另建重复范式。

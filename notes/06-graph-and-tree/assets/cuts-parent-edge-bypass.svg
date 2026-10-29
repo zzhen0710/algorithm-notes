@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="620" viewBox="0 0 1180 620">
+<rect width="1180" height="620" rx="12" fill="white"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="25" y="42" font-size="27" fill="#172554" text-anchor="start" font-weight="bold">第 3 节：跳过来边，不等于跳过父节点</text>
+<text x="25" y="78" font-size="17" fill="#475569" text-anchor="start" font-weight="normal">两条不同的无向边 e0、e1，都连接节点 1 与 2；从 e0 首次进入 2。</text>
+<rect x="25" y="100" width="550" height="410" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<rect x="605" y="100" width="550" height="410" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+<text x="45" y="138" font-size="20" fill="#dc2626" text-anchor="start" font-weight="bold">错误：指向父节点的边全部跳过</text>
+<path d="M 160 285 Q 300 160 440 285" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+<text x="300" y="205" font-size="17" fill="#dc2626" text-anchor="middle" font-weight="normal">e0：跳过</text>
+<path d="M 160 285 Q 300 420 440 285" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+<text x="300" y="385" font-size="17" fill="#dc2626" text-anchor="middle" font-weight="normal">e1：跳过</text>
+<circle cx="160" cy="285" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="160" y="292" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="440" cy="285" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="440" y="292" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">2</text>
+<text x="45" y="440" font-size="19" fill="#dc2626" text-anchor="start" font-weight="normal">low[2] 误留为 2，错判 e0 是桥</text>
+<text x="45" y="478" font-size="17" fill="#172554" text-anchor="start" font-weight="normal">删除 e0 后，明明还有 e1 可走</text>
+<text x="625" y="138" font-size="20" fill="#1d4ed8" text-anchor="start" font-weight="bold">正确：只跳过 pe[2] 指定的 e0</text>
+<path d="M 740 285 Q 880 160 1020 285" fill="none" stroke="#cbd5e1" stroke-width="4"/>
+<text x="880" y="205" font-size="17" fill="#475569" text-anchor="middle" font-weight="normal">e0：跳过</text>
+<path d="M 740 285 Q 880 420 1020 285" fill="none" stroke="#2563eb" stroke-width="4"/>
+<text x="880" y="385" font-size="17" fill="#475569" text-anchor="middle" font-weight="normal">e1：保留，能绕回 1</text>
+<circle cx="740" cy="285" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="740" y="292" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">1</text>
+<circle cx="1020" cy="285" r="25" fill="white" stroke="#1d4ed8" stroke-width="3"/>
+<text x="1020" y="292" font-size="21" fill="#1d4ed8" text-anchor="middle" font-weight="bold">2</text>
+<text x="625" y="440" font-size="19" fill="#1d4ed8" text-anchor="start" font-weight="normal">low[2] = min(2, dfn[1]) = 1</text>
+<text x="625" y="478" font-size="17" fill="#172554" text-anchor="start" font-weight="normal">e0、e1 只是端点相同，仍是两条不同的边</text>
+<rect x="25" y="530" width="1130" height="70" rx="8" fill="#eff6ff" stroke="none"/>
+<text x="42" y="558" font-size="18" fill="#172554" text-anchor="start" font-weight="bold">判桥时问的是：删掉“这一条边”，还剩不剩另一条路？</text>
+<text x="42" y="585" font-size="17" fill="#172554" text-anchor="start" font-weight="normal">因此必须按原边 id 过滤；只比较邻点是否等于 parent，会把真正的重边绕行一并删掉。</text>
+</g></svg>

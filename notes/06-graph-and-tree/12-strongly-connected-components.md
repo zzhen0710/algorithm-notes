@@ -641,4 +641,6 @@ Tarjan、扫描原边与扫描分量分别为 O(n+m)、O(m)、O(n)，总时间�
 
 概念与标准更新规则可对照 [OI Wiki：强连通分量](https://oi-wiki.org/graph/scc/)。本篇例图、过程表与显式栈实现按仓库已有 next 写法自行整理。
 
+后续：[无向图的割点与桥](13-articulation-points-bridges.md#7-与上一节-scc-对照别因为同名-low-就照搬)，比较同名 low 在不同目标中的更新条件。
+
 [本章索引](README.md) · [强连通分量模板](../../templates/06-graph-and-tree/scc/README.md)
