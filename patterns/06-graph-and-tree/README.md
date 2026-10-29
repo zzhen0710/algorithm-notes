@@ -10,6 +10,8 @@
 
 ## 跨章参考
 
+- [欧拉路径：从访问点转为消耗原边](../../notes/06-graph-and-tree/14-euler-trail.md#5-next-与-used一个防止重扫一个防止重走)：原边身份与永久标记、邻接游标和退栈拼接；补[同一模板与题面比较规则](../../notes/06-graph-and-tree/14-euler-trail.md#103-同一模板差别留在输入与输出)。完整讲解在知识笔记维护，不另建重复范式。
+
 - [割点与桥：先明确删点还是删边](../../notes/06-graph-and-tree/13-articulation-points-bridges.md#5-非根割点只能回到-u-本身也救不了删点)：通过能否绕开对象推导 low 的比较；补[点／边结果提取与端点映射](../../notes/06-graph-and-tree/13-articulation-points-bridges.md#93-两题共同留下什么)。与 SCC 的目标和状态边界分开，暂不独立重复范式。
 
 - [强连通分量：缩点后衔接 DAG](../../notes/06-graph-and-tree/12-strongly-connected-components.md#5-缩点原点编号映射为分量编号)：先解决有向环内互相可达，再分析组间依赖；组内状态能否聚合须另证；[最少起点覆盖](../../notes/06-graph-and-tree/12-strongly-connected-components.md#92-p2002最少选几个起点才能让消息覆盖全图)补原图入度反例与源分量证明。

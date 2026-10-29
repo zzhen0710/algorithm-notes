@@ -618,4 +618,6 @@ flowchart LR
 
 概念与标准判定规则参考 [OI Wiki：割点和桥](https://oi-wiki.org/graph/cut/)。本篇显式栈实现、例图和执行快照按仓库已有 DFS 写法自行整理。
 
+下一节：[6.14 欧拉路径与回路](14-euler-trail.md)，继续使用原边编号，但目标从判断删边后的连通性，转为安排每条边恰好使用一次的走法。
+
 [本章索引](README.md) · [割点与桥模板](../../templates/06-graph-and-tree/cuts/README.md)

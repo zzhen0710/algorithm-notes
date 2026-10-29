@@ -24,6 +24,8 @@
 
 - [割点与桥：无向图显式 DFS](cuts/README.md)
 
+- [欧拉路径与回路：Hierholzer](euler-trail/README.md)，同一实现支持有向／无向与可选字典序。
+
 ## 跨章依赖
 
 - [DSU：并查集](../09-data-structures/dsu/README.md)：Kruskal 复用这一实现；复制单文件参赛时按模板说明处理依赖。
