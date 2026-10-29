@@ -10,7 +10,7 @@
 | [02 序列与区间技巧](../notes/02-sequence-techniques/README.md) | [本章索引](02-sequence-techniques/README.md) | 离散化、二分、归并计数、区间合并 |
 | [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 互不冲突区间选择 |
 | [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | LIS 长度与逐位置长度、树上连通点集与独立集、小集合访问与有序选择、数位和余数、非零位计数与相邻位约束 |
-| [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、Dijkstra／Floyd、负权与负环、差分约束、拓扑、匹配、DFS 序、倍增 LCA |
+| [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 染色、最小生成树、Dijkstra／Floyd、负权与负环、差分约束、强连通分量与缩点、拓扑、匹配、DFS 序、倍增 LCA |
 | [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、快速幂、素数与分解、逆元、组合数、容斥、高精度 |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | KMP、字符串双哈希、Manacher |
 | [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表、线段树、Trie |

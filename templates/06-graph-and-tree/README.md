@@ -20,6 +20,8 @@
 
 - [差分约束：统一不等式、判定与一组解](difference-constraints/README.md)，复用本章负权最短路实现。
 
+- [强连通分量与缩点：显式栈 Tarjan](scc/README.md)
+
 ## 跨章依赖
 
 - [DSU：并查集](../09-data-structures/dsu/README.md)：Kruskal 复用这一实现；复制单文件参赛时按模板说明处理依赖。
