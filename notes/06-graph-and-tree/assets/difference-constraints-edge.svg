@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="410" viewBox="0 0 1040 410" role="img" aria-labelledby="title desc">
+ <title id="title">差分约束移项与有向边方向</title>
+ <desc id="desc">x2减x1至多为3，移项为x2至多等于x1加3，建立从变量1到变量2的权重3的有向边。变量1提供参照，变量2受到上界限制。边权是上界，不要求两值差恰好为3。</desc>
+ <defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0 0L9 4.5L0 9Z" fill="#287ba5"/></marker></defs>
+ <rect width="1040" height="410" rx="16" fill="#f7f9fc"/>
+ <style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif;fill:#20344b;font-size:20px}.title{font-size:26px;font-weight:700}.formula{font-size:29px;font-weight:700}.small{font-size:18px}.muted{fill:#536c80}</style>
+ <text x="30" y="42" class="title">先移项，再看谁为谁提供上界</text>
+ <rect x="30" y="70" width="285" height="100" rx="12" fill="#e9eef6"/>
+ <text x="70" y="108" class="small muted">原来的差值限制</text><text x="77" y="149" class="formula">x₂ − x₁ ≤ 3</text>
+ <text x="333" y="131" class="formula">→</text>
+ <rect x="380" y="70" width="285" height="100" rx="12" fill="#e4f1fa"/>
+ <text x="420" y="108" class="small muted">移项，明确被限制者</text><text x="423" y="149" class="formula">x₂ ≤ x₁ + 3</text>
+ <text x="683" y="131" class="formula">→</text>
+ <rect x="730" y="70" width="280" height="100" rx="12" fill="#e5f3eb"/>
+ <text x="770" y="108" class="small muted">图中的有向约束</text><text x="768" y="149" class="formula">1 ── 3 ──▶ 2</text>
+ <rect x="52" y="211" width="280" height="86" rx="12" fill="#e4f1fa" stroke="#94bad2"/>
+ <text x="92" y="245">变量 1：提供参照</text><text x="110" y="278" class="small">例如 x₁ = −1</text>
+ <path d="M335 253H700" stroke="#287ba5" stroke-width="3" marker-end="url(#arrow)"/>
+ <text x="386" y="229" class="small">允许的差值上限：+3</text>
+ <text x="390" y="287" class="small muted">不是要求两端差值等于 3</text>
+ <rect x="713" y="211" width="280" height="86" rx="12" fill="#e5f3eb" stroke="#9cc6ac"/>
+ <text x="752" y="245">变量 2：受到限制</text><text x="747" y="278" class="small">只需 x₂ ≤ −1 + 3 = 2</text>
+ <text x="53" y="344">所以 x₂ = 0 也合法：0 − (−1) = 1 ≤ 3，不必取到上界 2。</text>
+ <text x="53" y="381" class="small muted">记忆方式：右边的变量提供参照，边指向左边受上界约束的变量。</text>
+</svg>

@@ -18,6 +18,8 @@
 
 - [负权最短路与负环：Bellman–Ford、SPFA](negative-shortest-path/README.md)
 
+- [差分约束：统一不等式、判定与一组解](difference-constraints/README.md)，复用本章负权最短路实现。
+
 ## 跨章依赖
 
 - [DSU：并查集](../09-data-structures/dsu/README.md)：Kruskal 复用这一实现；复制单文件参赛时按模板说明处理依赖。

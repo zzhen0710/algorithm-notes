@@ -16,7 +16,8 @@ struct Result {
 };
 
 // 1-based；1<=s<=n 检查从 s 可达的负环；s=0 等价于虚拟源连向全部点。
-// n<=2000，实际有向边数 m<=20000，|w|<=1e9；检测期间的中间量也须安全。
+// n>=1，n+1、实际边数 m 可用 int 表示且内存足够；令 W 为边权绝对值上限。
+// 要求数学意义上的 n*m*W<=1e18，保证检测期间的中间加法也安全。
 // negative_cycle=true 时 dist 只是中间结果，不能当作最终最短路。
 inline Result bellman_ford(int n, const std::vector<Edge>& edges, int s = 1) {
     std::vector<ll> d(n + 1, s == 0 ? 0 : INF);

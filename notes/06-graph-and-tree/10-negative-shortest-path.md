@@ -34,7 +34,7 @@ $$
 
 沿用 `using ll = long long;`，点编号为 **1-based**。输入是已经建好的有向边表，每条边保存一次；无向边由调用者明确加入两个方向。
 
-教学与模板统一限制：1≤n≤2000，实际有向边数 m≤20000，边权绝对值≤10⁹。允许重边、自环和不连通；下面的计算范围覆盖检测负环期间的中间值。`s=0` 是接口约定的全图模式，不把编号 0 当作真实点。
+本节教学实现采用具体范围：1≤n≤2000，实际有向边数 m≤20000，边权绝对值≤10⁹。复用模板另给出更一般的数值充分条件，见[模板契约](../../templates/06-graph-and-tree/negative-shortest-path/README.md#接口与输入)。允许重边、自环和不连通；下面的计算范围覆盖检测负环期间的中间值。`s=0` 是接口约定的全图模式，不把编号 0 当作真实点。
 
 ```cpp
 const ll BF_INF = LLONG_MAX / 4;
@@ -543,7 +543,7 @@ $$
 3. 全图某处有负环，是否说明从 1 到 2 没有有限最短路？还需什么可达条件？
 4. inq 与 BFS 的永久访问标记有什么区别？hops 又为何不能写成每次改善就自增？
 
-本节的阶段递推与通用 DP 的联系补入[按允许边数组织状态](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#按允许边数分阶段bellmanford)。后续在完成本节练习后，再用这套负环判断衔接差分约束；暂不把下一专题记为已整理。
+本节的阶段递推与通用 DP 的联系补入[按允许边数组织状态](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#按允许边数分阶段bellmanford)。下一节：[6.11 差分约束](11-difference-constraints.md)，把不等式转成图并用全图负环判可行性。P3385 当前贴稿的调用范围继续保留待修正记录，不因进入下一节自动确认其平台提交版本。
 
 算法条件与参考说明：[Bellman–Ford 与 SPFA](https://cp-algorithms.com/graph/bellman_ford.html)、[OI Wiki 最短路](https://oi-wiki.org/graph/shortest-path/)。通用教学代码与图表按当前契约自行整理；两题个人实现及当前贴稿的范围修正记录在第 7 节，不混写为通用模板的验证结果。
 

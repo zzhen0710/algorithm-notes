@@ -10,6 +10,8 @@
 
 ## 跨章参考
 
+- [差分约束：从限制反推图](../../notes/06-graph-and-tree/11-difference-constraints.md#2-为什么是-j-到-i看谁为谁提供上界)：先统一形式，再从松弛公式确认方向；可行性与优化目标分开。当前保留知识笔记入口，不另建重复范式。
+
 - [按允许边数分阶段：Bellman–Ford](../05-dynamic-programming/dp-modeling-workflow.md#按允许边数分阶段bellmanford)：原地松弛与严格阶段的差别；[负环范围及队列传播](../../notes/06-graph-and-tree/10-negative-shortest-path.md#4-检测范围从一个点出发还是检查整张图)在知识笔记维护。
 
 - [按可用中转点分阶段：Floyd](../05-dynamic-programming/dp-modeling-workflow.md#按可用中转点分阶段floyd)：原图可有环，阶段依赖仍按可用中转范围递增。
