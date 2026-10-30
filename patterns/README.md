@@ -12,7 +12,7 @@
 | [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 基值与剩余量、分阶段解耦、答案结构缩减 |
 | [05 动态规划](../notes/05-dynamic-programming/README.md) | [本章索引](05-dynamic-programming/README.md) | DP 建模、记忆化与递推选型、背包识别、状态上界、子树条件状态，并链接 DAG DP |
 | [06 图与树](../notes/06-graph-and-tree/README.md) | [本章索引](06-graph-and-tree/README.md) | 无环依赖、状态方向、路径统计、父子递推与逆序离线 |
-| [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | 博弈阈值与策略证明 |
+| [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | 博弈阈值、策略证明与递推矩阵构造 |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | 筛选候选、比较键与指纹去重 |
 | [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | 统一变换、操作复合与翻转奇偶；跨章引用局部维护、倍增状态与区间判定 |
 

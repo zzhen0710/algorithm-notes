@@ -14,4 +14,6 @@
 
 - [非负高精度整数：十进制比较、加减乘与除以小整数](big-integer/README.md)
 
+- [矩阵乘法与快速幂：小状态的重复线性转移](matrix/README.md)
+
 [返回全部模板](../README.md)

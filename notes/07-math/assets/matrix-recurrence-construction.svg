@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="700" viewBox="0 0 1100 700">
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#475569"/></marker></defs>
+<rect x="0" y="0" width="1100" height="700" rx="0" fill="#f8fafc" stroke="none"/>
+<text x="28" y="42" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">构造转移矩阵：先写每一格怎样更新，再按行提取系数</text>
+<text x="28" y="80" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#0f172a" font-weight="400">Sₜ 是这一轮两个历史值的合称；Sₜ₊₁ 是更新后的两个值。</text>
+<text x="65" y="132" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#2563eb" font-weight="700">旧状态 Sₜ</text>
+<text x="475" y="132" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#047857" font-weight="700">新状态 Sₜ₊₁</text>
+<rect x="60" y="158" width="225" height="70" rx="0" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="143" y="203" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#2563eb" font-weight="700">Fₜ</text>
+<rect x="60" y="228" width="225" height="70" rx="0" fill="#eff6ff" stroke="#cbd5e1"/>
+<text x="143" y="273" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#2563eb" font-weight="700">Fₜ₋₁</text>
+<rect x="470" y="158" width="225" height="70" rx="0" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="545" y="203" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#047857" font-weight="700">Fₜ₊₁</text>
+<rect x="470" y="228" width="225" height="70" rx="0" fill="#ecfdf5" stroke="#cbd5e1"/>
+<text x="545" y="273" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#047857" font-weight="700">Fₜ</text>
+<path d="M325 228 H430" stroke="#475569" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<text x="330" y="203" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">更新一次</text>
+<text x="745" y="189" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#047857" font-weight="700">新第一格：算下一项</text>
+<text x="745" y="222" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="400">旧第一格 + 旧第二格</text>
+<text x="745" y="267" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#2563eb" font-weight="700">新第二格：留下历史</text>
+<text x="745" y="300" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="400">直接复制旧第一格</text>
+<rect x="28" y="342" width="1044" height="265" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="48" y="382" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">按“旧第一格、旧第二格”的顺序排列系数：</text>
+<text x="48" y="442" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#047857" font-weight="700">新第一格 = 1 × 旧第一格 + 1 × 旧第二格</text>
+<text x="48" y="478" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#0f172a" font-weight="400">计算新项，对应矩阵第一行 (1, 1)。</text>
+<text x="48" y="535" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#2563eb" font-weight="700">新第二格 = 1 × 旧第一格 + 0 × 旧第二格</text>
+<text x="48" y="571" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#0f172a" font-weight="400">复制历史，对应矩阵第二行 (1, 0)。</text>
+<text x="795" y="402" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#0f172a" font-weight="700">A：系数表</text>
+<rect x="790" y="427" width="95" height="70" rx="0" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="829" y="473" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#0f172a" font-weight="700">1</text>
+<rect x="885" y="427" width="95" height="70" rx="0" fill="#dcfce7" stroke="#cbd5e1"/>
+<text x="924" y="473" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#0f172a" font-weight="700">1</text>
+<rect x="790" y="497" width="95" height="70" rx="0" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="829" y="543" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#0f172a" font-weight="700">1</text>
+<rect x="885" y="497" width="95" height="70" rx="0" fill="#dbeafe" stroke="#cbd5e1"/>
+<text x="924" y="543" font-family="Microsoft YaHei, sans-serif" font-size="28" fill="#0f172a" font-weight="700">0</text>
+<text x="790" y="591" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0f172a" font-weight="400">行：新分量；列：旧分量</text>
+<rect x="28" y="630" width="1044" height="47" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+<text x="45" y="661" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#2563eb" font-weight="700">每一行都要交代完整：不仅要会算新项，还要留下下一轮需要的历史。</text>
+</svg>

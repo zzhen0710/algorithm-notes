@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740">
+<rect x="0" y="0" width="1100" height="740" rx="0" fill="#f8fafc" stroke="none"/>
+<text x="25" y="40" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">02 把一轮转移写成矩阵：每行对应一个新状态</text>
+<text x="25" y="77" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0f172a" font-weight="400">固定采用列向量，下一轮 = A × 当前轮；行表示目标，列表示来源。</text>
+<text x="65" y="145" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#2563eb" font-weight="700">A：每轮相同的系数</text>
+<text x="314" y="145" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="400">旧状态</text>
+<text x="590" y="145" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#047857" font-weight="700">新状态</text>
+<rect x="50" y="181" width="83" height="70" rx="0" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="85.34" y="224.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">2</text>
+<rect x="133" y="181" width="83" height="70" rx="0" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="168.34" y="224.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="50" y="251" width="83" height="70" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="85.34" y="294.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="133" y="251" width="83" height="70" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="168.34" y="294.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<text x="240" y="266" font-family="Microsoft YaHei, sans-serif" font-size="35" fill="#0f172a" font-weight="400">×</text>
+<rect x="300" y="181" width="100" height="70" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="331.52" y="224.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">x_t</text>
+<rect x="300" y="251" width="100" height="70" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="331.52" y="294.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">y_t</text>
+<text x="446" y="266" font-family="Microsoft YaHei, sans-serif" font-size="35" fill="#0f172a" font-weight="400">=</text>
+<rect x="505" y="181" width="260" height="70" rx="0" fill="#dbeafe" stroke="#94a3b8"/>
+<text x="579.0" y="224.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="700">2x_t + y_t</text>
+<rect x="505" y="251" width="260" height="70" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="579.0" y="294.0" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="700">x_t + 3y_t</text>
+<text x="800" y="213" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#2563eb" font-weight="700">第 0 行：</text>
+<text x="800" y="246" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#0f172a" font-weight="400">2 份 x，加 1 份 y。</text>
+<text x="800" y="286" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#047857" font-weight="700">第 1 行：</text>
+<text x="800" y="319" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#0f172a" font-weight="400">1 份 x，加 3 份 y。</text>
+<text x="45" y="376" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#7c3aed" font-weight="700">vₜ：把第 t 轮的 xₜ、yₜ 竖着放在一起；不是第三个数。</text>
+<rect x="35" y="421" width="215" height="145" rx="7" fill="#fff" stroke="#cbd5e1"/>
+<text x="49" y="453" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="700">初始状态 v₀</text>
+<text x="49" y="498" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#2563eb" font-weight="700">x₀ = 1，y₀ = 0</text>
+<text x="49" y="542" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0f172a" font-weight="400">尚未更新：t=0</text>
+<text x="262" y="496" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#0f172a" font-weight="400">→</text>
+<rect x="305" y="421" width="215" height="145" rx="7" fill="#fff" stroke="#cbd5e1"/>
+<text x="319" y="453" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="700">第 1 轮状态 v₁</text>
+<text x="319" y="498" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#2563eb" font-weight="700">x₁ = 2，y₁ = 1</text>
+<text x="319" y="542" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0f172a" font-weight="400">更新一次：t=1</text>
+<text x="532" y="496" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#0f172a" font-weight="400">→</text>
+<rect x="575" y="421" width="215" height="145" rx="7" fill="#fff" stroke="#cbd5e1"/>
+<text x="589" y="453" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="700">第 2 轮状态 v₂</text>
+<text x="589" y="498" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#2563eb" font-weight="700">x₂ = 5，y₂ = 5</text>
+<text x="589" y="542" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0f172a" font-weight="400">更新两次：t=2</text>
+<text x="802" y="496" font-family="Microsoft YaHei, sans-serif" font-size="27" fill="#0f172a" font-weight="400">→</text>
+<rect x="845" y="421" width="215" height="145" rx="7" fill="#fff" stroke="#cbd5e1"/>
+<text x="859" y="453" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="700">第 3 轮状态 v₃</text>
+<text x="859" y="498" font-family="Microsoft YaHei, sans-serif" font-size="19" fill="#2563eb" font-weight="700">x₃ = 15，y₃ = 20</text>
+<text x="859" y="542" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#0f172a" font-weight="400">更新三次：t=3</text>
+<rect x="25" y="600" width="1050" height="110" rx="7" fill="#eff6ff" stroke="#bfdbfe"/>
+<text x="45" y="639" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#2563eb" font-weight="700">每个箭头都是：下一轮的两个值 = A × 当前轮的两个值。</text>
+<text x="45" y="682" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="400">v₁ = A v₀ 表示从初始状态更新一次；v₂ = A v₁ 表示再更新一次。</text>
+</svg>
