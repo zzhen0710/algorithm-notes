@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="930" viewBox="0 0 1200 930" role="img"><title>已有车要撤销，新车槽位由有效范围管理</title><desc>按原代码手推容量10、重量6/4/4。绿色槽位是有效载重，灰色槽位即使留有旧值也不属于父层状态；已有车从10恢复6，新开车按赋值覆盖。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1200" height="930" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="44" font-size="27" fill="#172b4d" font-weight="bold">car 数组的旧值可以留下，但有效范围必须清楚</text>
+<text x="30" y="82" font-size="21" fill="#172b4d" font-weight="normal">容量 W=10，降序重量 6、4、4；绿色表示 j &lt; cnt，灰色槽位不读。</text>
+<rect x="30" y="120" width="1140" height="104" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="48" y="152" font-size="21" fill="#172b4d" font-weight="bold">① 先新开一辆放 6</text>
+<text x="48" y="185" font-size="20" fill="#172b4d" font-weight="normal">i=1，cnt=1，ans=3</text>
+<text x="48" y="211" font-size="17" fill="#64748b" font-weight="normal">开始安置第一只 4</text>
+<rect x="700" y="134" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="720" y="159" font-size="17" fill="#047857" font-weight="normal">car[0]</text>
+<text x="743" y="193" font-size="26" fill="#047857" font-weight="bold">6</text>
+<rect x="845" y="134" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="865" y="159" font-size="17" fill="#94a3b8" font-weight="normal">car[1]</text>
+<text x="888" y="193" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="990" y="134" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1010" y="159" font-size="17" fill="#94a3b8" font-weight="normal">car[2]</text>
+<text x="1033" y="193" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="30" y="239" width="1140" height="104" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="48" y="271" font-size="21" fill="#172b4d" font-weight="bold">② 把 4 放入已有车</text>
+<text x="48" y="304" font-size="20" fill="#172b4d" font-weight="normal">i=2，cnt=1，ans=3</text>
+<text x="48" y="330" font-size="17" fill="#64748b" font-weight="normal">car[0]：6 → 10</text>
+<rect x="700" y="253" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="720" y="278" font-size="17" fill="#047857" font-weight="normal">car[0]</text>
+<text x="743" y="312" font-size="26" fill="#047857" font-weight="bold">10</text>
+<rect x="845" y="253" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="865" y="278" font-size="17" fill="#94a3b8" font-weight="normal">car[1]</text>
+<text x="888" y="312" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="990" y="253" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1010" y="278" font-size="17" fill="#94a3b8" font-weight="normal">car[2]</text>
+<text x="1033" y="312" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="30" y="358" width="1140" height="104" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="48" y="390" font-size="21" fill="#172b4d" font-weight="bold">③ 另一只 4 需新开车</text>
+<text x="48" y="423" font-size="20" fill="#172b4d" font-weight="normal">i=3，cnt=2，ans=2</text>
+<text x="48" y="449" font-size="17" fill="#64748b" font-weight="normal">已放完，ans 从 3 更新为 2</text>
+<rect x="700" y="372" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="720" y="397" font-size="17" fill="#047857" font-weight="normal">car[0]</text>
+<text x="743" y="431" font-size="26" fill="#047857" font-weight="bold">10</text>
+<rect x="845" y="372" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="865" y="397" font-size="17" fill="#047857" font-weight="normal">car[1]</text>
+<text x="888" y="431" font-size="26" fill="#047857" font-weight="bold">4</text>
+<rect x="990" y="372" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1010" y="397" font-size="17" fill="#94a3b8" font-weight="normal">car[2]</text>
+<text x="1033" y="431" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="30" y="477" width="1140" height="104" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="48" y="509" font-size="21" fill="#172b4d" font-weight="bold">④ 返回上一层</text>
+<text x="48" y="542" font-size="20" fill="#172b4d" font-weight="normal">父层 i=2，cnt=1</text>
+<text x="48" y="568" font-size="17" fill="#64748b" font-weight="normal">car[1] 虽然为 4，已不在有效范围</text>
+<rect x="700" y="491" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="720" y="516" font-size="17" fill="#047857" font-weight="normal">car[0]</text>
+<text x="743" y="550" font-size="26" fill="#047857" font-weight="bold">10</text>
+<rect x="845" y="491" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="865" y="516" font-size="17" fill="#94a3b8" font-weight="normal">car[1]</text>
+<text x="888" y="550" font-size="26" fill="#94a3b8" font-weight="bold">4</text>
+<rect x="990" y="491" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1010" y="516" font-size="17" fill="#94a3b8" font-weight="normal">car[2]</text>
+<text x="1033" y="550" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="30" y="596" width="1140" height="104" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="48" y="628" font-size="21" fill="#172b4d" font-weight="bold">⑤ 再返回，撤销已有车放置</text>
+<text x="48" y="661" font-size="20" fill="#172b4d" font-weight="normal">父层 i=1，cnt=1</text>
+<text x="48" y="687" font-size="17" fill="#64748b" font-weight="normal">car[0] -= 4：10 → 6</text>
+<rect x="700" y="610" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="720" y="635" font-size="17" fill="#047857" font-weight="normal">car[0]</text>
+<text x="743" y="669" font-size="26" fill="#047857" font-weight="bold">6</text>
+<rect x="845" y="610" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="865" y="635" font-size="17" fill="#94a3b8" font-weight="normal">car[1]</text>
+<text x="888" y="669" font-size="26" fill="#94a3b8" font-weight="bold">4</text>
+<rect x="990" y="610" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1010" y="635" font-size="17" fill="#94a3b8" font-weight="normal">car[2]</text>
+<text x="1033" y="669" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<rect x="30" y="715" width="1140" height="104" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="48" y="747" font-size="21" fill="#172b4d" font-weight="bold">⑥ 尝试给第一只 4 开新车</text>
+<text x="48" y="780" font-size="20" fill="#172b4d" font-weight="normal">i=2，cnt=2，ans=2</text>
+<text x="48" y="806" font-size="17" fill="#64748b" font-weight="normal">car[1] = 4 覆盖；cnt ≥ ans，停止</text>
+<rect x="700" y="729" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="720" y="754" font-size="17" fill="#047857" font-weight="normal">car[0]</text>
+<text x="743" y="788" font-size="26" fill="#047857" font-weight="bold">6</text>
+<rect x="845" y="729" width="123" height="76" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="865" y="754" font-size="17" fill="#047857" font-weight="normal">car[1]</text>
+<text x="888" y="788" font-size="26" fill="#047857" font-weight="bold">4</text>
+<rect x="990" y="729" width="123" height="76" rx="12" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2"/>
+<text x="1010" y="754" font-size="17" fill="#94a3b8" font-weight="normal">car[2]</text>
+<text x="1033" y="788" font-size="26" fill="#94a3b8" font-weight="bold">0</text>
+<text x="30" y="875" font-size="23" fill="#172b4d" font-weight="bold">已有有效槽位要恢复；新槽位在父层范围外，下次开车重新赋值即可。</text>
+<text x="30" y="910" font-size="19" fill="#172b4d" font-weight="normal">图为按原代码手推的过程；ans 是跨分支保留的最好答案，不随返回撤销。</text>
+</g></svg>

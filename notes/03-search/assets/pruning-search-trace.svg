@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1110" viewBox="0 0 1100 1110" role="img"><title>一次搜索中，先找到 8，再跳过不能改善的分支</title><desc>容量5，依次处理A(4,8)、B(3,5)、C(2,3)。五次实际DFS调用对应下方变量表。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1100" height="1110" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei, sans-serif" fill="#172b4d">
+<text x="36" y="43" font-size="27" fill="#172b4d" font-weight="bold">先走左支找到 best=8，再用它剪掉右支</text>
+<text x="36" y="80" font-size="20" fill="#172b4d" font-weight="normal">容量 5；物品 (重量,价值)：A(4,8)、B(3,5)、C(2,3)</text>
+<rect x="330" y="105" width="440" height="74" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+<text x="350" y="136" font-size="22" fill="#172b4d" font-weight="bold">① i=0，left=5，value=0</text>
+<text x="350" y="163" font-size="18" fill="#172b4d" font-weight="normal">处理 A；best=0，上界=16</text>
+<path d="M440,179 L265,244" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="247" y="214" font-size="19" fill="#172b4d" font-weight="normal">选 A</text>
+<path d="M650,179 L820,244" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="755" y="214" font-size="18" fill="#172b4d" font-weight="normal">不选 A（左支返回后）</text>
+<rect x="40" y="250" width="440" height="84" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2" />
+<text x="60" y="281" font-size="22" fill="#172b4d" font-weight="bold">② i=1，left=1，value=8</text>
+<text x="60" y="312" font-size="19" fill="#172b4d" font-weight="normal">best 更新为 8；开始处理 B</text>
+<rect x="590" y="250" width="470" height="84" rx="12" fill="#fff7ed" stroke="#f59e0b" stroke-width="2" />
+<text x="610" y="281" font-size="22" fill="#172b4d" font-weight="bold">⑤ i=1，left=5，value=0</text>
+<text x="610" y="312" font-size="19" fill="#172b4d" font-weight="normal">上界=0+5+3=8 ≤ best，返回</text>
+<path d="M260,334 L260,394" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="285" y="372" font-size="18" fill="#172b4d" font-weight="normal">不选 B</text>
+<path d="M480,292 L535,353" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="7,6"/>
+<text x="493" y="377" font-size="17" fill="#b91c1c" font-weight="normal">选 B</text>
+<text x="493" y="398" font-size="17" fill="#b91c1c" font-weight="normal">3 &gt; 1</text>
+<rect x="40" y="400" width="440" height="84" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+<text x="60" y="432" font-size="22" fill="#172b4d" font-weight="bold">③ i=2，left=1，value=8</text>
+<text x="60" y="463" font-size="19" fill="#172b4d" font-weight="normal">best=8；开始处理 C</text>
+<path d="M260,484 L260,544" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)" />
+<text x="285" y="522" font-size="18" fill="#172b4d" font-weight="normal">不选 C</text>
+<path d="M480,442 L535,503" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="7,6"/>
+<text x="493" y="527" font-size="17" fill="#b91c1c" font-weight="normal">选 C</text>
+<text x="493" y="548" font-size="17" fill="#b91c1c" font-weight="normal">2 &gt; 1</text>
+<rect x="40" y="550" width="440" height="84" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+<text x="60" y="582" font-size="22" fill="#172b4d" font-weight="bold">④ i=3，到达末尾</text>
+<text x="60" y="613" font-size="19" fill="#172b4d" font-weight="normal">保留 best=8，逐层返回</text>
+<path d="M820,334 L820,394" fill="none" stroke="#ef4444" stroke-width="2" marker-end="url(#arrow)" stroke-dasharray="7,6"/>
+<rect x="590" y="400" width="470" height="174" rx="12" fill="#fff1f2" stroke="#ef4444" stroke-width="2" stroke-dasharray="7,6"/>
+<text x="615" y="435" font-size="23" fill="#b91c1c" font-weight="bold">整支不再展开</text>
+<text x="615" y="474" font-size="19" fill="#172b4d" font-weight="normal">B、C 全选也只能达到价值 8。</text>
+<text x="615" y="509" font-size="18" fill="#172b4d" font-weight="normal">它是另一个最优方案，但不能改善值。</text>
+<text x="615" y="544" font-size="18" fill="#b91c1c" font-weight="normal">若要统计最优方案数，不能这样剪等号。</text>
+<text x="40" y="687" font-size="23" fill="#172b4d" font-weight="bold">实际调用轨迹（best 为本次入口更新后的值）</text>
+<rect x="40" y="712" width="1020" height="302" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2" />
+<path d="M40,759 H1060" stroke="#cbd5e1"/>
+<text x="60" y="744" font-size="19" fill="#172b4d" font-weight="bold">次序</text>
+<text x="190" y="744" font-size="19" fill="#172b4d" font-weight="bold">i</text>
+<text x="320" y="744" font-size="19" fill="#172b4d" font-weight="bold">left</text>
+<text x="470" y="744" font-size="19" fill="#172b4d" font-weight="bold">value</text>
+<text x="650" y="744" font-size="19" fill="#172b4d" font-weight="bold">best</text>
+<text x="820" y="744" font-size="19" fill="#172b4d" font-weight="bold">价值上界</text>
+<text x="60" y="797" font-size="20" fill="#172b4d" font-weight="normal">1</text>
+<text x="190" y="797" font-size="20" fill="#172b4d" font-weight="normal">0</text>
+<text x="320" y="797" font-size="20" fill="#172b4d" font-weight="normal">5</text>
+<text x="470" y="797" font-size="20" fill="#172b4d" font-weight="normal">0</text>
+<text x="650" y="797" font-size="20" fill="#172b4d" font-weight="normal">0</text>
+<text x="820" y="797" font-size="20" fill="#172b4d" font-weight="normal">16</text>
+<text x="60" y="843" font-size="20" fill="#172b4d" font-weight="normal">2</text>
+<text x="190" y="843" font-size="20" fill="#172b4d" font-weight="normal">1</text>
+<text x="320" y="843" font-size="20" fill="#172b4d" font-weight="normal">1</text>
+<text x="470" y="843" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="650" y="843" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="820" y="843" font-size="20" fill="#172b4d" font-weight="normal">16</text>
+<text x="60" y="889" font-size="20" fill="#172b4d" font-weight="normal">3</text>
+<text x="190" y="889" font-size="20" fill="#172b4d" font-weight="normal">2</text>
+<text x="320" y="889" font-size="20" fill="#172b4d" font-weight="normal">1</text>
+<text x="470" y="889" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="650" y="889" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="820" y="889" font-size="20" fill="#172b4d" font-weight="normal">11</text>
+<text x="60" y="935" font-size="20" fill="#172b4d" font-weight="normal">4</text>
+<text x="190" y="935" font-size="20" fill="#172b4d" font-weight="normal">3</text>
+<text x="320" y="935" font-size="20" fill="#172b4d" font-weight="normal">1</text>
+<text x="470" y="935" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="650" y="935" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="820" y="935" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="60" y="981" font-size="20" fill="#172b4d" font-weight="normal">5</text>
+<text x="190" y="981" font-size="20" fill="#172b4d" font-weight="normal">1</text>
+<text x="320" y="981" font-size="20" fill="#172b4d" font-weight="normal">5</text>
+<text x="470" y="981" font-size="20" fill="#172b4d" font-weight="normal">0</text>
+<text x="650" y="981" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="820" y="981" font-size="20" fill="#172b4d" font-weight="normal">8</text>
+<text x="40" y="1054" font-size="19" fill="#172b4d" font-weight="normal">绿色：找到合法值；红色虚线：未进入递归；橙色：凭上界停止整支。</text>
+</g></svg>

@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="745" viewBox="0 0 1200 745" role="img"><title>分成三份：每个状态都保留下一份的下界</title><desc>手推7分成3份的非降序搜索。dfs参数为剩余总量、剩余份数、下一份下界，四个终点分别为115、124、133、223。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1200" height="745" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="44" font-size="27" fill="#172b4d" font-weight="bold">7 分成 3 份：只生成非降序，每个答案恰好出现一次</text>
+<text x="30" y="82" font-size="21" fill="#172b4d" font-weight="normal">状态写作 (val, bar, mx)；选 i 后变成 (val−i, bar−1, i)。</text>
+<rect x="390" y="112" width="420" height="92" rx="12" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="420" y="147" font-size="25" fill="#172b4d" font-weight="bold">dfs(7, 3, 1)</text>
+<text x="420" y="180" font-size="20" fill="#172b4d" font-weight="normal">首份 i = 1..⌊7/3⌋ = 2</text>
+<path d="M490,204 L390,271" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="230" y="242" font-size="21" fill="#172b4d" font-weight="normal">首份选 1</text>
+<path d="M710,204 L960,271" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="859" y="242" font-size="21" fill="#172b4d" font-weight="normal">首份选 2</text>
+<rect x="180" y="280" width="420" height="90" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="205" y="315" font-size="24" fill="#172b4d" font-weight="bold">dfs(6, 2, 1)</text>
+<text x="205" y="349" font-size="20" fill="#172b4d" font-weight="normal">第二份 i = 1..3</text>
+<rect x="760" y="280" width="400" height="90" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="785" y="315" font-size="24" fill="#172b4d" font-weight="bold">dfs(5, 2, 2)</text>
+<text x="785" y="349" font-size="20" fill="#172b4d" font-weight="normal">第二份只能 i = 2</text>
+<path d="M390,370 L160,444" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="120" y="418" font-size="20" fill="#172b4d" font-weight="normal">i = 1</text>
+<path d="M390,370 L450,444" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="480" y="418" font-size="20" fill="#172b4d" font-weight="normal">i = 2</text>
+<path d="M390,370 L740,444" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="700" y="418" font-size="20" fill="#172b4d" font-weight="normal">i = 3</text>
+<path d="M960,370 L1030,444" fill="none" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="1020" y="418" font-size="20" fill="#172b4d" font-weight="normal">i = 2</text>
+<rect x="25" y="455" width="270" height="120" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="45" y="490" font-size="22" fill="#172b4d" font-weight="bold">dfs(5, 1, 1)</text>
+<text x="45" y="529" font-size="22" fill="#172b4d" font-weight="normal">1 + 1 + 5</text>
+<text x="45" y="558" font-size="17" fill="#047857" font-weight="normal">只剩一份，检查后返回 1</text>
+<rect x="315" y="455" width="270" height="120" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="335" y="490" font-size="22" fill="#172b4d" font-weight="bold">dfs(4, 1, 2)</text>
+<text x="335" y="529" font-size="22" fill="#172b4d" font-weight="normal">1 + 2 + 4</text>
+<text x="335" y="558" font-size="17" fill="#047857" font-weight="normal">只剩一份，检查后返回 1</text>
+<rect x="605" y="455" width="270" height="120" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="625" y="490" font-size="22" fill="#172b4d" font-weight="bold">dfs(3, 1, 3)</text>
+<text x="625" y="529" font-size="22" fill="#172b4d" font-weight="normal">1 + 3 + 3</text>
+<text x="625" y="558" font-size="17" fill="#047857" font-weight="normal">只剩一份，检查后返回 1</text>
+<rect x="895" y="455" width="270" height="120" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="915" y="490" font-size="22" fill="#172b4d" font-weight="bold">dfs(3, 1, 2)</text>
+<text x="915" y="529" font-size="22" fill="#172b4d" font-weight="normal">2 + 2 + 3</text>
+<text x="915" y="558" font-size="17" fill="#047857" font-weight="normal">只剩一份，检查后返回 1</text>
+<text x="30" y="620" font-size="21" fill="#172b4d" font-weight="normal">bar=1 时，最后一份就是 val：无需再枚举，只检查 val ≥ mx。</text>
+<text x="30" y="662" font-size="21" fill="#172b4d" font-weight="normal">同一层各个 i 是不同的当前份，方案数求和：1 + 1 + 1 + 1 = 4。</text>
+<text x="30" y="708" font-size="21" fill="#1d4ed8" font-weight="bold">mx 是下一份的最小值；允许等于上一份，所以是非降序。</text>
+</g></svg>
