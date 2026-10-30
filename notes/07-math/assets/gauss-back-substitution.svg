@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="720" viewBox="0 0 1100 720">
+<rect x="0" y="0" width="1100" height="720" rx="0" fill="#f8fafc" stroke="none"/>
+<text x="25" y="40" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">02 回代：先算右边的未知数，再回到左边</text>
+<text x="25" y="78" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">主元已经化为 1；where 告诉程序，每个未知数应回到哪一行求值。</text>
+<text x="70" y="123" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="178" y="123" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="286" y="123" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">z</text>
+<text x="394" y="123" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="45" y="136" width="108" height="57" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="92.8" y="171.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="153" y="136" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="188.4" y="171.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="261" y="136" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="290.2" y="171.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">-0.5</text>
+<rect x="369" y="136" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="404.4" y="171.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="45" y="193" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="92.8" y="228.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="153" y="193" width="108" height="57" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="200.8" y="228.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="261" y="193" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="308.8" y="228.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="369" y="193" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="416.8" y="228.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">5</text>
+<rect x="45" y="250" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="92.8" y="285.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="153" y="250" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="200.8" y="285.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="261" y="250" width="108" height="57" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="308.8" y="285.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="369" y="250" width="108" height="57" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="416.8" y="285.5" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<line x1="369" y1="133" x2="369" y2="310" stroke="#475569" stroke-width="3"/>
+<text x="565" y="162" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="400">第 0 行：x + 0.5y − 0.5z = 0.5</text>
+<text x="565" y="219" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="400">第 1 行：y + z = 5</text>
+<text x="565" y="276" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="400">第 2 行：z = 3</text>
+<rect x="30" y="357" width="1040" height="82" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="50" y="407" font-family="Microsoft YaHei, sans-serif" font-size="23" fill="#047857" font-weight="700">先算 z</text>
+<text x="270" y="407" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">z = 3</text>
+<rect x="30" y="459" width="1040" height="82" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="50" y="509" font-family="Microsoft YaHei, sans-serif" font-size="23" fill="#2563eb" font-weight="700">再算 y</text>
+<text x="270" y="509" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">y = 5 − z = 5 − 3 = 2</text>
+<rect x="30" y="561" width="1040" height="82" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="50" y="611" font-family="Microsoft YaHei, sans-serif" font-size="23" fill="#7c3aed" font-weight="700">最后算 x</text>
+<text x="270" y="611" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">x = 0.5 − 0.5y + 0.5z = 1</text>
+<text x="35" y="691" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#2563eb" font-weight="700">倒序处理变量列：右侧有主元的值已算出，自由变量则按约定先取 0。</text>
+</svg>

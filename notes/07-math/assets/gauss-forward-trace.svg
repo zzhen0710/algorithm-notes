@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1090" viewBox="0 0 1100 1090">
+<rect x="0" y="0" width="1100" height="1090" rx="0" fill="#f8fafc" stroke="none"/>
+<text x="25" y="40" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">01 前向消元：只消主元下方，逐列留下可回代的方程</text>
+<text x="25" y="78" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">同一份 gauss 的实际数值；列 0、1、2 为 x、y、z，最后一列为右侧常数。</text>
+<rect x="22" y="112" width="1056" height="214" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="40" y="148" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#2563eb" font-weight="700">初始：col=0，row=0</text>
+<text x="40" y="195" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">x 列可选系数为 0、1、2。</text>
+<text x="40" y="232" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">选绝对值最大的 2，交换整行。</text>
+<text x="690" y="152" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="784" y="152" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="878" y="152" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">z</text>
+<text x="972" y="152" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="665" y="165" width="94" height="46" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="705.8" y="195.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="165" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="799.8" y="195.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="853" y="165" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="893.8" y="195.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="165" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="987.8" y="195.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">5</text>
+<rect x="665" y="211" width="94" height="46" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="705.8" y="241.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="759" y="211" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="799.8" y="241.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="853" y="211" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="893.8" y="241.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="211" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="987.8" y="241.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">6</text>
+<rect x="665" y="257" width="94" height="46" rx="0" fill="#fed7aa" stroke="#94a3b8"/>
+<text x="705.8" y="287.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">2</text>
+<rect x="759" y="257" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="799.8" y="287.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="853" y="257" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="887.6" y="287.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">-1</text>
+<rect x="947" y="257" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="987.8" y="287.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<line x1="947" y1="162" x2="947" y2="306" stroke="#475569" stroke-width="3"/>
+<rect x="22" y="347" width="1056" height="214" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="40" y="383" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#2563eb" font-weight="700">x 列处理后：row=1</text>
+<text x="40" y="430" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">主元行除以 2，先把主元变成 1。</text>
+<text x="40" y="467" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">下面含 x 的行减去相应倍数。</text>
+<text x="40" y="504" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">已有一条主元行，不再参与后续选行。</text>
+<text x="690" y="387" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="784" y="387" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="878" y="387" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">z</text>
+<text x="972" y="387" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="665" y="400" width="94" height="46" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="705.8" y="430.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="759" y="400" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="787.4" y="430.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="853" y="400" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="875.2" y="430.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">-0.5</text>
+<rect x="947" y="400" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="975.4" y="430.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="665" y="446" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="705.8" y="476.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="446" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="787.4" y="476.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="853" y="446" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="881.4" y="476.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1.5</text>
+<rect x="947" y="446" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="975.4" y="476.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">5.5</text>
+<rect x="665" y="492" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="705.8" y="522.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="492" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="799.8" y="522.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="853" y="492" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="893.8" y="522.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="492" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="987.8" y="522.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">5</text>
+<line x1="947" y1="397" x2="947" y2="541" stroke="#475569" stroke-width="3"/>
+<rect x="22" y="582" width="1056" height="214" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="40" y="618" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#2563eb" font-weight="700">y 列处理后：row=2</text>
+<text x="40" y="665" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">剩余 y 系数为 0.5、1，交换两行。</text>
+<text x="40" y="702" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">下方行减去 0.5 倍主元行。</text>
+<text x="40" y="739" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">结果只剩 z=3。</text>
+<text x="690" y="622" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="784" y="622" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="878" y="622" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">z</text>
+<text x="972" y="622" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="665" y="635" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="705.8" y="665.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="759" y="635" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="787.4" y="665.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="853" y="635" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="875.2" y="665.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">-0.5</text>
+<rect x="947" y="635" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="975.4" y="665.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="665" y="681" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="705.8" y="711.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="681" width="94" height="46" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="799.8" y="711.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="853" y="681" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="893.8" y="711.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="681" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="987.8" y="711.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">5</text>
+<rect x="665" y="727" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="705.8" y="757.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="727" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="799.8" y="757.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="853" y="727" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="893.8" y="757.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="727" width="94" height="46" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="987.8" y="757.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<line x1="947" y1="632" x2="947" y2="776" stroke="#475569" stroke-width="3"/>
+<rect x="22" y="817" width="1056" height="214" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="40" y="853" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#2563eb" font-weight="700">z 列处理后：row=3</text>
+<text x="40" y="900" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">最后的主元为 1，无须向下消。</text>
+<text x="40" y="937" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">三列都有主元，可从底行向上回代。</text>
+<text x="690" y="857" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="784" y="857" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="878" y="857" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">z</text>
+<text x="972" y="857" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="665" y="870" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="705.8" y="900.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="759" y="870" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="787.4" y="900.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="853" y="870" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="875.2" y="900.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">-0.5</text>
+<rect x="947" y="870" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="975.4" y="900.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0.5</text>
+<rect x="665" y="916" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="705.8" y="946.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="916" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="799.8" y="946.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="853" y="916" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="893.8" y="946.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="916" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="987.8" y="946.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">5</text>
+<rect x="665" y="962" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="705.8" y="992.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="759" y="962" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="799.8" y="992.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="853" y="962" width="94" height="46" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="893.8" y="992.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="947" y="962" width="94" height="46" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="987.8" y="992.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<line x1="947" y1="867" x2="947" y2="1011" stroke="#475569" stroke-width="3"/>
+<text x="35" y="1070" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#7c3aed" font-weight="700">row 记录已找到几条主元行；col 记录当前处理哪个未知数。</text>
+</svg>

@@ -16,4 +16,6 @@
 
 - [矩阵乘法与快速幂：小状态的重复线性转移](matrix/README.md)
 
+- [实数线性方程组：高斯消元与三类解](gaussian-elimination/README.md)
+
 [返回全部模板](../README.md)

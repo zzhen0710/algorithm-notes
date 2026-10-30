@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="650" viewBox="0 0 1100 650">
+<rect x="0" y="0" width="1100" height="650" rx="0" fill="#f8fafc" stroke="none"/>
+<text x="25" y="42" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#0f172a" font-weight="700">swap 后记 row：where 保存主元行现在的位置</text>
+<text x="25" y="81" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="400">处理 x 列：col=0，row=0，选中 sel=2；下标均从 0 开始。</text>
+<text x="85" y="135" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#2563eb" font-weight="700">交换前</text>
+<text x="675" y="135" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#047857" font-weight="700">交换后</text>
+<text x="120" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">x</text>
+<text x="205" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">y</text>
+<text x="290" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">z</text>
+<text x="375" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">常数</text>
+<text x="46" y="217" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#475569" font-weight="400">行 0</text>
+<rect x="95" y="180" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="130" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">0</text>
+<rect x="180" y="180" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="215" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="265" y="180" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="300" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="350" y="180" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="385" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">5</text>
+<text x="46" y="275" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#475569" font-weight="400">行 1</text>
+<rect x="95" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="130" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="180" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="215" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="265" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="300" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="350" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="385" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">6</text>
+<text x="46" y="333" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#475569" font-weight="400">行 2</text>
+<rect x="95" y="296" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="130" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">2</text>
+<rect x="180" y="296" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="215" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="265" y="296" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="300" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">-1</text>
+<rect x="350" y="296" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="385" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<line x1="350" y1="177" x2="350" y2="357" stroke="#475569" stroke-width="3"/>
+<text x="705" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">x</text>
+<text x="790" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">y</text>
+<text x="875" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">z</text>
+<text x="960" y="165" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#64748b" font-weight="400">常数</text>
+<text x="631" y="217" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#475569" font-weight="400">行 0</text>
+<rect x="680" y="180" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="715" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">2</text>
+<rect x="765" y="180" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="800" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="850" y="180" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="885" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">-1</text>
+<rect x="935" y="180" width="85" height="58" rx="0" fill="#dcfce7" stroke="#94a3b8"/>
+<text x="970" y="218" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<text x="631" y="275" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#475569" font-weight="400">行 1</text>
+<rect x="680" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="715" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="765" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="800" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="850" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="885" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="935" y="238" width="85" height="58" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="970" y="276" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">6</text>
+<text x="631" y="333" font-family="Microsoft YaHei, sans-serif" font-size="17" fill="#475569" font-weight="400">行 2</text>
+<rect x="680" y="296" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="715" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">0</text>
+<rect x="765" y="296" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="800" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="850" y="296" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="885" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">1</text>
+<rect x="935" y="296" width="85" height="58" rx="0" fill="#ffedd5" stroke="#94a3b8"/>
+<text x="970" y="334" font-family="Microsoft YaHei, sans-serif" font-size="24" fill="#0f172a" font-weight="700">5</text>
+<line x1="935" y1="177" x2="935" y2="357" stroke="#475569" stroke-width="3"/>
+<text x="490" y="270" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#0f172a" font-weight="400">交换两行</text>
+<text x="526" y="310" font-family="Microsoft YaHei, sans-serif" font-size="35" fill="#0f172a" font-weight="400">→</text>
+<text x="75" y="398" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#047857" font-weight="700">绿色主元行原在 a[2]，即 sel。</text>
+<text x="660" y="398" font-family="Microsoft YaHei, sans-serif" font-size="20" fill="#047857" font-weight="700">绿色主元行现位于 a[0]，即 row。</text>
+<rect x="25" y="435" width="1050" height="178" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="45" y="474" font-family="Microsoft YaHei, sans-serif" font-size="23" fill="#2563eb" font-weight="700">swap(a[2], a[0]);</text>
+<text x="45" y="517" font-family="Microsoft YaHei, sans-serif" font-size="23" fill="#047857" font-weight="700">where[0] = 0;   // 回代时去 a[0] 找 x 列的主元行</text>
+<text x="45" y="558" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#0f172a" font-weight="400">sel 仍为 2；swap 只交换矩阵行的内容，没有改变 sel、row 的值。</text>
+<text x="45" y="594" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#b91c1c" font-weight="700">误记 where[0]=2，会去读取被换下的另一条方程。</text>
+</svg>

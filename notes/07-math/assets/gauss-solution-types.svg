@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="740" viewBox="0 0 1100 740">
+<rect x="0" y="0" width="1100" height="740" rx="0" fill="#f8fafc" stroke="none"/>
+<text x="25" y="40" font-family="Microsoft YaHei, sans-serif" font-size="25" fill="#0f172a" font-weight="700">03 三类解：先排除矛盾，再比较主元数与未知数个数</text>
+<text x="25" y="78" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">三个例子均有 x、y 两个未知数；零行本身不能单独决定答案。</text>
+<rect x="22" y="124" width="330" height="444" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="47" y="167" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#047857" font-weight="700">唯一解</text>
+<text x="84" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="169" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="254" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="59" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="95.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="144" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="180.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="229" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="265.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<rect x="59" y="285" width="85" height="62" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="95.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="144" y="285" width="85" height="62" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="180.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="229" y="285" width="85" height="62" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="265.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">2</text>
+<line x1="229" y1="220" x2="229" y2="350" stroke="#475569" stroke-width="3"/>
+<text x="41" y="401" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">两个未知数都有主元。</text>
+<text x="41" y="455" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">y=2，x=1。</text>
+<text x="41" y="509" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#047857" font-weight="700">status = 1</text>
+<rect x="385" y="124" width="330" height="444" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="410" y="167" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#2563eb" font-weight="700">无穷多解</text>
+<text x="447" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="532" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="617" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="422" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="458.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="507" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="543.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="592" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="628.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<rect x="422" y="285" width="85" height="62" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="458.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="507" y="285" width="85" height="62" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="543.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="592" y="285" width="85" height="62" rx="0" fill="#eff6ff" stroke="#94a3b8"/>
+<text x="628.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<line x1="592" y1="220" x2="592" y2="350" stroke="#475569" stroke-width="3"/>
+<text x="404" y="401" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">底行是 0=0，没有新限制。</text>
+<text x="404" y="455" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">只有 x+y=3，y 可自由取值。</text>
+<text x="404" y="509" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#2563eb" font-weight="700">status = 2</text>
+<rect x="748" y="124" width="330" height="444" rx="8" fill="#fff" stroke="#cbd5e1"/>
+<text x="773" y="167" font-family="Microsoft YaHei, sans-serif" font-size="26" fill="#b91c1c" font-weight="700">无解</text>
+<text x="810" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">x</text>
+<text x="895" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">y</text>
+<text x="980" y="210" font-family="Microsoft YaHei, sans-serif" font-size="16" fill="#64748b" font-weight="400">常数</text>
+<rect x="785" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="821.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="870" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="906.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<rect x="955" y="223" width="85" height="62" rx="0" fill="#fff" stroke="#94a3b8"/>
+<text x="991.3" y="261.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">3</text>
+<rect x="785" y="285" width="85" height="62" rx="0" fill="#fee2e2" stroke="#94a3b8"/>
+<text x="821.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="870" y="285" width="85" height="62" rx="0" fill="#fee2e2" stroke="#94a3b8"/>
+<text x="906.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">0</text>
+<rect x="955" y="285" width="85" height="62" rx="0" fill="#fee2e2" stroke="#94a3b8"/>
+<text x="991.3" y="323.0" font-family="Microsoft YaHei, sans-serif" font-size="22" fill="#0f172a" font-weight="700">1</text>
+<line x1="955" y1="220" x2="955" y2="350" stroke="#475569" stroke-width="3"/>
+<text x="767" y="401" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">底行是 0=1，矛盾。</text>
+<text x="767" y="455" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#0f172a" font-weight="400">无论 x、y 取什么都不成立。</text>
+<text x="767" y="509" font-family="Microsoft YaHei, sans-serif" font-size="18" fill="#b91c1c" font-weight="700">status = 0</text>
+<rect x="25" y="608" width="1050" height="101" rx="8" fill="#eff6ff" stroke="#bfdbfe"/>
+<text x="45" y="648" font-family="Microsoft YaHei, sans-serif" font-size="23" fill="#b91c1c" font-weight="700">先检查是否有 0=非零常数：有则无解。</text>
+<text x="45" y="687" font-family="Microsoft YaHei, sans-serif" font-size="21" fill="#2563eb" font-weight="700">没有矛盾时：主元数等于未知数个数 → 唯一解；少于 → 无穷多实数解。</text>
+</svg>
