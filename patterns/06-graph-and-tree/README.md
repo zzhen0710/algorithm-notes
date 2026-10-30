@@ -10,6 +10,8 @@
 
 ## 跨章参考
 
+- [关键路径：由状态依赖选择正推／反推](dag-dp.md#关键路径同一拓扑序正向取-max反向取-min)：前驱给最早时间下界，后继给最迟时间上界；完整实现与逐轮图见[6.5 应用篇](../../notes/06-graph-and-tree/05a-critical-path.md)。
+
 - [欧拉路径：从访问点转为消耗原边](../../notes/06-graph-and-tree/14-euler-trail.md#5-next-与-used一个防止重扫一个防止重走)：原边身份与永久标记、邻接游标和退栈拼接；补[同一模板与题面比较规则](../../notes/06-graph-and-tree/14-euler-trail.md#103-同一模板差别留在输入与输出)。完整讲解在知识笔记维护，不另建重复范式。
 
 - [割点与桥：先明确删点还是删边](../../notes/06-graph-and-tree/13-articulation-points-bridges.md#5-非根割点只能回到-u-本身也救不了删点)：通过能否绕开对象推导 low 的比较；补[点／边结果提取与端点映射](../../notes/06-graph-and-tree/13-articulation-points-bridges.md#93-两题共同留下什么)。与 SCC 的目标和状态边界分开，暂不独立重复范式。

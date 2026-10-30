@@ -7,7 +7,7 @@
 - [全图二分图染色与判定](bipartite-coloring/README.md)
 - [Kruskal：最小生成树与目标块数](kruskal/README.md)
 - [Dijkstra：非负权最短路与路径还原](dijkstra/README.md)
-- [拓扑排序：Kahn 顺序与有向环判定](topological-sort/README.md)
+- [拓扑排序与关键路径：Kahn 判环、事件时间与活动余量](topological-sort/README.md)
 - [二分图最大匹配：DFS 增广](bipartite-matching/README.md)
 
 - [DFS 序：固定根与子树区间](dfs-order/README.md)
