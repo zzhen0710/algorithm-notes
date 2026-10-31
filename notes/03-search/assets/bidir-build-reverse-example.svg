@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="735" viewBox="0 0 1120 735" role="img"><title>同一条边，存为正图后继与反图前驱</title><desc>原图S到A和B，A和B到T。反图反向保存每一条边，g与rg分别展示四个节点的邻居列表。</desc><defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs><rect width="1120" height="735" fill="#f8fafc"/><g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="44" font-size="27" fill="#172b4d" font-weight="bold">读一条 u → v：g[u] 加入 v，rg[v] 加入 u</text>
+<text x="30" y="84" font-size="20" fill="#172b4d" font-weight="normal">两份邻接表描述同一张有向图；rg 用于反向探索，没有改变 g 的行走规则。</text>
+<text x="30" y="123" font-size="22" fill="#2563eb" font-weight="bold">g：沿原图后继向前走</text>
+<path d="M98.86428293496371,229.68031008217787 L233.38214595715587,171.51042336987854" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<path d="M98.86428293496371,250.31968991782213 L233.38214595715587,308.48957663012146" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<path d="M283.9625197535897,170.08948200151144 L423.2725741209961,228.74634699831415" stroke="#d97706" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+<path d="M283.9625197535897,309.91051799848856 L423.2725741209961,251.25365300168585" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<circle cx="75" cy="240" r="25" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="67" y="248" font-size="23" fill="#172b4d" font-weight="bold">S</text>
+<circle cx="260" cy="160" r="25" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="252" y="168" font-size="23" fill="#172b4d" font-weight="bold">A</text>
+<circle cx="260" cy="320" r="25" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="252" y="328" font-size="23" fill="#172b4d" font-weight="bold">B</text>
+<circle cx="450" cy="240" r="25" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="442" y="248" font-size="23" fill="#172b4d" font-weight="bold">T</text>
+<rect x="30" y="382" width="490" height="252" rx="12" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+<text x="55" y="427" font-size="23" fill="#2563eb" font-weight="normal">g[S] = [A, B]</text>
+<text x="55" y="482" font-size="23" fill="#2563eb" font-weight="normal">g[A] = [T]</text>
+<text x="55" y="537" font-size="23" fill="#2563eb" font-weight="normal">g[B] = [T]</text>
+<text x="55" y="592" font-size="23" fill="#2563eb" font-weight="normal">g[T] = []</text>
+<text x="620" y="123" font-size="22" fill="#ea580c" font-weight="bold">rg：沿原图前驱反向找</text>
+<path d="M826.1357170650363,170.31968991782213 L691.6178540428441,228.48957663012146" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<path d="M826.1357170650363,309.68031008217787 L691.6178540428441,251.51042336987854" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<path d="M1016.0374802464103,229.91051799848856 L876.7274258790039,171.25365300168585" stroke="#d97706" stroke-width="4" marker-end="url(#arrow)" fill="none"/>
+<path d="M1016.0374802464103,250.08948200151144 L876.7274258790039,308.74634699831415" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow)" fill="none"/>
+<circle cx="665" cy="240" r="25" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="657" y="248" font-size="23" fill="#172b4d" font-weight="bold">S</text>
+<circle cx="850" cy="160" r="25" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="842" y="168" font-size="23" fill="#172b4d" font-weight="bold">A</text>
+<circle cx="850" cy="320" r="25" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="842" y="328" font-size="23" fill="#172b4d" font-weight="bold">B</text>
+<circle cx="1040" cy="240" r="25" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="1032" y="248" font-size="23" fill="#172b4d" font-weight="bold">T</text>
+<rect x="620" y="382" width="490" height="252" rx="12" fill="#ffffff" stroke="#ea580c" stroke-width="2"/>
+<text x="645" y="427" font-size="23" fill="#ea580c" font-weight="normal">rg[S] = []</text>
+<text x="645" y="482" font-size="23" fill="#ea580c" font-weight="normal">rg[A] = [S]</text>
+<text x="645" y="537" font-size="23" fill="#ea580c" font-weight="normal">rg[B] = [S]</text>
+<text x="645" y="592" font-size="23" fill="#ea580c" font-weight="normal">rg[T] = [A, B]</text>
+<text x="30" y="680" font-size="22" fill="#172b4d" font-weight="bold">原边 A → T（加粗）：g[A].push_back(T) 与 rg[T].push_back(A)。</text>
+<text x="30" y="718" font-size="21" fill="#172b4d" font-weight="normal">next(S) 看 g[S] 得到 A、B；prev(T) 看 rg[T] 也得到 A、B。</text>
+</g></svg>

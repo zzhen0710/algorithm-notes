@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="855" viewBox="0 0 1100 855" role="img"><title>同一棋盘：一维位置到行列，再换回一维位置</title><desc>目标字符串123804765的空格下标为4，对应行1列1；右邻行1列2对应下标5。每个候选复制原字符串，交换位置4和5得到123840765。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1100" height="855" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="43" font-size="25" fill="#172b4d" font-weight="bold">先把空格下标换成行列，检查邻格，再换回字符串下标</text>
+<text x="30" y="82" font-size="20" fill="#172b4d" font-weight="normal">例：u = 123804765；空格字符是 0，它在字符串中的位置 z = 4。</text>
+<text x="45" y="129" font-size="20" fill="#172b4d" font-weight="bold">行 x / 列 y（0 下标）</text>
+<text x="78" y="154" font-size="18" fill="#64748b" font-weight="normal">0</text>
+<text x="153" y="154" font-size="18" fill="#64748b" font-weight="normal">1</text>
+<text x="228" y="154" font-size="18" fill="#64748b" font-weight="normal">2</text>
+<text x="21" y="207" font-size="18" fill="#64748b" font-weight="normal">0</text>
+<rect x="50" y="170" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="75" y="213" font-size="28" fill="#172b4d" font-weight="bold">1</text>
+<rect x="125" y="170" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="150" y="213" font-size="28" fill="#172b4d" font-weight="bold">2</text>
+<rect x="200" y="170" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="225" y="213" font-size="28" fill="#172b4d" font-weight="bold">3</text>
+<text x="21" y="282" font-size="18" fill="#64748b" font-weight="normal">1</text>
+<rect x="50" y="245" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="75" y="288" font-size="28" fill="#172b4d" font-weight="bold">8</text>
+<rect x="125" y="245" width="70" height="70" rx="10" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<text x="150" y="288" font-size="28" fill="#172b4d" font-weight="bold">0</text>
+<rect x="200" y="245" width="70" height="70" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="225" y="288" font-size="28" fill="#172b4d" font-weight="bold">4</text>
+<text x="21" y="357" font-size="18" fill="#64748b" font-weight="normal">2</text>
+<rect x="50" y="320" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="75" y="363" font-size="28" fill="#172b4d" font-weight="bold">7</text>
+<rect x="125" y="320" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="150" y="363" font-size="28" fill="#172b4d" font-weight="bold">6</text>
+<rect x="200" y="320" width="70" height="70" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="225" y="363" font-size="28" fill="#172b4d" font-weight="bold">5</text>
+<text x="37" y="433" font-size="20" fill="#172b4d" font-weight="normal">空格 (1,1) → 右邻 (1,2)</text>
+<text x="350" y="230" font-size="25" fill="#172b4d" font-weight="bold">u</text>
+<text x="416" y="175" font-size="18" fill="#64748b" font-weight="normal">0</text>
+<rect x="390" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="413" y="232" font-size="28" fill="#172b4d" font-weight="bold">1</text>
+<text x="486" y="175" font-size="18" fill="#64748b" font-weight="normal">1</text>
+<rect x="460" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="483" y="232" font-size="28" fill="#172b4d" font-weight="bold">2</text>
+<text x="556" y="175" font-size="18" fill="#64748b" font-weight="normal">2</text>
+<rect x="530" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="553" y="232" font-size="28" fill="#172b4d" font-weight="bold">3</text>
+<text x="626" y="175" font-size="18" fill="#64748b" font-weight="normal">3</text>
+<rect x="600" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="623" y="232" font-size="28" fill="#172b4d" font-weight="bold">8</text>
+<text x="696" y="175" font-size="18" fill="#64748b" font-weight="normal">4</text>
+<rect x="670" y="190" width="65" height="65" rx="10" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<text x="693" y="232" font-size="28" fill="#172b4d" font-weight="bold">0</text>
+<text x="766" y="175" font-size="18" fill="#64748b" font-weight="normal">5</text>
+<rect x="740" y="190" width="65" height="65" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="763" y="232" font-size="28" fill="#172b4d" font-weight="bold">4</text>
+<text x="836" y="175" font-size="18" fill="#64748b" font-weight="normal">6</text>
+<rect x="810" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="833" y="232" font-size="28" fill="#172b4d" font-weight="bold">7</text>
+<text x="906" y="175" font-size="18" fill="#64748b" font-weight="normal">7</text>
+<rect x="880" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="903" y="232" font-size="28" fill="#172b4d" font-weight="bold">6</text>
+<text x="976" y="175" font-size="18" fill="#64748b" font-weight="normal">8</text>
+<rect x="950" y="190" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="973" y="232" font-size="28" fill="#172b4d" font-weight="bold">5</text>
+<text x="350" y="480" font-size="25" fill="#172b4d" font-weight="bold">v</text>
+<rect x="390" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="413" y="482" font-size="28" fill="#172b4d" font-weight="bold">1</text>
+<rect x="460" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="483" y="482" font-size="28" fill="#172b4d" font-weight="bold">2</text>
+<rect x="530" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="553" y="482" font-size="28" fill="#172b4d" font-weight="bold">3</text>
+<rect x="600" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="623" y="482" font-size="28" fill="#172b4d" font-weight="bold">8</text>
+<rect x="670" y="440" width="65" height="65" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="693" y="482" font-size="28" fill="#172b4d" font-weight="bold">4</text>
+<rect x="740" y="440" width="65" height="65" rx="10" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<text x="763" y="482" font-size="28" fill="#172b4d" font-weight="bold">0</text>
+<rect x="810" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="833" y="482" font-size="28" fill="#172b4d" font-weight="bold">7</text>
+<rect x="880" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="903" y="482" font-size="28" fill="#172b4d" font-weight="bold">6</text>
+<rect x="950" y="440" width="65" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="973" y="482" font-size="28" fill="#172b4d" font-weight="bold">5</text>
+<text x="390" y="300" font-size="20" fill="#172b4d" font-weight="bold">z = 4：x = 4 / 3 = 1，y = 4 % 3 = 1</text>
+<text x="390" y="345" font-size="21" fill="#172b4d" font-weight="bold">右邻 (1,2) → 1 × 3 + 2 = 5</text>
+<path d="M690,365 L690,412" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="390" y="540" font-size="20" fill="#172b4d" font-weight="normal">先 v = u，再 swap(v[4], v[5])；原状态 u 不变。</text>
+<rect x="30" y="585" width="1040" height="195" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="50" y="624" font-size="23" fill="#172b4d" font-weight="bold">推广到每行 m 列：</text>
+<text x="50" y="668" font-size="24" fill="#1d4ed8" font-weight="normal">row = pos / m</text>
+<text x="500" y="668" font-size="24" fill="#1d4ed8" font-weight="normal">col = pos % m</text>
+<text x="50" y="714" font-size="24" fill="#1d4ed8" font-weight="normal">pos = row × m + col</text>
+<text x="50" y="757" font-size="21" fill="#172b4d" font-weight="normal">整行用商计算，本行偏移用余数计算；除数是列数。</text>
+<text x="30" y="824" font-size="20" fill="#172b4d" font-weight="normal">这里只画向右这一步；其余合法方向也各自生成独立的候选副本。</text>
+</g></svg>

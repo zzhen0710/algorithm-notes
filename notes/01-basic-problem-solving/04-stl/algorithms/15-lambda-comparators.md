@@ -13,6 +13,7 @@
 #include <numeric>   // iota：生成连续编号
 #include <vector>    // vector：示例容器
 #include <utility>   // pair：多关键字数据
+#include <functional> // function：保存工厂返回的可调用对象
 ```
 
 ---
@@ -67,6 +68,32 @@ bool second = by_ref(15);  // false：现在与 20 比较
 引用捕获也可以修改外部变量，但必须保证被引用变量在 Lambda 调用时仍然存活。不要返回一个引用捕获了函数内部局部变量的 Lambda，再在函数结束后调用它。
 
 按值捕获默认不能修改捕获的副本；加 `mutable` 可以修改副本，但不会因此修改外部原变量。竞赛中优先使用清楚、最小的捕获列表，避免无意复制大型容器。
+
+## 函数工厂：先固定规则，再返回函数
+
+```cpp
+using Test = std::function<bool(int)>; // 需要 <functional>
+
+Test make_at_least(int limit) {
+    return [limit](int x) -> bool {
+        return x >= limit;
+    };
+}
+
+// 以下调用放在 main 或其他函数内。
+auto at_least_3 = make_at_least(3);
+auto at_least_8 = make_at_least(8);
+bool a = at_least_3(5); // true
+bool b = at_least_8(5); // false
+```
+
+**用途速记：** 先把固定条件交给工厂，得到一个保存该条件的函数对象；以后调用它时，再提供每次变化的数据。两次创建使用相同代码，但可以保存不同的捕获值。
+
+`make_at_least(3)` 现在执行工厂，创建并返回一个记住 3 的对象；`at_least_3(5)` 才真正执行判断。`[limit]` 保存副本，工厂返回后对象仍有自己的条件。
+
+按值捕获让返回对象保存数据；引用捕获不会替原数据延长生命周期，必须确保调用时原数据还存在。捕获变量本身是对象引用时，按值捕获会复制它所引用的对象，参见 [C++11 草案的按值捕获规则](https://timsong-cpp.github.io/cppwp/n3337/expr.prim.lambda#14)。
+
+实际应用见 [P1032 的 make_step](../../../03-search/05-bidirectional-bfs.md#工厂调用和真正执行一步是两个时刻)：分别固定正向与反向规则，生成两个 `Step`，再交给同一份搜索主体。
 
 ---
 

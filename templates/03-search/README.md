@@ -8,6 +8,8 @@
 
 - [小规模一维装箱](bin-packing/README.md)：所有物品必须放入同容量箱子，求最少箱数；维护有效载重前缀，允许任意件同箱。
 
+- [双向 BFS](bidirectional-bfs/README.md)：指定起终点、等代价；由调用方生成正向后继与反向前驱，整层扩展并可限制总步数。
+
 不建立万能回溯或万能剪枝函数。具体状态与界需要据题重新设计；记忆化与递推的选型见[关联范式](../../patterns/05-dynamic-programming/memoization-vs-tabulation.md)。
 
 [返回全部模板](../README.md)

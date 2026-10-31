@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="940" viewBox="0 0 1100 940" role="img"><title>规则先捕获，状态后传入：创建正反两个step</title><desc>原规则aa到b与反规则b到aa分别创建next和prev。next对aaa在位置0和位置1各替换一次，生成ba与ab；prev对ba使用反规则得到aaa。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1100" height="940" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="43" font-size="26" fill="#172b4d" font-weight="bold">同一工厂调用两次：先创建函数，再在搜索中调用它</text>
+<text x="30" y="81" font-size="21" fill="#172b4d" font-weight="normal">make_step 固定规则；返回的 lambda 以后才接收当前状态 u。</text>
+<rect x="30" y="110" width="490" height="104" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<rect x="610" y="110" width="460" height="104" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="50" y="149" font-size="24" fill="#172b4d" font-weight="bold">rules：aa → b</text>
+<text x="50" y="186" font-size="20" fill="#172b4d" font-weight="normal">原图的一步规则</text>
+<text x="630" y="149" font-size="24" fill="#172b4d" font-weight="bold">rev_rules：b → aa</text>
+<text x="630" y="186" font-size="20" fill="#172b4d" font-weight="normal">交换左右，用来找原图前驱</text>
+<path d="M275,215 L275,274" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M840,215 L840,274" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="30" y="285" width="490" height="117" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<rect x="610" y="285" width="460" height="117" rx="10" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<text x="50" y="326" font-size="23" fill="#1d4ed8" font-weight="bold">next = make_step(rules)</text>
+<text x="50" y="368" font-size="20" fill="#172b4d" font-weight="normal">函数对象中保存 aa → b 的副本</text>
+<text x="630" y="326" font-size="22" fill="#c2410c" font-weight="bold">prev = make_step(rev_rules)</text>
+<text x="630" y="368" font-size="20" fill="#172b4d" font-weight="normal">函数对象中保存 b → aa 的副本</text>
+<path d="M275,402 L275,454" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M840,402 L840,454" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="30" y="465" width="550" height="395" rx="10" fill="#fff" stroke="#3b82f6" stroke-width="2"/>
+<rect x="610" y="465" width="460" height="395" rx="10" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+<text x="50" y="506" font-size="23" fill="#1d4ed8" font-weight="bold">现在调用 next(&quot;aaa&quot;)</text>
+<text x="168" y="547" font-size="18" fill="#64748b" font-weight="normal">0</text>
+<rect x="140" y="560" width="70" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="165" y="602" font-size="28" fill="#172b4d" font-weight="bold">a</text>
+<text x="268" y="547" font-size="18" fill="#64748b" font-weight="normal">1</text>
+<rect x="240" y="560" width="70" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="265" y="602" font-size="28" fill="#172b4d" font-weight="bold">a</text>
+<text x="368" y="547" font-size="18" fill="#64748b" font-weight="normal">2</text>
+<rect x="340" y="560" width="70" height="65" rx="10" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="365" y="602" font-size="28" fill="#172b4d" font-weight="bold">a</text>
+<path d="M230,635 L170,680" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M300,635 L435,680" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<rect x="55" y="693" width="225" height="78" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="73" y="726" font-size="20" fill="#172b4d" font-weight="normal">pos = 0</text>
+<text x="73" y="756" font-size="22" fill="#172b4d" font-weight="bold">aa a → b a</text>
+<rect x="305" y="693" width="245" height="78" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="325" y="726" font-size="20" fill="#172b4d" font-weight="normal">pos = 1</text>
+<text x="325" y="756" font-size="22" fill="#172b4d" font-weight="bold">a aa → a b</text>
+<text x="50" y="813" font-size="20" fill="#172b4d" font-weight="normal">++pos 保留重叠位置；每次复制原 u。</text>
+<text x="630" y="506" font-size="23" fill="#c2410c" font-weight="bold">现在调用 prev(&quot;ba&quot;)</text>
+<text x="680" y="590" font-size="31" fill="#172b4d" font-weight="bold">b a</text>
+<path d="M725,625 L725,683" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<text x="775" y="663" font-size="22" fill="#c2410c" font-weight="normal">b → aa</text>
+<rect x="650" y="700" width="365" height="77" rx="10" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="695" y="748" font-size="27" fill="#172b4d" font-weight="bold">aa a = aaa</text>
+<text x="630" y="813" font-size="20" fill="#172b4d" font-weight="normal">它是原图中能一步变成 ba 的前驱。</text>
+<text x="30" y="910" font-size="22" fill="#172b4d" font-weight="bold">创建时确定规则；调用时提供状态；一次调用只生成“一次操作”的候选。</text>
+</g></svg>

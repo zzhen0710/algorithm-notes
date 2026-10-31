@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="530" viewBox="0 0 1100 530" role="img"><title>正向走后继，反向找前驱</title><desc>原图S到A到T；目标侧从T找能到T的A，再找能到A的S，因此反向搜索距离正好是原图到终点的距离。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1100" height="530" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="43" font-size="27" fill="#172b4d" font-weight="bold">反向 BFS 的问题是：谁能一步走到当前状态？</text>
+<text x="30" y="87" font-size="20" fill="#172b4d" font-weight="normal">原图边：S → A → T；原图中没有 T → A 这条边，也不影响反向搜索。</text>
+<circle cx="130" cy="180" r="30" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="120" y="189" font-size="26" fill="#172b4d" font-weight="bold">S</text>
+<circle cx="430" cy="180" r="30" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="420" y="189" font-size="26" fill="#172b4d" font-weight="bold">A</text>
+<circle cx="730" cy="180" r="30" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="720" y="189" font-size="26" fill="#172b4d" font-weight="bold">T</text>
+<path d="M162,180 L395,180" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow)" />
+<path d="M462,180 L695,180" fill="none" stroke="#2563eb" stroke-width="2.5" marker-end="url(#arrow)" />
+<circle cx="130" cy="360" r="30" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="120" y="369" font-size="26" fill="#172b4d" font-weight="bold">S</text>
+<circle cx="430" cy="360" r="30" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="420" y="369" font-size="26" fill="#172b4d" font-weight="bold">A</text>
+<circle cx="730" cy="360" r="30" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>
+<text x="720" y="369" font-size="26" fill="#172b4d" font-weight="bold">T</text>
+<path d="M698,360 L465,360" fill="none" stroke="#ea580c" stroke-width="2.5" marker-end="url(#arrow)" />
+<path d="M398,360 L165,360" fill="none" stroke="#ea580c" stroke-width="2.5" marker-end="url(#arrow)" />
+<text x="35" y="140" font-size="19" fill="#1d4ed8" font-weight="normal">next：</text>
+<text x="35" y="320" font-size="19" fill="#c2410c" font-weight="normal">prev：</text>
+<text x="235" y="224" font-size="20" fill="#172b4d" font-weight="normal">后继 A</text>
+<text x="535" y="224" font-size="20" fill="#172b4d" font-weight="normal">后继 T</text>
+<text x="235" y="405" font-size="20" fill="#172b4d" font-weight="normal">A 的前驱 S</text>
+<text x="535" y="405" font-size="20" fill="#172b4d" font-weight="normal">T 的前驱 A</text>
+<rect x="835" y="145" width="230" height="255" rx="12" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<text x="855" y="182" font-size="23" fill="#172b4d" font-weight="bold">dt[T] = 0</text>
+<text x="855" y="232" font-size="23" fill="#172b4d" font-weight="bold">dt[A] = 1</text>
+<text x="855" y="282" font-size="23" fill="#172b4d" font-weight="bold">dt[S] = 2</text>
+<text x="855" y="333" font-size="18" fill="#172b4d" font-weight="normal">它们表示原图中</text>
+<text x="855" y="365" font-size="18" fill="#172b4d" font-weight="normal">各状态走到 T 的步数。</text>
+<text x="30" y="475" font-size="21" fill="#b91c1c" font-weight="normal">若把 next(T) 当反向邻居，只会得到空列表，漏掉真正的前驱 A。</text>
+</g></svg>

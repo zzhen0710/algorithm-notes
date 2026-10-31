@@ -46,7 +46,7 @@
 | [08 · fill / iota / generate](08-fill-iota-generate.md) | 批量初始化、自定义生成与排序下标技巧 |
 | [13 · copy / copy_if / transform](13-copy-copy_if%20-transform.md) | 复制、保序筛选、一元与二元映射、输出空间 |
 | [14 · swap / iter_swap](14-swap-iter_swap.md) | 交换元素、交换迭代器变量与复杂度区别 |
-| [15 · Lambda 与比较器](15-lambda-comparators.md) | 捕获方式、函数角色、严格弱序与稳定性 |
+| [15 · Lambda 与比较器](15-lambda-comparators.md) | 捕获方式、[函数工厂](15-lambda-comparators.md#函数工厂先固定规则再返回函数)、函数角色、严格弱序与稳定性 |
 
 ## 二、竞赛选型速查
 
