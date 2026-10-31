@@ -4,7 +4,7 @@
 
 ## 本章范式
 
-- [枚举降维](enumeration-dimension-reduction.md)
+- [枚举降维](enumeration-dimension-reduction.md)：从等式消去变量；含搜索末端转为方程求解的思路与 P1763 例子。
 - [枚举少量耦合变量：固定共享部分后独立求解](small-coupling-enumeration.md)
 
 ## 跨章参考

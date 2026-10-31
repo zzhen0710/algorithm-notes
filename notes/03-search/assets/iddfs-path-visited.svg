@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="825" viewBox="0 0 1100 825" role="img"><title>同一节点的剩余步数不同，不能永久跳过</title><desc>深度上限3。先经S-A-C-X到X，剩余0；再经S-B-X到X，剩余1，可以到T。若X首次出现后永久标记，会漏掉三步答案。</desc>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="#64748b"/></marker></defs>
+<rect width="1100" height="825" fill="#f8fafc"/>
+<g font-family="Microsoft YaHei,sans-serif" fill="#172b4d">
+<text x="30" y="43" font-size="26" fill="#172b4d" font-weight="bold">同样到达 X：第一条路没预算，第二条路还有一步</text>
+<text x="30" y="83" font-size="21" fill="#172b4d" font-weight="normal">本轮 limit=3；假设先试 A 分支，再试 B 分支。</text>
+<path d="M114.10061714380211,220.24498829893724 L273.1185424165284,155.8805899742623" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M326.0,145.0 L491.0,145.0" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M544.5083078541913,153.68002569835946 L732.663810470325,220.31843287490676" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M114.96000000000001,237.28 L422.16,326.88" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M474.62575896632313,326.6590171243099 L732.5328073067934,239.30340397673126" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow)"/>
+<path d="M786.0,230.0 L971.0,230.0" fill="none" stroke="#10b981" stroke-width="2.5" marker-end="url(#arrow)"/>
+<circle cx="90" cy="230" r="25" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="82" y="238" font-size="24" fill="#172b4d" font-weight="bold">S</text>
+<circle cx="300" cy="145" r="25" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="292" y="153" font-size="24" fill="#172b4d" font-weight="bold">A</text>
+<circle cx="520" cy="145" r="25" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="512" y="153" font-size="24" fill="#172b4d" font-weight="bold">C</text>
+<circle cx="760" cy="230" r="25" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="752" y="238" font-size="24" fill="#172b4d" font-weight="bold">X</text>
+<circle cx="1000" cy="230" r="25" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+<text x="992" y="238" font-size="24" fill="#172b4d" font-weight="bold">T</text>
+<circle cx="450" cy="335" r="25" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<text x="442" y="343" font-size="24" fill="#172b4d" font-weight="bold">B</text>
+<rect x="30" y="405" width="1040" height="135" rx="12" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<text x="50" y="445" font-size="24" fill="#172b4d" font-weight="bold">先到 X：S → A → C → X</text>
+<text x="50" y="486" font-size="21" fill="#172b4d" font-weight="normal">已经走3步，left=0；当前不能再走到T，所以这条分支失败。</text>
+<text x="50" y="520" font-size="20" fill="#172b4d" font-weight="normal">返回时移除当前路径上的 X，不能据此断定其他路径也没必要到 X。</text>
+<rect x="30" y="565" width="1040" height="135" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="50" y="605" font-size="24" fill="#172b4d" font-weight="bold">再到 X：S → B → X</text>
+<text x="50" y="647" font-size="21" fill="#172b4d" font-weight="normal">只走2步，left=1；仍能沿 X → T，得到3步答案。</text>
+<text x="50" y="680" font-size="20" fill="#172b4d" font-weight="normal">若第一次见到X就永久标记，这条合法尝试会被错误跳过。</text>
+<text x="30" y="753" font-size="21" fill="#172b4d" font-weight="bold">in_path 只说明“当前路径里有没有它”；失败后撤销，不等于永久 visited。</text>
+<text x="30" y="797" font-size="20" fill="#172b4d" font-weight="normal">若还要缓存结果，剩余步数、完整状态与路径限制都要另行核对。</text>
+</g></svg>

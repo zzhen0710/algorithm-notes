@@ -10,6 +10,8 @@
 
 - [双向 BFS](bidirectional-bfs/README.md)：指定起终点、等代价；由调用方生成正向后继与反向前驱，整层扩展并可限制总步数。
 
+- [迭代加深 IDDFS](iterative-deepening/README.md)：给定目标与合法后继，限制最大深度，返回一条最少步数路径；使用当前路径标记。
+
 不建立万能回溯或万能剪枝函数。具体状态与界需要据题重新设计；记忆化与递推的选型见[关联范式](../../patterns/05-dynamic-programming/memoization-vs-tabulation.md)。
 
 [返回全部模板](../README.md)

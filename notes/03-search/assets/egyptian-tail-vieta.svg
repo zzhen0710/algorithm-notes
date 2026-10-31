@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="1030" viewBox="0 0 1120 1030" role="img"><title>P1763：固定前缀后，最后两项改用求根</title><desc>手推19/45分支：先选分母5，剩余2/9，last5、left2。和2k积9k，k10与11的判别式不是完全平方，k12判别式144，得到分母6和18。本图是方程手推，不是运行个人程序得到的调用轨迹。</desc>
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L9,5 L0,10" fill="#64748b"/></marker></defs>
+<rect width="1120" height="1030" fill="#f8fafc"/>
+<g fill="#172b4d" font-family="Microsoft YaHei,sans-serif">
+<text x="30" y="45" font-size="27" fill="#172b4d" font-weight="bold">一条分支：先选 5，最后两项由方程求出 6、18</text>
+<text x="30" y="87" font-size="20" fill="#172b4d" font-weight="normal">手推示例：limit=3，max_den=1000；只展示这一条分支，不代表遍历次序。</text>
+<rect x="30" y="120" width="330" height="145" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="50" y="158" font-size="23" fill="#172b4d" font-weight="bold">当前剩余：19/45</text>
+<text x="50" y="201" font-size="21" fill="#172b4d" font-weight="normal">path = [ ]，left = 3</text>
+<text x="50" y="240" font-size="21" fill="#172b4d" font-weight="normal">准备选择下一分母 x = 5</text>
+<path d="M365,193 L425,193" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
+<rect x="435" y="120" width="655" height="145" rx="12" fill="#eff6ff" stroke="#60a5fa" stroke-width="2"/>
+<text x="455" y="158" font-size="24" fill="#172b4d" font-weight="bold">扣掉 1/5：19/45 − 1/5 = 2/9</text>
+<text x="455" y="201" font-size="22" fill="#172b4d" font-weight="normal">path = [5]，last = 5，left = 2</text>
+<text x="455" y="240" font-size="22" fill="#172b4d" font-weight="normal">转交 solve_last_two：2/9 = 1/x + 1/y</text>
+<path d="M760,270 L760,305" fill="none" stroke="#64748b" stroke-width="2.5" marker-end="url(#arr)"/>
+<rect x="30" y="320" width="1060" height="170" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="50" y="361" font-size="24" fill="#172b4d" font-weight="bold">约分后 a=2，b=9；改用参数 k 同时表示和与积</text>
+<text x="60" y="408" font-size="25" fill="#172b4d" font-weight="normal">x + y = 2k</text>
+<text x="350" y="408" font-size="25" fill="#172b4d" font-weight="normal">xy = 9k</text>
+<text x="625" y="408" font-size="25" fill="#172b4d" font-weight="normal">t² − 2kt + 9k = 0</text>
+<text x="60" y="458" font-size="22" fill="#172b4d" font-weight="normal">Δ = 4k² − 36k；先检查整数根，再检查 5 &lt; x &lt; y ≤ 1000。</text>
+<text x="30" y="538" font-size="23" fill="#172b4d" font-weight="bold">本分支 k 从 10 起枚举；下面逐项代入公式</text>
+<rect x="30" y="560" width="1060" height="227" rx="12" fill="#fff" stroke="#cbd5e1" stroke-width="2"/>
+<text x="55" y="596" font-size="21" fill="#64748b" font-weight="normal">k</text>
+<text x="160" y="596" font-size="21" fill="#64748b" font-weight="normal">x+y</text>
+<text x="335" y="596" font-size="21" fill="#64748b" font-weight="normal">xy</text>
+<text x="495" y="596" font-size="21" fill="#64748b" font-weight="normal">Δ</text>
+<text x="675" y="596" font-size="21" fill="#64748b" font-weight="normal">检查结果</text>
+<text x="55" y="647" font-size="21" fill="#172b4d" font-weight="normal">10</text>
+<text x="160" y="647" font-size="21" fill="#172b4d" font-weight="normal">20</text>
+<text x="335" y="647" font-size="21" fill="#172b4d" font-weight="normal">90</text>
+<text x="495" y="647" font-size="21" fill="#172b4d" font-weight="normal">40</text>
+<text x="675" y="647" font-size="21" fill="#172b4d" font-weight="normal">不是完全平方，跳过</text>
+<text x="55" y="699" font-size="21" fill="#172b4d" font-weight="normal">11</text>
+<text x="160" y="699" font-size="21" fill="#172b4d" font-weight="normal">22</text>
+<text x="335" y="699" font-size="21" fill="#172b4d" font-weight="normal">99</text>
+<text x="495" y="699" font-size="21" fill="#172b4d" font-weight="normal">88</text>
+<text x="675" y="699" font-size="21" fill="#172b4d" font-weight="normal">不是完全平方，跳过</text>
+<rect x="43" y="719" width="1033" height="43" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="55" y="751" font-size="21" fill="#047857" font-weight="bold">12</text>
+<text x="160" y="751" font-size="21" fill="#047857" font-weight="bold">24</text>
+<text x="335" y="751" font-size="21" fill="#047857" font-weight="bold">108</text>
+<text x="495" y="751" font-size="21" fill="#047857" font-weight="bold">144</text>
+<text x="675" y="751" font-size="21" fill="#047857" font-weight="bold">√Δ=12，得到 x=6、y=18</text>
+<rect x="30" y="823" width="1060" height="120" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<text x="52" y="865" font-size="25" fill="#172b4d" font-weight="bold">拼回前缀：19/45 = 1/5 + 1/6 + 1/18</text>
+<text x="52" y="910" font-size="22" fill="#172b4d" font-weight="normal">候选完整方案 [5,6,18]：若 18 &lt; best_last，就更新最好答案。</text>
+<text x="30" y="985" font-size="20" fill="#172b4d" font-weight="bold">固定前缀下，较大的合法 k 对应较大的 y；主 DFS 的其他前缀仍需继续比较。</text>
+</g></svg>
