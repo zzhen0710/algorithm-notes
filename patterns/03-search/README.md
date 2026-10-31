@@ -15,6 +15,8 @@
 
 ## 知识衔接
 
+- [3.8 搜索总结与选型](../../notes/03-search/08-summary-selection.md)：方法入口、写法与时空成本，以及[访问标记、路径标记和缓存的区别](../../notes/03-search/08-summary-selection.md#4-标记相似含义不同)；标准搜索选型集中在 Notes，不重复新建范式。
+
 - [3.5 双向 BFS](../../notes/03-search/05-bidirectional-bfs.md)：等代价、目标已知且可生成前驱时，比较从两端搜索；保留两侧完整分层，不能把逐节点交替的第一次碰头直接当最短路。标准算法在 Notes 维护，不重复新建范式；两题进一步对照[共用骨架与题目转移](../../notes/03-search/05-bidirectional-bfs.md#93-两题共用骨架题目决定一步怎么走)，坐标和工厂语法分别链接基础笔记。
 
 - [3.6 迭代加深](../../notes/03-search/06-iterative-deepening.md)：逐次限制深度，比较少存宽层状态与重复浅层搜索；[剩余步数与路径标记](../../notes/03-search/06-iterative-deepening.md#不能把首次到达永久标记成以后都不用再搜)不能机械套用 BFS 永久判重。

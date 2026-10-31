@@ -1,6 +1,6 @@
 # 第三章 搜索：模板索引
 
-[对应知识笔记](../../notes/03-search/README.md)
+[对应知识笔记](../../notes/03-search/README.md) · [全章选型与写法成本](../../notes/03-search/08-summary-selection.md#3-写法成本与时间空间怎样比较)
 
 ## 本章模板
 
