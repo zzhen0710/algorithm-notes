@@ -19,4 +19,6 @@
 
 - [3.6 迭代加深](../../notes/03-search/06-iterative-deepening.md)：逐次限制深度，比较少存宽层状态与重复浅层搜索；[剩余步数与路径标记](../../notes/03-search/06-iterative-deepening.md#不能把首次到达永久标记成以后都不用再搜)不能机械套用 BFS 永久判重。
 
+- [3.7 启发式搜索](../../notes/03-search/07-heuristic-search.md)：[放松限制设计下界](../../notes/03-search/07-heuristic-search.md#3-启发函数设计)，分别交给 pq 与限深 DFS 管理；[本质与动态对比](../../notes/03-search/07-heuristic-search.md#5-本质与横向对比)集中展示，两套模板复用相同的 Step／Goal／Heuristic。
+
 [返回全部范式](../README.md)
