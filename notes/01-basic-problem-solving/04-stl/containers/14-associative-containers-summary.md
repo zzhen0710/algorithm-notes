@@ -219,6 +219,56 @@ for (int score : group["Alice"]) {
 
 **核心原则：先明确需要什么操作，再选容器；不是所有带 `multi` 的场景都必须使用 `multi` 容器。**
 
+### 整体比较：内容相同与谁更小
+
+以下以同一容器类型及默认 key 规则为例。**按 key 查找／判重，与比较两个完整容器，是两件事。**
+
+| 容器家族 | C++11 支持 | 相等的标准 | 大小比较 |
+| --- | --- | --- | --- |
+| set / multiset | 六种比较 | 遍历序列逐项相等，重复次数也要相同 | 对该序列作字典序比较 |
+| map / multimap | 六种比较 | 遍历得到的每个 pair 都对应相等 | 对 pair 序列作字典序比较；每项先 key 后 value |
+| unordered_set / unordered_multiset | 仅 ==、!= | 元素内容及次数相同，不要求遍历顺序相同 | 不提供 |
+| unordered_map / unordered_multimap | 仅 ==、!= | 键值对内容及次数相同，不要求遍历顺序相同 | 不提供 |
+
+六种比较为 `==`、`!=`、`<`、`<=`、`>`、`>=`。**set 的 `<` 不是子集判断；map 的比较也不只是看 key。**
+
+#### multimap 与 unordered_multimap 的关键区别
+
+```cpp
+multimap<int, int> a, b;
+a.emplace(1, 2); a.emplace(1, 3);
+b.emplace(1, 3); b.emplace(1, 2);
+cout << (a == b) << '\n'; // 0：同 key 的记录顺序不同。
+
+unordered_multimap<int, int> x, y;
+x.emplace(1, 2); x.emplace(1, 3);
+y.emplace(1, 3); y.emplace(1, 2);
+cout << (x == y) << '\n'; // 1：键值对种类、次数相同即可。
+```
+
+`multimap` 按当前遍历序列比较，不会先把同 key 的 value 排序；`unordered_multimap` 则把同 key 的记录按内容匹配，顺序无关。不要把“保存了同一批记录”与“遍历序列完全相同”混成一个条件。
+
+#### Compare 决定存放顺序，整容器比较使用元素运算符
+
+```cpp
+set<int, greater<int>> a = {9, 1}, b = {8, 2};
+cout << (a < b); // 0：按遍历顺序先取 9 和 8，但实际判断仍是整数 9 < 8。
+```
+
+两个有序容器的 `==` 调用对应元素的 `==`，`<` 按遍历序列调用元素的 `<`，**不会拿容器的 Compare 替代元素运算符**。存放顺序由 Compare 产生，但整容器比较仍需元素支持对应操作。
+
+哈希容器的比较也不是只看哈希值：还需内容相等。若自定义 Hash / KeyEqual，C++11 要求两边对应规则具有相同行为，且 key 的 `==` 与 KeyEqual 的分组相容；通常使用两边相同的默认规则即可。
+
+| 比较操作 | 时间成本（元素比较、哈希为常数时） |
+| --- | --- |
+| 有序容器整体比较 | 最坏线性扫描，O(n+m) |
+| unordered_set / unordered_map 相等比较 | 平均 O(n)，最坏 O(n²) |
+| unordered_multiset / unordered_multimap 相等比较 | 设每个等价 key 组大小为 E_i，通常上界按各组 E_i² 之和估计；最坏 O(n²) |
+
+此处 n、m 是两边元素数；哈希容器大小不同可直接判不等，表中哈希复杂度针对同样大小。相同 key 的重复记录很多时，不能把 multi 哈希容器的整体比较一律写成平均 O(n)。
+
+依据：[N3337 容器要求](https://timsong-cpp.github.io/cppwp/n3337/container.requirements.general)与[无序关联容器比较](https://timsong-cpp.github.io/cppwp/n3337/unord.req#11)。其他容器与工具类型见[整体比较速查](README.md#整体比较速查c11)。
+
 ## 6. 与单容器笔记的关系
 
 这份笔记负责**横向比较、快速选型和查易错 API**，不重复展开代表题。典型题及完整代码仍保留在对应的单容器笔记中：

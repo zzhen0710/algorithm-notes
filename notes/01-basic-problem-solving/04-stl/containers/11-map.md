@@ -41,8 +41,24 @@ for (const auto& p : score) {
 | `iterator begin()` / `iterator end()` | 最小 key 的位置 / 尾后位置 | `O(1)` |
 | `size_type size() const` / `bool empty() const` | 键值对数量 / 是否为空 | `O(1)` |
 | `void clear()` | 清空全部元素 | `O(n)` |
+| `a == b` / `a != b` | 比较遍历序列的长度与全部对应元素 | 最坏 O(n+m) |
+| `a < b` / `a <= b` / `a > b` / `a >= b` | 对遍历序列作字典序比较 | O(min(n,m)) 次元素比较 |
 
 `n` 为键值对数量；表中树操作的 `O(log n)` 以键比较为基本操作。对于 `string` key，一次比较本身还可能读取多个字符。
+
+### 两个 map 比较时，value 也参与
+
+```cpp
+map<int, int> a = {{1, 2}}, b = {{1, 3}};
+cout << (a < b) << '\n';  // 1：对应 pair 的 key 相同，再比较 value 的 2 与 3。
+cout << (a == b) << '\n'; // 0：key 相同，value 不同。
+```
+
+C++11 支持 `==`、`!=`、`<`、`<=`、`>`、`>=`。先按容器的遍历顺序逐项比较，每项是 `pair<const Key,T>`，**先比较该项的 key，平手再比较 value**；不是先比较完全部 key 后才统一看 value。
+
+`==` 要求键和值都对应相等。比较容器与查找 key 使用的规则不同，详见[关联容器比较](14-associative-containers-summary.md#整体比较内容相同与谁更小)。
+
+比较复杂度中的 n、m 分别是两边的长度，元素比较按常数时间计。
 
 ### 2.1 `operator[]`：访问、修改，也可能插入
 

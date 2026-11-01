@@ -38,8 +38,27 @@ cout << scores.count("Alice");  // 2
 | `iterator begin()` / `iterator end()` | 起始位置 / 尾后位置 | `O(1)` |
 | `size_type size() const` / `bool empty() const` | 元素总数（含重复 key）/ 是否为空 | `O(1)` |
 | `void clear()` | 清空所有元素 | `O(n)` |
+| `a == b` / `a != b` | 比较遍历序列的长度与全部对应元素 | 最坏 O(n+m) |
+| `a < b` / `a <= b` / `a > b` / `a >= b` | 对遍历序列作字典序比较 | O(min(n,m)) 次元素比较 |
 
 其中 `n` 为当前元素总数，`k` 为与指定 key 相等的元素数；复杂度默认比较单个 key 的成本为 `O(1)`，若 key 为字符串，还需计入字符串比较成本。
+
+### multimap 的比较还要注意同 key 内的顺序
+
+```cpp
+multimap<int, int> a, b;
+a.emplace(1, 2); a.emplace(1, 3);
+b.emplace(1, 3); b.emplace(1, 2);
+
+cout << (a == b) << '\n'; // 0：遍历序列分别为 (1,2),(1,3) 与 (1,3),(1,2)。
+cout << (a < b) << '\n';  // 1：第一对 key 相同，比较 value 的 2 与 3。
+```
+
+C++11 支持 `==`、`!=`、`<`、`<=`、`>`、`>=`，规则是**比较当前遍历得到的 pair 序列**。它只按 key 排列；同 key 的 value 不会自动排序。因此，即使两边键值对的种类和次数相同，也可能因同 key 内的顺序不同而不相等。
+
+与忽略同 key 内顺序的 `unordered_multimap` 对照，见[关联容器比较](14-associative-containers-summary.md#整体比较内容相同与谁更小)。
+
+比较复杂度中的 n、m 分别是两边的长度，元素比较按常数时间计。
 
 ### 2.1 `equal_range()`：一次取得同一 key 的全部值
 

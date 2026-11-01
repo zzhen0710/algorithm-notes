@@ -38,6 +38,8 @@ array<int, N> c{};
 | `void fill(const int& value)` | 将全部元素赋值为 `value` | $O(N)$ |
 | `iterator begin() noexcept` | 返回首元素迭代器 | $O(1)$ |
 | `iterator end() noexcept` | 返回尾后迭代器 | $O(1)$ |
+| `a == b` / `a != b` | 比较全部对应元素是否相同 | O(N) |
+| `a < b` / `a <= b` / `a > b` / `a >= b` | 按下标顺序作字典序比较 | O(N) |
 
 `const array` 的访问接口返回 `const int&` 或 `const_iterator`。实际使用通常借助 `auto`，不必死记这些类型别名。
 
@@ -56,6 +58,22 @@ sort(a.begin(), a.end()); // 可以直接配合 STL 算法
 **没有** `push_back()`、`pop_back()`、`resize()`：`array` 不能改变长度。
 
 ---
+
+### array 比内容，原生数组不能这样比较
+
+```cpp
+array<int, 3> a = {1, 2, 9}, b = {1, 3, 0};
+cout << (a < b) << '\n'; // 1：第一个不同位置决定大小。
+cout << (a == b) << '\n'; // 0：不是全部对应元素都相同。
+
+int x[] = {1, 2}, y[] = {1, 2};
+// x == y 比较的是退化后的指针，不是逐项比较内容。
+cout << equal(begin(x), end(x), begin(y)) << '\n'; // 1；这里已知两边等长。
+```
+
+同一类型的 `array<T,N>` 支持 `==`、`!=`、`<`、`<=`、`>`、`>=`。相等要求全部对应元素相等，大小按字典序；最多检查 O(N) 个元素，不同 `N` 是不同类型，不能直接按这组运算符比较。
+
+**C 风格数组 `==` 不比较内容。** 可换成 `array` / `vector`，或像上例在保证第二段足够长、且检查两边长度后使用 C++11 的三迭代器 `equal`。完整分类见[整体比较速查](README.md#整体比较速查c11)。
 
 ## 3. 高频陷阱
 

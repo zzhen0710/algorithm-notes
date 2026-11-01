@@ -40,6 +40,8 @@ cout << s.substr(2, 3); // cde
 | `int compare(size_type pos, size_type count, const string& str) const` | 将指定子串与 `str` 比较 | $O(\min(count,m))$ |
 | `void swap(string& other)` | 与 `other` 交换全部内容（包括长度），不返回值；写作 `s.swap(t)`，也可用 `std::swap(s, t)` | $O(1)$ |
 | `void clear()` | 清空字符串 | $O(n)$ |
+| `a == b` / `a != b` | 比较完整字符串内容是否相同，返回 bool | 最坏 O(n+m) |
+| `a < b` / `a <= b` / `a > b` / `a >= b` | 字典序比较，返回 bool | O(min(n,m)) |
 
 其中 `n` 为当前字符串长度，`m = str.size()`；复杂度按通常的字符处理成本讨论。
 
@@ -75,6 +77,22 @@ if (pos != string::npos) {
 ```
 
 `string::npos` 表示未找到；查找位置的类型通常是无符号的 `string::size_type`，建议用 `auto` 或 `size_t` 保存，**不要习惯性与 `-1` 比较**。
+
+### 完整字符串直接比较（C++11）
+
+```cpp
+string a = "abc", b = "abd", c = "ab";
+cout << (a < b) << '\n';  // 1：前两个字符相同，比较 'c' 与 'd'。
+cout << (c < a) << '\n';  // 1：一方是另一方的前缀，较短者更小。
+cout << (a == "abc") << '\n'; // 1：逐字符内容相等。
+cout << (string("10") < string("2")) << '\n'; // 1：按字符比较，不按整数大小。
+```
+
+`string` 支持 `==`、`!=`、`<`、`<=`、`>`、`>=`，返回 `bool`。**大小按字符字典序，相等要求长度及对应字符全部相等**；字符的顺序由字符值决定，不是自然语言的排序规则。比较最坏需要线性扫描，不能因为写成一个运算符就看成 O(1)。
+
+只比较完整字符串时直接用运算符；比较已有字符串的某段时，接着用下面的 `compare()`。其他类型见[整体比较速查](README.md#整体比较速查c11)。
+
+比较复杂度中的 n、m 分别是两边的长度，元素比较按常数时间计。
 
 ### `compare()`：无需构造临时子串
 

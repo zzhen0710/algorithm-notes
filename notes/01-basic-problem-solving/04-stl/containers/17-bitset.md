@@ -103,6 +103,7 @@ if (cin >> b) {
 | `unsigned long long to_ullong() const` | 转为 `unsigned long long`；超范围抛异常 | 通常 `O(N / W + 1)` |
 | `bitset& operator<<=(size_t k)` / `bitset& operator>>=(size_t k)` | 整体左移 / 右移，返回自身引用 | 通常 `O(N / W + 1)` |
 | `bitset operator&(const bitset& other) const` 等按位运算 | 逐位执行按位与、按位或、按位异或，返回新 `bitset` | 通常 `O(N / W + 1)` |
+| `bool operator==(const bitset<N>& rhs) const` / `operator!=` | 判断位模式是否相同 / 不相同 | 通常 O(N / W + 1) |
 
 表中“通常”是对常见机器字实现的分析，并非标准保证的精确机器操作数；`N` 固定时可视为与输入数量无关。整数构造与全体位操作涉及初始化或处理底层存储；字符串构造及 `to_string()` 还需要处理字符。
 
@@ -146,6 +147,19 @@ cout << a.to_ullong() + b.to_ullong(); // 18
 ```
 
 `bitset` 适合位状态、位运算和统计，而不是替代 `int` / `long long` 进行普通算术。
+
+### 3.4 位集合可以判相等，不能直接比大小
+
+```cpp
+bitset<8> a(5), b("00000101"), c(6);
+cout << (a == b) << '\n'; // 1：所有对应位相同。
+cout << (a != c) << '\n'; // 1：位模式不同。
+// a < c; // C++11 不提供大小比较。
+```
+
+同一位数 `N` 的 `bitset<N>` 只提供 `==`、`!=`；**相等看每一位，不是只比较 count()**。例如 5 与 6 的置位数都为 2，但位模式不同。
+
+常见分块实现需处理 O(N/W+1) 个机器字。若确需按整数大小比较，只有确认值能装入目标整数类型时才可转换；不能为了比较而盲目调用可能溢出的 `to_ullong()`。完整分类见[整体比较速查](README.md#整体比较速查c11)。
 
 ## 4. 代表题：[CF 579A — Raising Bacteria](https://codeforces.com/problemset/problem/579/A)
 

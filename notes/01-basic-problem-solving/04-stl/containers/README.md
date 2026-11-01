@@ -70,6 +70,40 @@
 
 关联容器的完整分类、复杂度和接口区别，参见 [**八大关联容器总结**](14-associative-containers-summary.md)。
 
+### 整体比较速查（C++11）
+
+**完整比较**指支持 `==`、`!=`、`<`、`<=`、`>`、`>=`。比较的是两个对象的内容，返回 `bool`；表中容器以同一类型、默认比较及哈希规则为例，元素须支持相应运算。
+
+| 支持范围 | 类型 | 比较什么 |
+| --- | --- | --- |
+| 完整比较 | [string](03-string.md#完整字符串直接比较c11) | 按字符字典序；不是按数值大小 |
+| 完整比较 | [vector](01-vector.md#整个-vector-可以直接比较c11)、[deque](04-deque.md#整个-deque-的比较) | 按当前元素序列的字典序，不先排序 |
+| 完整比较 | [array](02-array.md#array-比内容原生数组不能这样比较) | 同一类型、同一 N，按下标顺序比较 |
+| 完整比较 | `list`、`forward_list` | 按从 begin 到 end 的元素序列比较 |
+| 完整比较 | [pair](15-pair.md#21-字典序先比较第一关键字再比较第二关键字) | 先 first，再 second |
+| 完整比较 | [tuple](16-tuple.md#23-默认字典序与排序) | 按字段顺序逐个比较 |
+| 完整比较 | [set](08-set.md#比较两个-set看完整有序序列)、[multiset](09-multiset.md#比较两个-multiset重复次数也算内容) | 按遍历序列；重复次数参与比较 |
+| 完整比较 | [map](11-map.md#两个-map-比较时value-也参与)、[multimap](12-multimap.md#multimap-的比较还要注意同-key-内的顺序) | 按 pair 序列，key 与 value 都参与 |
+| 完整比较 | [stack](05-stack.md#stack-也能比较但不是只比-top)、[queue](06-queue.md#queue-可以按完整队列比较) | 转交底层容器；默认分别从栈底、队首开始 |
+| 只有相等比较 | [unordered_set](10-unordered-set.md#只有相等比较不提供大小顺序)、`unordered_multiset` | 元素及重复次数相同，忽略遍历顺序 |
+| 只有相等比较 | [unordered_map](13-unordered-map.md#只有相等比较而且-key-与-value-都要相同)、`unordered_multimap` | 键值内容及重复次数相同，忽略遍历顺序 |
+| 只有相等比较 | [bitset](17-bitset.md#34-位集合可以判相等不能直接比大小) | 同一 N 的全部对应位相同 |
+| 只有相等比较 | `complex<T>` | 实部与虚部分别相等；浮点 == 仍是精确相等比较 |
+| 无整对象比较 | [priority_queue](07-priority-queue.md#堆内元素能比较不代表两个堆对象能比较) | Compare 决定堆内优先级，不是比较两个堆 |
+
+**字典序只需记两步：** 从左向右，首个能区分大小的位置决定结果；若前面全相同且一方先结束，则较短者更小。`==` 则要求长度相同、每个对应元素都相等；哈希容器改按内容匹配，不要求遍历顺序一致。
+
+```cpp
+vector<int> a = {1, 2, 9}, b = {1, 3, 0};
+cout << (a < b); // 1：看第一个不同位置的 2 < 3，不看总和或最后一项。
+```
+
+**能直接比较，不代表比较是 O(1)。** 序列可能扫描到末尾；pair/tuple 也要计入成员的比较成本。整哈希容器相等比较也不是一次平均 O(1) 的查询，关联容器的区别见[详细对照](14-associative-containers-summary.md#整体比较内容相同与谁更小)。
+
+**三个边界：** C 风格数组的 `==` 比较退化后的指针，不比较内容；`array` 可直接比较内容。自定义 struct 作为元素时，需提供相应运算符；只给 sort 或 set 写了比较器，不代表这个 struct 已有 `<`。C++11 中容器的类型要求也要匹配，不能据此直接比较 `vector<int>` 与 `vector<long long>`。
+
+规则依据：[N3337 容器比较要求](https://timsong-cpp.github.io/cppwp/n3337/container.requirements.general)、[pair 比较](https://timsong-cpp.github.io/cppwp/n3337/pairs#pairs.spec)、[tuple 比较](https://timsong-cpp.github.io/cppwp/n3337/tuple.rel)。哈希容器与适配器的特殊规则见下面的关联容器对照及各篇正文。
+
 ## 三、值得复用的解题思想
 
 学习容器不只是掌握接口，还应理解它们如何帮助简化问题。

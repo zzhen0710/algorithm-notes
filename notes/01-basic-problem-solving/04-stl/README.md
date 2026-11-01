@@ -8,7 +8,7 @@
 ### [Containers：容器与工具类型](containers/README.md)
 
 顺序容器、容器适配器、关联容器、pair、tuple、
-bitset，以及相关的代表题与解题思想。
+bitset，以及相关的代表题与解题思想。完整比较／仅相等／无整对象比较的分类，见[容器整体比较速查](containers/README.md#整体比较速查c11)。
 
 ### [Algorithms：标准算法](algorithms/16-stl-algorithm-index.md)
 
