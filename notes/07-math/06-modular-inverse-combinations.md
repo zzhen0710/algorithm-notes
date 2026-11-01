@@ -554,6 +554,8 @@ $$
 2. ifact[i] 与 i 的逆元有什么区别？为什么可以从 ifact[N] 向前推？
 3. n≥p 时，是组合数不存在，还是这份实现不再适用？
 
+模数不保证为素数时，接着看 [7.11 扩展欧几里得与一般模逆元](11-extended-euclid.md)，通过 `ax+my=1` 直接求系数；这不会自动放宽阶乘组合数公式的可逆条件。
+
 本节把同余、快速幂与基础计数连起来。范围与写法依据参考 [Modular Inverse](https://cp-algorithms.com/algebra/module-inverse.html)及 [Binomial Coefficients](https://cp-algorithms.com/combinatorics/binomial-coefficients.html)，代码在本仓库既有快速幂上独立整理。
 
 后续用 [7.7 容斥原理](07-inclusion-exclusion.md)处理类别重叠：本节强调一套位置选择不能重复计数，容斥进一步处理同一对象同时属于多类的情况。

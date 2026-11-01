@@ -8,6 +8,10 @@
 
 - [从递推式构造矩阵：先留历史，再写每个分量的更新](recurrence-to-matrix.md)：依赖项、历史搬运、逐行提取系数、初始向量、转移次数与答案位置，补[已知初值递推与方程求解的区别](recurrence-to-matrix.md#已知初值向前推还是由约束求未知量)。
 
+## 知识衔接
+
+- [7.11 扩展欧几里得与一般模逆元](../../notes/07-math/11-extended-euclid.md)：从下一层等式恢复本层系数，再利用互质条件计算逆元。
+
 ## 跨章参考
 
 - [MEX：从定义域与频率出发](../02-sequence-techniques/mex-analysis.md)

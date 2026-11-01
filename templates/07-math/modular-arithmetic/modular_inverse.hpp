@@ -1,5 +1,7 @@
 #pragma once
 
+#include "extended_gcd.hpp"
+
 #include "../binary-exponentiation/binary_exponentiation.hpp"
 
 // p 为素数，2<=p<2^31；a 可为任意 ll。调用者保证素数，不在此检测。
