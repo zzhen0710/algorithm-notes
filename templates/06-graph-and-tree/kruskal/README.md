@@ -33,7 +33,11 @@ if (res.used != n - k) {
 }
 ```
 
+**k=1 且原图连通时，最小总权值由图决定，与根无关。** Kruskal 没有起点参数，DSU 的根只是连通块代表；同权时具体边集可以不同。原理见 [MST 与根](../../../notes/06-graph-and-tree/03-kruskal-mst.md#mst-的最小总权值与根无关)。
+
 若输入可能出现 `k>n` 等非法目标，先在调用处处理；不能让负的所需选边数参与模型解释。
+
+矩阵输入与稠密图的另一种主写法见 [Prim 模板](../prim/README.md)，完整选型见 [6.3 补充篇](../../../notes/06-graph-and-tree/03a-prim-mst.md#6-怎样选-kruskal矩阵-prim-或堆-prim)。目标 k 块仍使用本模板，不随意截断一棵 Prim 树。
 
 ## 边界与复杂度
 

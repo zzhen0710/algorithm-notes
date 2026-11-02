@@ -10,6 +10,8 @@
 
 ## 跨章参考
 
+- [Prim 与 Kruskal：同一割性质，不同选边组织](../../notes/06-graph-and-tree/03a-prim-mst.md#4-更新只取边权为什么就够了)：已有 Kruskal 的交换证明可复用；补[接入边权与 Dijkstra 路径距离](../../notes/06-graph-and-tree/03a-prim-mst.md#5-与-dijkstra-很像但-best-的含义不同)，标准算法在知识笔记维护。
+
 - [关键路径：由状态依赖选择正推／反推](dag-dp.md#关键路径同一拓扑序正向取-max反向取-min)：前驱给最早时间下界，后继给最迟时间上界；完整实现与逐轮图见[6.5 应用篇](../../notes/06-graph-and-tree/05a-critical-path.md)。
 
 - [欧拉路径：从访问点转为消耗原边](../../notes/06-graph-and-tree/14-euler-trail.md#5-next-与-used一个防止重扫一个防止重走)：原边身份与永久标记、邻接游标和退栈拼接；补[同一模板与题面比较规则](../../notes/06-graph-and-tree/14-euler-trail.md#103-同一模板差别留在输入与输出)。完整讲解在知识笔记维护，不另建重复范式。
