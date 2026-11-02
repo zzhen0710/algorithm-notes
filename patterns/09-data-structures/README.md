@@ -8,6 +8,8 @@
 
 ## 跨章参考
 
+- [DP 的滑动候选区间](../05-dynamic-programming/dp-modeling-workflow.md#滑动候选区间用单调队列减少转移枚举)：固定候选分数与移动边界，队列加速选择转移来源。
+
 - [固定依赖与局部维护](../05-dynamic-programming/dp-modeling-workflow.md#固定划分的区间只重算受影响的祖先)：节点摘要是否足够、局部重算与延迟分发。
 - [区间代价与二分长度](../02-sequence-techniques/binary-search-on-answer.md#固定区间代价再二分可行长度)：查询工具与可行性判定分层。
 - [幂长状态与计算顺序](../05-dynamic-programming/dp-modeling-workflow.md#只存幂长区间按倍增长度满足依赖)：ST 表与依赖关系。

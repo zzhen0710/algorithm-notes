@@ -10,7 +10,7 @@
 
 - [数位 DP：余数、非零位计数与相邻位约束](digit-dp/README.md)
 
-- [多重背包：二进制拆分与逐种加入](bounded-knapsack/README.md)
+- [多重背包：二进制拆分、单调队列与逐种加入](bounded-knapsack/README.md)
 
 ## 跨章复用
 

@@ -583,3 +583,5 @@ $$
 **定义对照：**[Minimum Queue](https://cp-algorithms.com/data_structures/stack_queue_modification.html#queue-modification-method-2) 也通过记录下标识别过期候选；本节直接查询原数组，以窗口左边界判断过期，并明确保留较新同值位置的约定。
 
 竞赛短写法见[单调队列模板](../../templates/09-data-structures/monotonic-queue/README.md)：封装定长窗口最大值下标，最小值说明比较差异；变长窗口条件继续按题意维护。
+
+**DP 中的应用：** 窗口里维护的不一定是原输入，也可以是已计算状态变形后的候选分数。见 [5.11 单调队列优化 DP](../05-dynamic-programming/11-monotonic-queue-dp.md)，先说明分数不随本轮右端改变，再用相同的过期／劣势淘汰规则。
