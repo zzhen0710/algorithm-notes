@@ -18,4 +18,6 @@
 
 - [实数线性方程组：高斯消元与三类解](gaussian-elimination/README.md)
 
+- [整数平面几何：距离、方向、闭线段相交、凸图形内点与简单多边形面积](geometry/README.md)
+
 [返回全部模板](../README.md)
