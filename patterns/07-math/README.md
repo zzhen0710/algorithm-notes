@@ -16,6 +16,8 @@
 
 - [7.12 基础几何](../../notes/07-math/12-basic-geometry.md#11-自查与衔接)：叉积与范围条件的组合；两题已静态复盘，并链接凸图形同侧范式及整数模板。
 
+- [7.13 基础概率与期望](../../notes/07-math/13-probability-expectation.md)：[P4316](../../notes/07-math/13-probability-expectation.md#91-p4316直接把等概率出边接到模板)按后继期望反推，[CF621C](../../notes/07-math/13-probability-expectation.md#92-cf621c拆成相邻对的奖金贡献)按局部收益拆贡献；区分选择独立与期望相加，不另建重复模式。
+
 ## 跨章参考
 
 - [MEX：从定义域与频率出发](../02-sequence-techniques/mex-analysis.md)

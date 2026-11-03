@@ -632,4 +632,4 @@ bool strict = point_in_convex(poly, p, false);      // 只接纳严格内部。
 
 原理核对：[cp-algorithms：点积与叉积](https://cp-algorithms.com/geometry/basic-geometry.html)、[线段相交](https://cp-algorithms.com/geometry/check-segments-intersection.html)、[简单多边形面积](https://cp-algorithms.com/geometry/area-of-simple-polygon.html)。代码与图按本节整数契约自行整理，未照搬外部实现。
 
-[本章索引](README.md) · [几何模板](../../templates/07-math/geometry/README.md)
+[本章索引](README.md) · [几何模板](../../templates/07-math/geometry/README.md) · [下一单元：概率与期望](13-probability-expectation.md)

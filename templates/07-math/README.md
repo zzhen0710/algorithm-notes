@@ -20,4 +20,6 @@
 
 - [整数平面几何：距离、方向、闭线段相交、凸图形内点与简单多边形面积](geometry/README.md)
 
+- [DAG 期望：条件概率、转移代价与剩余期望](probability-expectation/README.md)
+
 [返回全部模板](../README.md)
