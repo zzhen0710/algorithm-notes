@@ -12,6 +12,8 @@
 
 - [多重背包：二进制拆分、单调队列与逐种加入](bounded-knapsack/README.md)
 
+- [分组背包：每组至多/恰好选一，支持零占用](group-knapsack/README.md)
+
 ## 跨章复用
 
 - [DFS 序与非递归树遍历](../06-graph-and-tree/dfs-order/README.md#将-order-用作计算顺序)：[5.7 树形 DP](../../notes/05-dynamic-programming/07-tree-dp.md)复用 parent、order，按依赖选择正序或逆序。两题核验后提炼的具体模型见本章 tree-dp 模板组；不建立万能树形 DP 模板。
