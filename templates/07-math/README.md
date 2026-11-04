@@ -22,4 +22,6 @@
 
 - [DAG 期望：条件概率、转移代价与剩余期望](probability-expectation/README.md)
 
+- [基础博弈：单堆固定取法胜负表与标准 Nim](game-theory/README.md)
+
 [返回全部模板](../README.md)

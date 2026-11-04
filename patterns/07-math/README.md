@@ -4,7 +4,7 @@
 
 ## 本章范式
 
-- [博弈中的临界条件：从资源阈值到策略证明](critical-condition-in-game.md)
+- [博弈中的临界条件：从资源阈值到策略证明](critical-condition-in-game.md)：补[胜负态与策略保证的区别](critical-condition-in-game.md#先分清胜负态与一条获胜路线)，基础实现集中在 Notes，并补[二进制平衡的识别与边界](critical-condition-in-game.md#从成对响应识别二进制平衡)、[周期猜想、块内分布与合法性证明](critical-condition-in-game.md#从小状态到周期先检查新增操作是否破坏旧败态)。
 
 - [从递推式构造矩阵：先留历史，再写每个分量的更新](recurrence-to-matrix.md)：依赖项、历史搬运、逐行提取系数、初始向量、转移次数与答案位置，补[已知初值递推与方程求解的区别](recurrence-to-matrix.md#已知初值向前推还是由约束求未知量)。
 
@@ -17,6 +17,8 @@
 - [7.12 基础几何](../../notes/07-math/12-basic-geometry.md#11-自查与衔接)：叉积与范围条件的组合；两题已静态复盘，并链接凸图形同侧范式及整数模板。
 
 - [7.13 基础概率与期望](../../notes/07-math/13-probability-expectation.md)：[P4316](../../notes/07-math/13-probability-expectation.md#91-p4316直接把等概率出边接到模板)按后继期望反推，[CF621C](../../notes/07-math/13-probability-expectation.md#92-cf621c拆成相邻对的奖金贡献)按局部收益拆贡献；区分选择独立与期望相加，不另建重复模式。
+
+- [7.14 基础博弈](../../notes/07-math/14-basic-games.md)：P2197 的短判定与 CF1194D 的周期分类已静态复盘；异或平衡和模数周期各按规则论证，复用已有博弈范式。
 
 ## 跨章参考
 

@@ -472,3 +472,5 @@ $$
 参考核对：[MIT 条件概率讲义](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006/resources/lec02/)、[离散随机变量与期望](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006/resources/lec05/)、[全期望与条件期望](https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-spring-2006/resources/lec06/)，以及 [Competitive Programmer's Handbook 第 24 章](https://cses.fi/book/book.pdf#page=237)的概率／期望线性性概述。代码、例子与配图自行整理，不照搬课程实例。
 
 [本章索引](README.md) · [期望模板](../../templates/07-math/probability-expectation/README.md)
+
+下一节：[7.14 基础博弈：胜负态与 Nim](14-basic-games.md)。随机选择使用概率加权；双方主动选择时，改为分析各自的最优应对。
