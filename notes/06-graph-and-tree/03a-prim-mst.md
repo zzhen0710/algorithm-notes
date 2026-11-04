@@ -281,3 +281,5 @@ P3366 已在 [Kruskal 原节](03-kruskal-mst.md#81-洛谷-p3366模板最小生�
 参考：[Princeton Algorithms：Minimum Spanning Trees](https://algs4.cs.princeton.edu/43mst/index.php)与 [PrimMST 接口说明](https://algs4.cs.princeton.edu/code/javadoc/edu/princeton/cs/algs4/PrimMST.html)。这里自行整理矩阵 C++11 实现，失败时报告未连通；与参考实现自动求多分量森林的契约不同。
 
 [图与树索引](README.md) · [Prim 模板](../../templates/06-graph-and-tree/prim/README.md) · [Kruskal 模板](../../templates/06-graph-and-tree/kruskal/README.md)
+
+[本章总结与选型](15-summary-selection.md)

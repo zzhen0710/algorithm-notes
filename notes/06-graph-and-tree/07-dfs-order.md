@@ -723,7 +723,7 @@ for (int i = 1; i <= n; ++i) {
 3. 改变孩子顺序，会不会破坏子树连续性？会不会改变题目要求的访问次序？
 4. 第一题为什么要用 order 取回节点，而第二题按 u 输出时只需要 tin？异或差分为什么在右端之后再改一次？
 
-本节把**树的结构关系转成序列位置关系**。之后在此基础上学习[倍增 LCA](08-lca-binary-lifting.md)与树形 DP；本章完整成本比较与场景推荐仍留到主题收尾。
+本节把**树的结构关系转成序列位置关系**。之后在此基础上学习[倍增 LCA](08-lca-binary-lifting.md)与树形 DP；本章成本比较与场景推荐见[总结与选型](15-summary-selection.md)。
 
 概念可对照 [USACO Guide 的 Euler Tour Technique](https://usaco.guide/gold/tree-euler?lang=cpp)，它的实现采用 0-based、半开区间；本篇独立实现采用 **1-based、闭区间**，保留已有显式栈风格，不能直接混用端点公式。
 

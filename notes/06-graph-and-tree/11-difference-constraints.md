@@ -502,3 +502,5 @@ flowchart LR
 模型定义与条件可对照 [OI Wiki：差分约束](https://oi-wiki.org/graph/diff-constraints/)。本篇例子、过程图与代码按仓库约定自行整理，两题实际实现与建模推导见第 9 节。
 
 [本章索引](README.md) · [差分约束模板](../../templates/06-graph-and-tree/difference-constraints/README.md)
+
+[本章总结与选型](15-summary-selection.md)

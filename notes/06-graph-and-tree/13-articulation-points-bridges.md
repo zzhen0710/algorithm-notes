@@ -621,3 +621,5 @@ flowchart LR
 下一节：[6.14 欧拉路径与回路](14-euler-trail.md)，继续使用原边编号，但目标从判断删边后的连通性，转为安排每条边恰好使用一次的走法。
 
 [本章索引](README.md) · [割点与桥模板](../../templates/06-graph-and-tree/cuts/README.md)
+
+[本章总结与选型](15-summary-selection.md)

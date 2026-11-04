@@ -636,3 +636,5 @@ B：1，4， 2
 定义与拼接思想参考 [OI Wiki：欧拉图](https://oi-wiki.org/graph/euler/) 和 [CP-Algorithms：Eulerian Path](https://cp-algorithms.com/graph/euler_path.html)。本篇按既有显式栈与原边编号约定自行实现，过程图由该实现的运行状态整理。
 
 [本章索引](README.md) · [欧拉路径竞赛模板](../../templates/06-graph-and-tree/euler-trail/README.md)
+
+[本章总结与选型](15-summary-selection.md)

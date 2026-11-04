@@ -390,3 +390,5 @@ $$
 [DAG DP：正推与反推的方向](../../patterns/06-graph-and-tree/dag-dp.md#关键路径同一拓扑序正向取-max反向取-min) · [关键路径竞赛模板](../../templates/06-graph-and-tree/topological-sort/critical_path.hpp)
 
 [返回 6.5 基础篇](05-topological-sort.md) · [本章索引](README.md)
+
+[本章总结与选型](15-summary-selection.md)

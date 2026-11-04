@@ -713,3 +713,5 @@ $$
 原理参考 [cp-algorithms：Binary Lifting LCA](https://cp-algorithms.com/graph/lca_binary_lifting.html)。本篇独立采用“先拉齐深度，再同步跳”的主写法，复用本仓库非递归遍历；与该页根父亲、时间戳及祖先判定接口不直接混用，未移植其实现。
 
 [返回本章索引](README.md) · [倍增 LCA 竞赛模板](../../templates/06-graph-and-tree/lca/README.md)
+
+[本章总结与选型](15-summary-selection.md)

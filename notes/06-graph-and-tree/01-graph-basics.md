@@ -701,3 +701,5 @@ void solve() {
 树的父子关系与显式栈写法，在 [6.7 DFS 序](07-dfs-order.md) 中继续用于记录子树的连续区间。
 
 概念补充参考：[Hello 算法 · 图](https://www.hello-algo.com/chapter_graph/graph/)。
+
+[本章总结与选型](15-summary-selection.md)

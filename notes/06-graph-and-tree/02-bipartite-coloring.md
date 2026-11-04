@@ -583,3 +583,5 @@ void solve() {
 本节代表题已完成复盘，后续按基础轮路线进入 [4.1 排序贪心与交换论证](../04-greedy-and-construction/01-sorting-greedy.md)；图的其他算法在相应前置齐备后继续整理。
 
 进一步阅读：[CP-Algorithms · Bipartite Graph Check](https://cp-algorithms.com/graph/bipartite-check.html)。
+
+[本章总结与选型](15-summary-selection.md)

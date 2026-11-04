@@ -10,6 +10,10 @@
 
 - [博弈胜负态：依赖后继，但切换玩家视角](dag-dp.md#博弈胜负态依赖后继但切换玩家视角)：不能操作者输，按“是否存在必败后继”组合；不是普通路径可达性。
 
+## 知识衔接
+
+- [6.15 本章总结与选型](../../notes/06-graph-and-tree/15-summary-selection.md)：按目标选择算法，区分状态／标记和实际时空成本；完整思想仍在已有范式维护。
+
 ## 跨章参考
 
 - [Prim 与 Kruskal：同一割性质，不同选边组织](../../notes/06-graph-and-tree/03a-prim-mst.md#4-更新只取边权为什么就够了)：已有 Kruskal 的交换证明可复用；补[接入边权与 Dijkstra 路径距离](../../notes/06-graph-and-tree/03a-prim-mst.md#5-与-dijkstra-很像但-best-的含义不同)，标准算法在知识笔记维护。

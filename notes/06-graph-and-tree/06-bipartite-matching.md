@@ -623,3 +623,5 @@ $$
 [返回本章索引](README.md) · [本章范式](../../patterns/06-graph-and-tree/README.md)
 
 竞赛短写法见[二分图最大匹配模板](../../templates/06-graph-and-tree/bipartite-matching/README.md)：保留逐轮清标记与右侧搭档，返回数量和方案；不改本篇原实现。
+
+[本章总结与选型](15-summary-selection.md)
