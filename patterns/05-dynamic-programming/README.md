@@ -12,6 +12,10 @@
 - [背包建模：使用次数、状态边界与优化目标](resource-limited-selection.md)：补[有限数量的转移压缩](resource-limited-selection.md#有限数量压缩转移轮数不改变容量语义)，对照最值与计数的等价要求，并补[同组互斥与旧行读取](resource-limited-selection.md#同组互斥把整组当作一个处理阶段)，及[独立资源分别保留容量](resource-limited-selection.md#多种独立资源分别保留容量)、[有限容量下的无限次上界](resource-limited-selection.md#正占用与有限容量无限次也有有效上限)。
 - [从最优性推出状态上界：超过太多，就删掉一步](optimality-state-bound.md)
 
+## 知识衔接
+
+- [5.14 本章总结与选型](../../notes/05-dynamic-programming/14-summary-selection.md)：十三节模型的状态、读取层次、优化瓶颈、写法成本与已有多解横向比较；通用推导仍在本章已有范式维护。
+
 ## 跨章参考
 
 - [逐个对象分配容器](../03-search/object-to-container-search.md)：对照“选不选”与“放到哪里”；共享载重数组也属于状态，不能只按 DFS 的两个形参建立缓存。

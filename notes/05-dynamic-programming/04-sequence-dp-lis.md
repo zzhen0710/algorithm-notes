@@ -679,3 +679,5 @@ $$
 下一节：[双序列 DP：同时处理两个前缀](05-two-sequence-dp-lcs.md)。
 
 竞赛短写法见 [LIS 模板](../../templates/05-dynamic-programming/lis/README.md)：同一算法提供整体长度与逐位置长度，默认严格上升，可切换非下降；模板元素统一使用 ll。
+
+[本章总结与选型](14-summary-selection.md)

@@ -16,6 +16,8 @@
 
 - [两种费用的 0/1 背包：两个资源上限，支持零费用](two-cost-knapsack/README.md)
 
+[5.14 写法成本与规模估算](../../notes/05-dynamic-programming/14-summary-selection.md#5-写法成本与现成多解按需回看)比较手写短转移和本章具体模板的条件、复杂度与状态语义；不新增万能 DP，也不因总结修改已有算法。
+
 ## 跨章复用
 
 - [DFS 序与非递归树遍历](../06-graph-and-tree/dfs-order/README.md#将-order-用作计算顺序)：[5.7 树形 DP](../../notes/05-dynamic-programming/07-tree-dp.md)复用 parent、order，按依赖选择正序或逆序。两题核验后提炼的具体模型见本章 tree-dp 模板组；不建立万能树形 DP 模板。

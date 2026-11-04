@@ -343,3 +343,5 @@ void solve() {
 模型和循环顺序对照 [OI Wiki 的分组背包](https://oi-wiki.org/dp/knapsack/advanced/#分组背包)；本节自行整理两种实现，并用暂存 best 处理零占用候选。题面范围以原站为准。
 
 [本章索引](README.md) · [竞赛模板](../../templates/05-dynamic-programming/group-knapsack/README.md) · [DP 建模流程](../../patterns/05-dynamic-programming/dp-modeling-workflow.md)
+
+[本章总结与选型](14-summary-selection.md)

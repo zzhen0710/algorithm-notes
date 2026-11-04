@@ -389,3 +389,5 @@ flowchart LR
 本节优化的是转移轮数；滚动数组优化的是存储量，LIS 二分优化则更换了保留状态。**先明确瓶颈，再判断优化依赖什么性质。** 参见 [DP 建模与优化检查](../../patterns/05-dynamic-programming/dp-modeling-workflow.md#时间优化先找重复枚举的选择)、[背包识别范式](../../patterns/05-dynamic-programming/resource-limited-selection.md#有限数量压缩转移轮数不改变容量语义)。
 
 [本章知识索引](README.md) · [多重背包模板](../../templates/05-dynamic-programming/bounded-knapsack/README.md)
+
+[本章总结与选型](14-summary-selection.md)

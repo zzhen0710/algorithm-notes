@@ -567,3 +567,5 @@ $$
 [返回本章索引](README.md) · [本章范式](../../patterns/05-dynamic-programming/README.md)
 
 下一节：[区间 DP：从最后一次合并倒推](06-interval-dp.md)。
+
+[本章总结与选型](14-summary-selection.md)

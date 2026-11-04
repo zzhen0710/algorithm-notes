@@ -397,3 +397,5 @@ $$
 模型对照 [OI Wiki：二维费用背包](https://oi-wiki.org/dp/knapsack/advanced/#二维费用背包)，代码与本节示例自行整理；题意与范围以两道原题为准。通用实现核验不代表典题已经通过或个人已经掌握。
 
 [本章索引](README.md) · [竞赛模板](../../templates/05-dynamic-programming/two-cost-knapsack/README.md) · [背包建模范式](../../patterns/05-dynamic-programming/resource-limited-selection.md)
+
+[本章总结与选型](14-summary-selection.md)

@@ -559,3 +559,5 @@ flowchart LR
 下一节：[5.9 数位 DP](09-digit-dp.md)，从小集合选择转向巨大数值区间的逐位计数，继续练习完整状态与结果复用。
 
 [本章索引](README.md) · [配套模板](../../templates/05-dynamic-programming/subset-dp/README.md)
+
+[本章总结与选型](14-summary-selection.md)

@@ -711,3 +711,5 @@ if (x < 0) return 0;
 下一小单元：[6.10 负权最短路与负环](../06-graph-and-tree/10-negative-shortest-path.md)，继续对照状态阶段、松弛传播与计算顺序，为差分约束建立前置。
 
 [本章索引](README.md) · [配套模板](../../templates/05-dynamic-programming/digit-dp/README.md)
+
+[本章总结与选型](14-summary-selection.md)

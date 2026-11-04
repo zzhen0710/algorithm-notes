@@ -561,3 +561,5 @@ $$
 随后接入 [5.12 分组背包](12-group-knapsack.md)：回到决策约束，比较同组多个候选怎样只选一种；不继续扩展更高级优化。
 
 [本章索引](README.md) · [单调队列知识](../09-data-structures/03-monotonic-queue.md) · [两种多重背包模板](../../templates/05-dynamic-programming/bounded-knapsack/README.md)
+
+[本章总结与选型](14-summary-selection.md)
