@@ -6,7 +6,7 @@
 
 | 对应章节 | 模板入口 | 已收录内容 |
 | --- | --- | --- |
-| [01 基础问题求解](../notes/01-basic-problem-solving/README.md) | [本章索引](01-basic-problem-solving/README.md) | C++ 程序框架与常用类型 |
+| [01 基础问题求解](../notes/01-basic-problem-solving/README.md) | [本章索引](01-basic-problem-solving/README.md) | C++ 程序框架（init／solve）、常用类型与常量 |
 | [02 序列与区间技巧](../notes/02-sequence-techniques/README.md) | [本章索引](02-sequence-techniques/README.md) | 离散化、二分、归并计数、区间合并 |
 | [03 搜索](../notes/03-search/README.md) | [本章索引](03-search/README.md) | 小规模 0/1 分支限界、同容量一维装箱、双向 BFS、迭代加深、A*／IDA* |
 | [04 贪心与构造](../notes/04-greedy-and-construction/README.md) | [本章索引](04-greedy-and-construction/README.md) | 互不冲突区间选择 |
