@@ -15,6 +15,7 @@
 | [07 数学](../notes/07-math/README.md) | [本章索引](07-math/README.md) | gcd/lcm、扩展欧几里得、快速幂、素数与分解、素数／一般模逆元、组合数、容斥、高精度、矩阵乘法与快速幂、高斯消元、整数平面几何与凸图形内点、DAG 期望代价、单堆胜负表与标准 Nim |
 | [08 字符串](../notes/08-strings/README.md) | [本章索引](08-strings/README.md) | KMP、字符串双哈希、Manacher |
 | [09 竞赛数据结构](../notes/09-data-structures/README.md) | [本章索引](09-data-structures/README.md) | DSU、BIT、单调栈/队列、ST 表、线段树、Trie |
+| [10 补充知识](../notes/10-supplementary/README.md) | [本章索引](10-supplementary/README.md) | Bell 数取模预处理 |
 
 第三章只收录有明确输入输出与适用边界的具体搜索实现，不建立万能剪枝模板。
 

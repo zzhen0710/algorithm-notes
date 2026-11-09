@@ -15,8 +15,9 @@
 | [07 数学](07-math/README.md) | 数论、模运算、组合计数、容斥、高精度、矩阵、高斯消元、基础几何、概率与博弈 | [本章范式](../patterns/07-math/README.md) |
 | [08 字符串](08-strings/README.md) | KMP、前后缀与周期、字符串哈希及碰撞边界、Manacher | [本章范式](../patterns/08-strings/README.md) |
 | [09 竞赛数据结构](09-data-structures/README.md) | 并查集、单调栈/队列、树状数组、ST 表、基础线段树与懒标记、Trie | [本章范式](../patterns/09-data-structures/README.md) |
+| [10 补充知识](10-supplementary/README.md) | 做题中遇到的知识，目前收录 Bell 数 | — |
 
-九个知识主题均已有正式笔记，各主题仍按实际进度逐步补充，不因目录存在就视为整章完成。每个主题默认直接放 Markdown 文件与 README，不预建空分类；现有 STL 保留容器与算法分类。
+前九个知识主题均已有正式笔记，各主题仍按实际进度逐步补充，不因目录存在就视为整章完成。每个主题默认直接放 Markdown 文件与 README，不预建空分类；现有 STL 保留容器与算法分类。
 
 ## 整理顺序与扩展标记
 
