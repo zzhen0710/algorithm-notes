@@ -2,25 +2,34 @@
 
 ## 基础版：只求距离
 
-日常比赛只查距离时直接用这版。沿用竞赛框架的 `ll`、`INF` 和 `Edge{to,w}`。图用 0-based 或 1-based 均可，起点和边端点须是合法下标。
+日常比赛只查距离时直接用这版。沿用竞赛框架的 `ll`、`INF`。图用 0-based 或 1-based 均可，起点和边端点须是合法下标。
 
 ```cpp
+// 非负权邻接表。ll 和 INF 由竞赛框架提供。
+struct Edge {
+    int to;
+    ll w;
+};
+
 vector<ll> dijkstra(const vector<vector<Edge>>& g, int s) {
+    // 1. 起点距离为 0，其余暂为 INF。小根堆存 {距离, 点}。
     vector<ll> dist(g.size(), INF);
-    using State = pair<ll, int>; // {距离, 点}
+    using State = pair<ll, int>;
     priority_queue<State, vector<State>, greater<State>> pq;
 
     dist[s] = 0;
     pq.push({0, s});
 
+    // 2. 取最小距离，跳过同一点之前留下的旧记录。
     while (!pq.empty()) {
         auto cur = pq.top();
         pq.pop();
 
         ll d = cur.first;
         int u = cur.second;
-        if (d != dist[u]) continue; // 跳过旧距离
+        if (d != dist[u]) continue;
 
+        // 3. 沿出边试走一步。发现更短路线就更新距离并重新入堆。
         for (const auto& e : g[u]) {
             ll nd = d + e.w;
             if (nd < dist[e.to]) {
@@ -30,7 +39,7 @@ vector<ll> dijkstra(const vector<vector<Edge>>& g, int s) {
         }
     }
 
-    return dist;
+    return dist; // 不可达点仍为 INF。
 }
 ```
 

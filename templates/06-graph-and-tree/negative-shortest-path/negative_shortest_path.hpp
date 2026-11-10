@@ -44,6 +44,7 @@ inline Result spfa(const std::vector<std::vector<AdjEdge>>& g, int s = 1) {
     std::vector<bool> inq(n + 1, false);
     std::queue<int> q;
     if (s == 0) {
+        // 全图判环：让所有真实点都能启动传播，覆盖不连通的部分。
         for (int u = 1; u <= n; ++u) q.push(u), inq[u] = true;
     } else {
         d[s] = 0;
@@ -56,7 +57,9 @@ inline Result spfa(const std::vector<std::vector<AdjEdge>>& g, int s = 1) {
         for (const auto& e : g[u]) {
             if (d[e.v] <= d[u] + e.w) continue;
             d[e.v] = d[u] + e.w;
+            // 这次改善的走法，是到 u 的走法再接一条边。
             hops[e.v] = hops[u] + 1;
+            // 到达 n 条边就触发负环判定，此时 d 仍是中间结果。
             if (hops[e.v] >= n) return {d, true};
             if (!inq[e.v]) q.push(e.v), inq[e.v] = true;
         }

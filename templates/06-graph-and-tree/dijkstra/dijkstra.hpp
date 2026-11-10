@@ -30,6 +30,7 @@ inline DijkstraResult dijkstra(const std::vector<std::vector<WeightedEdge>>& g, 
     using State = std::pair<ll, int>;
     std::priority_queue<State, std::vector<State>, std::greater<State>> pq;
 
+    // 从起点开始，小根堆按距离从小到大取点。
     dist[s] = 0;
     pq.push({0, s});
 
@@ -40,6 +41,7 @@ inline DijkstraResult dijkstra(const std::vector<std::vector<WeightedEdge>>& g, 
         int u = cur.second;
         if (d != dist[u]) continue; // 丢弃过期距离快照
 
+        // 用当前最短距离尝试改善每条出边的终点。
         for (const auto& e : g[u]) {
             ll nd = d + e.w;
             if (nd >= dist[e.to]) continue;

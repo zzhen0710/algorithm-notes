@@ -2,7 +2,59 @@
 
 [知识笔记、过程图与证明](../../../notes/06-graph-and-tree/10-negative-shortest-path.md) · [实现](negative_shortest_path.hpp)
 
-## 接口与输入
+## SPFA 基础版：只求距离
+
+沿用竞赛框架的 `ll` 和 `INF`。图可用 0-based 或 1-based，起点和边端点须是合法下标。若与 Dijkstra 基础版一起贴，`Edge` 定义共用一份。
+
+```cpp
+// 允许负边，要求从 s 可达的部分没有负环。ll 和 INF 由竞赛框架提供。
+struct Edge {
+    int to;
+    ll w;
+};
+
+vector<ll> spfa(const vector<vector<Edge>>& g, int s) {
+    int n = g.size();
+
+    // 1. 起点距离为 0，其余暂为 INF。队列存等待继续传播的点。
+    vector<ll> dist(n, INF);
+    vector<bool> inq(n, false); // inq[u] 表示 u 当前是否在队列中。
+    queue<int> q;
+    dist[s] = 0;
+    q.push(s);
+    inq[s] = true;
+
+    // 2. 取出队首，用 u 最新的距离尝试松弛出边。
+    while (!q.empty()) {
+        int u = q.front();
+        q.pop();
+        inq[u] = false; // 出队后若距离再次变短，还能重新排队。
+
+        for (const auto& e : g[u]) {
+            ll nd = dist[u] + e.w;
+
+            // 3. 找到更短走法就更新。已在队列里的点出队时会读到新距离。
+            if (nd < dist[e.to]) {
+                dist[e.to] = nd;
+                if (!inq[e.to]) {
+                    q.push(e.to);
+                    inq[e.to] = true;
+                }
+            }
+        }
+    }
+
+    return dist; // 不可达点仍为 INF。
+}
+```
+
+**允许负边，要求从 `s` 可达的部分没有负环。** 边权和有限最短距离须小于 `INF`，同时保证松弛加法不溢出。需要检测负环时用下方完整版。
+
+## 完整版：同时检测负环
+
+[negative_shortest_path.hpp](negative_shortest_path.hpp) 提供 Bellman–Ford 和 SPFA。完整版 SPFA 在距离更新时同时记下这条走法用了几条边，据此判环；`s=0` 时把所有点设为传播起点，覆盖全图。
+
+### 接口与输入
 
 所有类型和函数位于 `negative_shortest` 命名空间；使用 C++11、`using ll = long long;`。
 
