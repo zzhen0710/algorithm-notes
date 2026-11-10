@@ -9,6 +9,8 @@
 
 - [8.3 Manacher：用镜像信息加速回文扩展](03-manacher.md)：用同一例子的连续执行图讲清半径与位置换算；两题复盘串起最长回文与前后缀结构缩减。
 
+- [8.4 本章总结与选型](04-summary-selection.md)：匹配、子串指纹和回文半径的选型，兼顾 Trie 前缀查询。
+
 - 跨章参考：[9.8 Trie：共享前缀与字符串计数](../09-data-structures/08-trie.md)，正文与模板归第九章，不重复维护。
 
 ## 笔记整理进度
@@ -19,7 +21,7 @@
 - [x] [8.2 字符串哈希与碰撞边界](02-string-hash.md)：知识正文、P3370 与 CF 271D 原实现复盘完成（本地核验，平台结果未单独记录）；已提炼[比较键范式](../../patterns/08-strings/filter-key-dedup.md)与[双哈希模板](../../templates/08-strings/string-hash/README.md)。
 - [x] [8.3 Manacher](03-manacher.md)：正文、逐轮图解、P3805／CF1326D2 原实现及通用模板已本地核验并复盘，平台结果未单独提供；提炼[答案结构缩减](../../patterns/04-greedy-and-construction/answer-structure-reduction.md)，熟练度另行核验。
 - [ ] 前后缀与周期的进一步应用及其余字符串内容。
-- [ ] 全章总结与场景选型，主题收尾时完善。
+- [x] [8.4 本章总结与选型](04-summary-selection.md)：覆盖 8.1–8.3，含复杂度、接口边界与 Trie 跨章对照。
 
 ## 学习衔接
 
