@@ -25,6 +25,7 @@ struct DijkstraResult {
 // 1-based 图；s 合法；边权非负，边权和有限最短距离均须小于 INF
 inline DijkstraResult dijkstra(const std::vector<std::vector<WeightedEdge>>& g, int s) {
     std::vector<ll> dist(g.size(), DIJKSTRA_INF);
+    // pre[v] 记目前最短走法的上一个点，-1 表示还没记过。
     std::vector<int> pre(g.size(), -1);
     using State = std::pair<ll, int>;
     std::priority_queue<State, std::vector<State>, std::greater<State>> pq;
@@ -43,6 +44,7 @@ inline DijkstraResult dijkstra(const std::vector<std::vector<WeightedEdge>>& g, 
             ll nd = d + e.w;
             if (nd >= dist[e.to]) continue;
             dist[e.to] = nd;
+            // 这次是经 u 到达 e.to 更短，前驱也要一起改。
             pre[e.to] = u;
             pq.push({nd, e.to});
         }
@@ -54,6 +56,7 @@ inline DijkstraResult dijkstra(const std::vector<std::vector<WeightedEdge>>& g, 
 // pre 来自同一起点 s 的 dijkstra；返回点序列，不可达返回空
 inline std::vector<int> restore_path(int s, int t, const std::vector<int>& pre) {
     std::vector<int> path;
+    // 从终点顺着前驱找回起点，收集到的点是倒序的。
     for (int v = t; v != -1; v = pre[v]) {
         path.push_back(v);
         if (v == s) {
@@ -61,5 +64,6 @@ inline std::vector<int> restore_path(int s, int t, const std::vector<int>& pre) 
             return path;
         }
     }
+    // 前驱链在到达 s 前断了，t 不可达。
     return {};
 }
